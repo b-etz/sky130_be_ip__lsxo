@@ -1,0 +1,6 @@
+.spiceinit
+xschem/xschemrc
+xschem/.spiceinit
+xschem/*.spice
+spice/*
+ngspice/*

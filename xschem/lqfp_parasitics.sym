@@ -1,0 +1,31 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -60 -40 -60 40 {}
+L 4 60 -40 60 40 {}
+L 4 -60 40 60 40 {}
+L 4 -60 -40 60 -40 {}
+L 7 -80 20 -60 20 {}
+L 7 -80 -20 -60 -20 {}
+L 7 60 0 80 0 {}
+L 7 60 -20 80 -20 {}
+L 7 60 20 80 20 {}
+B 5 -82.5 17.5 -77.5 22.5 {name=chip2 dir=inout}
+B 5 -82.5 -22.5 -77.5 -17.5 {name=chip1 dir=inout}
+B 5 77.5 -2.5 82.5 2.5 {name=gnd dir=inout}
+B 5 77.5 -22.5 82.5 -17.5 {name=board1 dir=inout}
+B 5 77.5 17.5 82.5 22.5 {name=board2 dir=inout}
+T {@symname} -55.5 44 0 0 0.3 0.3 {}
+T {@name} 35 -52 0 0 0.2 0.2 {}
+T {chip2} -25 16 0 1 0.2 0.2 {}
+T {chip1} -25 -24 0 1 0.2 0.2 {}
+T {gnd} 55 -4 0 1 0.2 0.2 {}
+T {board1} 55 -24 0 1 0.2 0.2 {}
+T {board2} 55 16 0 1 0.2 0.2 {}
