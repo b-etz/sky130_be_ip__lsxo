@@ -80,10 +80,10 @@ C {devices/ipin.sym} 60 -280 0 0 {name=p1 lab=in}
 C {devices/iopin.sym} 480 -380 0 0 {name=p2 lab=avdd}
 C {devices/iopin.sym} 480 -180 0 0 {name=p3 lab=avss}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 500 -230 0 1 {name=M4
-W=6
+W=3
 L=0.5
-nf=2
-mult=1
+nf=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -94,10 +94,10 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 270 -230 0 0 {name=M3
-W=6
+W=3
 L=0.5
-nf=2
-mult=1
+nf=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

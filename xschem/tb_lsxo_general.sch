@@ -43,9 +43,9 @@ N 500 -220 500 -150 {
 lab=#net5}
 N 500 -220 540 -260 {
 lab=#net5}
-N 620 -220 620 -150 {
-lab=#net1}
 N 580 -260 620 -220 {
+lab=#net1}
+N 620 -220 620 -150 {
 lab=#net1}
 C {devices/vsource.sym} 40 -560 0 0 {name=VD value=\{DVDD\} savecurrent=false}
 C {devices/vsource.sym} 40 -430 0 0 {name=VA value=\{AVDD\} savecurrent=false}
@@ -62,14 +62,15 @@ value="
 "
 spice_ignore=false
 place=header}
-C {devices/code_shown.sym} 830 -620 0 0 {name=STIMULI 
+C {devices/code_shown.sym} 820 -690 0 0 {name=STIMULI 
 only_toplevel=true
 value="*.option savecurrents
 .param DVDD=1.8
 .param AVDD=3.3
+.param IVDD=2.7
 .param ENA=1
 .param STANDBY=0
-.param CL=12.5p
+.param CL=4p
 .param CSTRAY=2p
 *.ic V(x0.icnode)=100m
 .control
@@ -77,16 +78,14 @@ value="*.option savecurrents
   save I(v.x1.Vcurosc)
   save v(DOUT)
   save I(VA) I(VD)
-  save @m.x1.xm1.msky130_fd_pr__nfet_g5v0d10v5[gm]
   op
-  tran 15n 1
+  tran 25n 10m
   remzerovec
-  write tb_lsxo_general.raw
+  write tb_lsxo_general_short.raw
   plot V(XIN) V(XOUT)
   plot v(DOUT)
   plot I(v.x1.Vcurosc)
   plot I(VA) I(VD)
-  plot @m.x1.xm1.msky130_fd_pr__nfet_g5v0d10v5[gm]
   * quit 0
 .endc"}
 C {devices/capa.sym} 500 -70 0 1 {name=C1
@@ -115,7 +114,7 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 730 -590 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 730 -650 2 0 {name=p16 sig_type=std_logic lab=DOUT}
 C {devices/lab_pin.sym} 110 -660 2 0 {name=p17 sig_type=std_logic lab=IBIAS}
-C {devices/vsource.sym} 40 -690 0 0 {name=V0 value=2.7 savecurrent=false}
+C {devices/vsource.sym} 40 -690 0 0 {name=V0 value=\{IVDD\} savecurrent=false}
 C {devices/gnd.sym} 40 -660 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 520 -530 0 0 {name=p15 sig_type=std_logic lab=XIN}
 C {devices/lab_pin.sym} 600 -530 2 0 {name=p18 sig_type=std_logic lab=XOUT}
@@ -133,7 +132,7 @@ C {devices/lab_pin.sym} 560 -730 2 0 {name=p11 sig_type=std_logic lab=IBIAS}
 C {lsxo_top.sym} 560 -650 0 0 {name=x1}
 C {devices/gnd.sym} 480 -570 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 640 -570 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 40 -190 0 0 {name=V5 value="pwl(0 \{DVDD\} 1u \{DVDD\} 1.05u 0 500u 0 500.05u \{DVDD\})" savecurrent=false}
+C {devices/vsource.sym} 40 -190 0 0 {name=V5 value="pwl(0 0 1u 0 1.02u \{DVDD\})" savecurrent=false}
 C {devices/gnd.sym} 40 -160 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 40 -220 2 0 {name=p4 sig_type=std_logic lab=ENAP}
 C {devices/vsource.sym} 40 -70 0 0 {name=V6 value="pulse(\{DVDD\} 0 1m 50n 1 99 100)" savecurrent=false}
@@ -161,5 +160,5 @@ device=resistor
 m=1}
 C {lqfp_parasitics.sym} 560 -340 3 1 {name=x2}
 C {devices/gnd.sym} 560 -260 0 0 {name=l13 lab=GND}
-C {xtal_iqd_125_1.sym} 560 -100 0 0 {name=x0}
 C {devices/lab_pin.sym} 440 -630 0 0 {name=p6 sig_type=std_logic lab=STANDBY}
+C {xtal_abs_060.sym} 560 -100 0 0 {name=x0}

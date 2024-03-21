@@ -119,10 +119,10 @@ C {devices/lab_pin.sym} 1280 -570 0 0 {name=p23 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 1300 -570 2 0 {name=p24 sig_type=std_logic lab=avss}
 C {devices/title.sym} 290 -40 0 0 {name=l1 author="Brady Etz"}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 410 -290 0 0 {name=M1
-W=20
+W=4
 L=0.5
-nf=2
-mult=2
+nf=1
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -133,10 +133,10 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 410 -460 0 0 {name=M2
-W=20
+W=6
 L=2
-nf=2
-mult=3
+nf=1
+mult=6
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -166,10 +166,10 @@ mult=1
 lab=avss_ip}
 C {devices/lab_pin.sym} 310 -320 2 0 {name=p39 sig_type=std_logic lab=avss_ip}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 450 -180 0 1 {name=M5
-W=20
+W=4
 L=0.5
-nf=2
-mult=1
+nf=1
+mult=5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -181,10 +181,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 470 -180 2 0 {name=p40 sig_type=std_logic lab=ena_33}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 450 -730 0 1 {name=M6
-W=20
+W=4
 L=0.5
-nf=2
-mult=1
+nf=1
+mult=5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -196,10 +196,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 470 -730 2 0 {name=p41 sig_type=std_logic lab=ena_b_33}
 C {sky130_fd_pr/pfet_01v8.sym} 1090 -730 0 1 {name=M8
-W=40
+W=4
 L=0.15
-nf=4
-mult=1
+nf=1
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -211,10 +211,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1110 -730 2 0 {name=p48 sig_type=std_logic lab=standby}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 940 -650 3 1 {name=M9
-W=20
+W=4
 L=0.5
-nf=2
-mult=1
+nf=1
+mult=3
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -226,10 +226,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 940 -670 1 0 {name=p49 sig_type=std_logic lab=standby_33}
 C {sky130_fd_pr/nfet_01v8.sym} 1050 -180 0 0 {name=M11
-W=40
+W=4
 L=0.15
-nf=4
-mult=1
+nf=1
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

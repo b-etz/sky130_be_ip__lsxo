@@ -21,7 +21,7 @@ T {Copyright 2024 Brady Etz
 N 250 -310 380 -310 {
 lab=dvss}
 N 290 -340 340 -340 {
-lab=#net1}
+lab=ibias}
 N 250 -340 250 -310 {
 lab=dvss}
 N 380 -340 380 -310 {
@@ -41,21 +41,21 @@ lab=vbp}
 N 440 -530 440 -480 {
 lab=vbp}
 N 250 -390 310 -390 {
-lab=#net1}
+lab=ibias}
 N 310 -390 310 -340 {
-lab=#net1}
+lab=ibias}
 N 960 -500 960 -340 {
 lab=inv_in}
 N 730 -160 730 -100 {
-lab=#net2}
+lab=#net1}
 N 770 -100 770 -70 {
 lab=dvss}
 N 770 -190 770 -160 {
 lab=dvdd}
 N 730 -130 770 -130 {
-lab=#net2}
+lab=#net1}
 N 770 -130 890 -130 {
-lab=#net2}
+lab=#net1}
 N 1000 -390 1120 -390 {
 lab=inv_m1}
 N 920 -340 960 -340 {
@@ -89,7 +89,7 @@ lab=inv_m2}
 N 250 -560 250 -490 {
 lab=ibias}
 N 250 -430 250 -370 {
-lab=#net1}
+lab=ibias}
 N 1000 -470 1000 -370 {
 lab=inv_m1}
 N 1160 -470 1160 -370 {
@@ -103,38 +103,44 @@ lab=tail}
 N 490 -410 690 -410 {
 lab=dvdd}
 N 490 -380 490 -300 {
-lab=#net3}
+lab=#net2}
 N 490 -300 530 -300 {
-lab=#net3}
+lab=#net2}
 N 530 -300 530 -270 {
-lab=#net3}
+lab=#net2}
 N 530 -270 650 -270 {
-lab=#net3}
+lab=#net2}
 N 690 -380 690 -300 {
 lab=xin_buf}
 N 690 -340 820 -340 {
 lab=xin_buf}
 N 490 -240 690 -240 {
-lab=#net4}
+lab=dvss}
 N 490 -270 490 -240 {
-lab=#net4}
+lab=dvss}
 N 690 -270 690 -240 {
-lab=#net4}
+lab=dvss}
 N 590 -240 590 -230 {
-lab=#net4}
+lab=dvss}
 N 590 -170 590 -150 {
 lab=dvss}
 N 1000 -530 1330 -530 {
 lab=dvdd}
 N 1000 -310 1330 -310 {
 lab=dvss}
+N 250 -490 250 -430 {
+lab=ibias}
+N 590 -500 590 -440 {
+lab=tail}
+N 590 -230 590 -170 {
+lab=dvss}
 C {devices/lab_pin.sym} 450 -410 0 0 {name=p32 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 250 -560 1 0 {name=p35 sig_type=std_logic lab=ibias}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 270 -340 0 1 {name=M1
-W=10
+W=2
 L=2
-nf=5
-mult=1
+nf=1
+mult=5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -307,14 +313,12 @@ C {devices/lab_pin.sym} 920 -110 3 0 {name=p1 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 770 -70 0 0 {name=p2 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 1250 -530 1 0 {name=p13 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1240 -310 3 0 {name=p6 sig_type=std_logic lab=dvss}
-C {devices/ammeter.sym} 590 -470 0 0 {name=Vcurcd savecurrent=true}
-C {devices/ammeter.sym} 250 -460 0 0 {name=Vbiasin savecurrent=true}
 C {devices/ipin.sym} 190 -530 0 0 {name=p11 lab=xout}
 C {sky130_fd_pr/pfet_01v8.sym} 570 -530 0 0 {name=M16
-W=20
+W=4
 L=2
-nf=5
-mult=1
+nf=1
+mult=5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -383,6 +387,5 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 590 -150 3 0 {name=p9 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 730 -410 2 0 {name=p12 sig_type=std_logic lab=xout}
-C {devices/ammeter.sym} 590 -200 0 0 {name=Vcurm savecurrent=true}
 C {devices/lab_pin.sym} 520 -440 1 0 {name=p17 sig_type=std_logic lab=tail}
 C {devices/lab_pin.sym} 440 -490 2 0 {name=p18 sig_type=std_logic lab=vbp}

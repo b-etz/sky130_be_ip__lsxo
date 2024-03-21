@@ -115,10 +115,10 @@ lab=avss}
 N -240 -180 -240 -30 {
 lab=vg1}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} -10 -80 0 0 {name=M2
-W=16
+W=4
 L=2
 nf=1
-mult=1
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -176,8 +176,8 @@ spiceprefix=X
 C {devices/opin.sym} 10 -150 0 0 {name=p4 lab=vbreg}
 C {devices/lab_pin.sym} -40 -80 3 0 {name=p5 sig_type=std_logic lab=vg2}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 180 -210 0 0 {name=M6
-W=0.5
-L=10
+W=0.42
+L=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -205,7 +205,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 260 -40 0 0 {name=M7
 W=2
-L=10
+L=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -223,8 +223,8 @@ C {devices/lab_pin.sym} 10 -30 2 0 {name=p8 sig_type=std_logic lab=vrb}
 C {devices/lab_pin.sym} -240 -60 2 0 {name=p10 sig_type=std_logic lab=vg1}
 C {devices/lab_pin.sym} 280 -10 2 0 {name=p11 sig_type=std_logic lab=vg2}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 180 -120 0 0 {name=M8
-W=0.5
-L=10
+W=0.42
+L=8
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
