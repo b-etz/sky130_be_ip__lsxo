@@ -47,11 +47,13 @@ N 580 -260 620 -220 {
 lab=#net1}
 N 620 -220 620 -150 {
 lab=#net1}
+N 110 -720 220 -720 {
+lab=#net2}
 C {devices/vsource.sym} 40 -560 0 0 {name=VD value=\{DVDD\} savecurrent=false}
 C {devices/vsource.sym} 40 -430 0 0 {name=VA value=\{AVDD\} savecurrent=false}
 C {devices/lab_pin.sym} 130 -470 2 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_pin.sym} 130 -600 2 0 {name=p2 sig_type=std_logic lab=DVDD}
-C {devices/lab_pin.sym} 440 -670 0 0 {name=p3 sig_type=std_logic lab=ENAP
+C {devices/lab_pin.sym} 440 -670 0 0 {name=p3 sig_type=std_logic lab=ENA
 }
 C {devices/code.sym} 830 -140 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -70,21 +72,21 @@ value="*.option savecurrents
 .param IVDD=2.7
 .param ENA=1
 .param STANDBY=0
-.param CL=4p
+.param CL=6p
 .param CSTRAY=2p
+.model DUMMY D()
 *.ic V(x0.icnode)=100m
 .control
-  save v(XIN) v(XOUT) 
-  save I(v.x1.Vcurosc)
-  save v(DOUT)
+  save V(XIN) V(XOUT)
+  save V(ENA) V(STANDBY) V(DOUT)
   save I(VA) I(VD)
   op
-  tran 25n 10m
+  tran 25n 21m
+  *tran 0.1n 5u
   remzerovec
   write tb_lsxo_general_short.raw
   plot V(XIN) V(XOUT)
-  plot v(DOUT)
-  plot I(v.x1.Vcurosc)
+  plot V(ENA) V(STANDBY) V(DOUT)
   plot I(VA) I(VD)
   * quit 0
 .endc"}
@@ -122,22 +124,15 @@ C {devices/lab_pin.sym} 480 -730 0 0 {name=p20 sig_type=std_logic lab=AVDD}
 C {devices/lab_pin.sym} 640 -730 2 0 {name=p22 sig_type=std_logic lab=DVDD}
 C {devices/gnd.sym} 40 -530 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 40 -400 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} 40 -310 0 0 {name=V3 value=\{ENA*DVDD\} savecurrent=false}
-C {devices/lab_pin.sym} 40 -340 2 0 {name=p8 sig_type=std_logic lab=ENA}
-C {devices/gnd.sym} 40 -280 0 0 {name=l3 lab=GND}
-C {devices/vsource.sym} 170 -310 0 0 {name=V4 value=\{STANDBY*DVDD\} savecurrent=false}
-C {devices/lab_pin.sym} 170 -340 2 0 {name=p9 sig_type=std_logic lab=STANDBY}
-C {devices/gnd.sym} 170 -280 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 560 -730 2 0 {name=p11 sig_type=std_logic lab=IBIAS}
 C {lsxo_top.sym} 560 -650 0 0 {name=x1}
 C {devices/gnd.sym} 480 -570 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 640 -570 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 40 -190 0 0 {name=V5 value="pwl(0 0 1u 0 1.02u \{DVDD\})" savecurrent=false}
-C {devices/gnd.sym} 40 -160 0 0 {name=l11 lab=GND}
-C {devices/lab_pin.sym} 40 -220 2 0 {name=p4 sig_type=std_logic lab=ENAP}
-C {devices/vsource.sym} 40 -70 0 0 {name=V6 value="pulse(\{DVDD\} 0 1m 50n 1 99 100)" savecurrent=false}
-C {devices/gnd.sym} 40 -40 0 0 {name=l12 lab=GND}
-C {devices/lab_pin.sym} 40 -100 2 0 {name=p5 sig_type=std_logic lab=STANDBYP}
+C {devices/gnd.sym} 40 -290 0 0 {name=l11 lab=GND}
+C {devices/lab_pin.sym} 40 -350 2 0 {name=p4 sig_type=std_logic lab=ENA}
+C {devices/vsource.sym} 40 -210 0 0 {name=V6 value="pulse(\{DVDD\} 0 3m 10n 10n 5m 10m)" savecurrent=false}
+C {devices/gnd.sym} 40 -180 0 0 {name=l12 lab=GND}
+C {devices/lab_pin.sym} 40 -240 2 0 {name=p5 sig_type=std_logic lab=STANDBY}
 C {devices/res.sym} 100 -600 3 0 {name=R1
 value=5
 footprint=1206
@@ -160,5 +155,8 @@ device=resistor
 m=1}
 C {lqfp_parasitics.sym} 560 -340 3 1 {name=x2}
 C {devices/gnd.sym} 560 -260 0 0 {name=l13 lab=GND}
-C {devices/lab_pin.sym} 440 -630 0 0 {name=p6 sig_type=std_logic lab=STANDBY}
 C {xtal_abs_060.sym} 560 -100 0 0 {name=x0}
+C {devices/vsource.sym} 40 -320 0 0 {name=V1 value="pulse(0 \{DVDD\} 0.5m 10n 10n 10m 20m)" savecurrent=false}
+C {devices/lab_pin.sym} 440 -630 0 0 {name=p6 sig_type=std_logic lab=STANDBY}
+C {devices/lab_pin.sym} 220 -660 2 0 {name=p7 sig_type=std_logic lab=IBIAS}
+C {devices/diode.sym} 220 -690 2 0 {name=D1 model=DUMMY area=100}

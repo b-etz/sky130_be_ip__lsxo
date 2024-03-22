@@ -28,8 +28,6 @@ T {Copyright 2024 Brady Etz
    limitations under the License.} -60 -230 0 0 0.2 0.2 {}
 N 290 -290 390 -290 {
 lab=xin}
-N 430 -430 430 -420 {
-lab=#net1}
 N 430 -260 430 -210 {
 lab=avss_ip}
 N 430 -150 430 -90 {
@@ -58,12 +56,8 @@ N 1420 -810 1420 -790 {
 lab=dvdd}
 N 1070 -380 1070 -210 {
 lab=dvss_ip}
-N 1070 -700 1070 -480 {
-lab=dvdd_ip}
 N 1070 -810 1070 -760 {
 lab=dvdd}
-N 430 -360 430 -320 {
-lab=xout}
 N 1070 -760 1070 -730 {
 lab=dvdd}
 N 350 -460 390 -460 {
@@ -83,13 +77,21 @@ lab=avss_ip}
 N 910 -630 940 -630 {
 lab=ibias}
 N 970 -630 1030 -630 {
-lab=#net2}
+lab=#net1}
 N 1030 -630 1030 -480 {
-lab=#net2}
+lab=#net1}
 N 1160 -430 1240 -430 {
 lab=dout_ip}
 N 1240 -430 1240 -200 {
 lab=dout_ip}
+N 1370 -400 1370 -370 {
+lab=dvss}
+N 1240 -430 1370 -430 {
+lab=dout_ip}
+N 1070 -700 1070 -480 {
+lab=dvdd_ip}
+N 430 -430 430 -320 {
+lab=xout}
 C {devices/iopin.sym} 90 -820 0 0 {name=p1 lab=avdd}
 C {devices/opin.sym} 100 -640 0 0 {name=p3 lab=dout}
 C {devices/iopin.sym} 90 -800 0 0 {name=p4 lab=avss}
@@ -153,7 +155,6 @@ C {devices/lab_pin.sym} 340 -290 3 0 {name=p25 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 430 -810 2 0 {name=p26 sig_type=std_logic lab=avdd}
 C {lsxo_bias_gen.sym} 230 -460 0 0 {name=x3}
 C {devices/lab_pin.sym} 140 -460 0 0 {name=p45 sig_type=std_logic lab=xin}
-C {devices/ammeter.sym} 430 -390 0 0 {name=Vcurosc savecurrent=true}
 C {devices/lab_pin.sym} 1070 -810 2 0 {name=p31 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1070 -90 2 0 {name=p33 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 950 -440 0 0 {name=p36 sig_type=std_logic lab=xin}
@@ -197,7 +198,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} 470 -730 2 0 {name=p41 sig_type=std_logic lab=ena_b_33}
 C {sky130_fd_pr/pfet_01v8.sym} 1090 -730 0 1 {name=M8
 W=4
-L=0.15
+L=0.5
 nf=1
 mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -227,7 +228,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} 940 -670 1 0 {name=p49 sig_type=std_logic lab=standby_33}
 C {sky130_fd_pr/nfet_01v8.sym} 1050 -180 0 0 {name=M11
 W=4
-L=0.15
+L=0.5
 nf=1
 mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -271,3 +272,19 @@ C {devices/lab_pin.sym} 1240 -180 0 0 {name=p64 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 1240 -160 0 0 {name=p65 sig_type=std_logic lab=ena_b}
 C {devices/lab_pin.sym} 1240 -140 0 0 {name=p66 sig_type=std_logic lab=standby}
 C {devices/lab_pin.sym} 1240 -120 0 0 {name=p67 sig_type=std_logic lab=standby_b}
+C {sky130_fd_pr/nfet_01v8.sym} 1390 -400 0 1 {name=M3
+W=0.5
+L=4
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1370 -370 2 0 {name=p32 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} 1410 -400 2 0 {name=p44 sig_type=std_logic lab=standby}

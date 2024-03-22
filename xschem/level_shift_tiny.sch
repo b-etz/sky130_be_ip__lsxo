@@ -139,7 +139,7 @@ C {devices/iopin.sym} 100 -190 0 0 {name=p11 lab=dvss}
 C {devices/iopin.sym} 100 -370 0 0 {name=p12 lab=dvdd}
 C {sky130_fd_pr/pfet_01v8.sym} 80 -320 0 0 {name=M2
 W=1
-L=0.15
+L=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -153,7 +153,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 80 -240 0 0 {name=M1
 W=1
-L=0.15
+L=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
