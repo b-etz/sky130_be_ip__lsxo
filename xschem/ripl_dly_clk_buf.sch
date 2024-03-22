@@ -30,21 +30,17 @@ N 30 -10 30 40 {
 lab=clk_disable}
 N 30 40 160 40 {
 lab=clk_disable}
-C {ena_rip_dly.sym} 80 -290 0 0 {name=x1}
-C {devices/lab_pin.sym} 80 -340 0 0 {name=p60 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 80 -240 0 0 {name=p61 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 190 -280 2 0 {name=p62 sig_type=std_logic lab=ena_done_b}
 C {devices/lab_pin.sym} -40 -280 0 0 {name=p64 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} -40 -300 0 0 {name=p65 sig_type=std_logic lab=clkin}
 C {devices/lab_pin.sym} -40 -150 0 0 {name=p66 sig_type=std_logic lab=stby_b}
 C {devices/lab_pin.sym} 190 -150 2 0 {name=p67 sig_type=std_logic lab=stby_done_b}
-C {devices/lab_pin.sym} 80 -210 0 0 {name=p69 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 80 -110 0 0 {name=p70 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} -40 -170 0 0 {name=p71 sig_type=std_logic lab=clkin}
 C {devices/lab_pin.sym} 60 -50 0 0 {name=p72 sig_type=std_logic lab=clkin}
 C {devices/lab_pin.sym} -30 -10 3 0 {name=p78 sig_type=std_logic lab=clk_disable}
 C {devices/lab_pin.sym} 200 -50 2 0 {name=p81 sig_type=std_logic lab=clkout}
-C {stby_rip_dly.sym} 80 -160 0 0 {name=x2}
 C {sky130_fd_pr/nfet_01v8.sym} 180 40 0 0 {name=M3
 W=0.5
 L=4
@@ -77,3 +73,7 @@ C {devices/lab_pin.sym} -240 -10 0 0 {name=p10 sig_type=std_logic lab=stby_b}
 C {devices/lab_pin.sym} -240 70 0 0 {name=p11 sig_type=std_logic lab=stby}
 C {devices/lab_pin.sym} -240 -50 0 0 {name=p12 sig_type=std_logic lab=ena_done_b}
 C {devices/lab_pin.sym} -240 30 0 0 {name=p13 sig_type=std_logic lab=stby_done_b}
+C {devices/lab_pin.sym} 80 -210 0 0 {name=p14 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 80 -340 0 0 {name=p15 sig_type=std_logic lab=dvdd}
+C {ripple_dly_4.sym} 80 -160 0 0 {name=x2}
+C {ripple_dly_4.sym} 80 -290 0 0 {name=x1}

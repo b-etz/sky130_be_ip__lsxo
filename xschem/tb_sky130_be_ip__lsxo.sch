@@ -16,31 +16,31 @@ lab=#net1}
 N 40 -720 110 -720 {
 lab=#net2}
 N 40 -470 70 -470 {
-lab=#net3}
+lab=AVDD}
 N 40 -600 70 -600 {
-lab=#net4}
+lab=DVDD}
 N 600 -570 600 -510 {
 lab=XOUT}
 N 520 -570 520 -510 {
 lab=XIN}
 N 500 -100 520 -100 {
-lab=#net5}
-N 500 -150 530 -150 {
-lab=#net5}
-N 500 -150 500 -100 {
-lab=#net5}
-N 520 -450 540 -420 {
-lab=#net6}
-N 580 -420 600 -450 {
-lab=#net7}
-N 40 -600 40 -590 {
-lab=#net4}
-N 40 -470 40 -460 {
 lab=#net3}
+N 500 -150 530 -150 {
+lab=#net3}
+N 500 -150 500 -100 {
+lab=#net3}
+N 520 -450 540 -420 {
+lab=#net4}
+N 580 -420 600 -450 {
+lab=#net5}
+N 40 -600 40 -590 {
+lab=DVDD}
+N 40 -470 40 -460 {
+lab=AVDD}
 N 500 -220 500 -150 {
-lab=#net5}
+lab=#net3}
 N 500 -220 540 -260 {
-lab=#net5}
+lab=#net3}
 N 580 -260 620 -220 {
 lab=#net1}
 N 620 -220 620 -150 {
@@ -49,6 +49,18 @@ N 110 -720 220 -720 {
 lab=#net2}
 N 690 -650 730 -650 {
 lab=DOUT}
+N 50 -620 50 -600 {
+lab=DVDD}
+N 50 -620 130 -620 {
+lab=DVDD}
+N 130 -620 130 -600 {
+lab=DVDD}
+N 50 -490 50 -470 {
+lab=AVDD}
+N 50 -490 130 -490 {
+lab=AVDD}
+N 130 -490 130 -470 {
+lab=AVDD}
 C {devices/vsource.sym} 40 -560 0 0 {name=VD value=\{DVDD\} savecurrent=false}
 C {devices/vsource.sym} 40 -430 0 0 {name=VA value=\{AVDD\} savecurrent=false}
 C {devices/lab_pin.sym} 130 -470 2 0 {name=p1 sig_type=std_logic lab=AVDD}
@@ -59,15 +71,14 @@ C {devices/code.sym} 830 -140 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval(@value )"
 value="
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.lib $::SKYWATER_MODELS/sky130.lib.spice ff
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false
 place=header}
 C {devices/code_shown.sym} 820 -690 0 0 {name=STIMULI 
 only_toplevel=true
-value="*.option savecurrents
-.param DVDD=1.8
+value=".param DVDD=1.8
 .param AVDD=3.3
 .param IVDD=2.7
 .param ENA=1
@@ -76,12 +87,12 @@ value="*.option savecurrents
 .param CSTRAY=2p
 .model DUMMY D()
 *.ic V(x0.icnode)=100m
+.option TEMP=85
 .control
   save V(ENA) V(STANDBY) V(DOUT)
   save I(VA) I(VD)
-  op
-  tran 25n 21m
-  *tran 0.1n 2u
+  *tran 25n 21m
+  tran 0.1n 2u
   remzerovec
   write tb_lsxo_general_short.raw
   plot V(ENA) V(STANDBY) V(DOUT)

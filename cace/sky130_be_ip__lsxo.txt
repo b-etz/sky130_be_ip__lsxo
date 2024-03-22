@@ -1,0 +1,473 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:		sky130_be_ip__lsxo
+description:	Low-speed (32 kHz) crystal oscillator
+commit:		N/A
+PDK:		sky130A
+
+cace_format:	4.0
+
+authorship {
+	designer:	Brady Etz
+	company:	Brady Etz
+	creation_date:	March 22, 2024
+	license:	Apache 2.0
+}
+
+# Paths to various files
+
+paths {
+	root:		..
+	documentation:	doc
+	schematic:	xschem
+	magic:		mag
+	layout:		gds
+	netlist:	netlist
+	testbench:	cace
+	simulation:	ngspice
+        reports:	reports
+	plots:		plots
+	logs:		ngspice/log
+}
+
+# Project dependencies
+
+dependencies {
+}
+
+# Pin names and descriptions
+
+pins {
+	name:		avdd
+	description:	Analog power supply
+	type:		power
+	direction:	inout
+	Vmin:		3.0
+	Vmax:		5.2
+
+	+
+	name:		avss
+	description:	Analog ground
+	type:		ground
+	direction:	inout
+	Vmin:		-0.3
+	Vmax:		0.3
+
+	+
+	name:		dvdd
+	description:	Digital power supply
+	type:		power
+	direction:	inout
+	Vmin:		1.72
+	Vmax:		1.98
+
+	+
+	name:		dvss
+	description:	Digital ground
+	type:		ground
+	direction:	inout
+	Vmin:		-0.02
+	Vmax:		0.02
+
+	+
+	name:		ibias
+	description:	External 50nA bias current
+	type:		power
+	direction:	inout
+	Vmin:		avss - 0.3
+	Vmax:		avdd + 0.3
+
+	+
+	name:		ena
+	description:	Oscillator enable input (active high)
+	type:		digital
+	direction:	input
+	Vmin:		dvss - 0.3
+	Vmax:		dvdd + 0.3
+
+	+
+	name:		standby
+	description:	Output clock enable (active low)
+	type:		digital
+	direction:	input
+	Vmin:		dvss - 0.3
+	Vmax:		dvdd + 0.3
+
+	+
+	name:		xin
+	description:	Oscillator input from crystal
+	type:		signal
+	direction:	input
+	Vmin:		avss - 0.3
+	Vmax:		avdd + 0.3
+
+	+
+	name:		xout
+	description:	Oscillator output to crystal
+	type:		signal
+	direction:	output
+	Vmin:		avss
+	Vmax:		avdd
+
+	+
+	name:		dout
+	description:	Digital clock output
+	type:		digital
+	direction:	output
+	Vmin:		dvss - 0.1
+	Vmax:		dvdd + 0.1
+}
+
+# Default values for electrical parameter measurement conditions
+# if not otherwise specified
+
+default_conditions {
+	name:		Vavdd
+	description:	Analog power supply voltage
+	display:	avdd
+	unit:		V
+	typical:	3.3
+
+	+
+	name:		Vavss
+	description:	Analog ground
+	display:	avss
+	unit:		V
+	typical:	0
+
+	+
+	name:		Vdvdd
+	description:	Digital power supply voltage
+	display:	dvdd
+	unit:		V
+	typical:	1.8
+
+	+
+	name:		Vdvss
+	description:	Digital ground
+	display:	dvss
+	unit:		V
+	typical:	0
+
+	+
+	name:		Ibias
+	description:	Reference current
+	display:	ibias
+	unit:		nA
+	typical:	50
+
+	+
+	name:		Rout
+	description:	Output load resistance
+	display:	RLoad
+	unit:		M{ohms}
+	typical:	100
+
+	+
+	name:		Cout
+	description:	Output load capacitance
+	display:	CLoad
+	unit:		fF
+	typical:	200
+
+	+
+	name:		Cstray
+	description:	Crystal circuit stray capacitance
+	display:	Cstray
+	unit:		pF
+	typical:	2
+
+	+
+	name:		Cxtal
+	description:	Board capacitors for crystal loading
+	display:	Cxtal
+	unit:		pF
+	typical:	8
+	note:		Used for simulation. Actual values will depend on crystal datasheet.
+
+	+
+	name:		ena
+	description:	Oscillator enable
+	display:	ena
+	typical:	1
+
+	+
+	name:		standby
+	description:	Output clock disable
+	display:	standby
+	typical:	0
+
+	+
+	name:		temperature
+	description:	Ambient temperature
+	display:	Temp
+	unit:		{degrees}C
+	minimum:	-40
+	typical:	25
+	maximum:	85
+
+	+
+	name:		corner
+	description:	Process corner
+	display:	Corner
+	minimum:	ss
+	typical:	tt
+	maximum:	ff
+
+	+
+	name:		iterations
+	description:	Iterations to run
+	display:	Iterations
+	minimum:	1
+	maximum:	10
+	step:		linear
+	stepsize:	1
+}
+
+# List of electrical parameters to be measured and their specified limits
+
+electrical_parameters {
+	name:		Idd_enabled
+	description:	Current draw through both supplies, oscillator enabled
+	display:	Active current
+	unit:		{micro}A
+	spec {
+		minimum:	any
+		typical:	1
+		maximum:	1.2	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_current.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vdvdd
+		typical: 1.8
+
+		+
+		name: ena
+		typical: 1
+		
+		+
+		name: standby
+		typical: 0
+
+		+
+		name: temperature
+		typical: 25
+	}
+
+	+
+	name:		Idd_disabled
+	description:	Current draw through both supplies, shutdown
+	display:	Shutdown current
+	unit:		nA
+	spec {
+		minimum:	any
+		typical:	1
+		maximum:	2	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_current.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: Vdvdd
+		typical: 1.8
+
+		+
+		name: ena
+		typical: 0
+
+		+
+		name: standby
+		typical: 1
+
+		+
+		name: temperature
+		typical: 25
+	}
+	
+	+
+	name:		Duty_cycle
+	status:		skip
+	description:	Oscillator duty cycle after initial startup
+	display:	Duty cycle
+	unit:		%
+	spec {
+		minimum:	45	fail
+		typical:	50
+		maximum:	55	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_duty.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: ena
+		typical: 1
+
+		+
+		name: standby
+		typical: 0
+
+		+
+		name: temperature
+		minimum: -40
+		typical: 25
+		maximum: 85		
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
+	+
+	name:		Vol
+	status:		skip
+	description:	Output voltage low
+	display:	Output voltage low (Vol)
+	unit:		V
+	spec {
+		maximum:	dvss + 0.1	fail
+		typical:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vol.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
+	+
+	name:		Voh
+	status:		skip
+	description:	Output voltage high
+	display:	Output voltage high (Voh)
+	unit:		V
+	spec {
+		minimum:	dvdd - 0.1	fail
+		typical:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_voh.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
+	+
+	name:		Slewrate_rise
+	status:		skip
+	description:	Slew Rate Risetime
+	display:	Slew Rate Risetime
+	unit:		V/{micro}s
+	spec {
+		minimum:	0.5	fail
+		typical:	12
+		maximum:	30	fail	maximum-above
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_rise.spice
+		format:		ascii .data result null
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: temperature
+		minimum: -40
+		typical: 25
+		maximum: 85
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
+	+
+	name:		slewrate_fall
+	status:		skip
+	description:	Slew Rate Falltime
+	display:	Slew Rate Falltime
+	unit:		V/{micro}s
+	spec {
+		minimum:	1	fail
+		typical:	25
+		maximum:	45	fail	maximum-above
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_fall.spice
+		format:		ascii .data result null
+	}
+	conditions {
+		name: Vavdd
+		typical: 3.3
+
+		+
+		name: temperature
+		minimum: -40
+		typical: 25
+		maximum: 85		
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+}
+
+# List of physical parameters to be measured and their specified limits
+
+physical_parameters {
+	name:		area
+	status:		skip
+	description:	Total circuit layout area
+	display:	area
+	unit:		{micro}m{squared}
+	spec {
+		maximum:	50000	fail
+	}
+	evaluate {
+		tool:	cace_area
+	}
+}

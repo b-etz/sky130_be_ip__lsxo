@@ -211,7 +211,7 @@ C {sky130_fd_pr/pfet_g5v0d10v5.sym} 940 -650 3 1 {name=M9
 W=4
 L=0.5
 nf=1
-mult=3
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -260,7 +260,6 @@ C {devices/lab_pin.sym} 1420 -810 2 0 {name=p58 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1420 -710 2 0 {name=p59 sig_type=std_logic lab=dvss}
 C {ripl_dly_clk_buf.sym} 1370 -160 0 0 {name=x5}
 C {devices/lab_pin.sym} 1370 -90 2 0 {name=p60 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1370 -230 2 0 {name=p61 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1500 -160 2 0 {name=p62 sig_type=std_logic lab=dout}
 C {devices/lab_pin.sym} 1180 -430 1 0 {name=p63 sig_type=std_logic lab=dout_ip}
 C {devices/lab_pin.sym} 1240 -180 0 0 {name=p64 sig_type=std_logic lab=ena}
@@ -287,3 +286,4 @@ C {level_shift.sym} 610 -630 0 0 {name=x1}
 C {level_shift.sym} 1290 -630 0 0 {name=x2}
 C {dout_amp.sym} 1050 -430 0 0 {name=x4}
 C {bias_gen.sym} 250 -460 0 0 {name=x3}
+C {devices/lab_pin.sym} 1370 -230 2 0 {name=p61 sig_type=std_logic lab=dvdd}

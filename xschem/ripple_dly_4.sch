@@ -59,4 +59,4 @@ C {sky130_stdcells/nand2_1.sym} -20 -200 0 0 {name=x1 VGND=dvss VNB=dvss VPB=dvd
 C {devices/noconn.sym} 240 -200 2 0 {name=l1}
 C {devices/noconn.sym} 480 -200 2 0 {name=l2}
 C {devices/lab_pin.sym} 50 -200 1 0 {name=p13 sig_type=std_logic lab=gated_clk}
-C {sky130_stdcells/dfrbp_2.sym} 640 -180 0 0 {name=x4 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/dfrbp_1.sym} 640 -180 0 0 {name=x4 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
