@@ -90,7 +90,6 @@ C {devices/gnd.sym} 40 -170 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 40 -230 2 0 {name=p10 sig_type=std_logic lab=XINP}
 C {devices/isource.sym} 190 -570 0 0 {name=I1 value=50n}
 C {devices/lab_pin.sym} 190 -540 2 0 {name=p11 sig_type=std_logic lab=IBIASd}
-C {dout_amp_d.sym} 1130 -570 0 0 {name=x2}
 C {devices/vsource.sym} 600 -570 0 0 {name=V2 value="sin(\{CENTERO\} \{VPO\} 32768 \{SIN_DLY\} 0 130)" savecurrent=false}
 C {devices/gnd.sym} 600 -540 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 1240 -570 2 0 {name=p14 sig_type=std_logic lab=DOUTd}
@@ -193,3 +192,4 @@ C {devices/lab_pin.sym} 1080 -410 0 0 {name=p7 sig_type=std_logic lab=ENAb}
 C {devices/vsource.sym} 150 -330 0 0 {name=VDD value=\{DVDD\} savecurrent=false}
 C {devices/lab_pin.sym} 150 -360 2 0 {name=p12 sig_type=std_logic lab=VDD}
 C {devices/gnd.sym} 150 -300 0 0 {name=l17 lab=GND}
+C {dout_amp.sym} 1130 -570 0 0 {name=x2}
