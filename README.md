@@ -72,7 +72,7 @@ This IP is in the design phase. The compliance table is in development. Typical 
 | Frequency Accuracy at 25 deg C     | n/a     | n/a   | ppm   |
 | _dout_ Low Level (Vol)             | 0       | 0     | V     |
 | _dout_ High Level (Vol)            | DVDD    | DVDD  | V     |
-| _dout_ Rise/Fall Time              | 4       | 2.5   | ns    |
+| _dout_ Rise/Fall Time              | 3       | 1     | ns    |
 
 ### CACE Summary Capture
 
@@ -80,10 +80,9 @@ This IP is in the design phase. The compliance table is in development. Typical 
 
 Edge rates are faster than required. The output standard cell buffer can be sized down from 2x to 1x, but it may cause longer rise times than 6ns when crystal oscillations have just begun. Depending on downstream rise time requirements, this may be acceptable. It would also save dynamic power.
 
-
 Duty cycle is likely impacted by some simulations failing to start up. This is supported by startup times reported as 6ms. I have not been able to reproduce startup failures in the manual testbench in ss,tt,ff corners, or at -40 or 85 degrees Celsius. I do not expect this reflects the functionality of the physical device.
 
-The startup times could potentially simulate better for 12.5-pF devices by loading the active device with more current and consuming greater startup power. However, this would likely reduce compatibility with 6-pF and 4-pF devices entirely. Lower drive current is required to sustain oscillations with low-CL, low-ESR devices.
+The startup times could potentially simulate better for 12.5-pF devices by loading the active device with more current and consuming greater startup power. However, this would reduce or eliminate compatibility with 6-pF and 4-pF devices entirely. Lower drive current is required to sustain oscillations with low-CL, low-ESR devices.
 
 ## Theory of Operation
 
