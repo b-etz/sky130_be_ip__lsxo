@@ -349,7 +349,7 @@ electrical_parameters {
 	simulate {
 		tool:		ngspice
 		template:	tb_rise.spice
-		format:		ascii .data result null
+		format:		ascii .data null result
 	}
 	conditions {
 		name: temperature
@@ -377,7 +377,7 @@ electrical_parameters {
 	simulate {
 		tool:		ngspice
 		template:	tb_fall.spice
-		format:		ascii .data result null
+		format:		ascii .data null result
 	}
 	conditions {
 		name: temperature
