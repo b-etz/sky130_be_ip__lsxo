@@ -76,7 +76,7 @@ This IP is in the design phase. The compliance table is in development. Typical 
 
 ### CACE Summary Capture
 
-![CACE Summary - Produced on 23 March 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/images/cace_lsxo_results_20240323.png?raw=true)
+![CACE Summary - Produced on 23 March 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_lsxo_results_20240323.png?raw=true)
 
 Edge rates are faster than required. The output standard cell buffer can be sized down from 2x to 1x, but it may cause longer rise times than 6ns when crystal oscillations have just begun. Depending on downstream rise time requirements, this may be acceptable. It would also save dynamic power.
 
