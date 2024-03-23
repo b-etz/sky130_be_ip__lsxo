@@ -76,7 +76,14 @@ This IP is in the design phase. The compliance table is in development. Typical 
 
 ## Theory of Operation
 
-_~Section is under development~_
+_Section is under development_
+
+Crystal oscillators use a transconductor (in this case, a common-source NMOS) to provide a non-linear feedback voltage to a VERY finely tuned filter. The result is a self-sustaining sinusoid that precisely tracks a target frequency.
+
+Temperature and process variability dramatically effect the steady-state oscillation amplitude of a crystal oscillator, in the absence of feedback. This IP block uses voltage feedback from the crystal to reduce the current driving the active device. This is a configuration commonly referred to as an "amplitude regulator". The added benefits of amplitude regulation include power savings after startup and improved crystal reliability.
+
+
+Startup time is commonly defined as the time taken from oscillator activation to the crystal reaching 90% of its steady-state oscillation amplitude. For a high-Q crystal oscillator, this may take thousands of cycles. This project uses the alternative definition of the time from oscillator activation to the first valid clock. Although the crystal does not oscillate within tolerance during startup, the early use of a clock could be useful for certain applications. **Designers using this IP block must be aware of the startup variability this design exposes, and gate the clock according to their system requirements.**
 
 A big thank-you to IQD Frequency Products, Ltd. for providing the 12.5pF device characterization data used for these simulations.
 
