@@ -8,3 +8,4 @@ cace/*.spice
 cace/xschemrc
 plots/*
 spice/*
+netlist/*

@@ -240,7 +240,7 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_current.spice
+		template:	tb_current_avdd.spice
 		format:		ascii .data null result
 	}
 	conditions {
@@ -250,14 +250,6 @@ electrical_parameters {
 		+
 		name: Vdvdd
 		typical: 1.8
-
-		+
-		name: ena
-		typical: 1
-		
-		+
-		name: standby
-		typical: 0
 
 		+
 		name: temperature
@@ -276,7 +268,7 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_current.spice
+		template:	tb_current_total.spice
 		format:		ascii .data null result
 	}
 	conditions {
@@ -314,17 +306,9 @@ electrical_parameters {
 	simulate {
 		tool:		ngspice
 		template:	tb_vol.spice
-		format:		ascii .data result
+		format:		ascii .data null result
 	}
 	conditions {
-		name: ena
-		typical: 1
-
-		+
-		name: standby
-		typical: 0
-
-		+
 		name: corner
 		minimum: ss
 		typical: tt
@@ -343,17 +327,9 @@ electrical_parameters {
 	simulate {
 		tool:		ngspice
 		template:	tb_voh.spice
-		format:		ascii .data result
+		format:		ascii .data null result
 	}
 	conditions {
-		name: ena
-		typical: 1
-
-		+
-		name: standby
-		typical: 0
-
-		+
 		name: corner
 		minimum: ss
 		typical: tt
@@ -362,7 +338,6 @@ electrical_parameters {
 
 	+
 	name:		Time_rise
-	status:		skip
 	description:	Rise time on dout
 	display:	Dout Rise Time
 	unit:		ns
@@ -391,7 +366,6 @@ electrical_parameters {
 
 	+
 	name:		Time_fall
-	status:		skip
 	description:	Fall time on dout
 	display:	Dout Fall Time
 	unit:		ns
@@ -420,7 +394,6 @@ electrical_parameters {
 	
 	+
 	name:		Duty_cycle
-	status:		skip
 	description:	Oscillator duty cycle after initial startup
 	display:	Duty cycle
 	unit:		%
@@ -449,7 +422,6 @@ electrical_parameters {
 	
 	+
 	name:		Startup_enable
-	status:		skip
 	description:	Startup time from activating the clock
 	display:	Startup (enable)
 	unit:		ms
@@ -460,8 +432,8 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_TBD.spice
-		format:		ascii .data null result
+		template:	tb_startup_clk_on.spice
+		format:		ascii .data result null
 	}
 	conditions {
 		name: temperature
@@ -478,7 +450,6 @@ electrical_parameters {
 	
 	+
 	name:		Startup_power_on
-	status:		skip
 	description:	Startup time from supply voltage on
 	display:	Startup (power-on)
 	unit:		ms
@@ -489,8 +460,8 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_TBD.spice
-		format:		ascii .data null result
+		template:	tb_startup_pwron.spice
+		format:		ascii .data result null
 	}
 	conditions {
 		name: temperature

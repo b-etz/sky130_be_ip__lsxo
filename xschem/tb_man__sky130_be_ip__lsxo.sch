@@ -15,32 +15,24 @@ N 590 -150 620 -150 {
 lab=#net1}
 N 40 -720 110 -720 {
 lab=#net2}
-N 40 -470 70 -470 {
-lab=#net3}
-N 40 -600 70 -600 {
-lab=#net4}
 N 600 -570 600 -510 {
 lab=XOUT}
 N 520 -570 520 -510 {
 lab=XIN}
 N 500 -100 520 -100 {
-lab=#net5}
-N 500 -150 530 -150 {
-lab=#net5}
-N 500 -150 500 -100 {
-lab=#net5}
-N 520 -450 540 -420 {
-lab=#net6}
-N 580 -420 600 -450 {
-lab=#net7}
-N 40 -600 40 -590 {
-lab=#net4}
-N 40 -470 40 -460 {
 lab=#net3}
+N 500 -150 530 -150 {
+lab=#net3}
+N 500 -150 500 -100 {
+lab=#net3}
+N 520 -450 540 -420 {
+lab=#net4}
+N 580 -420 600 -450 {
+lab=#net5}
 N 500 -220 500 -150 {
-lab=#net5}
+lab=#net3}
 N 500 -220 540 -260 {
-lab=#net5}
+lab=#net3}
 N 580 -260 620 -220 {
 lab=#net1}
 N 620 -220 620 -150 {
@@ -51,8 +43,8 @@ N 690 -650 730 -650 {
 lab=DOUT}
 C {devices/vsource.sym} 40 -560 0 0 {name=VD value=\{DVDD\} savecurrent=false}
 C {devices/vsource.sym} 40 -430 0 0 {name=VA value=\{AVDD\} savecurrent=false}
-C {devices/lab_pin.sym} 130 -470 2 0 {name=p1 sig_type=std_logic lab=AVDD}
-C {devices/lab_pin.sym} 130 -600 2 0 {name=p2 sig_type=std_logic lab=DVDD}
+C {devices/lab_pin.sym} 40 -460 2 0 {name=p1 sig_type=std_logic lab=AVDD}
+C {devices/lab_pin.sym} 40 -590 2 0 {name=p2 sig_type=std_logic lab=DVDD}
 C {devices/lab_pin.sym} 430 -670 0 0 {name=p3 sig_type=std_logic lab=ENA
 }
 C {devices/code.sym} 830 -140 0 0 {name=TT_MODELS
@@ -122,23 +114,11 @@ C {devices/lab_pin.sym} 640 -730 2 0 {name=p22 sig_type=std_logic lab=DVDD}
 C {devices/gnd.sym} 40 -530 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 40 -400 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 560 -730 2 0 {name=p11 sig_type=std_logic lab=IBIAS}
-C {devices/gnd.sym} 480 -570 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} 640 -570 0 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 40 -290 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 40 -350 2 0 {name=p4 sig_type=std_logic lab=ENA}
 C {devices/vsource.sym} 40 -210 0 0 {name=V6 value="pulse(\{DVDD\} 0 1m 10n 10n 5m 10m)" savecurrent=false}
 C {devices/gnd.sym} 40 -180 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 40 -240 2 0 {name=p5 sig_type=std_logic lab=STANDBY}
-C {devices/res.sym} 100 -600 3 0 {name=R1
-value=5
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 100 -470 3 0 {name=R2
-value=5
-footprint=1206
-device=resistor
-m=1}
 C {devices/res.sym} 520 -480 0 0 {name=R3
 value=150
 footprint=1206
@@ -157,3 +137,11 @@ C {devices/lab_pin.sym} 220 -660 2 0 {name=p7 sig_type=std_logic lab=IBIAS}
 C {devices/diode.sym} 220 -690 2 0 {name=D1 model=DUMMY area=100}
 C {sky130_be_ip__lsxo.sym} 560 -650 0 0 {name=x1}
 C {xtal_iqd_125_1.sym} 560 -100 0 0 {name=x0}
+C {devices/vsource.sym} 200 -560 0 0 {name=Vdvss value=0 savecurrent=false}
+C {devices/gnd.sym} 200 -530 0 0 {name=l3 lab=GND}
+C {devices/vsource.sym} 200 -430 0 0 {name=Vavss value=0 savecurrent=false}
+C {devices/gnd.sym} 200 -400 0 0 {name=l14 lab=GND}
+C {devices/lab_pin.sym} 200 -460 2 0 {name=p8 sig_type=std_logic lab=avss}
+C {devices/lab_pin.sym} 200 -590 2 0 {name=p9 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} 640 -570 2 0 {name=p10 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} 480 -570 0 0 {name=p12 sig_type=std_logic lab=avss}
