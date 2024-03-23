@@ -99,7 +99,7 @@ pins {
 	name:		xin
 	description:	Oscillator input from crystal
 	type:		signal
-	direction:	input
+	direction:	inout
 	Vmin:		avss - 0.3
 	Vmax:		avdd + 0.3
 
@@ -107,7 +107,7 @@ pins {
 	name:		xout
 	description:	Oscillator output to crystal
 	type:		signal
-	direction:	output
+	direction:	inout
 	Vmin:		avss
 	Vmax:		avdd
 
@@ -184,7 +184,7 @@ default_conditions {
 	description:	Board capacitors for crystal loading
 	display:	Cxtal
 	unit:		pF
-	typical:	8
+	typical:	21
 	note:		Used for simulation. Actual values will depend on crystal datasheet.
 
 	+
@@ -300,6 +300,124 @@ electrical_parameters {
 		typical: 25
 	}
 	
+
+
+	+
+	name:		Vol
+	description:	Output voltage low
+	display:	Output voltage low (Vol)
+	unit:		V
+	spec {
+		maximum:	dvss + 0.1	fail
+		typical:	dvss
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vol.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: ena
+		typical: 1
+
+		+
+		name: standby
+		typical: 0
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
+	+
+	name:		Voh
+	description:	Output voltage high
+	display:	Output voltage high (Voh)
+	unit:		V
+	spec {
+		minimum:	dvdd - 0.1	fail
+		typical:	dvdd
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_voh.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: ena
+		typical: 1
+
+		+
+		name: standby
+		typical: 0
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
+	+
+	name:		Time_rise
+	status:		skip
+	description:	Rise time on dout
+	display:	Dout Rise Time
+	unit:		ns
+	spec {
+		minimum:	4	fail
+		typical:	5
+		maximum:	6	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_rise.spice
+		format:		ascii .data result null
+	}
+	conditions {
+		name: temperature
+		minimum: -40
+		typical: 25
+		maximum: 85
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
+	+
+	name:		Time_fall
+	status:		skip
+	description:	Fall time on dout
+	display:	Dout Fall Time
+	unit:		ns
+	spec {
+		minimum:	4	fail
+		typical:	5
+		maximum:	6	fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_fall.spice
+		format:		ascii .data result null
+	}
+	conditions {
+		name: temperature
+		minimum: -40
+		typical: 25
+		maximum: 85		
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+	
 	+
 	name:		Duty_cycle
 	status:		skip
@@ -317,14 +435,6 @@ electrical_parameters {
 		format:		ascii .data null result
 	}
 	conditions {
-		name: ena
-		typical: 1
-
-		+
-		name: standby
-		typical: 0
-
-		+
 		name: temperature
 		minimum: -40
 		typical: 25
@@ -336,123 +446,63 @@ electrical_parameters {
 		typical: tt
 		maximum: ff
 	}
-
+	
 	+
-	name:		Vol
+	name:		Startup_enable
 	status:		skip
-	description:	Output voltage low
-	display:	Output voltage low (Vol)
-	unit:		V
+	description:	Startup time from activating the clock
+	display:	Startup (enable)
+	unit:		ms
 	spec {
-		maximum:	dvss + 0.1	fail
-		typical:	any
+		minimum:	any
+		typical:	1
+		maximum:	2	fail
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_vol.spice
-		format:		ascii .data result
+		template:	tb_TBD.spice
+		format:		ascii .data null result
 	}
 	conditions {
-		name: Vavdd
-		typical: 3.3
-
-		+
-		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
-	}
-
-	+
-	name:		Voh
-	status:		skip
-	description:	Output voltage high
-	display:	Output voltage high (Voh)
-	unit:		V
-	spec {
-		minimum:	dvdd - 0.1	fail
-		typical:	any
-	}
-	simulate {
-		tool:		ngspice
-		template:	tb_voh.spice
-		format:		ascii .data result
-	}
-	conditions {
-		name: Vavdd
-		typical: 3.3
-
-		+
-		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
-	}
-
-	+
-	name:		Slewrate_rise
-	status:		skip
-	description:	Slew Rate Risetime
-	display:	Slew Rate Risetime
-	unit:		V/{micro}s
-	spec {
-		minimum:	0.5	fail
-		typical:	12
-		maximum:	30	fail	maximum-above
-	}
-	simulate {
-		tool:		ngspice
-		template:	tb_rise.spice
-		format:		ascii .data result null
-	}
-	conditions {
-		name: Vavdd
-		typical: 3.3
-
-		+
 		name: temperature
 		minimum: -40
 		typical: 25
 		maximum: 85
-
+		
 		+
 		name: corner
 		minimum: ss
 		typical: tt
 		maximum: ff
 	}
-
+	
 	+
-	name:		slewrate_fall
+	name:		Startup_power_on
 	status:		skip
-	description:	Slew Rate Falltime
-	display:	Slew Rate Falltime
-	unit:		V/{micro}s
+	description:	Startup time from supply voltage on
+	display:	Startup (power-on)
+	unit:		ms
 	spec {
-		minimum:	1	fail
-		typical:	25
-		maximum:	45	fail	maximum-above
+		minimum:	any
+		typical:	2
+		maximum:	4	fail
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_fall.spice
-		format:		ascii .data result null
+		template:	tb_TBD.spice
+		format:		ascii .data null result
 	}
 	conditions {
-		name: Vavdd
-		typical: 3.3
-
-		+
 		name: temperature
 		minimum: -40
 		typical: 25
-		maximum: 85		
-
+		maximum: 85
+		
 		+
 		name: corner
 		minimum: ss
 		typical: tt
-		maximum: ff
+		maximum: fF
 	}
 }
 
@@ -460,7 +510,6 @@ electrical_parameters {
 
 physical_parameters {
 	name:		area
-	status:		skip
 	description:	Total circuit layout area
 	display:	area
 	unit:		{micro}m{squared}
