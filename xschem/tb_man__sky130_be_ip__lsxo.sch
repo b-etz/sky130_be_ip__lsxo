@@ -51,7 +51,7 @@ C {devices/code.sym} 830 -140 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval(@value )"
 value="
-.lib $::SKYWATER_MODELS/sky130.lib.spice ff
+.lib $::SKYWATER_MODELS/sky130.lib.spice ss
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false
@@ -67,7 +67,7 @@ value=".param DVDD=1.8
 .param CSTRAY=2p
 .model DUMMY D()
 *.ic V(x0.icnode)=100m
-.option TEMP=25
+.option TEMP=85
 .control
   save V(ENA) V(STANDBY) V(DOUT)
   save I(VA) I(VD)

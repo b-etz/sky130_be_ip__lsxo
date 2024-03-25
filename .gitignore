@@ -1,11 +1,9 @@
 .spiceinit
-xschem/xschemrc
 xschem/.spiceinit
 xschem/*.spice
 spice/*
 ngspice/*
 cace/*.spice
-cace/xschemrc
 plots/*
 spice/*
 netlist/*

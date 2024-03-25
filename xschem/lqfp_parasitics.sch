@@ -5,9 +5,6 @@ K {}
 V {}
 S {}
 E {}
-T {Values estimated for 128-QFP from Texas Instruments AN-1205, Tables 2 & 7
-
-This model assumes adjacent pins and no other mutual coupling.} 170 60 0 0 0.2 0.2 {}
 T {Bondwires} 160 -260 0 0 0.4 0.4 {}
 T {Package leads} 160 -30 0 0 0.4 0.4 {}
 T {Copyright 2024 Brady Etz

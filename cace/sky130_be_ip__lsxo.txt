@@ -128,7 +128,9 @@ default_conditions {
 	description:	Analog power supply voltage
 	display:	avdd
 	unit:		V
+	minimum:	2.7
 	typical:	3.3
+	maximum:	5.5
 
 	+
 	name:		Vavss
@@ -142,7 +144,9 @@ default_conditions {
 	description:	Digital power supply voltage
 	display:	dvdd
 	unit:		V
+	minimum:	1.72
 	typical:	1.8
+	maximum:	1.98
 
 	+
 	name:		Vdvss
@@ -310,9 +314,7 @@ electrical_parameters {
 	}
 	conditions {
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate: ss fs tt sf ff
 	}
 
 	+
@@ -331,9 +333,7 @@ electrical_parameters {
 	}
 	conditions {
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate: ss fs tt sf ff
 	}
 
 	+
@@ -342,7 +342,7 @@ electrical_parameters {
 	display:	Dout Rise Time
 	unit:		ns
 	spec {
-		minimum:	4	fail
+		minimum:	1	fail
 		typical:	5
 		maximum:	6	fail
 	}
@@ -359,9 +359,7 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate: ss fs tt sf ff
 	}
 
 	+
@@ -370,7 +368,7 @@ electrical_parameters {
 	display:	Dout Fall Time
 	unit:		ns
 	spec {
-		minimum:	4	fail
+		minimum:	1	fail
 		typical:	5
 		maximum:	6	fail
 	}
@@ -387,9 +385,7 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate: ss fs tt sf ff
 	}
 	
 	+
@@ -415,9 +411,7 @@ electrical_parameters {
 
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate: ss fs tt sf ff
 	}
 	
 	+
@@ -443,9 +437,7 @@ electrical_parameters {
 		
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: ff
+		enumerate: ss fs tt sf ff
 	}
 	
 	+
@@ -471,9 +463,7 @@ electrical_parameters {
 		
 		+
 		name: corner
-		minimum: ss
-		typical: tt
-		maximum: fF
+		enumerate: ss fs tt sf ff
 	}
 }
 

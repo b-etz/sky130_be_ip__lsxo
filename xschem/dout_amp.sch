@@ -18,6 +18,7 @@ T {Copyright 2024 Brady Etz
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 130 -210 0 0 0.2 0.2 {}
+T {50nA} 280 -590 0 0 0.4 0.4 {}
 N 250 -310 380 -310 {
 lab=dvss}
 N 290 -340 340 -340 {
