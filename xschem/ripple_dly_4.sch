@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-T {Sends a DONE signal after 4 falling edges on CLKIN} -140 -380 0 0 0.6 0.6 {}
+T {Sends a DONE signal after 4 rising edges on CLKIN} -140 -380 0 0 0.6 0.6 {}
 T {2} 260 -240 0 0 0.4 0.4 {}
 T {4} 500 -240 0 0 0.4 0.4 {}
 T {Copyright 2024 Brady Etz
@@ -55,8 +55,8 @@ C {devices/iopin.sym} -80 -300 2 0 {name=p19 lab=dvss}
 C {devices/lab_pin.sym} 300 -200 1 0 {name=p20 sig_type=std_logic lab=Qb1}
 C {sky130_stdcells/dfrbp_1.sym} 390 -180 0 0 {name=x3 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} 550 -200 1 0 {name=p2 sig_type=std_logic lab=Qb2}
-C {sky130_stdcells/nand2_1.sym} -20 -200 0 0 {name=x1 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {devices/noconn.sym} 240 -200 2 0 {name=l1}
 C {devices/noconn.sym} 480 -200 2 0 {name=l2}
 C {devices/lab_pin.sym} 50 -200 1 0 {name=p13 sig_type=std_logic lab=gated_clk}
 C {sky130_stdcells/dfrbp_1.sym} 640 -180 0 0 {name=x4 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/and2_0.sym} -20 -200 0 0 {name=x1 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }

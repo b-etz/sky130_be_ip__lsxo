@@ -25,22 +25,22 @@ N 500 -150 530 -150 {
 lab=#net3}
 N 500 -150 500 -100 {
 lab=#net3}
-N 520 -450 540 -420 {
-lab=#net4}
-N 580 -420 600 -450 {
-lab=#net5}
 N 500 -220 500 -150 {
 lab=#net3}
-N 500 -220 540 -260 {
-lab=#net3}
-N 580 -260 620 -220 {
-lab=#net1}
 N 620 -220 620 -150 {
 lab=#net1}
 N 110 -720 220 -720 {
 lab=#net2}
 N 690 -650 730 -650 {
 lab=DOUT}
+N 500 -410 520 -450 {
+lab=#net3}
+N 600 -450 620 -410 {
+lab=#net1}
+N 500 -410 500 -220 {
+lab=#net3}
+N 620 -410 620 -220 {
+lab=#net1}
 C {devices/vsource.sym} 40 -560 0 0 {name=VD value=\{DVDD\} savecurrent=false}
 C {devices/vsource.sym} 40 -430 0 0 {name=VA value=\{AVDD\} savecurrent=false}
 C {devices/lab_pin.sym} 40 -460 2 0 {name=p1 sig_type=std_logic lab=AVDD}
@@ -51,32 +51,37 @@ C {devices/code.sym} 830 -140 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval(@value )"
 value="
-.lib $::SKYWATER_MODELS/sky130.lib.spice ss
+.lib $::SKYWATER_MODELS/sky130.lib.spice fs
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false
 place=header}
 C {devices/code_shown.sym} 820 -690 0 0 {name=STIMULI 
 only_toplevel=true
-value=".param DVDD=1.8
-.param AVDD=3.3
-.param IVDD=2.7
+value=".param DVDD=1.72
+.param AVDD=2.7
 .param ENA=1
 .param STANDBY=0
 .param CL=12.5p
 .param CSTRAY=2p
 .model DUMMY D()
 *.ic V(x0.icnode)=100m
-.option TEMP=85
+.option TEMP=-40
 .control
-  save V(ENA) V(STANDBY) V(DOUT)
-  save I(VA) I(VD)
-  tran 25n 5m
-  *tran 1n 2u
+  save V(DOUT) 
+  save V(XIN) V(XOUT)
+  save V(x1.x4.xin_buf) V(x1.x4.inv_in)
+  *save V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
+  *save I(VA) I(VD)
+  tran 250n 10m
+  *tran 1n 0.2m
   remzerovec
   write tb_lsxo_general_short.raw
-  plot V(ENA) V(STANDBY) V(DOUT)
-  plot I(VA) I(VD)
+  plot V(DOUT)
+  plot V(XIN) V(XOUT)
+  plot V(x1.x4.xin_buf) V(x1.x4.inv_in)
+  *plot V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
+  *plot I(VA) I(VD)
   * quit 0
 .endc"}
 C {devices/capa.sym} 500 -70 0 1 {name=C1
@@ -105,7 +110,7 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 730 -590 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 730 -650 2 0 {name=p16 sig_type=std_logic lab=DOUT}
 C {devices/lab_pin.sym} 110 -660 2 0 {name=p17 sig_type=std_logic lab=IBIAS}
-C {devices/vsource.sym} 40 -690 0 0 {name=V0 value=\{IVDD\} savecurrent=false}
+C {devices/vsource.sym} 40 -690 0 0 {name=V0 value=2.7 savecurrent=false}
 C {devices/gnd.sym} 40 -660 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 520 -530 0 0 {name=p15 sig_type=std_logic lab=XIN}
 C {devices/lab_pin.sym} 600 -530 2 0 {name=p18 sig_type=std_logic lab=XOUT}
@@ -116,7 +121,7 @@ C {devices/gnd.sym} 40 -400 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 560 -730 2 0 {name=p11 sig_type=std_logic lab=IBIAS}
 C {devices/gnd.sym} 40 -290 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 40 -350 2 0 {name=p4 sig_type=std_logic lab=ENA}
-C {devices/vsource.sym} 40 -210 0 0 {name=V6 value="pulse(\{DVDD\} 0 1m 10n 10n 5m 10m)" savecurrent=false}
+C {devices/vsource.sym} 40 -210 0 0 {name=V6 value="pulse(\{DVDD\} 0 1m 10n 10n 5 6)" savecurrent=false}
 C {devices/gnd.sym} 40 -180 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 40 -240 2 0 {name=p5 sig_type=std_logic lab=STANDBY}
 C {devices/res.sym} 520 -480 0 0 {name=R3
@@ -131,7 +136,7 @@ device=resistor
 m=1}
 C {lqfp_parasitics.sym} 560 -340 3 1 {name=x2}
 C {devices/gnd.sym} 560 -260 0 0 {name=l13 lab=GND}
-C {devices/vsource.sym} 40 -320 0 0 {name=V1 value="pulse(0 \{DVDD\} 0 10n 10n 10m 20m)" savecurrent=false}
+C {devices/vsource.sym} 40 -320 0 0 {name=V1 value="pulse(0 \{DVDD\} 0 10n 10n 5 6)" savecurrent=false}
 C {devices/lab_pin.sym} 430 -630 0 0 {name=p6 sig_type=std_logic lab=STANDBY}
 C {devices/lab_pin.sym} 220 -660 2 0 {name=p7 sig_type=std_logic lab=IBIAS}
 C {devices/diode.sym} 220 -690 2 0 {name=D1 model=DUMMY area=100}
@@ -145,3 +150,7 @@ C {devices/lab_pin.sym} 200 -460 2 0 {name=p8 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 200 -590 2 0 {name=p9 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 640 -570 2 0 {name=p10 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 480 -570 0 0 {name=p12 sig_type=std_logic lab=avss}
+C {devices/noconn.sym} 580 -420 0 0 {name=l4}
+C {devices/noconn.sym} 580 -260 0 0 {name=l5}
+C {devices/noconn.sym} 540 -260 2 0 {name=l6}
+C {devices/noconn.sym} 540 -420 2 0 {name=l15}

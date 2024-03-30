@@ -13,12 +13,14 @@ XC1 avdd_ip avss_ip sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=10
 XC2 dvdd_ip dvss_ip sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=30
 XC3 avdd avss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=10
 XC4 dvdd dvss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=50
-x5 dvdd dvss dout_ip dout ena ena_b standby standby_b ripl_dly_clk_buf
+x5 dvdd dvss dout_ip dout_filt ena ena_b standby standby_b ripl_dly_clk_buf
 XM3 dout_ip standby dvss dvss sky130_fd_pr__nfet_01v8 L=4 W=0.5 nf=1 m=1
 x1 avdd dvdd ena_33 ena_b_33 ena dvss avss ena_b level_shift
 x2 avdd dvdd standby_33 standby_b_33 standby dvss avss standby_b level_shift
 x4 dvdd_ip dvss_ip xin xout net1 dout_ip dout_amp
 x3 avdd_ip vbreg xin avss_ip bias_gen
+XM4 dout dout_filt dvss_ip dvss_ip sky130_fd_pr__nfet_01v8 L=1 W=0.75 nf=1 m=1
+XM7 dout dout_filt dvdd_ip dvdd_ip sky130_fd_pr__pfet_01v8 L=1 W=4 nf=1 m=1
 .ends
 
 * expanding   symbol:  ripl_dly_clk_buf.sym # of pins=8
@@ -27,12 +29,12 @@ x3 avdd_ip vbreg xin avss_ip bias_gen
 .subckt ripl_dly_clk_buf dvdd dvss clkin clkout ena ena_b stby stby_b
 *.PININFO dvdd:B dvss:B clkin:I clkout:O ena:I stby:I ena_b:I stby_b:I
 XM3 clkout clk_disable dvss dvss sky130_fd_pr__nfet_01v8 L=4 W=0.5 nf=1 m=1
-x4 clkin clk_disable dvss dvss dvdd dvdd clkout sky130_fd_sc_hd__ebufn_2
 * noconn #net1
 * noconn #net2
 x3 ena ena_done_b stby_b stby_done_b stby dvss dvss dvdd dvdd clk_disable sky130_fd_sc_hd__a221o_1
 x2 dvdd dvss clkin net2 stby_done_b stby_b ripple_dly_4
 x1 dvdd dvss clkin net1 ena_done_b ena ripple_dly_4
+x5 clkin clk_disable dvss dvss dvdd dvdd clkout sky130_fd_sc_hd__einvn_0
 .ends
 
 
@@ -66,8 +68,8 @@ XM9 net1 net1 dvss dvss sky130_fd_pr__nfet_01v8 L=8 W=0.5 nf=1 m=1
 XR1 inv_in net1 dvss sky130_fd_pr__res_xhigh_po_0p35 L=1000 mult=1 m=1
 XM10 inv_m2 inv_m1 dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=0.5 nf=1 m=1
 XM11 inv_m2 inv_m1 dvss dvss sky130_fd_pr__nfet_01v8 L=1 W=0.5 nf=1 m=1
-XM12 dout inv_m2 dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=2 nf=1 m=1
-XM13 dout inv_m2 dvss dvss sky130_fd_pr__nfet_01v8 L=1 W=2 nf=1 m=1
+XM12 dout inv_m2 dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XM13 dout inv_m2 dvss dvss sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
 XM16 tail vbp dvdd dvdd sky130_fd_pr__pfet_01v8 L=2 W=4 nf=1 m=5
 XM17 vbp vbp dvdd dvdd sky130_fd_pr__pfet_01v8 L=2 W=2 nf=1 m=1
 XM3 xin_buf xout tail dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=2 nf=1 m=1
@@ -85,14 +87,15 @@ XM2 vbreg vg2 vrb avss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=4 nf=1 m=4
 XM3 vbreg vbreg avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 XM4 vg1 vbreg avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 XM1 vg1 vg1 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=4 nf=1 m=1
-XM6 net1 net1 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
-XM5 vbtri vg2 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=1
-XM7 vbreg vbtri vg2 avss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=2 nf=1 m=1
-XM8 vbtri vbtri net1 avdd sky130_fd_pr__pfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
 XR2 vg2 vg1 avss sky130_fd_pr__res_xhigh_po_0p35 L=2000 mult=1 m=1
 XR3 avss vrb avss sky130_fd_pr__res_xhigh_po_0p35 L=150 mult=1 m=1
-XC3 vg2 avss sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=10
+XC3 vg2 avss sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=2
 XC1 xin vg1 sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=5
+XM5 icnode vg2 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1 nf=1 m=1
+XC2 avdd icnode sky130_fd_pr__cap_mim_m3_1 W=20 L=20 m=1
+XM6 vbreg icnode net2 avss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
+XM8 net1 net1 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
+XM7 net2 icnode net1 avss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
 .ends
 
 
@@ -103,10 +106,10 @@ XC1 xin vg1 sky130_fd_pr__cap_mim_m3_1 W=25 L=25 m=5
 *.PININFO clkin:I ena:I done:O doneb:O dvdd:B dvss:B
 x2 gated_clk Qb1 ena dvss dvss dvdd dvdd net1 Qb1 sky130_fd_sc_hd__dfrbp_1
 x3 Qb1 Qb2 ena dvss dvss dvdd dvdd net2 Qb2 sky130_fd_sc_hd__dfrbp_1
-x1 clkin doneb dvss dvss dvdd dvdd gated_clk sky130_fd_sc_hd__nand2_1
 * noconn #net1
 * noconn #net2
 x4 Qb2 doneb ena dvss dvss dvdd dvdd done doneb sky130_fd_sc_hd__dfrbp_1
+x1 clkin doneb dvss dvss dvdd dvdd gated_clk sky130_fd_sc_hd__and2_0
 .ends
 
 .end

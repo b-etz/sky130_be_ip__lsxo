@@ -19,9 +19,9 @@ T {Copyright 2024 Brady Etz
    See the License for the specific language governing permissions and
    limitations under the License.} -320 100 0 0 0.2 0.2 {}
 N 140 -50 200 -50 {
-lab=clkout}
+lab=#net1}
 N 200 -50 200 10 {
-lab=clkout}
+lab=#net1}
 N 200 40 200 70 {
 lab=dvss}
 N -80 -10 60 -10 {
@@ -56,7 +56,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 200 70 3 0 {name=p82 sig_type=std_logic lab=dvss}
-C {sky130_stdcells/ebufn_2.sym} 100 -50 0 0 {name=x4 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {devices/iopin.sym} -250 -340 2 0 {name=p1 lab=dvdd}
 C {devices/iopin.sym} -250 -320 2 0 {name=p2 lab=dvss}
 C {devices/ipin.sym} -250 -280 0 0 {name=p3 lab=clkin}
@@ -77,3 +76,4 @@ C {devices/lab_pin.sym} 80 -210 0 0 {name=p14 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 80 -340 0 0 {name=p15 sig_type=std_logic lab=dvdd}
 C {ripple_dly_4.sym} 80 -160 0 0 {name=x2}
 C {ripple_dly_4.sym} 80 -290 0 0 {name=x1}
+C {sky130_stdcells/einvn_0.sym} 100 -50 0 0 {name=x5 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }

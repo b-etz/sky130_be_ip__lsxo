@@ -9,6 +9,10 @@ L 4 1200 -530 1200 -220 {}
 L 4 110 -530 110 -220 {}
 L 4 110 -530 1200 -530 {}
 L 4 110 -220 1200 -220 {}
+L 4 1570 -530 1570 -270 {}
+L 4 1380 -530 1380 -270 {}
+L 4 1380 -530 1570 -530 {}
+L 4 1380 -270 1570 -270 {}
 T {Supplies:} 40 -860 0 0 0.4 0.4 {}
 T {1.8V Domain:} 30 -720 0 0 0.4 0.4 {}
 T {3.3V Domain:} 30 -620 0 0 0.4 0.4 {}
@@ -84,14 +88,26 @@ N 1160 -430 1240 -430 {
 lab=dout_ip}
 N 1240 -430 1240 -200 {
 lab=dout_ip}
-N 1370 -400 1370 -370 {
+N 1310 -400 1310 -370 {
 lab=dvss}
-N 1240 -430 1370 -430 {
+N 1240 -430 1310 -430 {
 lab=dout_ip}
 N 1070 -700 1070 -480 {
 lab=dvdd_ip}
 N 430 -430 430 -320 {
 lab=xout}
+N 1460 -450 1460 -350 {
+lab=dout_filt}
+N 1500 -350 1500 -320 {
+lab=dvss_ip}
+N 1500 -480 1500 -450 {
+lab=dvdd_ip}
+N 1500 -420 1500 -380 {
+lab=dout}
+N 1500 -320 1500 -300 {
+lab=dvss_ip}
+N 1500 -500 1500 -480 {
+lab=dvdd_ip}
 C {devices/iopin.sym} 90 -820 0 0 {name=p1 lab=avdd}
 C {devices/opin.sym} 100 -640 0 0 {name=p3 lab=dout}
 C {devices/iopin.sym} 90 -800 0 0 {name=p4 lab=avss}
@@ -132,10 +148,10 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 410 -460 0 0 {name=M2
-W=6
+W=4
 L=2
 nf=1
-mult=6
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -156,7 +172,7 @@ C {devices/lab_pin.sym} 1070 -90 2 0 {name=p33 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 950 -440 0 0 {name=p36 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 910 -630 0 0 {name=p42 sig_type=std_logic lab=ibias}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 290 -320 2 0 {name=R2
-L=1800
+L=2400
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1
@@ -260,13 +276,13 @@ C {devices/lab_pin.sym} 1420 -810 2 0 {name=p58 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1420 -710 2 0 {name=p59 sig_type=std_logic lab=dvss}
 C {ripl_dly_clk_buf.sym} 1370 -160 0 0 {name=x5}
 C {devices/lab_pin.sym} 1370 -90 2 0 {name=p60 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1500 -160 2 0 {name=p62 sig_type=std_logic lab=dout}
+C {devices/lab_pin.sym} 1500 -160 2 0 {name=p62 sig_type=std_logic lab=dout_filt}
 C {devices/lab_pin.sym} 1180 -430 1 0 {name=p63 sig_type=std_logic lab=dout_ip}
 C {devices/lab_pin.sym} 1240 -180 0 0 {name=p64 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 1240 -160 0 0 {name=p65 sig_type=std_logic lab=ena_b}
 C {devices/lab_pin.sym} 1240 -140 0 0 {name=p66 sig_type=std_logic lab=standby}
 C {devices/lab_pin.sym} 1240 -120 0 0 {name=p67 sig_type=std_logic lab=standby_b}
-C {sky130_fd_pr/nfet_01v8.sym} 1390 -400 0 1 {name=M3
+C {sky130_fd_pr/nfet_01v8.sym} 1330 -400 0 1 {name=M3
 W=0.5
 L=4
 nf=1
@@ -280,10 +296,42 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1370 -370 2 0 {name=p32 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1410 -400 2 0 {name=p44 sig_type=std_logic lab=standby}
+C {devices/lab_pin.sym} 1310 -370 3 0 {name=p32 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} 1350 -400 3 0 {name=p44 sig_type=std_logic lab=standby}
 C {level_shift.sym} 610 -630 0 0 {name=x1}
 C {level_shift.sym} 1290 -630 0 0 {name=x2}
 C {dout_amp.sym} 1050 -430 0 0 {name=x4}
 C {bias_gen.sym} 250 -460 0 0 {name=x3}
 C {devices/lab_pin.sym} 1370 -230 2 0 {name=p61 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 1500 -400 2 0 {name=p81 sig_type=std_logic lab=dout}
+C {sky130_fd_pr/nfet_01v8.sym} 1480 -350 0 0 {name=M4
+W=0.75
+L=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 1480 -450 0 0 {name=M7
+W=4
+L=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1500 -300 0 0 {name=p68 sig_type=std_logic lab=dvss_ip}
+C {devices/lab_pin.sym} 1500 -500 0 0 {name=p69 sig_type=std_logic lab=dvdd_ip}
+C {devices/lab_pin.sym} 1460 -400 0 0 {name=p70 sig_type=std_logic lab=dout_filt}

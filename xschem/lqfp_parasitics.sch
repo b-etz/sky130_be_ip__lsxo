@@ -20,6 +20,7 @@ T {Copyright 2024 Brady Etz
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 170 130 0 0 0.2 0.2 {}
+T {Estimates based on 1-2mm bondwire, approx. LQFP lead length, moderate coupling.} 160 50 0 0 0.3 0.3 {}
 N -100 -310 -100 -280 {
 lab=chip1}
 N -100 -220 -100 -200 {
@@ -63,69 +64,69 @@ C {devices/iopin.sym} -100 310 1 0 {name=p4 lab=board1}
 C {devices/iopin.sym} 0 0 1 0 {name=p5 lab=gnd}
 C {devices/ind.sym} -100 170 0 1 {name=L5
 m=1
-value=2.25n
+value=1n
 footprint=1206
 device=inductor}
 C {devices/ind.sym} 100 170 0 0 {name=L6
 m=1
-value=2.25n
+value=1n
 footprint=1206
 device=inductor}
-C {devices/k.sym} 0 -90 2 1 {name=K1 K=0.62 L1=L3 L2=L4}
+C {devices/k.sym} 0 -90 2 1 {name=K1 K=0.5 L1=L3 L2=L4}
 C {devices/ind.sym} -100 -90 0 1 {name=L3
 m=1
-value=2.25n
+value=1n
 footprint=1206
 device=inductor}
 C {devices/ind.sym} 100 -90 0 0 {name=L4
 m=1
-value=2.25n
+value=1n
 footprint=1206
 device=inductor}
 C {devices/capa.sym} 0 80 3 1 {name=C3
 m=1
-value=0.45p
+value=200f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 50 -20 1 1 {name=C2
 m=1
-value=0.1p
+value=50f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} -50 -20 1 1 {name=C1
 m=1
-value=0.1p
+value=50f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/res.sym} 100 260 0 1 {name=R4
-value=0.6
+value=0.5
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} -100 260 0 0 {name=R3
-value=0.6
+value=0.5
 footprint=1206
 device=resistor
 m=1}
-C {devices/k.sym} 0 170 0 0 {name=K2 K=0.62 L1=L5 L2=L6}
+C {devices/k.sym} 0 170 0 0 {name=K2 K=0.5 L1=L5 L2=L6}
 C {devices/res.sym} 100 -170 0 1 {name=R2
-value=0.6
+value=0.5
 footprint=1206
 device=resistor
 m=1}
 C {devices/res.sym} -100 -170 0 0 {name=R1
-value=0.6
+value=0.5
 footprint=1206
 device=resistor
 m=1}
 C {devices/ind.sym} -100 -250 0 1 {name=L1
 m=1
-value=7.7n
+value=2n
 footprint=1206
 device=inductor}
 C {devices/ind.sym} 100 -250 0 0 {name=L2
 m=1
-value=7.7n
+value=2n
 footprint=1206
 device=inductor}
-C {devices/k.sym} 0 -250 2 1 {name=K3 K=0.63 L1=L1 L2=L2}
+C {devices/k.sym} 0 -250 2 1 {name=K3 K=0.5 L1=L1 L2=L2}

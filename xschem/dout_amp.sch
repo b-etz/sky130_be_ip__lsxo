@@ -166,7 +166,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 470 -410 0 0 {name=M5
-W=2
+W=4
 L=2
 nf=1
 mult=1
@@ -275,7 +275,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1070 -390 1 0 {name=p14 sig_type=std_logic lab=inv_m1}
 C {sky130_fd_pr/pfet_01v8.sym} 1310 -500 0 0 {name=M12
-W=2
+W=1
 L=1
 nf=1
 mult=1
@@ -289,7 +289,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1310 -340 0 0 {name=M13
-W=2
+W=1
 L=1
 nf=1
 mult=1
@@ -344,7 +344,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 710 -410 0 1 {name=M3
-W=2
+W=4
 L=2
 nf=1
 mult=1
