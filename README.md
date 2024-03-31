@@ -76,7 +76,7 @@ This IP is in the design phase. The compliance table is in development. Typical 
 
 ### CACE Summary Capture
 
-![CACE Summary - Produced on 31 March 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_lsxo_results_combined_20240331.png?raw=true)
+![CACE Summary - Produced on 31 March 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_results_combined_20240331.png?raw=true)
 
 Duty cycle tests are performed with a 10-nA current initial condition for the crystal motional inductance. This is done to accelerate startup (separate testbench) and capture a more realistic image of duty cycle across these corners.
 
