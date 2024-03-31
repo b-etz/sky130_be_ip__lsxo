@@ -93,12 +93,12 @@ m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 990 -320 0 0 {name=CONTROL only_toplevel=false value=".control
 save v(dout)
-tran 50n 0.3m
+tran 25n 0.3m
 
 let veval=0.2
 meas tran teval WHEN v(dout)=veval FALL=3
-let tstart=teval+2u
-let tend=teval+3u
+let tstart=teval+5u
+let tend=teval+6u
 meas tran Vol_abs MAX v(dout) from=tstart to=tend
 let Vol_rel = Vol_abs-\{Vdvss\}
 

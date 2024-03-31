@@ -417,9 +417,9 @@ electrical_parameters {
 	}
 	conditions {
 		name: temperature
-		minimum: -40
-		typical: 25
-		maximum: 85		
+		minimum:	-40
+		typical:	25
+		maximum:	85		
 
 		+
 		name: corner
@@ -475,17 +475,29 @@ electrical_parameters {
 	simulate {
 		tool:		ngspice
 		template:	tb_startup_clk_on.spice
-		format:		ascii .data result null
+		format:		ascii .data null result
 	}
 	conditions {
 		name: temperature
-		minimum: -40
-		typical: 25
-		maximum: 85
+		minimum:	-40
+		typical:	25
+		maximum:	85
 		
 		+
 		name: corner
 		enumerate: ss fs tt sf ff
+		
+		+
+		name: Vavdd
+		minimum:	2.7
+		typical:	3.3
+		maximum:	5.5
+		
+		+
+		name: Vdvdd
+		minimum:	1.72
+		typical:	1.8
+		maximum:	1.98
 	}
 	
 	+
@@ -501,7 +513,7 @@ electrical_parameters {
 	simulate {
 		tool:		ngspice
 		template:	tb_startup_pwron.spice
-		format:		ascii .data result null
+		format:		ascii .data null result
 	}
 	conditions {
 		name: temperature
@@ -512,6 +524,18 @@ electrical_parameters {
 		+
 		name: corner
 		enumerate: ss fs tt sf ff
+		
+		+
+		name: Vavdd
+		minimum:	2.7
+		typical:	3.3
+		maximum:	5.5
+		
+		+
+		name: Vdvdd
+		minimum:	1.72
+		typical:	1.8
+		maximum:	1.98
 	}
 }
 

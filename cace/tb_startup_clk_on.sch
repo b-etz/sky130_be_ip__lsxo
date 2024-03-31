@@ -123,14 +123,13 @@ m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 990 -310 0 0 {name=CONTROL only_toplevel=false value=".control
 save v(dout)
-tran 25n 6m
+tran 50n 6m
 
 let vmid=\{Vdvdd\}/2
-meas tran tcheck WHEN v(dout)=vmid CROSS=2
-meas tran tresult WHEN v(dout)=vmid TD=tcheck CROSS=1
+meas tran tstart WHEN v(dout)=vmid TD=0.5m CROSS=3
 
 set wr_singlescale
-wrdata \{simpath\}/\{filename\}_\{N\}.data tresult
+wrdata \{simpath\}/\{filename\}_\{N\}.data tstart
 quit
 .endc
 "}

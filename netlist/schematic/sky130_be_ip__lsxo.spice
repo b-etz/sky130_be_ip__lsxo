@@ -2,8 +2,8 @@
 .subckt sky130_be_ip__lsxo avdd avss dvdd dvss ibias ena standby dout xin xout
 *.PININFO avdd:B dout:O avss:B dvdd:B dvss:B ibias:I ena:I standby:I xin:I xout:O
 XM1 xout xin avss_ip avss_ip sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=10
-XM2 xout vbreg avdd_ip avdd_ip sky130_fd_pr__pfet_g5v0d10v5 L=2 W=6 nf=1 m=6
-XR2 xout xin avss_ip sky130_fd_pr__res_xhigh_po_0p35 L=1800 mult=1 m=1
+XM2 xout vbreg avdd_ip avdd_ip sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=10
+XR2 xout xin avss_ip sky130_fd_pr__res_xhigh_po_0p35 L=2600 mult=1 m=1
 XM5 avss_ip ena_33 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=5
 XM6 avdd_ip ena_b_33 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=5
 XM8 dvdd_ip standby dvdd dvdd sky130_fd_pr__pfet_01v8 L=0.5 W=4 nf=1 m=10
@@ -59,7 +59,7 @@ XM1 in_b in dvss dvss sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
 *.PININFO xin:I dvdd:B dvss:B dout:O ibias:I xout:I
 XM1 ibias ibias dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=5
 XM2 vbp ibias dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=1
-XM5 net2 xin tail dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=2 nf=1 m=1
+XM5 net2 xin tail dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 XC1 xin_buf inv_in sky130_fd_pr__cap_mim_m3_1 W=10 L=10 m=12
 XM6 inv_m1 inv_in dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=0.5 nf=1 m=1
 XM7 inv_m1 inv_in dvss dvss sky130_fd_pr__nfet_01v8 L=8 W=0.5 nf=1 m=1
@@ -72,7 +72,7 @@ XM12 dout inv_m2 dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
 XM13 dout inv_m2 dvss dvss sky130_fd_pr__nfet_01v8 L=1 W=1 nf=1 m=1
 XM16 tail vbp dvdd dvdd sky130_fd_pr__pfet_01v8 L=2 W=4 nf=1 m=5
 XM17 vbp vbp dvdd dvdd sky130_fd_pr__pfet_01v8 L=2 W=2 nf=1 m=1
-XM3 xin_buf xout tail dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=2 nf=1 m=1
+XM3 xin_buf xout tail dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 XM4 xin_buf net2 dvss dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
 XM18 net2 net2 dvss dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
 .ends

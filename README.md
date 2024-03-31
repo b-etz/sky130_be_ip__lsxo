@@ -19,7 +19,7 @@ $ git clone https://github.com/b-etz/sky130_be_ip__lsxo
 $ cd sky130_be_ip__lsxo/ 
 ```
 
-In the new directory, you can inspect schematics in the `xschem/` directory, or you can initiate the verification suite from the repo root by using:
+In the new directory, you can inspect schematics and open manual testbenches in the `xschem/` directory, or you can initiate the verification suite from the repo root by using:
 
 ```
 $ cace-gui
@@ -27,10 +27,10 @@ $ cace-gui
 
 The listed specifications are provided in table form, with individual simulation buttons on the right-hand side.
 
-Total simulation time is currently over 45 minutes. I recommend running each simulation type individually. If possible, in your simulation home directory, update `.spiceinit` to include the line:
+Total simulation time is currently over 3 hours. I recommend running each simulation type individually. If possible, in your simulation home directory, update `.spiceinit` to include the line:
 
 ```
-set num_threads=8
+set num_threads={Max System Threads}
 ```
 
 Due to simulation time limitations, all testbenches are performed during crystal startup, or simulating a crystal response with pure sinusoids. Some of these CACE testbenches that include a crystal model, such as duty cycle, can produce spurious results caused by variations in startup time. **To plot example behavior and tool with testbench settings, see the manual testbench in the `xschem/` directory.**
@@ -63,26 +63,24 @@ This IP is in the design phase. The compliance table is in development. Typical 
 
 | Parameter                          | Typical | Worst | Unit  |
 | ---------------------------------- | ------- | ----- | ----- |
-| AVDD Current Dissipation (Enabled) | 0.6     | 0.7   | uA    |
-| Current Dissipation (Powered Down) | 0.3     | 0.4   | nA    |
-| _dout_ Duty Cycle                  | 50      | 30    | %     |
-| Startup Time (Power-on)            | 3       | 8     | ms    |
-| Startup Time (Enable)              | 2       | 4     | ms    |
+| AVDD Current Dissipation (Enabled) | 0.8     | 0.9   | uA    |
+| Current Dissipation (Powered Down) | 0.4     | 0.6   | nA    |
+| _dout_ Duty Cycle                  | 50.4    | 62    | %     |
+| Startup Time (Power-on)            | 1.3     | 5.9   | ms    |
+| Startup Time (Enable)              | 1.7     | 5.9   | ms    |
 | Frequency Stability over Temp      | n/a     | n/a   | ppm   |
 | Frequency Accuracy at 25 deg C     | n/a     | n/a   | ppm   |
 | _dout_ Low Level (Vol)             | 0       | 0     | V     |
 | _dout_ High Level (Vol)            | DVDD    | DVDD  | V     |
-| _dout_ Rise/Fall Time              | 3       | 1     | ns    |
+| _dout_ Rise/Fall Time              | 4       | 2.6   | ns    |
 
 ### CACE Summary Capture
 
-![CACE Summary - Produced on 23 March 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_lsxo_results_20240323.png?raw=true)
+![CACE Summary - Produced on 31 March 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_lsxo_results_combined_20240331.png?raw=true)
 
-Edge rates are faster than required. The output standard cell buffer can be sized down from 2x to 1x, but it may cause longer rise times than 6ns when crystal oscillations have just begun. Depending on downstream rise time requirements, this may be acceptable. It would also save dynamic power.
+Duty cycle tests are performed with a 10-nA current initial condition for the crystal motional inductance. This is done to accelerate startup (separate testbench) and capture a more realistic image of duty cycle across these corners.
 
-Duty cycle is likely impacted by some simulations failing to start up. This is supported by startup times reported as 6ms. I have not been able to reproduce startup failures in the manual testbench in ss,tt,ff corners, or at -40 or 85 degrees Celsius. I do not expect this reflects the functionality of the physical device.
-
-The startup times could potentially simulate better for 12.5-pF devices by loading the active device with more current and consuming greater startup power. However, this would reduce or eliminate compatibility with 6-pF and 4-pF devices entirely. Lower drive current is required to sustain oscillations with low-CL, low-ESR devices.
+Startup times appear strongly influenced by initial transient response from initial conditions, which vary slightly from sim to sim. The startup times could improve for 12.5-pF devices by loading the active device with more current and consuming greater startup power. However, this would reduce or eliminate compatibility with 6-pF and 4-pF devices entirely. Lower drive current is required to sustain oscillations with low-CL, low-ESR devices.
 
 ## Theory of Operation
 

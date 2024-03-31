@@ -27,7 +27,7 @@ N -40 30 -40 50 {
 lab=#net1}
 C {devices/ind.sym} -40 0 0 0 {name=L1
 m=1
-value=7641
+value="7641 ic=10nA"
 footprint=1206
 device=inductor}
 C {devices/capa.sym} -40 -80 0 0 {name=C1

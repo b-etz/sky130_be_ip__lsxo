@@ -43,8 +43,8 @@ N 690 -650 730 -650 {
 lab=dout}
 N 730 -650 850 -650 {
 lab=dout}
-C {devices/vsource.sym} 40 -560 0 0 {name=Vdvdd value="PULSE(0 \{Vdvdd\} 0 20n 20n 10m 11m)" savecurrent=false}
-C {devices/vsource.sym} 40 -430 0 0 {name=Vavdd value="PULSE(0 \{Vavdd\} 0 30n 30n 10m 11m)" savecurrent=false}
+C {devices/vsource.sym} 40 -560 0 0 {name=Vdvdd value="PULSE(0 \{Vdvdd\} 10u 50n 50n 10m 11m)" savecurrent=false}
+C {devices/vsource.sym} 40 -430 0 0 {name=Vavdd value="PULSE(0 \{Vavdd\} 10u 100n 100n 10m 11m)" savecurrent=false}
 C {devices/lab_pin.sym} 40 -460 2 0 {name=p1 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 40 -590 2 0 {name=p2 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 430 -670 0 0 {name=p3 sig_type=std_logic lab=ena
@@ -123,14 +123,13 @@ m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 990 -310 0 0 {name=CONTROL only_toplevel=false value=".control
 save v(dout)
-tran 25n 6m
+tran 50n 6m
 
 let vmid=\{Vdvdd\}/2
-meas tran tcheck WHEN v(dout)=vmid CROSS=2
-meas tran tresult WHEN v(dout)=vmid TD=tcheck CROSS=1
+meas tran tstart WHEN v(dout)=vmid TD=0.5m CROSS=3
 
 set wr_singlescale
-wrdata \{simpath\}/\{filename\}_\{N\}.data tresult
+wrdata \{simpath\}/\{filename\}_\{N\}.data tstart
 quit
 .endc
 "}

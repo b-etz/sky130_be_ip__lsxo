@@ -7,6 +7,7 @@ S {}
 E {}
 T {I/O Pads 
 / ESD} 540 -460 0 0 0.2 0.2 {}
+T {** Uses 10nA .ic for crystal motional inductance} 970 -80 0 0 0.4 0.4 {}
 N 600 -100 620 -100 {
 lab=#net1}
 N 620 -150 620 -100 {
@@ -125,9 +126,9 @@ m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 990 -310 0 0 {name=CONTROL only_toplevel=false value=".control
 save v(dout)
-tran 20n 5m
+tran 50n 6m uic
 
-meas tran doutint INTEG v(dout) from=4m to=5m
+meas tran doutint INTEG v(dout) from=5m to=6m
 let vavg=doutint/1m
 let duty=vavg/\{Vdvdd\}
 

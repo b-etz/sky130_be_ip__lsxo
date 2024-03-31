@@ -34,12 +34,16 @@ lab=#net2}
 N 690 -650 730 -650 {
 lab=DOUT}
 N 500 -410 520 -450 {
-lab=#net3}
+lab=#net4}
 N 600 -450 620 -410 {
-lab=#net1}
-N 500 -410 500 -220 {
+lab=#net5}
+N 520 -450 540 -420 {
+lab=#net4}
+N 580 -420 600 -450 {
+lab=#net5}
+N 500 -220 540 -260 {
 lab=#net3}
-N 620 -410 620 -220 {
+N 580 -260 620 -220 {
 lab=#net1}
 C {devices/vsource.sym} 40 -560 0 0 {name=VD value=\{DVDD\} savecurrent=false}
 C {devices/vsource.sym} 40 -430 0 0 {name=VA value=\{AVDD\} savecurrent=false}
@@ -47,33 +51,33 @@ C {devices/lab_pin.sym} 40 -460 2 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_pin.sym} 40 -590 2 0 {name=p2 sig_type=std_logic lab=DVDD}
 C {devices/lab_pin.sym} 430 -670 0 0 {name=p3 sig_type=std_logic lab=ENA
 }
-C {devices/code.sym} 830 -140 0 0 {name=TT_MODELS
+C {devices/code_shown.sym} 830 -140 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval(@value )"
 value="
-.lib $::SKYWATER_MODELS/sky130.lib.spice fs
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false
 place=header}
 C {devices/code_shown.sym} 820 -690 0 0 {name=STIMULI 
 only_toplevel=true
-value=".param DVDD=1.72
-.param AVDD=2.7
+value=".param DVDD=1.8
+.param AVDD=3.3
 .param ENA=1
 .param STANDBY=0
 .param CL=12.5p
 .param CSTRAY=2p
 .model DUMMY D()
 *.ic V(x0.icnode)=100m
-.option TEMP=-40
+.option TEMP=25
 .control
   save V(DOUT) 
   save V(XIN) V(XOUT)
   save V(x1.x4.xin_buf) V(x1.x4.inv_in)
   *save V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
   *save I(VA) I(VD)
-  tran 250n 10m
+  tran 50n 6m
   *tran 1n 0.2m
   remzerovec
   write tb_lsxo_general_short.raw
@@ -150,7 +154,7 @@ C {devices/lab_pin.sym} 200 -460 2 0 {name=p8 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 200 -590 2 0 {name=p9 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 640 -570 2 0 {name=p10 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 480 -570 0 0 {name=p12 sig_type=std_logic lab=avss}
-C {devices/noconn.sym} 580 -420 0 0 {name=l4}
-C {devices/noconn.sym} 580 -260 0 0 {name=l5}
-C {devices/noconn.sym} 540 -260 2 0 {name=l6}
-C {devices/noconn.sym} 540 -420 2 0 {name=l15}
+C {devices/noconn.sym} 740 -390 0 0 {name=l4}
+C {devices/noconn.sym} 740 -360 0 0 {name=l5}
+C {devices/noconn.sym} 700 -360 2 0 {name=l6}
+C {devices/noconn.sym} 700 -390 2 0 {name=l15}

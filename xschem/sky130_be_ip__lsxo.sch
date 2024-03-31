@@ -172,7 +172,7 @@ C {devices/lab_pin.sym} 1070 -90 2 0 {name=p33 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 950 -440 0 0 {name=p36 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 910 -630 0 0 {name=p42 sig_type=std_logic lab=ibias}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 290 -320 2 0 {name=R2
-L=2400
+L=2600
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1
