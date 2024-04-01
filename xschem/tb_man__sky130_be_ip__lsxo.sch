@@ -74,18 +74,20 @@ value=".param DVDD=1.8
 .control
   save V(DOUT) 
   save V(XIN) V(XOUT)
-  save V(x1.x4.xin_buf) V(x1.x4.inv_in)
+  save V(x1.vbreg)
+  *save V(x1.x4.xin_buf) V(x1.x4.inv_in)
   *save V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
-  *save I(VA) I(VD)
-  tran 50n 6m
+  save I(VA) I(VD)
+  tran 1u 1.5
   *tran 1n 0.2m
   remzerovec
   write tb_lsxo_general_short.raw
   plot V(DOUT)
   plot V(XIN) V(XOUT)
-  plot V(x1.x4.xin_buf) V(x1.x4.inv_in)
+  plot V(x1.vbreg)
+  *plot V(x1.x4.xin_buf) V(x1.x4.inv_in)
   *plot V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
-  *plot I(VA) I(VD)
+  plot I(VA) I(VD)
   * quit 0
 .endc"}
 C {devices/capa.sym} 500 -70 0 1 {name=C1
@@ -154,7 +156,3 @@ C {devices/lab_pin.sym} 200 -460 2 0 {name=p8 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 200 -590 2 0 {name=p9 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 640 -570 2 0 {name=p10 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 480 -570 0 0 {name=p12 sig_type=std_logic lab=avss}
-C {devices/noconn.sym} 740 -390 0 0 {name=l4}
-C {devices/noconn.sym} 740 -360 0 0 {name=l5}
-C {devices/noconn.sym} 700 -360 2 0 {name=l6}
-C {devices/noconn.sym} 700 -390 2 0 {name=l15}

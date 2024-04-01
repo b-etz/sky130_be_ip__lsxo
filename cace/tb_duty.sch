@@ -126,10 +126,10 @@ m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 990 -310 0 0 {name=CONTROL only_toplevel=false value=".control
 save v(dout)
-tran 50n 6m uic
+tran 300n 5m uic
 
-meas tran doutint INTEG v(dout) from=5m to=6m
-let vavg=doutint/1m
+meas tran doutint INTEG v(dout) from=4.5m to=5m
+let vavg=doutint/0.5m
 let duty=vavg/\{Vdvdd\}
 
 set wr_singlescale
