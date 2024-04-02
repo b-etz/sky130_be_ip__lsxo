@@ -6,21 +6,23 @@ XM2 xout vbreg avdd_ip avdd_ip sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=10
 XR2 xout xin avss_ip sky130_fd_pr__res_xhigh_po_0p35 L=2600 mult=1 m=1
 XM5 avss_ip ena_33 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=5
 XM6 avdd_ip ena_b_33 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=5
-XM8 dvdd_ip standby dvdd dvdd sky130_fd_pr__pfet_01v8 L=0.5 W=4 nf=1 m=10
+XM8 dvdd_ip standby_ip dvdd dvdd sky130_fd_pr__pfet_01v8 L=0.5 W=4 nf=1 m=10
 XM9 net1 standby_33 ibias ibias sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
 XM11 dvss_ip standby_b dvss dvss sky130_fd_pr__nfet_01v8 L=0.5 W=4 nf=1 m=10
 XC1 avdd_ip avss_ip sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=2
 XC2 dvdd_ip dvss_ip sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=30
 XC3 avdd avss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=5
 XC4 dvdd dvss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=5
-x5 dvdd dvss dout_ip dout_filt ena ena_b standby standby_b ripl_dly_clk_buf
-XM3 dout_ip standby dvss dvss sky130_fd_pr__nfet_01v8 L=4 W=0.5 nf=1 m=1
-x1 avdd dvdd ena_33 ena_b_33 ena dvss avss ena_b level_shift
-x2 avdd dvdd standby_33 standby_b_33 standby dvss avss standby_b level_shift
-x4 dvdd_ip dvss_ip xin xout net1 dout_ip dout_amp
-x3 avdd_ip vbreg xin avss_ip bias_gen
+x7 dvdd dvss dout_ip dout_filt ena_ip ena_b standby_ip standby_b ripl_dly_clk_buf
+XM3 dout_ip standby_ip dvss dvss sky130_fd_pr__nfet_01v8 L=4 W=0.5 nf=1 m=1
+x3 avdd dvdd ena_33 ena_b_33 ena_ip dvss avss ena_b level_shift
+x4 avdd dvdd standby_33 standby_b_33 standby_ip dvss avss standby_b level_shift
+x6 dvdd_ip dvss_ip xin xout net1 dout_ip dout_amp
+x5 avdd_ip vbreg xin avss_ip bias_gen
 XM4 dout dout_filt dvss_ip dvss_ip sky130_fd_pr__nfet_01v8 L=1 W=0.75 nf=1 m=1
 XM7 dout dout_filt dvdd_ip dvdd_ip sky130_fd_pr__pfet_01v8 L=1 W=4 nf=1 m=1
+x1 ena dvss dvss dvdd dvdd ena_ip sky130_fd_sc_hd__buf_1
+x2 standby dvss dvss dvdd dvdd standby_ip sky130_fd_sc_hd__buf_1
 .ends
 
 * expanding   symbol:  ripl_dly_clk_buf.sym # of pins=8

@@ -78,11 +78,7 @@ N 430 -490 430 -460 {
 lab=avdd_ip}
 N 430 -290 430 -260 {
 lab=avss_ip}
-N 910 -630 940 -630 {
-lab=ibias}
-N 970 -630 1030 -630 {
-lab=#net1}
-N 1030 -630 1030 -480 {
+N 910 -680 910 -650 {
 lab=#net1}
 N 1160 -430 1240 -430 {
 lab=dout_ip}
@@ -108,6 +104,10 @@ N 1500 -320 1500 -300 {
 lab=dvss_ip}
 N 1500 -500 1500 -480 {
 lab=dvdd_ip}
+N 910 -810 910 -680 {}
+N 910 -620 910 -580 {}
+N 910 -580 1030 -580 {}
+N 1030 -580 1030 -480 {}
 C {devices/iopin.sym} 90 -820 0 0 {name=p1 lab=avdd}
 C {devices/opin.sym} 100 -640 0 0 {name=p3 lab=dout}
 C {devices/iopin.sym} 90 -800 0 0 {name=p4 lab=avss}
@@ -126,8 +126,8 @@ C {devices/lab_pin.sym} 1280 -690 0 0 {name=p15 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1300 -690 2 0 {name=p16 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 1390 -610 2 0 {name=p17 sig_type=std_logic lab=standby_b_33}
 C {devices/lab_pin.sym} 1390 -630 2 0 {name=p18 sig_type=std_logic lab=standby_33}
-C {devices/lab_pin.sym} 520 -630 0 0 {name=p19 sig_type=std_logic lab=ena}
-C {devices/lab_pin.sym} 1200 -630 0 0 {name=p20 sig_type=std_logic lab=standby}
+C {devices/lab_pin.sym} 520 -630 0 0 {name=p19 sig_type=std_logic lab=ena_ip}
+C {devices/lab_pin.sym} 1200 -630 0 0 {name=p20 sig_type=std_logic lab=standby_ip}
 C {devices/lab_pin.sym} 600 -570 0 0 {name=p21 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 620 -570 2 0 {name=p22 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 1280 -570 0 0 {name=p23 sig_type=std_logic lab=dvss}
@@ -170,7 +170,7 @@ C {devices/lab_pin.sym} 160 -460 0 0 {name=p45 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 1070 -810 2 0 {name=p31 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1070 -90 2 0 {name=p33 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 950 -440 0 0 {name=p36 sig_type=std_logic lab=xin}
-C {devices/lab_pin.sym} 910 -630 0 0 {name=p42 sig_type=std_logic lab=ibias}
+C {devices/lab_pin.sym} 910 -810 2 0 {name=p42 sig_type=std_logic lab=ibias}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 290 -320 2 0 {name=R2
 L=2600
 model=res_xhigh_po_0p35
@@ -222,8 +222,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1110 -730 2 0 {name=p48 sig_type=std_logic lab=standby}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 940 -650 3 1 {name=M9
+C {devices/lab_pin.sym} 1110 -730 2 0 {name=p48 sig_type=std_logic lab=standby_ip}
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 930 -650 0 1 {name=M9
 W=4
 L=0.5
 nf=1
@@ -237,7 +237,7 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 940 -670 2 0 {name=p49 sig_type=std_logic lab=standby_33}
+C {devices/lab_pin.sym} 950 -650 2 0 {name=p49 sig_type=std_logic lab=standby_33}
 C {sky130_fd_pr/nfet_01v8.sym} 1050 -180 0 0 {name=M11
 W=4
 L=0.5
@@ -274,13 +274,13 @@ C {sky130_fd_pr/cap_mim_m3_2.sym} 740 -760 0 0 {name=C3 model=cap_mim_m3_2 W=10 
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1420 -760 0 0 {name=C4 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
 C {devices/lab_pin.sym} 1420 -810 2 0 {name=p58 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1420 -710 2 0 {name=p59 sig_type=std_logic lab=dvss}
-C {ripl_dly_clk_buf.sym} 1370 -160 0 0 {name=x5}
+C {ripl_dly_clk_buf.sym} 1370 -160 0 0 {name=x7}
 C {devices/lab_pin.sym} 1370 -90 2 0 {name=p60 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 1500 -160 2 0 {name=p62 sig_type=std_logic lab=dout_filt}
 C {devices/lab_pin.sym} 1180 -430 1 0 {name=p63 sig_type=std_logic lab=dout_ip}
-C {devices/lab_pin.sym} 1240 -180 0 0 {name=p64 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 1240 -180 0 0 {name=p64 sig_type=std_logic lab=ena_ip}
 C {devices/lab_pin.sym} 1240 -160 0 0 {name=p65 sig_type=std_logic lab=ena_b}
-C {devices/lab_pin.sym} 1240 -140 0 0 {name=p66 sig_type=std_logic lab=standby}
+C {devices/lab_pin.sym} 1240 -140 0 0 {name=p66 sig_type=std_logic lab=standby_ip}
 C {devices/lab_pin.sym} 1240 -120 0 0 {name=p67 sig_type=std_logic lab=standby_b}
 C {sky130_fd_pr/nfet_01v8.sym} 1330 -400 0 1 {name=M3
 W=0.5
@@ -297,11 +297,11 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1310 -370 3 0 {name=p32 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 1350 -400 3 0 {name=p44 sig_type=std_logic lab=standby}
-C {level_shift.sym} 610 -630 0 0 {name=x1}
-C {level_shift.sym} 1290 -630 0 0 {name=x2}
-C {dout_amp.sym} 1050 -430 0 0 {name=x4}
-C {bias_gen.sym} 250 -460 0 0 {name=x3}
+C {devices/lab_pin.sym} 1350 -400 3 0 {name=p44 sig_type=std_logic lab=standby_ip}
+C {level_shift.sym} 610 -630 0 0 {name=x3}
+C {level_shift.sym} 1290 -630 0 0 {name=x4}
+C {dout_amp.sym} 1050 -430 0 0 {name=x6}
+C {bias_gen.sym} 250 -460 0 0 {name=x5}
 C {devices/lab_pin.sym} 1370 -230 2 0 {name=p61 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1500 -400 2 0 {name=p81 sig_type=std_logic lab=dout}
 C {sky130_fd_pr/nfet_01v8.sym} 1480 -350 0 0 {name=M4
@@ -335,3 +335,9 @@ spiceprefix=X
 C {devices/lab_pin.sym} 1500 -300 0 0 {name=p68 sig_type=std_logic lab=dvss_ip}
 C {devices/lab_pin.sym} 1500 -500 0 0 {name=p69 sig_type=std_logic lab=dvdd_ip}
 C {devices/lab_pin.sym} 1460 -400 0 0 {name=p70 sig_type=std_logic lab=dout_filt}
+C {sky130_stdcells/buf_1.sym} 600 -810 0 0 {name=x1 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 560 -810 0 0 {name=p71 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 1210 -810 0 0 {name=p72 sig_type=std_logic lab=standby}
+C {devices/lab_pin.sym} 640 -810 2 0 {name=p73 sig_type=std_logic lab=ena_ip}
+C {devices/lab_pin.sym} 1290 -810 2 0 {name=p74 sig_type=std_logic lab=standby_ip}
+C {sky130_stdcells/buf_1.sym} 1250 -810 0 0 {name=x2 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
