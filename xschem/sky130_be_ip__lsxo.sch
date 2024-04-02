@@ -270,8 +270,8 @@ C {devices/lab_pin.sym} 710 -650 2 0 {name=p54 sig_type=std_logic lab=ena_b}
 C {devices/lab_pin.sym} 1390 -650 2 0 {name=p55 sig_type=std_logic lab=standby_b}
 C {devices/lab_pin.sym} 740 -810 2 0 {name=p56 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 740 -710 2 0 {name=p57 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 740 -760 0 0 {name=C3 model=cap_mim_m3_2 W=10 L=10 MF=10 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1420 -760 0 0 {name=C4 model=cap_mim_m3_2 W=10 L=10 MF=20 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 740 -760 0 0 {name=C3 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1420 -760 0 0 {name=C4 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
 C {devices/lab_pin.sym} 1420 -810 2 0 {name=p58 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1420 -710 2 0 {name=p59 sig_type=std_logic lab=dvss}
 C {ripl_dly_clk_buf.sym} 1370 -160 0 0 {name=x5}

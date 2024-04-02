@@ -9,10 +9,10 @@ XM6 avdd_ip ena_b_33 avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=5
 XM8 dvdd_ip standby dvdd dvdd sky130_fd_pr__pfet_01v8 L=0.5 W=4 nf=1 m=10
 XM9 net1 standby_33 ibias ibias sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=4 nf=1 m=1
 XM11 dvss_ip standby_b dvss dvss sky130_fd_pr__nfet_01v8 L=0.5 W=4 nf=1 m=10
-XC1 avdd_ip avss_ip sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=10
+XC1 avdd_ip avss_ip sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=2
 XC2 dvdd_ip dvss_ip sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=30
-XC3 avdd avss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=10
-XC4 dvdd dvss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=50
+XC3 avdd avss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=5
+XC4 dvdd dvss sky130_fd_pr__cap_mim_m3_2 W=10 L=10 m=5
 x5 dvdd dvss dout_ip dout_filt ena ena_b standby standby_b ripl_dly_clk_buf
 XM3 dout_ip standby dvss dvss sky130_fd_pr__nfet_01v8 L=4 W=0.5 nf=1 m=1
 x1 avdd dvdd ena_33 ena_b_33 ena dvss avss ena_b level_shift
