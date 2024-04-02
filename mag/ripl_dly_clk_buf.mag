@@ -1,0 +1,102 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1712074743
+<< error_s >>
+rect 1101 808 1139 1067
+rect 1877 760 1913 792
+rect 3888 -146 3903 -115
+rect 3882 -180 3903 -146
+rect 3888 -211 3903 -180
+rect 3916 -143 3931 -112
+rect 6026 -143 6032 -112
+rect 3916 -177 3937 -143
+rect 6020 -177 6032 -143
+rect 3916 -208 3931 -177
+rect 6026 -208 6032 -177
+rect 6054 -143 6060 -112
+rect 6054 -177 6066 -143
+rect 6054 -208 6060 -177
+rect 3888 -690 3903 -659
+rect 3882 -724 3903 -690
+rect 3888 -755 3903 -724
+rect 3916 -687 3931 -656
+rect 6026 -687 6032 -656
+rect 3916 -721 3937 -687
+rect 6020 -721 6032 -687
+rect 3916 -752 3931 -721
+rect 6026 -752 6032 -721
+rect 6054 -687 6060 -656
+rect 6054 -721 6066 -687
+rect 6054 -752 6060 -721
+rect 4536 -1246 4551 -1215
+rect 4530 -1280 4551 -1246
+rect 4536 -1311 4551 -1280
+rect 4564 -1243 4579 -1212
+rect 6674 -1243 6680 -1212
+rect 4564 -1277 4585 -1243
+rect 6668 -1277 6680 -1243
+rect 4564 -1308 4579 -1277
+rect 6674 -1308 6680 -1277
+rect 6702 -1243 6708 -1212
+rect 6702 -1277 6714 -1243
+rect 6702 -1308 6708 -1277
+rect 4536 -1790 4551 -1759
+rect 4530 -1824 4551 -1790
+rect 4536 -1855 4551 -1824
+rect 4564 -1787 4579 -1756
+rect 6674 -1787 6680 -1756
+rect 4564 -1821 4585 -1787
+rect 6668 -1821 6680 -1787
+rect 4564 -1852 4579 -1821
+rect 6674 -1852 6680 -1821
+rect 6702 -1787 6708 -1756
+rect 6702 -1821 6714 -1787
+rect 6702 -1852 6708 -1821
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+use ripple_dly_4  x1
+timestamp 1712071977
+transform 1 0 1010 0 1 -76
+box 0 -2000 7198 200
+use ripple_dly_4  x2
+timestamp 1712071977
+transform 1 0 1658 0 1 -1176
+box 0 -2000 7198 200
+use sky130_fd_sc_hd__a221o_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1707688321
+transform 1 0 1139 0 1 547
+box -38 -48 774 592
+use sky130_fd_sc_hd__einvn_0  x5 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1707688321
+transform 1 0 1915 0 1 499
+box -38 -48 406 592
+use sky130_fd_pr__nfet_01v8_AHZR5K  XM3
+timestamp 1712071977
+transform 1 0 543 0 1 807
+box -596 -260 596 260
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 128 0 0 0 dvdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 128 0 0 0 dvss
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 128 0 0 0 clkin
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 128 0 0 0 clkout
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 128 0 0 0 ena
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 128 0 0 0 ena_b
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 128 0 0 0 stby
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 128 0 0 0 stby_b
+port 7 nsew
+<< end >>

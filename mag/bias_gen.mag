@@ -1,0 +1,71 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1712073863
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+use sky130_fd_pr__cap_mim_m3_1_VKJSDZ  XC1
+timestamp 1712073863
+transform -1 0 8068 0 1 9300
+box -7398 -4720 7398 4720
+use sky130_fd_pr__cap_mim_m3_1_BNHTNG  XC2
+timestamp 1712071977
+transform 1 0 12134 0 1 804
+box -2186 -2040 2186 2040
+use sky130_fd_pr__cap_mim_m3_1_F9QPB9  XC3
+timestamp 1712073863
+transform -1 0 5274 0 1 510
+box -4092 -3920 4092 3920
+use sky130_fd_pr__nfet_g5v0d10v5_WVW7CW  XM1
+timestamp 1712071977
+transform 1 0 3859 0 1 788
+box -428 -658 428 658
+use sky130_fd_pr__nfet_g5v0d10v5_FSM8CU  XM2
+timestamp 1712073863
+transform 1 0 6232 0 1 768
+box -1115 -658 1115 658
+use sky130_fd_pr__pfet_g5v0d10v5_4778VV  XM3
+timestamp 1712071977
+transform 1 0 6053 0 1 2785
+box -458 -697 458 697
+use sky130_fd_pr__pfet_g5v0d10v5_4778VV  XM4
+timestamp 1712071977
+transform 1 0 3867 0 1 2825
+box -458 -697 458 697
+use sky130_fd_pr__nfet_g5v0d10v5_69TNYL  XM5
+timestamp 1712071977
+transform 1 0 13330 0 1 2068
+box -328 -358 328 358
+use sky130_fd_pr__nfet_g5v0d10v5_HZ2NJE  XM6
+timestamp 1712071977
+transform 1 0 11532 0 1 2198
+box -1028 -300 1028 300
+use sky130_fd_pr__nfet_g5v0d10v5_HZ2NJE  XM7
+timestamp 1712071977
+transform 1 0 11552 0 1 1552
+box -1028 -300 1028 300
+use sky130_fd_pr__nfet_g5v0d10v5_HZ2NJE  XM8
+timestamp 1712071977
+transform 1 0 11656 0 1 -654
+box -1028 -300 1028 300
+use sky130_fd_pr__res_xhigh_po_0p35_TYVJNV  XR2
+timestamp 1712071977
+transform 1 0 5994 0 1 9272
+box -4268 -4582 4268 4582
+use sky130_fd_pr__res_xhigh_po_0p35_6A4GVA  XR3
+timestamp 1712071977
+transform 1 0 6247 0 1 -1798
+box -1363 -1582 1363 1582
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 128 0 0 0 avdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 128 0 0 0 vbreg
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 128 0 0 0 xin
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 128 0 0 0 avss
+port 3 nsew
+<< end >>

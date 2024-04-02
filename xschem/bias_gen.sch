@@ -187,8 +187,8 @@ L=150
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -100 -10 0 0 {name=C3 model=cap_mim_m3_1 W=25 L=25 MF=2 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -310 -80 3 0 {name=C1 model=cap_mim_m3_1 W=25 L=25 MF=5 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -100 -10 0 0 {name=C3 model=cap_mim_m3_1 W=18 L=18 MF=4 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -310 -80 3 0 {name=C1 model=cap_mim_m3_1 W=22 L=22 MF=6 spiceprefix=X}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 310 -80 0 0 {name=M5
 W=1
 L=1

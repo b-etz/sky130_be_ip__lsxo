@@ -79,7 +79,7 @@ lab=avdd_ip}
 N 430 -290 430 -260 {
 lab=avss_ip}
 N 910 -680 910 -650 {
-lab=#net1}
+lab=ibias}
 N 1160 -430 1240 -430 {
 lab=dout_ip}
 N 1240 -430 1240 -200 {
@@ -104,10 +104,14 @@ N 1500 -320 1500 -300 {
 lab=dvss_ip}
 N 1500 -500 1500 -480 {
 lab=dvdd_ip}
-N 910 -810 910 -680 {}
-N 910 -620 910 -580 {}
-N 910 -580 1030 -580 {}
-N 1030 -580 1030 -480 {}
+N 910 -810 910 -680 {
+lab=ibias}
+N 910 -620 910 -580 {
+lab=#net1}
+N 910 -580 1030 -580 {
+lab=#net1}
+N 1030 -580 1030 -480 {
+lab=#net1}
 C {devices/iopin.sym} 90 -820 0 0 {name=p1 lab=avdd}
 C {devices/opin.sym} 100 -640 0 0 {name=p3 lab=dout}
 C {devices/iopin.sym} 90 -800 0 0 {name=p4 lab=avss}
@@ -260,18 +264,18 @@ C {devices/lab_pin.sym} 250 -410 2 0 {name=p35 sig_type=std_logic lab=avss_ip}
 C {devices/lab_pin.sym} 250 -510 2 0 {name=p37 sig_type=std_logic lab=avdd_ip}
 C {devices/lab_pin.sym} 590 -420 2 0 {name=p38 sig_type=std_logic lab=avdd_ip}
 C {devices/lab_pin.sym} 590 -320 2 0 {name=p43 sig_type=std_logic lab=avss_ip}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 590 -370 0 0 {name=C1 model=cap_mim_m3_2 W=10 L=10 MF=2 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 590 -370 0 0 {name=C1 model=cap_mim_m3_1 W=7 L=7 MF=4 spiceprefix=X}
 C {devices/lab_pin.sym} 1070 -510 2 0 {name=p46 sig_type=std_logic lab=dvdd_ip}
 C {devices/lab_pin.sym} 1070 -240 2 0 {name=p47 sig_type=std_logic lab=dvss_ip}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 790 -370 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=30 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 790 -370 0 0 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=32 spiceprefix=X}
 C {devices/lab_pin.sym} 790 -420 2 0 {name=p52 sig_type=std_logic lab=dvdd_ip}
 C {devices/lab_pin.sym} 790 -320 2 0 {name=p53 sig_type=std_logic lab=dvss_ip}
 C {devices/lab_pin.sym} 710 -650 2 0 {name=p54 sig_type=std_logic lab=ena_b}
 C {devices/lab_pin.sym} 1390 -650 2 0 {name=p55 sig_type=std_logic lab=standby_b}
 C {devices/lab_pin.sym} 740 -810 2 0 {name=p56 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 740 -710 2 0 {name=p57 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 740 -760 0 0 {name=C3 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1420 -760 0 0 {name=C4 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 740 -760 0 0 {name=C3 model=cap_mim_m3_1 W=10 L=10 MF=4 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1420 -760 0 0 {name=C4 model=cap_mim_m3_1 W=10 L=10 MF=4 spiceprefix=X}
 C {devices/lab_pin.sym} 1420 -810 2 0 {name=p58 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1420 -710 2 0 {name=p59 sig_type=std_logic lab=dvss}
 C {ripl_dly_clk_buf.sym} 1370 -160 0 0 {name=x7}
