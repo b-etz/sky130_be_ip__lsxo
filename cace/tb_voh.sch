@@ -104,6 +104,7 @@ let Voh_rel = Voh_abs-\{Vdvdd\}
 
 set wr_singlescale
 wrdata \{simpath\}/\{filename\}_\{N\}.data Voh_rel
+*echo $&Voh_rel > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}

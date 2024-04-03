@@ -102,6 +102,7 @@ let Tdelta=tstop-tstart
 
 set wr_singlescale
 wrdata \{simpath\}/\{filename\}_\{N\}.data Tdelta
+*echo $&Tdelta > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}

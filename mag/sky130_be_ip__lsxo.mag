@@ -1,7 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1712088150
+timestamp 1712110069
+<< error_s >>
+rect 2022 -1705 2374 -1384
+rect 2090 -6733 2442 -6412
 << metal1 >>
 rect 0 0 200 200
 rect 0 -400 200 -200
@@ -22,13 +25,13 @@ timestamp 1707688321
 transform 1 0 2128 0 1 -6994
 box -38 -48 314 592
 use level_shift  x3
-timestamp 1712071977
+timestamp 1712110069
 transform 1 0 3450 0 1 -836
-box 0 -2800 3195 480
+box 642 -2246 3370 246
 use level_shift  x4
-timestamp 1712071977
+timestamp 1712110069
 transform 1 0 3306 0 1 -5912
-box 0 -2800 3195 480
+box 642 -2246 3370 246
 use bias_gen  x5
 timestamp 1712073863
 transform 1 0 22450 0 1 -13914

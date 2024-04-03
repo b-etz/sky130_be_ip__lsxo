@@ -7,7 +7,7 @@ S {}
 E {}
 T {I/O Pads 
 / ESD} 540 -460 0 0 0.2 0.2 {}
-T {** Uses 10nA .ic for crystal motional inductance} 970 -80 0 0 0.4 0.4 {}
+T {** Uses 10nA .ic for crystal motional inductance} 970 -70 0 0 0.4 0.4 {}
 N 600 -100 620 -100 {
 lab=#net1}
 N 620 -150 620 -100 {
@@ -134,6 +134,7 @@ let duty=vavg/\{Vdvdd\}
 
 set wr_singlescale
 wrdata \{simpath\}/\{filename\}_\{N\}.data duty
+*echo $&duty > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}

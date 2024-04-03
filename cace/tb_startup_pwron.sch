@@ -130,6 +130,7 @@ meas tran tstart WHEN v(dout)=vmid TD=0.5m CROSS=3
 
 set wr_singlescale
 wrdata \{simpath\}/\{filename\}_\{N\}.data tstart
+*echo $&tstart > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}

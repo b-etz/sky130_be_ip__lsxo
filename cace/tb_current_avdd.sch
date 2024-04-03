@@ -126,7 +126,9 @@ C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 980 -310 0 0 {name=CONTROL only_toplevel=false value=".control
 tran 500p 10u
 set wr_singlescale
-wrdata \{simpath\}/\{filename\}_\{N\}.data mean(-I(Vavdd))
+let avgI = mean(-I(Vavdd))
+wrdata \{simpath\}/\{filename\}_\{N\}.data avgI
+*echo $&avgI > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}

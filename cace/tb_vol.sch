@@ -104,6 +104,7 @@ let Vol_rel = Vol_abs-\{Vdvss\}
 
 set wr_singlescale
 wrdata \{simpath\}/\{filename\}_\{N\}.data Vol_rel
+*echo $&Vol_rel > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}
