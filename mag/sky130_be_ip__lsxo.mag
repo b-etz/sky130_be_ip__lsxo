@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1712250795
+timestamp 1712511904
 << metal1 >>
 rect 0 0 200 200
 rect 0 -400 200 -200
@@ -22,13 +22,13 @@ timestamp 1707688321
 transform 0 1 9098 -1 0 -780
 box -38 -48 314 592
 use level_shift  x3
-timestamp 1712203273
+timestamp 1712511643
 transform 0 1 4250 -1 0 -1190
-box 590 -2390 6048 318
+box 652 -1950 5670 -128
 use level_shift  x4
-timestamp 1712203273
-transform 0 1 10034 -1 0 -1300
-box 590 -2390 6048 318
+timestamp 1712511643
+transform 0 -1 4086 -1 0 -1188
+box 652 -1950 5670 -128
 use bias_gen  x5
 timestamp 1712250795
 transform 1 0 1962 0 1 -15524
@@ -45,10 +45,10 @@ use sky130_fd_pr__cap_mim_m3_1_KAF84V  XC1
 timestamp 1712073300
 transform -1 0 17850 0 -1 -24526
 box -886 -3440 886 3440
-use sky130_fd_pr__cap_mim_m3_1_4HQTN9  XC2
-timestamp 1712250795
-transform 1 0 35696 0 1 -22570
-box -10328 -4640 10328 4640
+use sky130_fd_pr__cap_mim_m3_1_4HJTN9  XC2
+timestamp 1712437813
+transform 1 0 33062 0 1 -21822
+box -7716 -4640 7716 4640
 use sky130_fd_pr__cap_mim_m3_1_4DMTN9  XC3
 timestamp 1712250795
 transform 1 0 12064 0 1 -6736
@@ -59,7 +59,7 @@ transform 0 -1 42836 1 0 -10682
 box -1186 -4640 1186 4640
 use sky130_fd_pr__nfet_g5v0d10v5_MHWJF7  XM1
 timestamp 1712250795
-transform 1 0 20755 0 1 -24648
+transform 1 0 20755 0 1 -24504
 box -989 -658 989 658
 use sky130_fd_pr__pfet_g5v0d10v5_28EAA9  XM2
 timestamp 1712250795
@@ -97,10 +97,10 @@ use sky130_fd_pr__nfet_01v8_Y5BWKS  XM11
 timestamp 1712087189
 transform 1 0 16360 0 1 -4521
 box -562 -1119 562 1119
-use sky130_fd_pr__res_xhigh_po_0p35_B8TXHM  XR2
-timestamp 1712250795
-transform 0 1 12056 -1 0 -27744
-box -2276 -10582 2276 10582
+use sky130_fd_pr__res_xhigh_po_0p35_27M88N  XR2
+timestamp 1712437813
+transform 0 1 12474 -1 0 -27691
+box -2359 -10982 2359 10982
 << labels >>
 flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 avdd
 port 0 nsew
