@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1712511643
+timestamp 1712539951
 << viali >>
 rect 2726 -412 3746 -378
 rect 750 -512 1316 -478
@@ -130,15 +130,7 @@ rect 5042 -1630 5052 -1450
 rect 4832 -1640 5052 -1630
 rect 5190 -1620 5228 -596
 rect 5262 -1620 5370 -460
-rect 5430 -448 5670 -438
-rect 5430 -628 5438 -448
-rect 5658 -628 5670 -448
-rect 5430 -638 5670 -628
 rect 5190 -1680 5370 -1620
-rect 5430 -1450 5670 -1440
-rect 5430 -1630 5438 -1450
-rect 5658 -1630 5670 -1450
-rect 5430 -1640 5670 -1630
 rect 3912 -1950 5370 -1680
 << via1 >>
 rect 1180 -782 1464 -694
@@ -153,8 +145,6 @@ rect 4240 -628 4440 -448
 rect 4248 -1230 4428 -850
 rect 4852 -1228 5032 -848
 rect 4842 -1630 5042 -1450
-rect 5438 -628 5658 -448
-rect 5438 -1630 5658 -1450
 << metal2 >>
 rect 3742 -448 5670 -438
 rect 1854 -458 3668 -452
@@ -172,8 +162,7 @@ rect 3742 -588 4240 -448
 rect 2936 -594 4240 -588
 rect 2936 -778 2944 -594
 rect 3526 -628 4240 -594
-rect 4440 -628 5438 -448
-rect 5658 -628 5670 -448
+rect 4440 -628 5670 -448
 rect 3526 -638 5670 -628
 rect 3526 -778 3942 -638
 rect 2936 -788 3942 -778
@@ -204,8 +193,7 @@ rect 3662 -1622 3668 -1528
 rect 1822 -1628 3668 -1622
 rect 1822 -1950 2074 -1628
 rect 3742 -1630 4842 -1492
-rect 5042 -1630 5438 -1450
-rect 5658 -1630 5670 -1450
+rect 5042 -1630 5670 -1450
 rect 3742 -1640 5670 -1630
 use sky130_fd_pr__nfet_01v8_69TQ3K  XM1
 timestamp 1712071977
@@ -232,20 +220,20 @@ timestamp 1712071977
 transform 0 1 4943 -1 0 -1040
 box -658 -397 658 397
 << labels >>
-flabel metal2 5430 -638 5670 -438 0 FreeSans 800 0 0 0 out_b
-port 21 nsew
-flabel metal2 5430 -1640 5670 -1440 0 FreeSans 800 0 0 0 out
-port 22 nsew
 flabel metal1 2580 -1950 3852 -1702 0 FreeSans 800 0 0 0 avss
-port 23 nsew
+port 3 nsew
 flabel metal1 3912 -400 5370 -128 0 FreeSans 800 0 0 0 avdd
-port 24 nsew
+port 2 nsew
 flabel metal1 652 -1950 1418 -1598 0 FreeSans 800 0 0 0 dvss
-port 25 nsew
+port 11 nsew
 flabel metal1 652 -478 1434 -128 0 FreeSans 800 0 0 0 dvdd
-port 26 nsew
+port 12 nsew
 flabel metal1 652 -1356 900 -972 0 FreeSans 800 0 0 0 in
-port 27 nsew
+port 1 nsew
 flabel metal2 1822 -1950 2072 -1700 0 FreeSans 800 0 0 0 in_b
-port 28 nsew
+port 6 nsew
+flabel metal2 4440 -638 5670 -438 0 FreeSans 800 0 0 0 out_b
+port 10 nsew
+flabel metal2 5042 -1640 5670 -1440 0 FreeSans 800 0 0 0 out
+port 9 nsew
 << end >>

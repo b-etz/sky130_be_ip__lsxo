@@ -128,7 +128,6 @@ C {devices/lab_pin.sym} 710 -610 2 0 {name=p13 sig_type=std_logic lab=ena_b_33}
 C {devices/lab_pin.sym} 710 -630 2 0 {name=p14 sig_type=std_logic lab=ena_33}
 C {devices/lab_pin.sym} 1280 -690 0 0 {name=p15 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1300 -690 2 0 {name=p16 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 1390 -610 2 0 {name=p17 sig_type=std_logic lab=standby_b_33}
 C {devices/lab_pin.sym} 1390 -630 2 0 {name=p18 sig_type=std_logic lab=standby_33}
 C {devices/lab_pin.sym} 520 -630 0 0 {name=p19 sig_type=std_logic lab=ena_ip}
 C {devices/lab_pin.sym} 1200 -630 0 0 {name=p20 sig_type=std_logic lab=standby_ip}
@@ -345,3 +344,4 @@ C {devices/lab_pin.sym} 1290 -810 2 0 {name=p74 sig_type=std_logic lab=standby_i
 C {sky130_stdcells/buf_1.sym} 1250 -810 0 0 {name=x2 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {devices/noconn.sym} 1240 -160 0 0 {name=l2}
 C {devices/noconn.sym} 710 -650 2 0 {name=l3}
+C {devices/noconn.sym} 1390 -610 2 0 {name=l4}

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1712087189
+timestamp 1712544943
 << metal1 >>
 rect 436 61 536 161
 rect 2344 -48 2444 52
@@ -10,13 +10,13 @@ rect 444 -812 544 -712
 rect 489 -1031 589 -931
 rect 2349 -1523 2449 -1423
 use ripple_dly_4  x1
-timestamp 1712087189
+timestamp 1712544943
 transform 1 0 505 0 1 -38
-box 122 -727 3753 -178
+box 116 -613 3637 -293
 use ripple_dly_4  x2
-timestamp 1712087189
+timestamp 1712544943
 transform 1 0 506 0 -1 -1542
-box 122 -727 3753 -178
+box 116 -613 3637 -293
 use sky130_fd_sc_hd__a221o_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1707688321
 transform 1 0 708 0 1 3
