@@ -19,9 +19,9 @@ T {Copyright 2024 Brady Etz
    See the License for the specific language governing permissions and
    limitations under the License.} -320 100 0 0 0.2 0.2 {}
 N 140 -50 200 -50 {
-lab=#net1}
+lab=clkout}
 N 200 -50 200 10 {
-lab=#net1}
+lab=clkout}
 N 200 40 200 70 {
 lab=dvss}
 N -80 -10 60 -10 {
@@ -67,11 +67,11 @@ C {devices/ipin.sym} -250 -160 0 0 {name=p8 lab=stby_b}
 C {devices/noconn.sym} 190 -300 2 0 {name=l1}
 C {devices/noconn.sym} 190 -170 2 0 {name=l2}
 C {sky130_stdcells/a221o_1.sym} -160 -10 0 0 {name=x3 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} -240 -90 0 0 {name=p9 sig_type=std_logic lab=ena}
-C {devices/lab_pin.sym} -240 -10 0 0 {name=p10 sig_type=std_logic lab=stby_b}
+C {devices/lab_pin.sym} -240 -10 0 0 {name=p9 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} -240 -90 0 0 {name=p10 sig_type=std_logic lab=stby_b}
 C {devices/lab_pin.sym} -240 70 0 0 {name=p11 sig_type=std_logic lab=stby}
-C {devices/lab_pin.sym} -240 -50 0 0 {name=p12 sig_type=std_logic lab=ena_done_b}
-C {devices/lab_pin.sym} -240 30 0 0 {name=p13 sig_type=std_logic lab=stby_done_b}
+C {devices/lab_pin.sym} -240 30 0 0 {name=p12 sig_type=std_logic lab=ena_done_b}
+C {devices/lab_pin.sym} -240 -50 0 0 {name=p13 sig_type=std_logic lab=stby_done_b}
 C {devices/lab_pin.sym} 80 -210 0 0 {name=p14 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 80 -340 0 0 {name=p15 sig_type=std_logic lab=dvdd}
 C {ripple_dly_4.sym} 80 -160 0 0 {name=x2}

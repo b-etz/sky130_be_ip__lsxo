@@ -178,7 +178,7 @@ C {devices/lab_pin.sym} -40 -80 3 0 {name=p5 sig_type=std_logic lab=vg2}
 C {devices/lab_pin.sym} 10 -30 2 0 {name=p8 sig_type=std_logic lab=vrb}
 C {devices/lab_pin.sym} -240 -60 2 0 {name=p10 sig_type=std_logic lab=vg1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} -150 -80 3 0 {name=R2
-L=2000
+L=1955
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
