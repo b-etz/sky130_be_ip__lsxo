@@ -1,10 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1712853061
-<< error_s >>
-rect 18180 -11534 18222 -11460
-rect 18240 -11474 18282 -11400
+timestamp 1712855660
 << dnwell >>
 rect 1646 -8966 6654 -3564
 << nwell >>
@@ -299,6 +296,46 @@ rect 3782 -8134 3902 -8054
 rect 4098 -8134 4218 -8054
 rect 4414 -8134 4534 -8054
 rect 3782 -8334 4534 -8134
+use sky130_fd_pr__cap_mim_m3_1_6BRTNB  amp_XC1
+timestamp 1712854380
+transform 0 1 14842 -1 0 -7212
+box -2492 -6960 2492 6960
+use sky130_fd_pr__nfet_g5v0d10v5_554GUR  amp_XM1_2
+timestamp 1712854380
+transform 1 0 12515 0 1 -5116
+box -2031 -458 2031 458
+use sky130_fd_pr__pfet_01v8_T2YKL7  amp_XM3_5
+timestamp 1712854380
+transform 1 0 22729 0 1 -4817
+box -1083 -619 1083 619
+use sky130_fd_pr__nfet_01v8_8DG47J  amp_XM4_18
+timestamp 1712854380
+transform 1 0 22683 0 1 -6264
+box -1083 -610 1083 610
+use sky130_fd_pr__pfet_01v8_ED4X7U  amp_XM6_8
+timestamp 1712854380
+transform 0 1 9383 -1 0 -7765
+box -1825 -269 1825 269
+use sky130_fd_pr__nfet_01v8_YD343X  amp_XM7_9
+timestamp 1712854380
+transform 0 1 8460 -1 0 -7811
+box -1825 -260 1825 260
+use sky130_fd_pr__pfet_01v8_8D4V8N  amp_XM10_12
+timestamp 1712854380
+transform 1 0 19605 0 1 -6629
+box -425 -383 425 383
+use sky130_fd_pr__nfet_01v8_U59KY9  amp_XM11_13
+timestamp 1712854380
+transform 1 0 18395 0 1 -6669
+box -425 -365 425 365
+use sky130_fd_pr__pfet_g5v0d10v5_QS5HKK  amp_XM16_17
+timestamp 1712854380
+transform 1 0 12453 0 1 -6501
+box -2061 -761 2061 761
+use sky130_fd_pr__res_xhigh_po_0p35_BDKUVN  amp_XR1
+timestamp 1712855660
+transform 0 1 20746 -1 0 -8636
+box -1114 -10582 1114 10582
 use sky130_fd_pr__cap_mim_m3_1_VMUSDZ  bias_XC1
 timestamp 1712851378
 transform 0 -1 11090 1 0 -21394
@@ -347,10 +384,6 @@ use level_shift  x4
 timestamp 1712539951
 transform 0 -1 4086 -1 0 -1190
 box 652 -1950 5670 -128
-use dout_amp  x6
-timestamp 1712853061
-transform 1 0 21710 0 1 -42
-box -3470 -11500 16982 -608
 use ripl_dly_clk_buf  x7
 timestamp 1712693559
 transform 1 0 11856 0 1 -1322
@@ -361,7 +394,7 @@ transform 0 -1 14782 1 0 -12346
 box -886 -3440 886 3440
 use sky130_fd_pr__cap_mim_m3_1_4RGTN9  XC2
 timestamp 1712848480
-transform 1 0 43672 0 1 -12306
+transform 1 0 27110 0 1 -9190
 box -3798 -9280 3798 9280
 use sky130_fd_pr__cap_mim_m3_1_3DMTNZ  XC3
 timestamp 1712540964
@@ -381,11 +414,11 @@ transform 0 1 21701 -1 0 -13881
 box -2061 -1161 2061 1161
 use sky130_fd_pr__nfet_01v8_AHZR5K  XM3
 timestamp 1712071977
-transform 1 0 13606 0 1 -3976
+transform 1 0 13450 0 1 -3622
 box -596 -260 596 260
 use sky130_fd_pr__nfet_01v8_HZ6WG7  XM4
 timestamp 1712071977
-transform 1 0 20516 0 1 -5497
+transform 1 0 21986 0 1 -1371
 box -296 -285 296 285
 use sky130_fd_pr__nfet_g5v0d10v5_ZPGQJT  XM5
 timestamp 1712087189
@@ -397,7 +430,7 @@ transform 1 0 4238 0 -1 -7655
 box -624 -697 624 697
 use sky130_fd_pr__pfet_01v8_3H68VM  XM7
 timestamp 1712071977
-transform 1 0 20534 0 1 -4461
+transform 0 1 23155 -1 0 -1360
 box -296 -619 296 619
 use sky130_fd_pr__pfet_01v8_EDP4SU  XM8
 timestamp 1712694485

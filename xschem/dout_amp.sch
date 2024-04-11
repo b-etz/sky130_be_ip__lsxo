@@ -275,10 +275,10 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1070 -390 1 0 {name=p14 sig_type=std_logic lab=inv_m1}
 C {sky130_fd_pr/pfet_01v8.sym} 1310 -500 0 0 {name=M12
-W=1
+W=0.5
 L=1
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -289,10 +289,10 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1310 -340 0 0 {name=M13
-W=1
+W=0.5
 L=1
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
