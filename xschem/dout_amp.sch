@@ -316,10 +316,10 @@ C {devices/lab_pin.sym} 1250 -530 1 0 {name=p13 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 1240 -310 3 0 {name=p6 sig_type=std_logic lab=dvss}
 C {devices/ipin.sym} 190 -530 0 0 {name=p11 lab=xout}
 C {sky130_fd_pr/pfet_01v8.sym} 570 -530 0 0 {name=M16
-W=4
+W=2
 L=2
 nf=1
-mult=5
+mult=10
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

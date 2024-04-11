@@ -188,7 +188,7 @@ model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/cap_mim_m3_1.sym} -100 -10 0 0 {name=C3 model=cap_mim_m3_1 W=18 L=18 MF=4 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} -310 -80 3 0 {name=C1 model=cap_mim_m3_1 W=22 L=22 MF=6 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -310 -80 3 0 {name=C1 model=cap_mim_m3_1 W=22 L=22 MF=5 spiceprefix=X}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 310 -80 0 0 {name=M5
 W=1
 L=1
@@ -204,7 +204,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 200 -180 1 0 {name=p12 sig_type=std_logic lab=vbreg}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 330 -240 0 0 {name=C2 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 330 -240 0 0 {name=C2 model=cap_mim_m3_1 W=16 L=25 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 220 -150 0 1 {name=M6
 W=0.42
 L=8

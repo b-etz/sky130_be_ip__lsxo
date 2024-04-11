@@ -1,71 +1,8 @@
 magic
 tech sky130A
-magscale 1 2
-timestamp 1712250795
-<< metal1 >>
-rect 0 0 200 200
-rect 0 -400 200 -200
-rect 0 -800 200 -600
-rect 0 -1200 200 -1000
-use sky130_fd_pr__res_xhigh_po_0p35_PHRY4S  sky130_fd_pr__res_xhigh_po_0p35_PHRY4S_0
-timestamp 1712250795
-transform 0 1 8150 -1 0 -7419
-box -2193 -8582 2193 8582
+timestamp 1712849042
 use sky130_fd_pr__cap_mim_m3_1_VKJSDZ  XC1
 timestamp 1712073863
-transform -1 0 6954 0 1 -9760
-box -7398 -4720 7398 4720
-use sky130_fd_pr__cap_mim_m3_1_BNHTNG  XC2
-timestamp 1712071977
-transform 1 0 1738 0 1 1216
-box -2186 -2040 2186 2040
-use sky130_fd_pr__cap_mim_m3_1_FX2QB9  XC3
-timestamp 1712250795
-transform -1 0 7854 0 1 -2974
-box -8304 -1840 8304 1840
-use sky130_fd_pr__nfet_g5v0d10v5_WVW7CW  XM1
-timestamp 1712071977
-transform 1 0 4778 0 1 -218
-box -428 -658 428 658
-use sky130_fd_pr__nfet_g5v0d10v5_FSM8CU  XM2
-timestamp 1712073863
-transform 1 0 6191 0 1 -218
-box -1115 -658 1115 658
-use sky130_fd_pr__pfet_g5v0d10v5_4778VV  XM3
-timestamp 1712071977
-transform 1 0 6076 0 1 1309
-box -458 -697 458 697
-use sky130_fd_pr__pfet_g5v0d10v5_4778VV  XM4
-timestamp 1712071977
-transform 1 0 5350 0 1 1309
-box -458 -697 458 697
-use sky130_fd_pr__nfet_g5v0d10v5_69TNYL  XM5
-timestamp 1712071977
-transform 1 0 13330 0 1 2068
-box -328 -358 328 358
-use sky130_fd_pr__nfet_g5v0d10v5_HZ2NJE  XM6
-timestamp 1712071977
-transform 0 1 11324 -1 0 210
-box -1028 -300 1028 300
-use sky130_fd_pr__nfet_g5v0d10v5_HZ2NJE  XM7
-timestamp 1712071977
-transform 0 1 10854 -1 0 210
-box -1028 -300 1028 300
-use sky130_fd_pr__nfet_g5v0d10v5_HZ2NJE  XM8
-timestamp 1712071977
-transform 0 1 10384 -1 0 210
-box -1028 -300 1028 300
-use sky130_fd_pr__res_xhigh_po_0p35_Z3RFMK  XR3
-timestamp 1712250795
-transform 0 1 7444 -1 0 -4451
-box -367 -5582 367 5582
-<< labels >>
-flabel metal1 0 0 200 200 0 FreeSans 128 0 0 0 avdd
-port 0 nsew
-flabel metal1 0 -400 200 -200 0 FreeSans 128 0 0 0 vbreg
-port 1 nsew
-flabel metal1 0 -800 200 -600 0 FreeSans 128 0 0 0 xin
-port 2 nsew
-flabel metal1 0 -1200 200 -1000 0 FreeSans 128 0 0 0 avss
-port 3 nsew
+transform -1 0 3477 0 1 -4880
+box -3699 -2360 3699 2360
 << end >>

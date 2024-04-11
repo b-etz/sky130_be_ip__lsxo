@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1712544943
+timestamp 1712693559
 << locali >>
 rect 232 -792 432 -788
 rect 232 -936 238 -792
@@ -131,19 +131,19 @@ rect 4308 -1060 4458 -1046
 rect 6426 -1062 6576 -1046
 rect 232 -1176 432 -1136
 use sky130_fd_sc_hd__and2_0  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1707688321
+timestamp 1712500979
 transform 1 0 346 0 1 -1178
 box -38 -48 498 592
 use sky130_fd_sc_hd__dfrbp_1  x2 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1707688321
+timestamp 1712500979
 transform 1 0 806 0 1 -1178
 box -38 -48 2154 592
 use sky130_fd_sc_hd__dfrbp_1  x3
-timestamp 1707688321
+timestamp 1712500979
 transform 1 0 2922 0 1 -1178
 box -38 -48 2154 592
 use sky130_fd_sc_hd__dfrbp_1  x4
-timestamp 1707688321
+timestamp 1712500979
 transform 1 0 5038 0 1 -1178
 box -38 -48 2154 592
 << labels >>
