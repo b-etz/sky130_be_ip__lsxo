@@ -204,7 +204,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 200 -180 1 0 {name=p12 sig_type=std_logic lab=vbreg}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 330 -240 0 0 {name=C2 model=cap_mim_m3_1 W=16 L=25 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 330 -240 0 0 {name=C2 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 220 -150 0 1 {name=M6
 W=0.42
 L=8
