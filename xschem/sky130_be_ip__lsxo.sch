@@ -175,7 +175,7 @@ C {devices/lab_pin.sym} 1070 -90 2 0 {name=p33 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 950 -440 0 0 {name=p36 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 910 -810 2 0 {name=p42 sig_type=std_logic lab=ibias}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 290 -320 2 0 {name=R2
-L=2600
+L=2530
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1
@@ -266,7 +266,7 @@ C {devices/lab_pin.sym} 590 -320 2 0 {name=p43 sig_type=std_logic lab=avss_ip}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 590 -370 0 0 {name=C1 model=cap_mim_m3_1 W=7 L=7 MF=4 spiceprefix=X}
 C {devices/lab_pin.sym} 1070 -510 2 0 {name=p46 sig_type=std_logic lab=dvdd_ip}
 C {devices/lab_pin.sym} 1070 -240 2 0 {name=p47 sig_type=std_logic lab=dvss_ip}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 790 -370 0 0 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=24 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 790 -370 0 0 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=21 spiceprefix=X}
 C {devices/lab_pin.sym} 790 -420 2 0 {name=p52 sig_type=std_logic lab=dvdd_ip}
 C {devices/lab_pin.sym} 790 -320 2 0 {name=p53 sig_type=std_logic lab=dvss_ip}
 C {devices/lab_pin.sym} 1390 -650 2 0 {name=p55 sig_type=std_logic lab=standby_b}
