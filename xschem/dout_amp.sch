@@ -241,7 +241,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 770 -190 1 0 {name=p10 sig_type=std_logic lab=dvdd}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 920 -130 3 0 {name=R1
-L=1000
+L=990
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}

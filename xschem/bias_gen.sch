@@ -114,6 +114,20 @@ N 240 -150 240 -90 {
 lab=icnode}
 N 200 -60 200 -20 {
 lab=#net1}
+N 90 130 110 130 {
+lab=avss}
+N 90 130 90 160 {
+lab=avss}
+N 90 160 90 190 {
+lab=avss}
+N 90 190 110 190 {
+lab=avss}
+N 110 130 270 130 {
+lab=avss}
+N 110 190 270 190 {
+lab=avss}
+N 250 160 250 190 {
+lab=avss}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} -10 -80 0 0 {name=M2
 W=4
 L=2
@@ -178,7 +192,7 @@ C {devices/lab_pin.sym} -40 -80 3 0 {name=p5 sig_type=std_logic lab=vg2}
 C {devices/lab_pin.sym} 10 -30 2 0 {name=p8 sig_type=std_logic lab=vrb}
 C {devices/lab_pin.sym} -240 -60 2 0 {name=p10 sig_type=std_logic lab=vg1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} -150 -80 3 0 {name=R2
-L=1955
+L=1968
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -251,3 +265,14 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 170 -90 0 0 {name=p11 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 110 160 0 0 {name=RD1
+L=164
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/lab_pin.sym} 90 160 0 0 {name=p13 sig_type=std_logic lab=avss}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 270 160 0 0 {name=RD2
+L=150
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1}
