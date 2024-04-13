@@ -112,6 +112,16 @@ N 910 -580 1030 -580 {
 lab=#net1}
 N 1030 -580 1030 -480 {
 lab=#net1}
+N 650 -180 670 -180 {
+lab=avss_ip}
+N 670 -180 670 -150 {
+lab=avss_ip}
+N 670 -150 670 -120 {
+lab=avss_ip}
+N 650 -120 670 -120 {
+lab=avss_ip}
+N 810 -180 810 -120 {
+lab=#net2}
 C {devices/iopin.sym} 90 -820 0 0 {name=p1 lab=avdd}
 C {devices/opin.sym} 100 -640 0 0 {name=p3 lab=dout}
 C {devices/iopin.sym} 90 -800 0 0 {name=p4 lab=avss}
@@ -345,3 +355,26 @@ C {sky130_stdcells/buf_1.sym} 1250 -810 0 0 {name=x2 VGND=dvss VNB=dvss VPB=dvdd
 C {devices/noconn.sym} 1240 -160 0 0 {name=l2}
 C {devices/noconn.sym} 710 -650 2 0 {name=l3}
 C {devices/noconn.sym} 1390 -610 2 0 {name=l4}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 650 -150 2 0 {name=RD1
+L=220
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1
+lab=avss_ip}
+C {devices/lab_pin.sym} 670 -150 2 0 {name=p17 sig_type=std_logic lab=avss_ip}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 790 -150 0 0 {name=MD1
+W=4
+L=0.5
+nf=1
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 770 -150 3 0 {name=p54 sig_type=std_logic lab=xin}
+C {devices/lab_pin.sym} 810 -120 3 0 {name=p65 sig_type=std_logic lab=avss_ip}
