@@ -7,4 +7,4 @@ cace/*.spice
 plots/*
 spice/*
 netlist/*
-
+mag/cleanup_unref.py
