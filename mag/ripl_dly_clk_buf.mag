@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1713144909
+timestamp 1713146481
 << psubdiff >>
 rect 236 -847 266 -835
 rect 236 -889 266 -877
@@ -181,23 +181,23 @@ rect 857 -1033 863 -1019
 rect 1246 -1033 1252 -994
 rect 857 -1037 1252 -1033
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713144909
+timestamp 1712500979
 transform 0 1 271 -1 0 -299
 box -19 -24 65 296
 use ripple_dly_4  x1
-timestamp 1713144909
+timestamp 1713146481
 transform 1 0 689 0 -1 -935
 box -49 -614 3675 -294
 use ripple_dly_4  x2
-timestamp 1713144909
+timestamp 1713146481
 transform 1 0 689 0 1 -299
 box -49 -614 3675 -294
 use sky130_fd_sc_hd__a221o_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713144909
+timestamp 1712500979
 transform 0 1 271 -1 0 -345
 box -19 -24 387 296
 use sky130_fd_sc_hd__einvn_0  x5 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713144909
+timestamp 1712500979
 transform 0 1 271 -1 0 -713
 box -19 -24 203 296
 use sky130_fd_pr__nfet_01v8_AHZR5K  XM3

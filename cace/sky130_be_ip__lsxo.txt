@@ -552,4 +552,13 @@ physical_parameters {
 	evaluate {
 		tool:	cace_area
 	}
+	
+	+
+	name:		DRC_errors
+	spec {
+		maximum:	0	fail
+	}
+	evaluate {
+		tool:	cace_drc
+	}
 }
