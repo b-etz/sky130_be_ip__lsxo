@@ -1,0 +1,77 @@
+timestamp 1713210209
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_sc_hd__dfrbp_1 x2 1 0 688 0 1 -1180
+use sky130_fd_sc_hd__dfrbp_1 x3 1 0 2896 0 1 -1180
+use sky130_fd_sc_hd__dfrbp_1 x4 1 0 5104 0 1 -1180
+use sky130_fd_sc_hd__and2_0 x1 1 0 136 0 1 -1180
+use sky130_fd_sc_hd__tapvpwrvgnd_1 sky130_fd_sc_hd__tapvpwrvgnd_1_0 1 0 2804 0 1 -1180
+use sky130_fd_sc_hd__tapvpwrvgnd_1 sky130_fd_sc_hd__tapvpwrvgnd_1_1 1 0 44 0 1 -1180
+use sky130_fd_sc_hd__tapvpwrvgnd_1 sky130_fd_sc_hd__tapvpwrvgnd_1_2 1 0 596 0 1 -1180
+use sky130_fd_sc_hd__tapvpwrvgnd_1 sky130_fd_sc_hd__tapvpwrvgnd_1_3 1 0 5012 0 1 -1180
+use sky130_fd_sc_hd__tapvpwrvgnd_1 sky130_fd_sc_hd__tapvpwrvgnd_1_4 1 0 7220 0 1 -1180
+port "dvss" 2 378 -1214 2084 -1150 m1
+port "ena" 4 -98 -1094 2 -994 m1
+port "dvdd" 1 396 -666 2102 -602 m1
+port "doneb" 5 320 -958 420 -718 m2
+port "clkin" 3 -98 -918 2 -818 m1
+node "dvss" 0 0 378 -1214 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ena" 0 0 -98 -1094 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "dvdd" 0 0 396 -666 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_4976_n976#" 0 0 4976 -976 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2770_n976#" 0 0 2770 -976 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_568_n976#" 0 0 568 -976 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6838_n888#" 0 0 6838 -888 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qb2" 0 0 3198 -894 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Qb1" 0 0 990 -894 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "doneb" 0 0 320 -958 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "clkin" 0 0 -98 -918 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_4/VPWR" "sky130_fd_sc_hd__tapvpwrvgnd_1_3/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_3/VPWR" "x4/VPWR"
+merge "x4/VPWR" "x4/VPB"
+merge "x4/VPB" "sky130_fd_sc_hd__tapvpwrvgnd_1_0/VPWR"
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_0/VPWR" "x3/VPWR"
+merge "x3/VPWR" "x3/VPB"
+merge "x3/VPB" "sky130_fd_sc_hd__tapvpwrvgnd_1_2/VPWR"
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_2/VPWR" "x2/VPB"
+merge "x2/VPB" "sky130_fd_sc_hd__tapvpwrvgnd_1_1/VPWR"
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_1/VPWR" "x1/VPB"
+merge "x1/VPB" "x1/VPWR"
+merge "x1/VPWR" "x2/VPWR"
+merge "x2/VPWR" "dvdd"
+merge "x4/Q_N" "x4/D" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x4/D" "x1/B"
+merge "x1/B" "doneb"
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_4/VGND" "sky130_fd_sc_hd__tapvpwrvgnd_1_3/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_3/VGND" "x4/VGND"
+merge "x4/VGND" "x4/VNB"
+merge "x4/VNB" "sky130_fd_sc_hd__tapvpwrvgnd_1_0/VGND"
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_0/VGND" "x3/VGND"
+merge "x3/VGND" "x3/VNB"
+merge "x3/VNB" "sky130_fd_sc_hd__tapvpwrvgnd_1_2/VGND"
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_2/VGND" "sky130_fd_sc_hd__tapvpwrvgnd_1_1/VGND"
+merge "sky130_fd_sc_hd__tapvpwrvgnd_1_1/VGND" "x1/VNB"
+merge "x1/VNB" "x2/VNB"
+merge "x2/VNB" "VSUBS"
+merge "VSUBS" "x1/VGND"
+merge "x1/VGND" "x2/VGND"
+merge "x2/VGND" "dvss"
+merge "x3/CLK" "x2/Q_N" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x2/Q_N" "li_2770_n976#"
+merge "li_2770_n976#" "x2/D"
+merge "x2/D" "Qb1"
+merge "x1/X" "x2/CLK" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x2/CLK" "li_568_n976#"
+merge "x1/A" "clkin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x4/Q" "li_6838_n888#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x4/RESET_B" "x3/RESET_B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x3/RESET_B" "x2/RESET_B"
+merge "x2/RESET_B" "ena"
+merge "x4/CLK" "x3/Q_N" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x3/Q_N" "li_4976_n976#"
+merge "li_4976_n976#" "x3/D"
+merge "x3/D" "Qb2"

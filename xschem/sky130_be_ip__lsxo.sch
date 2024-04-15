@@ -49,9 +49,9 @@ N 430 -700 430 -490 {
 lab=avdd_ip}
 N 1070 -150 1070 -90 {
 lab=dvss}
-N 590 -340 590 -320 {
+N 625 -340 625 -320 {
 lab=avss_ip}
-N 590 -420 590 -400 {
+N 625 -420 625 -400 {
 lab=avdd_ip}
 N 790 -340 790 -320 {
 lab=dvss_ip}
@@ -135,6 +135,16 @@ N 1760 -500 1760 -480 {
 lab=xout}
 N 1240 -200 1240 -190 {
 lab=dout_ip}
+N 605 -450 670 -450 {
+lab=xout}
+N 680 -510 680 -450 {
+lab=xout}
+N 605 -510 670 -510 {
+lab=xout}
+N 670 -510 680 -510 {
+lab=xout}
+N 670 -450 680 -450 {
+lab=xout}
 C {devices/iopin.sym} 90 -820 0 0 {name=p1 lab=avdd}
 C {devices/opin.sym} 100 -640 0 0 {name=p8 lab=dout}
 C {devices/iopin.sym} 90 -800 0 0 {name=p2 lab=avss}
@@ -284,9 +294,9 @@ C {devices/lab_pin.sym} 430 -240 2 0 {name=p210 sig_type=std_logic lab=avss_ip}
 C {devices/lab_pin.sym} 430 -510 2 0 {name=p208 sig_type=std_logic lab=avdd_ip}
 C {devices/lab_pin.sym} 250 -410 2 0 {name=p202 sig_type=std_logic lab=avss_ip}
 C {devices/lab_pin.sym} 250 -510 2 0 {name=p201 sig_type=std_logic lab=avdd_ip}
-C {devices/lab_pin.sym} 590 -420 2 0 {name=p222 sig_type=std_logic lab=avdd_ip}
-C {devices/lab_pin.sym} 590 -320 2 0 {name=p223 sig_type=std_logic lab=avss_ip}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 590 -370 0 0 {name=C1 model=cap_mim_m3_1 W=7 L=7 MF=4 spiceprefix=X}
+C {devices/lab_pin.sym} 625 -420 2 0 {name=p222 sig_type=std_logic lab=avdd_ip}
+C {devices/lab_pin.sym} 625 -320 2 0 {name=p223 sig_type=std_logic lab=avss_ip}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 625 -370 0 0 {name=C1 model=cap_mim_m3_1 W=7 L=7 MF=4 spiceprefix=X}
 C {devices/lab_pin.sym} 1070 -510 2 0 {name=p235 sig_type=std_logic lab=dvdd_ip}
 C {devices/lab_pin.sym} 1070 -240 2 0 {name=p239 sig_type=std_logic lab=dvss_ip}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 790 -370 0 0 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=21 spiceprefix=X}
@@ -437,3 +447,20 @@ C {devices/lab_pin.sym} 1760 -320 2 0 {name=p272 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 1760 -380 0 0 {name=p271 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 1760 -280 0 0 {name=p273 sig_type=std_logic lab=standby}
 C {devices/lab_pin.sym} 1030 -510 0 0 {name=p101 sig_type=std_logic lab=ibias_ip}
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 585 -480 0 0 {name=MD2
+W=4
+L=2
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 565 -480 3 0 {name=p11 sig_type=std_logic lab=vbreg}
+C {devices/lab_pin.sym} 680 -510 2 0 {name=p12 sig_type=std_logic lab=xout}
+C {devices/lab_pin.sym} 605 -480 2 0 {name=p13 sig_type=std_logic lab=avss_ip}
