@@ -148,17 +148,17 @@ lab=vn}
 N 760 -540 820 -540 {
 lab=vn}
 N 650 -210 710 -210 {
-lab=#net2}
+lab=xin_buf}
 N 710 -210 710 -150 {
-lab=#net2}
+lab=xin_buf}
 N 650 -150 710 -150 {
-lab=#net2}
+lab=xin_buf}
 N 730 -520 790 -520 {
-lab=#net3}
+lab=xin_buf}
 N 730 -520 730 -460 {
-lab=#net3}
+lab=xin_buf}
 N 730 -460 790 -460 {
-lab=#net3}
+lab=xin_buf}
 N 460 -160 500 -160 {
 lab=vn}
 N 460 -190 460 -160 {
@@ -425,8 +425,8 @@ C {devices/lab_pin.sym} 730 -410 2 0 {name=p12 sig_type=std_logic lab=xout}
 C {devices/lab_pin.sym} 520 -440 1 0 {name=p17 sig_type=std_logic lab=tail}
 C {devices/lab_pin.sym} 440 -490 2 0 {name=p18 sig_type=std_logic lab=vbp}
 C {sky130_fd_pr/nfet_01v8.sym} 480 -190 0 0 {name=MD2
-W=0.5
-L=1
+W=4
+L=2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -540,8 +540,8 @@ C {devices/lab_pin.sym} 730 -520 2 1 {name=p40 sig_type=std_logic lab=xin_buf}
 C {devices/lab_pin.sym} 530 -300 2 0 {name=p41 sig_type=std_logic lab=vn}
 C {devices/lab_pin.sym} 820 -600 2 0 {name=p42 sig_type=std_logic lab=vn}
 C {sky130_fd_pr/nfet_01v8.sym} 1140 -250 0 0 {name=MD8
-W=4
-L=2
+W=0.5
+L=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -555,3 +555,4 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 1160 -250 2 0 {name=p43 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 1120 -250 0 0 {name=p44 sig_type=std_logic lab=inv_m1}
+C {devices/lab_pin.sym} 650 -150 3 0 {name=p45 sig_type=std_logic lab=xin_buf}

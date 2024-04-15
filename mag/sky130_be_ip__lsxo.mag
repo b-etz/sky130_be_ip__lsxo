@@ -1,15 +1,16 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713210209
+timestamp 1713220443
 << dnwell >>
-rect 1932 -9000 6418 -3442
+rect 1926 -9006 6422 -3446
 rect 8780 -10312 25248 -4220
+rect 1706 -23624 25490 -11618
 << nwell >>
-rect 1852 -3648 6498 -3362
-rect 1852 -8794 2138 -3648
-rect 6212 -8794 6498 -3648
-rect 1852 -9080 6498 -8794
+rect 1846 -3652 6502 -3366
+rect 1846 -8800 2132 -3652
+rect 6216 -8800 6502 -3652
+rect 1846 -9086 6502 -8800
 rect 8700 -4426 25328 -4140
 rect 8700 -10106 8986 -4426
 rect 25042 -10106 25328 -4426
@@ -23,22 +24,22 @@ rect 10652 -5358 11064 -4958
 rect 12592 -5420 12844 -4896
 rect 14698 -5358 15110 -4958
 << nsubdiff >>
-rect 1889 -3419 6461 -3399
-rect 1889 -3453 1969 -3419
-rect 6381 -3453 6461 -3419
-rect 1889 -3473 6461 -3453
-rect 1889 -3479 1963 -3473
-rect 1889 -8963 1909 -3479
-rect 1943 -8963 1963 -3479
-rect 1889 -8969 1963 -8963
-rect 6387 -3479 6461 -3473
-rect 6387 -8963 6407 -3479
-rect 6441 -8963 6461 -3479
-rect 6387 -8969 6461 -8963
-rect 1889 -8989 6461 -8969
-rect 1889 -9023 1969 -8989
-rect 6381 -9023 6461 -8989
-rect 1889 -9043 6461 -9023
+rect 1883 -3423 6465 -3403
+rect 1883 -3457 1963 -3423
+rect 6385 -3457 6465 -3423
+rect 1883 -3477 6465 -3457
+rect 1883 -3483 1957 -3477
+rect 1883 -8969 1903 -3483
+rect 1937 -8969 1957 -3483
+rect 1883 -8975 1957 -8969
+rect 6391 -3483 6465 -3477
+rect 6391 -8969 6411 -3483
+rect 6445 -8969 6465 -3483
+rect 6391 -8975 6465 -8969
+rect 1883 -8995 6465 -8975
+rect 1883 -9029 1963 -8995
+rect 6385 -9029 6465 -8995
+rect 1883 -9049 6465 -9029
 rect 8737 -4197 25291 -4177
 rect 8737 -4231 8817 -4197
 rect 25211 -4231 25291 -4197
@@ -72,10 +73,10 @@ rect 1663 -23647 1743 -23613
 rect 25453 -23647 25533 -23613
 rect 1663 -23667 25533 -23647
 << nsubdiffcont >>
-rect 1969 -3453 6381 -3419
-rect 1909 -8963 1943 -3479
-rect 6407 -8963 6441 -3479
-rect 1969 -9023 6381 -8989
+rect 1963 -3457 6385 -3423
+rect 1903 -8969 1937 -3483
+rect 6411 -8969 6445 -3483
+rect 1963 -9029 6385 -8995
 rect 8817 -4231 25211 -4197
 rect 8757 -10275 8791 -4257
 rect 25237 -10275 25271 -4257
@@ -235,20 +236,26 @@ rect 10952 -3092 10970 -3044
 rect 9426 -3098 10970 -3092
 rect 13030 -3190 13668 -3026
 rect 12440 -3216 13668 -3190
-rect 1909 -3453 1969 -3419
-rect 6381 -3453 6441 -3419
-rect 1909 -3479 1943 -3453
-rect 6407 -3479 6441 -3453
-rect 1943 -5154 2644 -5100
-rect 1943 -6772 1990 -5154
+rect 6406 -3417 6446 -3416
+rect 1905 -3423 6446 -3417
+rect 1903 -3457 1963 -3423
+rect 6385 -3452 6446 -3423
+rect 6385 -3457 6445 -3452
+rect 1903 -3483 1943 -3457
+rect 1937 -5100 1943 -3483
+rect 6407 -3483 6445 -3457
+rect 1937 -5154 2644 -5100
+rect 6407 -5104 6411 -3483
+rect 1937 -6772 1990 -5154
 rect 2476 -6772 2644 -5154
-rect 5692 -5156 6407 -5104
+rect 5692 -5156 6411 -5104
 rect 5692 -6428 5838 -5156
 rect 4762 -6434 5838 -6428
 rect 3706 -6560 5838 -6434
-rect 1943 -6822 2644 -6772
+rect 1937 -6822 2644 -6772
 rect 3634 -6774 5838 -6560
-rect 6324 -6774 6407 -5156
+rect 6324 -6774 6411 -5156
+rect 1937 -8969 1943 -6822
 rect 2128 -7064 3504 -6958
 rect 2130 -7250 2336 -7064
 rect 2496 -7126 3228 -7116
@@ -285,13 +292,13 @@ rect 3212 -8172 3228 -8092
 rect 2496 -8184 3228 -8172
 rect 3408 -8250 3504 -7064
 rect 2130 -8812 3504 -8250
-rect 3634 -7050 6407 -6774
+rect 3634 -7050 6411 -6774
 rect 3634 -8254 3708 -7050
 rect 3872 -7120 4600 -7110
 rect 3872 -7208 3888 -7120
 rect 4588 -7208 4600 -7120
-rect 4762 -7252 6407 -7050
-rect 4616 -7254 6407 -7252
+rect 4762 -7252 6411 -7050
+rect 4616 -7254 6411 -7252
 rect 3782 -7266 3902 -7254
 rect 3782 -8044 3796 -7266
 rect 3888 -8044 3902 -7266
@@ -312,18 +319,18 @@ rect 4414 -7266 4534 -7254
 rect 4414 -8044 4428 -7266
 rect 4520 -8044 4534 -7266
 rect 4414 -8054 4534 -8044
-rect 4572 -7266 6407 -7254
+rect 4572 -7266 6411 -7254
 rect 4572 -8044 4586 -7266
-rect 4678 -8044 6407 -7266
-rect 4572 -8054 6407 -8044
-rect 4616 -8060 6407 -8054
+rect 4678 -8044 6411 -7266
+rect 4572 -8054 6411 -8044
+rect 4616 -8060 6411 -8054
 rect 3872 -8188 3888 -8102
 rect 4594 -8188 4608 -8102
 rect 3872 -8196 4608 -8188
-rect 4762 -8254 6407 -8060
+rect 4762 -8254 6411 -8060
 rect 2130 -8814 3468 -8812
-rect 1909 -8989 1943 -8963
-rect 3634 -8963 6407 -8254
+rect 1903 -8988 1943 -8969
+rect 3634 -8969 6411 -8254
 rect 12440 -3630 12462 -3216
 rect 12588 -3416 13668 -3216
 rect 13646 -3630 13668 -3416
@@ -335,12 +342,15 @@ rect 15008 -3516 15034 -3442
 rect 16212 -3516 16220 -3438
 rect 15008 -3534 16220 -3516
 rect 12440 -3646 13668 -3630
-rect 3634 -8989 6441 -8963
-rect 1909 -9023 1969 -8989
-rect 6381 -9023 6441 -8989
+rect 1902 -8989 1944 -8988
+rect 3634 -8989 6445 -8969
+rect 1902 -8995 6445 -8989
+rect 1902 -9029 1963 -8995
+rect 6385 -9029 6445 -8995
 rect 8757 -4231 8817 -4197
 rect 25211 -4231 25271 -4197
 rect 8757 -4257 8791 -4231
+rect 1902 -9030 1944 -9029
 rect 25237 -4257 25271 -4231
 rect 8880 -4316 25158 -4298
 rect 8791 -5608 8792 -5450
@@ -3884,195 +3894,195 @@ rect 19806 -18758 19822 -18462
 rect 17542 -19024 19822 -18758
 rect 5950 -21440 21402 -20766
 use sky130_fd_pr__cap_mim_m3_1_67RTNB  amp_XC1
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 12312 -1 0 -8182
 box -3798 -4532 6070 4534
 use sky130_fd_pr__nfet_g5v0d10v5_Z6W9J4  amp_XM1_2
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 12881 0 1 -5158
 box -2451 -458 2451 458
 use sky130_fd_pr__pfet_g5v0d10v5_8CDM6Z  amp_XM3_5
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 17147 0 1 -6497
 box -1145 -697 1145 697
 use sky130_fd_pr__nfet_01v8_LHQHT5  amp_XM4_18
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 17147 0 1 -5138
 box -1083 -610 1083 610
 use sky130_fd_pr__pfet_01v8_EDYT7U  amp_XM6
-timestamp 1713210209
+timestamp 1713220443
 transform -1 0 19728 0 -1 -6597
 box -996 -269 996 269
 use sky130_fd_pr__nfet_01v8_UY343Z  amp_XM7
-timestamp 1713210209
+timestamp 1713220443
 transform -1 0 19748 0 -1 -5584
 box -996 -260 996 260
 use sky130_fd_pr__pfet_01v8_EDYT7U  amp_XM8
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 9847 -1 0 -8280
 box -996 -269 996 269
 use sky130_fd_pr__nfet_01v8_UY343Z  amp_XM9
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 9258 -1 0 -8546
 box -996 -260 996 260
 use sky130_fd_pr__pfet_01v8_M6QFHF  amp_XM10_12
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 21641 0 1 -6575
 box -425 -383 425 383
 use sky130_fd_pr__nfet_01v8_6G4XAN  amp_XM11_13
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 21641 0 1 -5561
 box -425 -365 425 365
 use sky130_fd_pr__pfet_01v8_LL48TN  amp_XM16_17
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 12884 0 1 -6453
 box -2398 -683 2398 683
 use sky130_fd_pr__res_xhigh_po_0p35_WHP78W  amp_XR1
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 17636 -1 0 -8635
 box -1363 -7182 1363 7182
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  ant_diode_ena
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 2933 0 1 -997
 box -183 -183 183 183
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  ant_diode_standby
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 5403 0 1 -997
 box -183 -183 183 183
 use sky130_fd_pr__cap_mim_m3_1_VMUSDZ  bias_XC1
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 13498 -1 0 -21238
 box -2386 -11680 2092 11684
 use sky130_fd_pr__cap_mim_m3_1_WXTTNJ  bias_XC2
-timestamp 1713210209
+timestamp 1713220443
 transform -1 0 3588 0 -1 -11370
 box -2186 -2040 1882 2040
 use sky130_fd_pr__cap_mim_m3_1_F5PPB9  bias_XC3
-timestamp 1713210209
+timestamp 1713220443
 transform 0 -1 9528 1 0 -16620
 box -1986 -7722 1700 7724
 use sky130_fd_pr__nfet_g5v0d10v5_BKL7UB  bias_XM1_2
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 20853 -1 0 -14102
 box -1584 -1113 1584 1113
 use sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z  bias_XM5
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 7426 0 1 -12350
 box -328 -358 328 358
 use sky130_fd_pr__nfet_g5v0d10v5_H6M2KM  bias_XM6_7_8
-timestamp 1713210209
+timestamp 1713220443
 transform -1 0 10726 0 -1 -12352
 box -2686 -300 2686 300
 use sky130_fd_pr__res_xhigh_po_0p35_M35ED8  bias_XR2
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 10748 -1 0 -15970
 box -2276 -8782 2276 8782
 use sky130_fd_pr__res_xhigh_po_0p35_VTNT3C  bias_XR3
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 11050 -1 0 -13206
 box -450 -8082 450 8082
 use sky130_fd_sc_hd__tapvpwrvgnd_1  ena_buf_tap $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 2950 -1 0 -1232
 box -38 -48 130 592
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  esd_n_xin
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 20505 0 1 -22985
 box -183 -183 183 183
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  esd_n_xout
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 23613 0 1 -22987
 box -183 -183 183 183
 use sky130_fd_pr__diode_pd2nw_05v5_K4SERG  esd_p_xin
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 21361 0 1 -22975
 box -321 -321 321 321
 use sky130_fd_pr__diode_pd2nw_05v5_K4SERG  esd_p_xout
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 22787 0 1 -22977
 box -321 -321 321 321
 use sky130_fd_sc_hd__tapvpwrvgnd_1  standby_buf_tap
-timestamp 1713210209
+timestamp 1713220443
 transform 0 -1 5380 1 0 -1324
 box -38 -48 130 592
 use sky130_fd_sc_hd__buf_1  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 2950 -1 0 -1324
 box -38 -48 314 592
 use sky130_fd_sc_hd__buf_1  x2
-timestamp 1713210209
+timestamp 1713220443
 transform 0 -1 5380 -1 0 -1324
 box -38 -48 314 592
 use level_shift  x3
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 4250 -1 0 -1190
 box 652 -1950 5670 -128
 use level_shift  x4
-timestamp 1713210209
+timestamp 1713220443
 transform 0 -1 4086 -1 0 -1190
 box 652 -1950 5670 -128
 use ripl_dly_clk_buf  x7
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 13446 0 1 -1060
 box 216 -2416 9016 -120
 use sky130_fd_pr__cap_mim_m3_1_UYSCL3  XC1
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 15424 -1 0 -12168
 box -1892 -1614 1336 1624
 use sky130_fd_pr__cap_mim_m3_1_43FTN9  XC2
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 21888 0 1 -9798
 box -3546 -8008 3672 8020
 use sky130_fd_pr__cap_mim_m3_1_3DMTNZ  XC3
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 4424 0 1 -6020
 box -2492 -2268 1950 2222
 use sky130_fd_pr__cap_mim_m3_1_4HHTN9  XC4
-timestamp 1713210209
+timestamp 1713220443
 transform 0 -1 11504 1 0 -2544
 box -1186 -4640 890 4640
 use sky130_fd_pr__nfet_g5v0d10v5_YG6WAD  XM1
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 20864 -1 0 -17009
 box -1147 -658 1147 658
 use sky130_fd_pr__pfet_g5v0d10v5_E4RF2H  XM2_bias_XM3_4
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 23465 -1 0 -15266
 box -2770 -1161 2770 1161
 use sky130_fd_pr__nfet_01v8_AHZR5K  XM3
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 12824 -1 0 -2652
 box -596 -260 596 260
 use sky130_fd_pr__nfet_01v8_HZ6WG7  XM4
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 23509 -1 0 -5548
 box -296 -285 296 285
 use sky130_fd_pr__nfet_g5v0d10v5_GZN5JV  XM5
-timestamp 1713210209
+timestamp 1713220443
 transform -1 0 2863 0 1 -7653
 box -594 -658 594 658
 use sky130_fd_pr__pfet_g5v0d10v5_74GBJT  XM6
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 4238 0 -1 -7655
 box -624 -697 624 697
 use sky130_fd_pr__pfet_01v8_3H68VM  XM7
-timestamp 1713210209
+timestamp 1713220443
 transform 0 -1 23531 1 0 -6550
 box -296 -619 296 619
 use sky130_fd_pr__pfet_01v8_MTZJAC  XM8
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 8283 0 1 -2587
 box -957 -619 957 619
 use sky130_fd_pr__pfet_g5v0d10v5_6RLJVT  XM9
-timestamp 1713210209
+timestamp 1713220443
 transform -1 0 11530 0 -1 -2569
 box -308 -697 308 697
 use sky130_fd_pr__nfet_01v8_Y7GPAW  XM11
-timestamp 1713210209
+timestamp 1713220443
 transform 1 0 10209 0 1 -2592
 box -957 -610 957 610
 use sky130_fd_pr__res_xhigh_po_0p35_68VL2P  XR2
-timestamp 1713210209
+timestamp 1713220443
 transform 0 1 13546 -1 0 -20477
 box -2193 -11582 2193 11582
 << labels >>
@@ -4107,8 +4117,6 @@ flabel metal2 5592 -7636 9246 -7536 0 FreeSans 800 0 0 0 standby_33
 flabel metal2 6632 -1444 7372 -1344 0 FreeSans 800 0 0 0 standby_ip
 flabel metal2 6812 -1600 7378 -1500 0 FreeSans 800 0 0 0 ena_ip
 flabel metal2 6974 -1784 7378 -1684 0 FreeSans 800 0 0 0 standby_b
-flabel metal2 2610 -6860 3484 -6740 0 FreeSans 800 0 0 0 ena_33
-flabel metal2 3614 -7916 3734 -7214 0 FreeSans 800 0 0 0 ena_b_33
 flabel viali 8878 -7250 10492 -5640 0 FreeSans 3200 0 0 0 dvdd_ip
 flabel viali 8900 -5476 10462 -4316 0 FreeSans 3200 0 0 0 dvss_ip
 flabel metal2 13962 -4022 22308 -3882 0 FreeSans 800 0 0 0 dout_ip

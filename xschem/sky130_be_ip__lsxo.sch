@@ -378,10 +378,10 @@ C {sky130_stdcells/buf_1.sym} 1250 -810 0 0 {name=x2 VGND=dvss VNB=dvss VPB=dvdd
 C {devices/noconn.sym} 710 -650 2 0 {name=l3}
 C {devices/noconn.sym} 1390 -610 2 0 {name=l4}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 650 -150 2 0 {name=RD1
-L=220
+L=110
 model=res_xhigh_po_0p35
 spiceprefix=X
-mult=1
+mult=2
 lab=avss_ip}
 C {devices/lab_pin.sym} 670 -150 2 0 {name=p224 sig_type=std_logic lab=avss_ip}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 790 -150 0 0 {name=MD1
@@ -463,4 +463,4 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 565 -480 3 0 {name=p11 sig_type=std_logic lab=vbreg}
 C {devices/lab_pin.sym} 680 -510 2 0 {name=p12 sig_type=std_logic lab=xout}
-C {devices/lab_pin.sym} 605 -480 2 0 {name=p13 sig_type=std_logic lab=avss_ip}
+C {devices/lab_pin.sym} 605 -480 2 0 {name=p13 sig_type=std_logic lab=avdd_ip}

@@ -131,11 +131,11 @@ lab=avss}
 N -490 -310 -490 -250 {
 lab=avdd}
 N -490 -230 -420 -230 {
-lab=vg1}
+lab=#net2}
 N -420 -230 -420 -170 {
-lab=vg1}
+lab=#net2}
 N -490 -170 -420 -170 {
-lab=vg1}
+lab=#net2}
 N -490 -130 -490 -70 {
 lab=avss}
 N -530 -100 -530 -70 {
@@ -286,16 +286,16 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 170 -90 0 0 {name=p11 sig_type=std_logic lab=avss}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 110 160 0 0 {name=RD1
-L=164
+L=82
 model=res_xhigh_po_0p35
 spiceprefix=X
-mult=1}
+mult=2}
 C {devices/lab_pin.sym} 90 160 0 0 {name=p13 sig_type=std_logic lab=avss}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 270 160 0 0 {name=RD2
-L=150
+L=75
 model=res_xhigh_po_0p35
 spiceprefix=X
-mult=1}
+mult=2}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} -510 -280 0 0 {name=MD1
 W=4
 L=2
@@ -347,7 +347,7 @@ C {sky130_fd_pr/nfet_g5v0d10v5.sym} -510 -10 0 0 {name=MD4
 W=4
 L=2
 nf=1
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

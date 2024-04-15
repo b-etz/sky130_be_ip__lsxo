@@ -25,7 +25,7 @@ x1 ena dvss dvss dvdd dvdd ena_ip sky130_fd_sc_hd__buf_1
 x2 standby dvss dvss dvdd dvdd standby_ip sky130_fd_sc_hd__buf_1
 * noconn #net1
 * noconn #net2
-XRD1 avss_ip avss_ip avss_ip sky130_fd_pr__res_xhigh_po_0p35 L=220 mult=1 m=1
+XRD1 avss_ip avss_ip avss_ip sky130_fd_pr__res_xhigh_po_0p35 L=110 mult=2 m=2
 XMD1 avss_ip xin avss_ip avss_ip sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
 XD1 xin avdd_ip sky130_fd_pr__diode_pd2nw_05v5 area=2.025e11 perim=1.8e6
 XD2 avss_ip xin sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
@@ -33,7 +33,7 @@ XD3 xout avdd_ip sky130_fd_pr__diode_pd2nw_05v5 area=2.025e11 perim=1.8e6
 XD4 avss_ip xout sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 XD5 dvss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 XD6 dvss standby sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
-XMD2 xout vbreg xout avss_ip sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
+XMD2 xout vbreg xout avdd_ip sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 .ends
 
 * expanding   symbol:  ripl_dly_clk_buf.sym # of pins=7
@@ -86,14 +86,14 @@ XM17 vbp vbp dvdd dvdd sky130_fd_pr__pfet_01v8 L=2 W=2 nf=1 m=1
 XM3 xin_buf xout tail dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 XM4 xin_buf vn dvss dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
 XM18 vn vn dvss dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
-XMD2 vn vn vn dvss sky130_fd_pr__nfet_01v8 L=1 W=0.5 nf=1 m=1
+XMD2 vn vn vn dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
 XMD1 dvdd inv_m1 dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=0.5 nf=1 m=1
 XMD4 dvss ibias dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=2 nf=1 m=2
 XMD3 dvdd vbp dvdd dvdd sky130_fd_pr__pfet_01v8 L=2 W=2 nf=1 m=5
 XMD5 vn xin vn dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
-XMD6 net2 vn net2 dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
+XMD6 xin_buf vn xin_buf dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
 XMD7 xin_buf xout xin_buf dvdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
-XMD8 dvss inv_m1 dvss dvss sky130_fd_pr__nfet_01v8 L=2 W=4 nf=1 m=1
+XMD8 dvss inv_m1 dvss dvss sky130_fd_pr__nfet_01v8 L=1 W=0.5 nf=1 m=1
 .ends
 
 
@@ -115,12 +115,12 @@ XC2 avdd icnode sky130_fd_pr__cap_mim_m3_1 W=20 L=20 m=1
 XM6 vbreg icnode net3 avss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
 XM8 net1 net1 avss avss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
 XM7 net3 icnode net1 avss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=0.42 nf=1 m=1
-XRD1 avss avss avss sky130_fd_pr__res_xhigh_po_0p35 L=164 mult=1 m=1
-XRD2 avss avss avss sky130_fd_pr__res_xhigh_po_0p35 L=150 mult=1 m=1
+XRD1 avss avss avss sky130_fd_pr__res_xhigh_po_0p35 L=82 mult=2 m=2
+XRD2 avss avss avss sky130_fd_pr__res_xhigh_po_0p35 L=75 mult=2 m=2
 XMD1 avdd vbreg avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=4
 XMD2 net2 vbreg net2 avdd sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 XMD3 avss avss avss avss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=4 nf=1 m=4
-XMD4 vbreg vg1 vbreg avss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=4 nf=1 m=4
+XMD4 vbreg vg1 vbreg avss sky130_fd_pr__nfet_g5v0d10v5 L=2 W=4 nf=1 m=1
 .ends
 
 
