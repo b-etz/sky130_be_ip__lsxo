@@ -56,16 +56,13 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 200 70 3 0 {name=p82 sig_type=std_logic lab=dvss}
-C {devices/iopin.sym} -250 -340 2 0 {name=p1 lab=dvdd}
-C {devices/iopin.sym} -250 -320 2 0 {name=p2 lab=dvss}
-C {devices/ipin.sym} -250 -280 0 0 {name=p3 lab=clkin}
-C {devices/opin.sym} -270 -260 0 0 {name=p4 lab=clkout}
-C {devices/ipin.sym} -250 -220 0 0 {name=p5 lab=ena}
-C {devices/ipin.sym} -250 -180 0 0 {name=p6 lab=stby}
-C {devices/ipin.sym} -250 -200 0 0 {name=p7 lab=ena_b}
-C {devices/ipin.sym} -250 -160 0 0 {name=p8 lab=stby_b}
-C {devices/noconn.sym} 190 -300 2 0 {name=l1}
-C {devices/noconn.sym} 190 -170 2 0 {name=l2}
+C {devices/iopin.sym} -250 -310 2 0 {name=p1 lab=dvdd}
+C {devices/iopin.sym} -250 -290 2 0 {name=p2 lab=dvss}
+C {devices/ipin.sym} -250 -250 0 0 {name=p3 lab=clkin}
+C {devices/opin.sym} -270 -230 0 0 {name=p4 lab=clkout}
+C {devices/ipin.sym} -250 -190 0 0 {name=p5 lab=ena}
+C {devices/ipin.sym} -250 -170 0 0 {name=p6 lab=stby}
+C {devices/ipin.sym} -250 -150 0 0 {name=p7 lab=stby_b}
 C {sky130_stdcells/a221o_1.sym} -160 -10 0 0 {name=x3 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} -240 -10 0 0 {name=p9 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} -240 -90 0 0 {name=p10 sig_type=std_logic lab=stby_b}

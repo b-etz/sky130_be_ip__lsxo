@@ -41,22 +41,22 @@ N 550 -160 550 -50 {
 lab=ena}
 N 480 -180 550 -200 {
 lab=Qb2}
-C {devices/lab_pin.sym} 60 -180 0 0 {name=p1 sig_type=std_logic lab=Qb1}
+C {devices/lab_pin.sym} 60 -180 0 0 {name=p80 sig_type=std_logic lab=Qb1}
 C {devices/ipin.sym} -80 -220 0 0 {name=p3 lab=clkin}
 C {devices/ipin.sym} -80 -50 0 0 {name=p4 lab=ena}
-C {devices/opin.sym} 730 -200 0 0 {name=p5 lab=done}
 C {devices/lab_pin.sym} 300 -180 0 0 {name=p7 sig_type=std_logic lab=Qb2}
 C {devices/lab_pin.sym} 550 -180 0 0 {name=p15 sig_type=std_logic lab=doneb}
-C {devices/opin.sym} 730 -180 0 0 {name=p16 lab=doneb}
+C {devices/opin.sym} 730 -180 0 0 {name=p5 lab=doneb}
 C {devices/lab_pin.sym} -80 -180 0 0 {name=p17 sig_type=std_logic lab=doneb}
 C {sky130_stdcells/dfrbp_1.sym} 150 -180 0 0 {name=x2 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
-C {devices/iopin.sym} -80 -320 2 0 {name=p18 lab=dvdd}
-C {devices/iopin.sym} -80 -300 2 0 {name=p19 lab=dvss}
+C {devices/iopin.sym} -80 -320 2 0 {name=p1 lab=dvdd}
+C {devices/iopin.sym} -80 -300 2 0 {name=p2 lab=dvss}
 C {devices/lab_pin.sym} 300 -200 1 0 {name=p20 sig_type=std_logic lab=Qb1}
 C {sky130_stdcells/dfrbp_1.sym} 390 -180 0 0 {name=x3 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
-C {devices/lab_pin.sym} 550 -200 1 0 {name=p2 sig_type=std_logic lab=Qb2}
+C {devices/lab_pin.sym} 550 -200 1 0 {name=p30 sig_type=std_logic lab=Qb2}
 C {devices/noconn.sym} 240 -200 2 0 {name=l1}
 C {devices/noconn.sym} 480 -200 2 0 {name=l2}
 C {devices/lab_pin.sym} 50 -200 1 0 {name=p13 sig_type=std_logic lab=gated_clk}
 C {sky130_stdcells/dfrbp_1.sym} 640 -180 0 0 {name=x4 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/and2_0.sym} -20 -200 0 0 {name=x1 VGND=dvss VNB=dvss VPB=dvdd VPWR=dvdd prefix=sky130_fd_sc_hd__ }
+C {devices/noconn.sym} 730 -200 2 0 {name=l3}

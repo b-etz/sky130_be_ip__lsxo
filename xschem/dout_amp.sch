@@ -104,13 +104,13 @@ lab=tail}
 N 490 -410 690 -410 {
 lab=dvdd}
 N 490 -380 490 -300 {
-lab=#net2}
+lab=vn}
 N 490 -300 530 -300 {
-lab=#net2}
+lab=vn}
 N 530 -300 530 -270 {
-lab=#net2}
+lab=vn}
 N 530 -270 650 -270 {
-lab=#net2}
+lab=vn}
 N 690 -380 690 -300 {
 lab=xin_buf}
 N 690 -340 820 -340 {
@@ -144,17 +144,17 @@ lab=dvdd}
 N 770 -520 770 -460 {
 lab=dvss}
 N 1330 -240 1390 -240 {
-lab=#net3}
+lab=vn}
 N 1390 -240 1390 -180 {
-lab=#net3}
+lab=vn}
 N 1330 -180 1390 -180 {
-lab=#net3}
+lab=vn}
 N 1330 -140 1390 -140 {
-lab=#net4}
+lab=#net2}
 N 1390 -140 1390 -80 {
-lab=#net4}
+lab=#net2}
 N 1330 -80 1390 -80 {
-lab=#net4}
+lab=#net2}
 N 1480 -240 1540 -240 {
 lab=xin_buf}
 N 1540 -240 1540 -180 {
@@ -207,7 +207,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 830 -340 1 0 {name=p4 sig_type=std_logic lab=xin_buf}
 C {devices/lab_pin.sym} 450 -560 1 0 {name=p5 sig_type=std_logic lab=dvdd}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 890 -340 3 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=12 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 890 -340 1 1 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=12 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 980 -500 0 0 {name=M6
 W=0.5
 L=8

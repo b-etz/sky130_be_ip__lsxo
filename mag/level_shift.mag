@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713144909
+timestamp 1713190424
 << viali >>
 rect 2726 -380 3744 -284
 rect 750 -512 1316 -478
@@ -195,44 +195,44 @@ rect 3742 -1630 4842 -1492
 rect 5042 -1630 5670 -1450
 rect 3742 -1640 5670 -1630
 use sky130_fd_pr__nfet_01v8_69TQ3K  XM1
-timestamp 1713144909
+timestamp 1713190424
 transform 0 -1 1032 1 0 -1338
 box -296 -310 296 310
 use sky130_fd_pr__pfet_01v8_3HMWVM  XM2
-timestamp 1713144909
+timestamp 1713190424
 transform 0 -1 1033 1 0 -738
 box -296 -319 296 319
 use sky130_fd_pr__nfet_g5v0d10v5_9YEQ2B  XM3
-timestamp 1713144909
+timestamp 1713190424
 transform 0 1 3236 -1 0 -687
 box -357 -558 357 558
 use sky130_fd_pr__nfet_g5v0d10v5_9YEQ2B  XM4
-timestamp 1713144909
+timestamp 1713190424
 transform 0 1 3236 -1 0 -1393
 box -357 -558 357 558
 use sky130_fd_pr__pfet_g5v0d10v5_VHBZVD  XM5
-timestamp 1713144909
+timestamp 1713190424
 transform 0 1 4339 -1 0 -1040
 box -658 -397 658 397
 use sky130_fd_pr__pfet_g5v0d10v5_VHBZVD  XM6
-timestamp 1713144909
+timestamp 1713190424
 transform 0 1 4943 -1 0 -1040
 box -658 -397 658 397
 << labels >>
-flabel metal1 2580 -1950 3852 -1702 0 FreeSans 800 0 0 0 avss
-port 3 nsew
-flabel metal1 652 -1950 1418 -1598 0 FreeSans 800 0 0 0 dvss
-port 11 nsew
-flabel metal1 652 -478 1434 -128 0 FreeSans 800 0 0 0 dvdd
-port 12 nsew
-flabel metal1 652 -1356 900 -972 0 FreeSans 800 0 0 0 in
+flabel metal1 652 -478 1434 -128 0 FreeSans 1600 0 0 0 dvdd
 port 1 nsew
-flabel metal2 4440 -638 5670 -438 0 FreeSans 800 0 0 0 out_b
-port 10 nsew
-flabel metal2 5042 -1640 5670 -1440 0 FreeSans 800 0 0 0 out
-port 9 nsew
-flabel metal1 3912 -378 5370 -128 0 FreeSans 800 0 0 0 avdd
+flabel metal1 652 -1950 1418 -1598 0 FreeSans 1600 0 0 0 dvss
 port 2 nsew
-flabel metal2 1822 -1628 2074 -1082 0 FreeSans 800 0 0 0 in_b
+flabel metal1 3912 -378 5370 -128 0 FreeSans 1600 0 0 0 avdd
+port 3 nsew
+flabel metal1 2580 -1950 3852 -1794 0 FreeSans 1200 0 0 0 avss
+port 4 nsew
+flabel metal1 652 -1356 900 -972 0 FreeSans 1200 0 0 0 in
+port 5 nsew
+flabel metal2 1822 -1628 2074 -988 0 FreeSans 800 0 0 0 in_b
 port 6 nsew
+flabel metal2 4440 -638 5670 -438 0 FreeSans 1200 0 0 0 out_b
+port 7 nsew
+flabel metal2 5042 -1640 5670 -1440 0 FreeSans 1200 0 0 0 out
+port 8 nsew
 << end >>

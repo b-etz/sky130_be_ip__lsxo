@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713146481
+timestamp 1713190424
 << locali >>
 rect -98 -832 2 -818
 rect -98 -904 -84 -832
@@ -23,6 +23,7 @@ rect 4942 -880 4980 -842
 rect 5406 -894 5446 -854
 rect 7150 -964 7190 -770
 << metal1 >>
+rect 396 -666 2102 -602
 rect 7130 -756 7210 -748
 rect 144 -790 228 -778
 rect -98 -828 2 -818
@@ -78,6 +79,7 @@ rect 7130 -988 7210 -978
 rect -10 -1070 6628 -1020
 rect -10 -1082 2 -1070
 rect -98 -1094 2 -1082
+rect 378 -1214 2084 -1150
 << via1 >>
 rect 330 -864 402 -840
 rect 330 -944 336 -864
@@ -105,52 +107,54 @@ rect -98 -1082 -86 -1006
 rect -10 -1082 2 -1006
 rect -98 -1094 2 -1082
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 2804 0 1 -1180
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_1
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 44 0 1 -1180
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_2
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 596 0 1 -1180
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 5012 0 1 -1180
 box -38 -48 130 592
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_4
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 7220 0 1 -1180
 box -38 -48 130 592
 use sky130_fd_sc_hd__and2_0  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 136 0 1 -1180
 box -38 -48 498 592
 use sky130_fd_sc_hd__dfrbp_1  x2 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 688 0 1 -1180
 box -38 -48 2154 592
 use sky130_fd_sc_hd__dfrbp_1  x3
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 2896 0 1 -1180
 box -38 -48 2154 592
 use sky130_fd_sc_hd__dfrbp_1  x4
-timestamp 1712500979
+timestamp 1713190424
 transform 1 0 5104 0 1 -1180
 box -38 -48 2154 592
 << labels >>
-flabel space 6838 -1054 6905 -864 0 FreeSans 800 0 0 0 done
-port 5 nsew
-flabel metal2 320 -840 420 -718 0 FreeSans 800 0 0 0 done_b
-port 16 nsew
+flabel metal1 396 -666 2102 -602 0 FreeSans 800 0 0 0 dvdd
+port 1 nsew
+flabel metal1 378 -1214 2084 -1150 0 FreeSans 800 0 0 0 dvss
+port 2 nsew
 flabel metal1 -98 -918 2 -818 0 FreeSans 800 0 0 0 clkin
 port 3 nsew
-flabel metal2 -98 -1094 2 -994 0 FreeSans 800 0 0 0 ena
+flabel metal1 -98 -1094 2 -994 0 FreeSans 800 0 0 0 ena
 port 4 nsew
-flabel space 1119 -684 1177 -588 0 FreeSans 800 0 0 0 dvdd
-port 18 nsew
-flabel space 1119 -1228 1177 -1132 0 FreeSans 800 0 0 0 dvss
-port 19 nsew
+flabel space 526 -976 720 -926 0 FreeSans 400 0 0 0 gated_clk
+flabel metal1 1030 -890 2732 -858 0 FreeSans 400 0 0 0 Qb1
+flabel metal1 3238 -890 4942 -858 0 FreeSans 400 0 0 0 Qb2
+flabel space 6839 -1083 6905 -864 0 FreeSans 400 0 0 0 done
+flabel metal2 320 -958 420 -718 0 FreeSans 800 0 0 0 doneb
+port 5 nsew
 << end >>
