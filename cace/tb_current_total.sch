@@ -124,7 +124,7 @@ device=resistor
 m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 980 -290 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 500p 10u
+tran 500n 1m
 set wr_singlescale
 let avgI = mean(-I(Vavdd)-I(Vdvdd))
 wrdata \{simpath\}/\{filename\}_\{N\}.data avgI

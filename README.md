@@ -4,6 +4,8 @@ A low-speed crystal oscillator IP for the SKY130 PDK
 Designed as part of the 2024 Efabless Chipalooza, this IP is a 32.768kHz crystal oscillator unit. 
 It is intended for use in systems built in the SKY130A process that require the ability to disable the subcircuit during deep sleep operation.
 
+![GDS Rendered in Magic VLSI, produced 15 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/magic_layout_20240415.png?raw=true)
+
 ## Instructions for Characterization using CACE
 
 This project is using the newly developed tool CACE (https://github.com/efabless/cace) for circuit characterization. To install CACE from PyPI, use:

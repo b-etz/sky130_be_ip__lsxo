@@ -12,7 +12,7 @@ cace_format:	4.0
 authorship {
 	designer:	Brady Etz
 	company:	Brady Etz
-	creation_date:	March 22, 2024
+	creation_date:	April 15, 2024
 	license:	Apache 2.0
 }
 
@@ -551,6 +551,17 @@ physical_parameters {
 	}
 	evaluate {
 		tool:	cace_area
+	}
+	
+	+
+	name:		LVS_errors
+	description:	LVS errors
+	display:	LVS errors
+	spec {
+		maximum:	0	fail
+	}
+	evaluate {
+		tool:		cace_lvs
 	}
 	
 	+
