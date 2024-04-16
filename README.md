@@ -52,7 +52,7 @@ $ {OSIC_MULTITOOL_PATH}/iic-drc.sh ../sky130_be_ip__lsxo.mag
 $ cd mag/iic-lvs
 $ {OSIC_MULTITOOL_PATH}/iic-lvs.sh -s ../../xschem/sky130_be_ip__lsxo.sch -l ../sky130_be_ip__lsxo.mag -c sky130_be_ip__lsxo
 ```
-The Netgen output is readable as `sky130_be_ip__lsxo.pex.spice` using your favorite text editor.
+The Netgen output is readable as `sky130_be_ip__lsxo.lvs.out` using your favorite text editor.
 
 ### To run parasitic extraction:
 
