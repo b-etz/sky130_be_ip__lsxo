@@ -35,6 +35,33 @@ set num_threads={Max System Threads}
 
 I recommend system RAM of at least 16 GB, and even then warn users of the tendency to run out of memory (at least in a WSL 2 environment). Due to simulation time limitations, all testbenches are performed during crystal startup, or simulating a crystal response with pure sinusoids. Some of these CACE testbenches that include a crystal model, such as duty cycle, can produce spurious results caused by variations in startup behavior. **To plot example behavior and tool with testbench settings, see the manual testbench in the `xschem/` directory.**
 
+## Instructions for Layout Verification
+
+This project used the osic-multitool library (https://github.com/iic-jku/osic-multitool) for most DRC, LVS, and parasitic extraction.
+
+### For a Magic DRC check:
+
+```
+$ cd mag/iic-drc
+$ {OSIC_MULTITOOL_PATH}/iic-drc.sh ../sky130_be_ip__lsxo.mag
+```
+
+### To run LVS:
+
+```
+$ cd mag/iic-lvs
+$ {OSIC_MULTITOOL_PATH}/iic-lvs.sh -s ../../xschem/sky130_be_ip__lsxo.sch -l ../sky130_be_ip__lsxo.mag -c sky130_be_ip__lsxo
+```
+The Netgen output is readable as `sky130_be_ip__lsxo.pex.spice` using your favorite text editor.
+
+### To run parasitic extraction:
+
+I have not yet run parasitic extraction across resistance and capacitance corners. To perform an R-C extraction at the nominal values for both:
+```
+$ cd mag/iic-pex
+$ {OSIC_MULTITOOL_PATH}/iic-pex.sh -m 3 ../sky130_be_ip__lsxo.mag
+```
+The spice output is readable as `sky130_be_ip__lsxo.pex.spice` using your favorite text editor.
 
 ## Specifications
 
