@@ -115,11 +115,40 @@ Startup times appear strongly influenced by initial transient response from init
 
 Last updated April 17, 2024
 
+Design is approximately 120 um wide by 115 um high, for a total area of 13,800 um^2.
+
+Power supplies and control ports are on the top-left and top-middle. Digital clock output is on the top-right. Crystal input/output ports are on the bottom-right.
+
 ![GDS Rendered in Magic VLSI, produced 17 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/magic_layout_20240417.png?raw=true)
 
 ## Theory of Operation
 
-_Section is under development_
+### Ports and Connections
+
+| Name    | Nominal Voltage(s) | Description                             | Int/Ext  |
+| ------- | ------------------ | --------------------------------------- | -------- |
+| dvdd    | 1.8 (LVCMOS)       | Digital supply voltage                  | Internal |
+| dvss    | 0                  | Digital reference voltage               | Internal |
+| avdd    | 3.3/5 (CMOS)       | Analog supply voltage                   | Internal |
+| avss    | 0                  | Analog reference voltage                | Internal |
+| ibias   | 0-3.3 (50 nA)      | Reference current input                 | Internal |
+| ena     | dvss/dvdd          | Crystal oscillator enable (control bit) | Internal |
+| standby | dvss/dvdd          | Clock output disable (control bit)      | Internal |
+| dout    | dvss/dvdd          | Clock output                            | Internal |
+| xin     | 0-5                | Crystal pin 1 (input)                   | External |
+| xout    | 0-5                | Crystal pin 2 (output)                  | External |
+
+This oscillator is designed to operate without an external series resistor between `xout` and the crystal. On an application board, connect one crystal pad to `xin` and one crystal pad to `xout`. Locate the crystal physically close to the `xin` and `xout` pins, and keep digital signals and return currents away from this protected zone. If possible, guard the crystal oscillator, `xin`/`xout` pins, and the load capacitors with an analog ground ring.
+
+The crystal will require one load capacitor to ground on each lead. The value of the load capacitor depends on the load capacitance specification for the crystal part being used, as well as the board parasitic capacitances on the crystal and the `xin`/`xout` ports.
+
+To design in SMD capacitors, assume both capacitors have the same value (C_additional). Estimate the stray capacitance from the board (a typical value is C_stray = 2 pF). Subtract this stray capacitance from the crystal's specified load capacitance. Multiply this result by two. Use this value to load both pins.
+
+```
+C_additional = 2 * (C_load_spec - C_stray)
+```
+
+Use one ceramic NP0/C0G capacitor on each crystal pin at this specified value (or within 1 pF). Use capacitors rated for 6.3VDC or higher that have a 5% tolerance or better. Before assembling many units, create prototype boards and measure the achieved frequency accuracy at different values of C_additional to optimize performance. Measure frequency from a buffered clock output, not directly on the sensitive crystal oscillator.
 
 ### Control Bits (`ena` and `standby`)
 
@@ -186,6 +215,8 @@ The following table includes examples of available crystal part numbers and thei
 | Abracon       | ABS06-32.768KHZ-6-1 | 6 pF    | 2.0 x 1.2mm SMD | $15.20       | https://www.digikey.com/short/080dd50r | https://mou.sr/3na9BJf | UNTESTED       | Low load capacitance (lower power) |
 
 As with most PCB systems, reflow has an impact on circuit reliability. For a crystal oscillator circuit, aggressive reflow temperatures may cause crystals to deviate from their specified tolerances. Always follow the reflow profiles specified by the crystal manufacturer for your chosen part in its datasheet.
+
+Refer to the Ports and Connections section for more details on load capacitor requirements.
 
 ### Startup Characteristics
 
