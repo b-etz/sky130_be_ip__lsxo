@@ -124,9 +124,9 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
-C {devices/code_shown.sym} 990 -310 0 0 {name=CONTROL only_toplevel=false value=".control
+C {devices/code_shown.sym} 990 -300 0 0 {name=CONTROL only_toplevel=false value=".control
 save v(dout)
-tran 300n 5m uic
+tran 3u 5m uic
 
 meas tran doutint INTEG v(dout) from=4.5m to=5m
 let vavg=doutint/0.5m
@@ -146,6 +146,8 @@ C {devices/code_shown.sym} 990 -550 0 0 {name=SETUP only_toplevel=false value="*
 .lib \{PDK_ROOT\}/\{PDK\}/libs.tech/combined/sky130.lib.spice \{corner\}
 
 .option TEMP=\{temperature\}
+.option klu
+.option noinit
 * Flag unsafe operating conditions (exceeds models' specified limits)
 .option warn=1
 "}

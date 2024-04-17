@@ -123,8 +123,9 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
-C {devices/code_shown.sym} 980 -310 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 500n 1m
+C {devices/code_shown.sym} 980 -250 0 0 {name=CONTROL only_toplevel=false value=".control
+save I(Vavdd)
+tran 50n 1m
 set wr_singlescale
 let avgI = mean(-I(Vavdd))
 wrdata \{simpath\}/\{filename\}_\{N\}.data avgI
@@ -139,6 +140,10 @@ C {devices/code_shown.sym} 980 -550 0 0 {name=SETUP only_toplevel=false value="*
 .include \{DUT_path\}
 .lib \{PDK_ROOT\}/\{PDK\}/libs.tech/combined/sky130.lib.spice \{corner\}
 
+.option noinit
+*.option klu
+.option reltol=1e-3
+.option abstol=1e-3
 .option TEMP=\{temperature\}
 * Flag unsafe operating conditions (exceeds models' specified limits)
 .option warn=1

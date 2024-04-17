@@ -1,0 +1,2089 @@
+[
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ], [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        ""
+      ], [
+        ""
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        ""
+      ], [
+        ""
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2",
+        "3"
+      ], [
+        "1",
+        "2",
+        "3"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2"
+      ], [
+        "1",
+        "2"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "ripple_dly_4",
+      "ripple_dly_4"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_sc_hd__and2_0", 1],
+         ["sky130_fd_sc_hd__dfrbp_1", 3 ]
+       ], [
+         ["sky130_fd_sc_hd__and2_0", 1 ],
+         ["sky130_fd_sc_hd__dfrbp_1", 3 ]
+       ]
+   ],
+   "nets": [
+    45,
+    45
+   ],
+   "badnets": [
+      [
+        [
+          [
+            "x1/X",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "X", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "CLK", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "gated_clk",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "1", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "7", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "dvdd",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "VPB", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "VPWR", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VPB", 3 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VPWR", 3 ]
+            ]
+          ],
+          [
+            "dvss",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "VGND", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "VNB", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VGND", 3 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VNB", 3 ]
+            ]
+          ]
+        ], [
+          [
+            "dvdd",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "6", 3 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "7", 3 ],
+              [ "sky130_fd_sc_hd__and2_0", "5", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "6", 1 ]
+            ]
+          ],
+          [
+            "dvss",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "4", 3 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "5", 3 ],
+              [ "sky130_fd_sc_hd__and2_0", "3", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "4", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "ena",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "RESET_B", 3 ]
+            ]
+          ],
+          [
+            "Qb2",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "D", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q_N", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "CLK", 1 ]
+            ]
+          ],
+          [
+            "Qb1",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "CLK", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "D", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q_N", 1 ]
+            ]
+          ],
+          [
+            "doneb",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "B", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "D", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q_N", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "doneb",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "2", 1 ]
+            ]
+          ],
+          [
+            "Qb2",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "1", 1 ]
+            ]
+          ],
+          [
+            "ena",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "3", 3 ]
+            ]
+          ],
+          [
+            "Qb1",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "1", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "dummy_36",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy9", 1 ]
+            ]
+          ],
+          [
+            "dummy_35",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy8", 1 ]
+            ]
+          ],
+          [
+            "dummy_34",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy7", 1 ]
+            ]
+          ],
+          [
+            "dummy_33",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "dummy_32",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "dummy_31",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "dummy_30",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "dummy_29",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "dummy_28",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxy1", 1 ]
+            ]
+          ],
+          [
+            "dummy_18",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxy7", 1 ]
+            ]
+          ],
+          [
+            "dummy_17",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "dummy_16",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "dummy_15",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "dummy_14",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "dummy_13",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "dummy_12",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxy1", 1 ]
+            ]
+          ],
+          [
+            "x2/Q",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q", 1 ]
+            ]
+          ],
+          [
+            "clkin",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "A", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "dummy_27",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyQ_N", 1 ]
+            ]
+          ],
+          [
+            "dummy_26",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyQ", 1 ]
+            ]
+          ],
+          [
+            "dummy_25",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "dummy_24",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "dummy_23",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "dummy_22",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "dummy_21",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyRESET_B", 1 ]
+            ]
+          ],
+          [
+            "dummy_20",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyD", 1 ]
+            ]
+          ],
+          [
+            "dummy_19",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "proxyCLK", 1 ]
+            ]
+          ],
+          [
+            "dummy_18",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxyX", 1 ]
+            ]
+          ],
+          [
+            "dummy_17",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "dummy_16",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "dummy_15",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "dummy_14",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "dummy_13",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxyB", 1 ]
+            ]
+          ],
+          [
+            "dummy_12",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "proxyA", 1 ]
+            ]
+          ],
+          [
+            "clkin",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "1", 1 ]
+            ]
+          ],
+          [
+            "net1",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "8", 1 ]
+            ]
+          ]
+        ]
+      ]
+   ],
+   "badelements": [
+      [
+        [
+          [
+            "sky130_fd_sc_hd__dfrbp_1:x2",
+            [
+              [ "CLK", 2 ],
+              [ "D", 3 ],
+              [ "RESET_B", 3 ],
+              [ "VGND", 8 ],
+              [ "VNB", 8 ],
+              [ "VPB", 8 ],
+              [ "VPWR", 8 ],
+              [ "Q", 1 ],
+              [ "Q_N", 3 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ],
+              [ "proxy7", 1 ],
+              [ "proxy8", 1 ],
+              [ "proxy9", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "sky130_fd_sc_hd__dfrbp_1:2",
+            [
+              [ "proxyCLK", 1 ],
+              [ "proxyD", 1 ],
+              [ "proxyRESET_B", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyQ", 1 ],
+              [ "proxyQ_N", 1 ],
+              [ "1", 2 ],
+              [ "2", 3 ],
+              [ "3", 3 ],
+              [ "4", 8 ],
+              [ "5", 8 ],
+              [ "6", 8 ],
+              [ "7", 8 ],
+              [ "8", 1 ],
+              [ "9", 3 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "sky130_fd_sc_hd__and2_0:x1",
+            [
+              [ "A", 1 ],
+              [ "B", 3 ],
+              [ "VGND", 8 ],
+              [ "VNB", 8 ],
+              [ "VPB", 8 ],
+              [ "VPWR", 8 ],
+              [ "X", 2 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ],
+              [ "proxy7", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "sky130_fd_sc_hd__and2_0:1",
+            [
+              [ "proxyA", 1 ],
+              [ "proxyB", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyX", 1 ],
+              [ "1", 1 ],
+              [ "2", 3 ],
+              [ "3", 8 ],
+              [ "4", 8 ],
+              [ "5", 8 ],
+              [ "6", 8 ],
+              [ "7", 2 ]
+            ]
+          ]
+        ]
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        ""
+      ], [
+        ""
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        ""
+      ], [
+        ""
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2"
+      ], [
+        "1",
+        "2"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "1",
+        "2"
+      ], [
+        "1",
+        "2"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        ""
+      ], [
+        ""
+      ]
+   ]
+  },
+  {
+   "name": [
+      "level_shift",
+      "level_shift"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__nfet_01v8", 1],
+         ["sky130_fd_pr__pfet_01v8", 1],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 2],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 2 ]
+       ], [
+         ["sky130_fd_pr__nfet_01v8", 1 ],
+         ["sky130_fd_pr__pfet_01v8", 1 ],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 2 ],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 2 ]
+       ]
+   ],
+   "nets": [
+    8,
+    8
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "avss",
+        "avdd",
+        "in_b",
+        "out",
+        "out_b",
+        "in",
+        "dvdd",
+        "dvss"
+      ], [
+        "avss",
+        "avdd",
+        "in_b",
+        "out",
+        "out_b",
+        "in",
+        "dvdd",
+        "dvss"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "ripl_dly_clk_buf",
+      "ripl_dly_clk_buf"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_sc_hd__and2_0", 2],
+         ["sky130_fd_sc_hd__dfrbp_1", 6],
+         ["sky130_fd_sc_hd__a221o_1", 1],
+         ["sky130_fd_sc_hd__einvn_0", 1],
+         ["sky130_fd_pr__nfet_01v8", 1 ]
+       ], [
+         ["sky130_fd_sc_hd__and2_0", 2 ],
+         ["sky130_fd_sc_hd__dfrbp_1", 6 ],
+         ["sky130_fd_sc_hd__a221o_1", 1 ],
+         ["sky130_fd_sc_hd__einvn_0", 1 ],
+         ["sky130_fd_pr__nfet_01v8", 1 ]
+       ]
+   ],
+   "nets": [
+    107,
+    107
+   ],
+   "badnets": [
+      [
+        [
+          [
+            "clkout",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "Z", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "clkout",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "7", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "dummy_117",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy7", 1 ]
+            ]
+          ],
+          [
+            "dummy_116",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "dummy_115",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "dummy_114",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "dummy_113",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "dummy_112",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "dummy_111",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy1", 1 ]
+            ]
+          ],
+          [
+            "dummy_110",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy10", 1 ]
+            ]
+          ],
+          [
+            "dummy_109",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy9", 1 ]
+            ]
+          ],
+          [
+            "dummy_108",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy8", 1 ]
+            ]
+          ],
+          [
+            "dummy_107",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy7", 1 ]
+            ]
+          ],
+          [
+            "dummy_106",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "dummy_105",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "dummy_104",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "dummy_103",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "dummy_102",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "dummy_101",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy1", 1 ]
+            ]
+          ],
+          [
+            "stby",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "C1", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "dummy_117",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyZ", 1 ]
+            ]
+          ],
+          [
+            "dummy_116",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "dummy_115",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "dummy_114",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "dummy_113",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "dummy_112",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyTE_B", 1 ]
+            ]
+          ],
+          [
+            "dummy_111",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyA", 1 ]
+            ]
+          ],
+          [
+            "dummy_110",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyX", 1 ]
+            ]
+          ],
+          [
+            "dummy_109",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "dummy_108",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "dummy_107",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "dummy_106",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "dummy_105",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyC1", 1 ]
+            ]
+          ],
+          [
+            "dummy_104",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyB2", 1 ]
+            ]
+          ],
+          [
+            "dummy_103",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyB1", 1 ]
+            ]
+          ],
+          [
+            "dummy_102",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyA2", 1 ]
+            ]
+          ],
+          [
+            "dummy_101",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyA1", 1 ]
+            ]
+          ],
+          [
+            "stby",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "5", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "x5/VPB",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "VPB", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "VPWR", 2 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VPB", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VPWR", 6 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VPB", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VPWR", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VPB", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VPWR", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "dvdd",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "8", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "6", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "7", 6 ],
+              [ "sky130_fd_sc_hd__and2_0", "5", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "6", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "5", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "6", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "dvss",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "VGND", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "VNB", 2 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VGND", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VNB", 6 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VGND", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VNB", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VGND", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VNB", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "4", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "dvss",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "4", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "6", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "7", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "4", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "5", 6 ],
+              [ "sky130_fd_sc_hd__and2_0", "3", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "4", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "3", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "4", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "stby_done_b",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "B", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "D", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q_N", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "A2", 1 ]
+            ]
+          ],
+          [
+            "stby_b",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "RESET_B", 3 ],
+              [ "sky130_fd_sc_hd__a221o_1", "A1", 1 ]
+            ]
+          ],
+          [
+            "ena_done_b",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "B", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "D", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q_N", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "B2", 1 ]
+            ]
+          ],
+          [
+            "ena",
+            [
+              [ "sky130_fd_sc_hd__dfrbp_1", "RESET_B", 3 ],
+              [ "sky130_fd_sc_hd__a221o_1", "B1", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "ena_done_b",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "4", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "2", 1 ]
+            ]
+          ],
+          [
+            "ena",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "3", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "3", 3 ]
+            ]
+          ],
+          [
+            "stby_done_b",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "2", 1 ]
+            ]
+          ],
+          [
+            "stby_b",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "1", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "3", 3 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "clk_disable",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "X", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "TE_B", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ]
+            ]
+          ],
+          [
+            "clkin",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "A", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "A", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "clkin",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "1", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "1", 1 ]
+            ]
+          ],
+          [
+            "clk_disable",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "10", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "2", 1 ]
+            ]
+          ]
+        ]
+      ]
+   ],
+   "badelements": [
+      [
+        [
+          [
+            "sky130_fd_sc_hd__einvn_0:x5",
+            [
+              [ "A", 3 ],
+              [ "TE_B", 3 ],
+              [ "VGND", 22 ],
+              [ "VNB", 22 ],
+              [ "VPB", 20 ],
+              [ "VPWR", 20 ],
+              [ "Z", 2 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ],
+              [ "proxy7", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "sky130_fd_sc_hd__einvn_0:5",
+            [
+              [ "proxyA", 1 ],
+              [ "proxyTE_B", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyZ", 1 ],
+              [ "1", 3 ],
+              [ "2", 3 ],
+              [ "3", 22 ],
+              [ "4", 22 ],
+              [ "5", 20 ],
+              [ "6", 20 ],
+              [ "7", 2 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "sky130_fd_sc_hd__a221o_1:x3",
+            [
+              [ "A1", 4 ],
+              [ "A2", 4 ],
+              [ "B1", 4 ],
+              [ "B2", 4 ],
+              [ "C1", 1 ],
+              [ "VGND", 22 ],
+              [ "VNB", 22 ],
+              [ "VPB", 20 ],
+              [ "VPWR", 20 ],
+              [ "X", 3 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ],
+              [ "proxy7", 1 ],
+              [ "proxy8", 1 ],
+              [ "proxy9", 1 ],
+              [ "proxy10", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "sky130_fd_sc_hd__a221o_1:3",
+            [
+              [ "proxyA1", 1 ],
+              [ "proxyA2", 1 ],
+              [ "proxyB1", 1 ],
+              [ "proxyB2", 1 ],
+              [ "proxyC1", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyX", 1 ],
+              [ "1", 4 ],
+              [ "2", 4 ],
+              [ "3", 4 ],
+              [ "4", 4 ],
+              [ "5", 1 ],
+              [ "6", 22 ],
+              [ "7", 22 ],
+              [ "8", 20 ],
+              [ "9", 20 ],
+              [ "10", 3 ]
+            ]
+          ]
+        ]
+      ]
+   ]
+  },
+  {
+   "name": [
+      "sky130_be_ip__lsxo",
+      "sky130_be_ip__lsxo"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_pr__res_xhigh_po_0p35", 5],
+         ["sky130_fd_sc_hd__buf_1", 2],
+         ["sky130_fd_pr__diode_pw2nd_05v5", 4],
+         ["sky130_fd_pr__nfet_01v8", 15],
+         ["sky130_fd_pr__pfet_01v8", 12],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 18],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 16],
+         ["sky130_fd_sc_hd__and2_0", 2],
+         ["sky130_fd_sc_hd__dfrbp_1", 6],
+         ["sky130_fd_sc_hd__a221o_1", 1],
+         ["sky130_fd_sc_hd__einvn_0", 1],
+         ["sky130_fd_pr__cap_mim_m3_1", 8],
+         ["sky130_fd_pr__diode_pd2nw_05v5", 2 ]
+       ], [
+         ["sky130_fd_pr__res_xhigh_po_0p35", 5 ],
+         ["sky130_fd_sc_hd__buf_1", 2 ],
+         ["sky130_fd_pr__diode_pw2nd_05v5", 4 ],
+         ["sky130_fd_pr__nfet_01v8", 15 ],
+         ["sky130_fd_pr__pfet_01v8", 12 ],
+         ["sky130_fd_pr__nfet_g5v0d10v5", 18 ],
+         ["sky130_fd_pr__pfet_g5v0d10v5", 16 ],
+         ["sky130_fd_sc_hd__and2_0", 2 ],
+         ["sky130_fd_sc_hd__dfrbp_1", 6 ],
+         ["sky130_fd_sc_hd__a221o_1", 1 ],
+         ["sky130_fd_sc_hd__einvn_0", 1 ],
+         ["sky130_fd_pr__cap_mim_m3_1", 8 ],
+         ["sky130_fd_pr__diode_pd2nw_05v5", 2 ]
+       ]
+   ],
+   "nets": [
+    153,
+    153
+   ],
+   "badnets": [
+      [
+        [
+          [
+            "ripl_dly_clk_buf:x7/dummy_117",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy7", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_116",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_115",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_114",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_113",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_112",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_111",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxy1", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_110",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy10", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_109",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy9", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_108",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy8", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_107",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy7", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_106",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_105",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_104",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_103",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_102",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/dummy_101",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxy1", 1 ]
+            ]
+          ],
+          [
+            "dummy_112",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "dummy_111",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "dummy_110",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "dummy_109",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "dummy_108",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "dummy_107",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy1", 1 ]
+            ]
+          ],
+          [
+            "dummy_106",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy6", 1 ]
+            ]
+          ],
+          [
+            "dummy_105",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy5", 1 ]
+            ]
+          ],
+          [
+            "dummy_104",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy4", 1 ]
+            ]
+          ],
+          [
+            "dummy_103",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy3", 1 ]
+            ]
+          ],
+          [
+            "dummy_102",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy2", 1 ]
+            ]
+          ],
+          [
+            "dummy_101",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxy1", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "ripl_dly_clk_buf:7/dummy_117",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyZ", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_116",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_115",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_114",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_113",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_112",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyTE_B", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_111",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "proxyA", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_110",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyX", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_109",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_108",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_107",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_106",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_105",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyC1", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_104",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyB2", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_103",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyB1", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_102",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyA2", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/dummy_101",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "proxyA1", 1 ]
+            ]
+          ],
+          [
+            "dummy_38",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyX", 1 ]
+            ]
+          ],
+          [
+            "dummy_37",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "dummy_36",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "dummy_35",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "dummy_34",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "dummy_33",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyA", 1 ]
+            ]
+          ],
+          [
+            "dummy_32",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyX", 1 ]
+            ]
+          ],
+          [
+            "dummy_31",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVPWR", 1 ]
+            ]
+          ],
+          [
+            "dummy_30",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVPB", 1 ]
+            ]
+          ],
+          [
+            "dummy_29",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVNB", 1 ]
+            ]
+          ],
+          [
+            "dummy_28",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyVGND", 1 ]
+            ]
+          ],
+          [
+            "dummy_27",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "proxyA", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "ripl_dly_clk_buf:x7/clk_disable",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "X", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "TE_B", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "ripl_dly_clk_buf:7/clk_disable",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "10", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "2", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "standby_ip",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "X", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 2 ],
+              [ "sky130_fd_pr__pfet_01v8", "2", 2 ],
+              [ "sky130_fd_pr__nfet_g5v0d10v5", "2", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "C1", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "standby_ip",
+            [
+              [ "sky130_fd_pr__pfet_01v8", "2", 2 ],
+              [ "sky130_fd_sc_hd__a221o_1", "5", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 2 ],
+              [ "sky130_fd_pr__nfet_g5v0d10v5", "2", 1 ],
+              [ "sky130_fd_sc_hd__buf_1", "6", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "standby_b",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_pr__pfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_pr__nfet_g5v0d10v5", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "RESET_B", 3 ],
+              [ "sky130_fd_sc_hd__a221o_1", "A1", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ]
+            ]
+          ],
+          [
+            "ena_ip",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "X", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ],
+              [ "sky130_fd_pr__pfet_01v8", "2", 1 ],
+              [ "sky130_fd_pr__nfet_g5v0d10v5", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "RESET_B", 3 ],
+              [ "sky130_fd_sc_hd__a221o_1", "B1", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "ena_ip",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "3", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "3", 3 ],
+              [ "sky130_fd_pr__nfet_g5v0d10v5", "2", 1 ],
+              [ "sky130_fd_pr__pfet_01v8", "2", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ],
+              [ "sky130_fd_sc_hd__buf_1", "6", 1 ]
+            ]
+          ],
+          [
+            "standby_b",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "1", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "3", 3 ],
+              [ "sky130_fd_pr__nfet_g5v0d10v5", "2", 1 ],
+              [ "sky130_fd_pr__pfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "dvss",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "VGND", 2 ],
+              [ "sky130_fd_sc_hd__buf_1", "VNB", 2 ],
+              [ "sky130_fd_pr__diode_pw2nd_05v5", "1", 2 ],
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 5 ],
+              [ "sky130_fd_pr__nfet_01v8", "4", 5 ],
+              [ "sky130_fd_sc_hd__and2_0", "VGND", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "VNB", 2 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VGND", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VNB", 6 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VGND", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VNB", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VGND", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VNB", 1 ],
+              [ "sky130_fd_pr__cap_mim_m3_1", "2", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "dvss",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 5 ],
+              [ "sky130_fd_pr__nfet_01v8", "4", 5 ],
+              [ "sky130_fd_pr__cap_mim_m3_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "6", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "7", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "4", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "5", 6 ],
+              [ "sky130_fd_sc_hd__and2_0", "3", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "4", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "3", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "4", 1 ],
+              [ "sky130_fd_sc_hd__buf_1", "2", 2 ],
+              [ "sky130_fd_sc_hd__buf_1", "3", 2 ],
+              [ "sky130_fd_pr__diode_pw2nd_05v5", "1", 2 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "standby",
+            [
+              [ "sky130_fd_pr__diode_pw2nd_05v5", "2", 1 ],
+              [ "sky130_fd_sc_hd__buf_1", "A", 1 ]
+            ]
+          ],
+          [
+            "ena",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "A", 1 ],
+              [ "sky130_fd_pr__diode_pw2nd_05v5", "2", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "standby",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "1", 1 ],
+              [ "sky130_fd_pr__diode_pw2nd_05v5", "2", 1 ]
+            ]
+          ],
+          [
+            "ena",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "1", 1 ],
+              [ "sky130_fd_pr__diode_pw2nd_05v5", "2", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "dout_ip",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "A", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "A", 1 ],
+              [ "sky130_fd_pr__pfet_01v8", "1|3", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "dout_ip",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "1", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "1", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 2 ],
+              [ "sky130_fd_pr__pfet_01v8", "1|3", 1 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "dvdd",
+            [
+              [ "sky130_fd_sc_hd__buf_1", "VPB", 2 ],
+              [ "sky130_fd_sc_hd__buf_1", "VPWR", 2 ],
+              [ "sky130_fd_pr__pfet_01v8", "1|3", 3 ],
+              [ "sky130_fd_pr__pfet_01v8", "4", 3 ],
+              [ "sky130_fd_sc_hd__and2_0", "VPB", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "VPWR", 2 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VPB", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "VPWR", 6 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VPB", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "VPWR", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VPB", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "VPWR", 1 ],
+              [ "sky130_fd_pr__cap_mim_m3_1", "1", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "dvdd",
+            [
+              [ "sky130_fd_pr__pfet_01v8", "1|3", 3 ],
+              [ "sky130_fd_pr__pfet_01v8", "4", 3 ],
+              [ "sky130_fd_pr__cap_mim_m3_1", "1", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "8", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "6", 6 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "7", 6 ],
+              [ "sky130_fd_sc_hd__and2_0", "5", 2 ],
+              [ "sky130_fd_sc_hd__and2_0", "6", 2 ],
+              [ "sky130_fd_sc_hd__einvn_0", "5", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "6", 1 ],
+              [ "sky130_fd_sc_hd__buf_1", "4", 2 ],
+              [ "sky130_fd_sc_hd__buf_1", "5", 2 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "ripl_dly_clk_buf:x7/stby_done_b",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "B", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "D", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q_N", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "A2", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:x7/ena_done_b",
+            [
+              [ "sky130_fd_sc_hd__and2_0", "B", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "D", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "Q_N", 1 ],
+              [ "sky130_fd_sc_hd__a221o_1", "B2", 1 ]
+            ]
+          ],
+          [
+            "dout_filt",
+            [
+              [ "sky130_fd_sc_hd__einvn_0", "Z", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ],
+              [ "sky130_fd_pr__pfet_01v8", "2", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "ripl_dly_clk_buf:7/ena_done_b",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "4", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "2", 1 ]
+            ]
+          ],
+          [
+            "ripl_dly_clk_buf:7/stby_done_b",
+            [
+              [ "sky130_fd_sc_hd__a221o_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "2", 1 ],
+              [ "sky130_fd_sc_hd__dfrbp_1", "9", 1 ],
+              [ "sky130_fd_sc_hd__and2_0", "2", 1 ]
+            ]
+          ],
+          [
+            "dout_filt",
+            [
+              [ "sky130_fd_pr__nfet_01v8", "1|3", 1 ],
+              [ "sky130_fd_sc_hd__einvn_0", "7", 1 ],
+              [ "sky130_fd_pr__nfet_01v8", "2", 1 ],
+              [ "sky130_fd_pr__pfet_01v8", "2", 1 ]
+            ]
+          ]
+        ]
+      ]
+   ],
+   "badelements": [
+      [
+        [
+          [
+            "ripl_dly_clk_buf:x7/sky130_fd_sc_hd__einvn_0:x5",
+            [
+              [ "A", 6 ],
+              [ "TE_B", 3 ],
+              [ "VGND", 37 ],
+              [ "VNB", 37 ],
+              [ "VPB", 31 ],
+              [ "VPWR", 31 ],
+              [ "Z", 4 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ],
+              [ "proxy7", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "ripl_dly_clk_buf:7/sky130_fd_sc_hd__einvn_0:5",
+            [
+              [ "proxyA", 1 ],
+              [ "proxyTE_B", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyZ", 1 ],
+              [ "1", 6 ],
+              [ "2", 3 ],
+              [ "3", 37 ],
+              [ "4", 37 ],
+              [ "5", 31 ],
+              [ "6", 31 ],
+              [ "7", 4 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "ripl_dly_clk_buf:x7/sky130_fd_sc_hd__a221o_1:x3",
+            [
+              [ "A1", 8 ],
+              [ "A2", 4 ],
+              [ "B1", 8 ],
+              [ "B2", 4 ],
+              [ "C1", 7 ],
+              [ "VGND", 37 ],
+              [ "VNB", 37 ],
+              [ "VPB", 31 ],
+              [ "VPWR", 31 ],
+              [ "X", 3 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ],
+              [ "proxy7", 1 ],
+              [ "proxy8", 1 ],
+              [ "proxy9", 1 ],
+              [ "proxy10", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "ripl_dly_clk_buf:7/sky130_fd_sc_hd__a221o_1:3",
+            [
+              [ "proxyA1", 1 ],
+              [ "proxyA2", 1 ],
+              [ "proxyB1", 1 ],
+              [ "proxyB2", 1 ],
+              [ "proxyC1", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyX", 1 ],
+              [ "1", 8 ],
+              [ "2", 4 ],
+              [ "3", 8 ],
+              [ "4", 4 ],
+              [ "5", 7 ],
+              [ "6", 37 ],
+              [ "7", 37 ],
+              [ "8", 31 ],
+              [ "9", 31 ],
+              [ "10", 3 ]
+            ]
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "sky130_fd_sc_hd__buf_1:x2",
+            [
+              [ "A", 2 ],
+              [ "VGND", 37 ],
+              [ "VNB", 37 ],
+              [ "VPB", 31 ],
+              [ "VPWR", 31 ],
+              [ "X", 7 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ]
+            ]
+          ],
+          [
+            "sky130_fd_sc_hd__buf_1:x1",
+            [
+              [ "A", 2 ],
+              [ "VGND", 37 ],
+              [ "VNB", 37 ],
+              [ "VPB", 31 ],
+              [ "VPWR", 31 ],
+              [ "X", 8 ],
+              [ "proxy1", 1 ],
+              [ "proxy2", 1 ],
+              [ "proxy3", 1 ],
+              [ "proxy4", 1 ],
+              [ "proxy5", 1 ],
+              [ "proxy6", 1 ]
+            ]
+          ]
+        ], [
+          [
+            "sky130_fd_sc_hd__buf_1:2",
+            [
+              [ "proxyA", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyX", 1 ],
+              [ "1", 2 ],
+              [ "2", 37 ],
+              [ "3", 37 ],
+              [ "4", 31 ],
+              [ "5", 31 ],
+              [ "6", 7 ]
+            ]
+          ],
+          [
+            "sky130_fd_sc_hd__buf_1:1",
+            [
+              [ "proxyA", 1 ],
+              [ "proxyVGND", 1 ],
+              [ "proxyVNB", 1 ],
+              [ "proxyVPB", 1 ],
+              [ "proxyVPWR", 1 ],
+              [ "proxyX", 1 ],
+              [ "1", 2 ],
+              [ "2", 37 ],
+              [ "3", 37 ],
+              [ "4", 31 ],
+              [ "5", 31 ],
+              [ "6", 8 ]
+            ]
+          ]
+        ]
+      ]
+   ],
+   "pins": [
+      [
+        "avss",
+        "avdd",
+        "xout",
+        "xin",
+        "dvss",
+        "standby",
+        "ena",
+        "ibias",
+        "dout",
+        "dvdd"
+      ], [
+        "avss",
+        "avdd",
+        "xout",
+        "xin",
+        "dvss",
+        "standby",
+        "ena",
+        "ibias",
+        "dout",
+        "dvdd"
+      ]
+   ]
+  }
+]

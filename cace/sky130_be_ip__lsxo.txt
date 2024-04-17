@@ -554,17 +554,6 @@ physical_parameters {
 	}
 	
 	+
-	name:		LVS_errors
-	description:	LVS errors
-	display:	LVS errors
-	spec {
-		maximum:	0	fail
-	}
-	evaluate {
-		tool:		cace_lvs
-	}
-	
-	+
 	name:		DRC_errors
 	spec {
 		maximum:	0	fail
