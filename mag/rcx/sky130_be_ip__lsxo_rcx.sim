@@ -1,0 +1,1042 @@
+| units: 500000 tech: sky130A format: MIT
+x a_15705_n2241# a_16273_n2273# a_16620_n1869# dvss s=3996,197 d=2844,151 l=30 w=72 x=16590 y=-1868 sky130_fd_pr__special_nfet_01v8
+x x7.stby_done_b dvdd a_20376_n2791# dvdd s=4368,272 d=2604,146 l=30 w=84 x=20358 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_19955_n2241# a_20689_n2273# a_21036_n1869# dvdd s=5166,237 d=2352,140 l=30 w=84 x=21082 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_11052_n8172# a_10620_n8338# a_24220_n8172# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-8171 sky130_fd_pr__res_xhigh_po_0p35
+x a_16620_n2791# a_16974_n2791# a_16795_n2817# dvss s=2562,145 d=4368,272 l=30 w=84 x=17035 y=-2790 sky130_fd_pr__nfet_01v8
+x ena_ip x3.in_b dvdd dvdd s=11600,516 d=11600,516 l=200 w=200 x=3412 y=-2322 sky130_fd_pr__pfet_01v8
+x a_21036_n1869# a_21211_n1943# dvdd dvdd s=2268,138 d=8528,334 l=30 w=84 x=21444 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_17913_n2791# a_18481_n2549# a_18828_n2791# dvss s=3996,197 d=2844,151 l=30 w=72 x=18798 y=-2790 sky130_fd_pr__special_nfet_01v8
+x a_2562_n19848# a_2130_n19848# a_24530_n20014# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-19847 sky130_fd_pr__res_xhigh_po_0p35
+x icnode a_11526_n12394# vbreg avss_ip s=2436,142 d=4872,284 l=1600 w=84 x=11584 y=-12393 sky130_fd_pr__nfet_g5v0d10v5
+x a_15000_n2791# dvss x7.x2.x2.CLK dvss s=3864,176 d=4452,274 l=30 w=84 x=15247 y=-2790 sky130_fd_pr__nfet_01v8
+x x7.x1.Qb2 dvss a_18168_n1881# dvss s=8820,378 d=2640,149 l=30 w=84 x=18138 y=-1880 sky130_fd_pr__nfet_01v8
+x vbp dvdd_ip tail dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=12398 y=-6916 sky130_fd_pr__pfet_01v8
+x a_16273_n2549# a_16151_n2791# a_16317_n2791# dvss s=5604,220 d=1764,126 l=30 w=84 x=16287 y=-2790 sky130_fd_pr__nfet_01v8
+x standby_b dvss_ip dvss dvss s=23200,858 d=23200,858 l=100 w=800 x=9922 y=-2991 sky130_fd_pr__nfet_01v8
+x a_11052_n9832# a_9120_n9346# a_24220_n9832# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-9831 sky130_fd_pr__res_xhigh_po_0p35
+x a_16620_n1869# a_16974_n1881# a_16795_n1943# dvss s=2562,145 d=4368,272 l=30 w=84 x=17035 y=-1880 sky130_fd_pr__nfet_01v8
+x a_21775_n2247# dvdd x7.ena_done_b dvdd s=6160,267 d=10400,504 l=30 w=200 x=21924 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=20742 y=-6157 sky130_fd_pr__cap_mim_m3_1
+x a_19955_n2241# dvdd a_20121_n2241# dvdd s=3456,182 d=6656,360 l=30 w=128 x=20091 y=-2240 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n21176# a_2130_n21176# a_24530_n21342# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-21175 sky130_fd_pr__res_xhigh_po_0p35
+x standby_33 ibias ibias_ip ibias s=46400,1716 d=46400,1716 l=100 w=800 x=11480 y=-2968 sky130_fd_pr__pfet_g5v0d10v5
+x vbreg avdd_ip xout avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=22601 y=-14309 sky130_fd_pr__pfet_g5v0d10v5
+x inv_in dvdd_ip inv_m1 dvdd_ip s=5800,316 d=5800,316 l=1600 w=100 x=18928 y=-6646 sky130_fd_pr__pfet_01v8
+x a_2564_n15590# a_2132_n15590# a_18932_n15756# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-15589 sky130_fd_pr__res_xhigh_po_0p35
+x inv_m2 dvdd_ip dout_ip dvdd_ip s=2900,158 d=5800,316 l=200 w=100 x=21670 y=-6510 sky130_fd_pr__pfet_01v8
+x a_20689_n2549# a_20567_n2791# a_20733_n2791# dvss s=5604,220 d=1764,126 l=30 w=84 x=20703 y=-2790 sky130_fd_pr__nfet_01v8
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=7832 y=-6423 sky130_fd_pr__cap_mim_m3_1
+x a_15000_n1881# dvss x7.x1.x2.CLK dvss s=3864,176 d=4452,274 l=30 w=84 x=15247 y=-1880 sky130_fd_pr__nfet_01v8
+x avdd_ip avss_ip s=9162736,22500 l=1400 w=1400 x=13874 y=-13457 sky130_fd_pr__cap_mim_m3_1
+x a_16273_n2273# a_16151_n1869# a_16317_n1881# dvss s=5604,220 d=1764,126 l=30 w=84 x=16287 y=-1880 sky130_fd_pr__nfet_01v8
+x a_21775_n2791# dvss x7.stby_done_b dvss s=4010,197 d=6760,364 l=30 w=130 x=21924 y=-2790 sky130_fd_pr__nfet_01v8
+x x7.clk_disable dvss a_14009_n2701# dvss s=3066,157 d=4368,272 l=30 w=84 x=14035 y=-2597 sky130_fd_pr__nfet_01v8
+x standby_ip standby_b dvss dvss s=11600,516 d=11600,516 l=200 w=200 x=5324 y=-2321 sky130_fd_pr__nfet_01v8
+x a_2971_n1521# ena_ip dvss dvss s=5408,312 d=3016,162 l=30 w=104 x=2997 y=-1520 sky130_fd_pr__nfet_01v8
+x standby_b a_16317_n2791# dvss dvss s=1764,126 d=5384,230 l=30 w=84 x=16359 y=-2790 sky130_fd_pr__nfet_01v8
+x avdd_ip avss_ip s=9162736,22500 l=1400 w=1400 x=15584 y=-11715 sky130_fd_pr__cap_mim_m3_1
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=20742 y=-10797 sky130_fd_pr__cap_mim_m3_1
+x x7.ena_done_b a_14035_n1997# dvss dvss s=2730,172 d=4290,196 l=30 w=130 x=14035 y=-1954 sky130_fd_pr__nfet_01v8
+x a_21775_n2791# dvdd x7.stby_done_b dvdd s=6160,267 d=10400,504 l=30 w=200 x=21924 y=-2540 sky130_fd_pr__pfet_01v8_hvt
+x a_2564_n17416# a_2132_n17582# a_18932_n17416# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-17415 sky130_fd_pr__res_xhigh_po_0p35
+x inv_in dvss_ip inv_m1 dvss_ip s=5800,316 d=5800,316 l=1600 w=100 x=18948 y=-5633 sky130_fd_pr__nfet_01v8
+x avss avdd s=17936464,30612 l=2000 w=2000 x=1974 y=-8233 sky130_fd_pr__cap_mim_m3_1
+x a_11052_n9666# a_10620_n9666# a_24220_n9832# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-9665 sky130_fd_pr__res_xhigh_po_0p35
+x a_20689_n2273# a_20567_n1869# a_20733_n1881# dvss s=5604,220 d=1764,126 l=30 w=84 x=20703 y=-1880 sky130_fd_pr__nfet_01v8
+x x7.x2.x2.CLK a_15539_n2791# dvdd dvdd s=6656,360 d=3456,182 l=30 w=128 x=15591 y=-2474 sky130_fd_pr__pfet_01v8_hvt
+x a_15705_n2791# a_16620_n2791# a_16782_n2425# dvdd s=2352,140 d=2268,138 l=30 w=84 x=16752 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x inv_m1 inv_m2 dvdd_ip dvdd_ip s=5800,316 d=2900,158 l=200 w=100 x=21412 y=-6510 sky130_fd_pr__pfet_01v8
+x standby dvdd a_4857_n1521# dvdd s=4582,216 d=8216,420 l=30 w=158 x=4883 y=-1432 sky130_fd_pr__pfet_01v8_hvt
+x x3.out_b avdd avdd_ip avdd s=23200,858 d=23200,858 l=100 w=800 x=4030 y=-8054 sky130_fd_pr__pfet_g5v0d10v5
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=23508 y=-10797 sky130_fd_pr__cap_mim_m3_1
+x a_19955_n2791# dvss a_20121_n2791# dvss s=2268,138 d=4368,272 l=30 w=84 x=20091 y=-2790 sky130_fd_pr__nfet_01v8
+x ena_ip a_16317_n1881# dvss dvss s=1764,126 d=5384,230 l=30 w=84 x=16359 y=-1880 sky130_fd_pr__nfet_01v8
+x a_19567_n2247# dvss x7.x1.Qb2 dvss s=4010,197 d=6760,364 l=30 w=130 x=19716 y=-1926 sky130_fd_pr__nfet_01v8
+x ena dvss l=0 w=0 x=2888 y=-1041 sky130_fd_pr__diode_pw2nd_05v5
+x a_19003_n2817# a_19567_n2791# dvdd dvdd s=6656,360 d=6160,267 l=30 w=128 x=19619 y=-2468 sky130_fd_pr__pfet_01v8_hvt
+x vg1 vg1 avss_ip avss_ip s=46400,1716 d=46400,1716 l=400 w=800 x=20908 y=-14301 sky130_fd_pr__nfet_g5v0d10v5
+x a_19955_n2241# a_21036_n1869# a_21145_n1869# dvss s=2844,151 d=2676,150 l=30 w=72 x=21115 y=-1868 sky130_fd_pr__special_nfet_01v8
+x vbreg avdd_ip avdd_ip avdd_ip d=46400,1716 l=400 w=800 x=22601 y=-13153 sky130_fd_pr__pfet_g5v0d10v5
+x standby_b dvdd a_21211_n2817# dvdd s=3276,162 d=2268,138 l=30 w=84 x=21360 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x xin avss_ip avss_ip avss_ip d=23200,858 l=100 w=800 x=20464 y=-17927 sky130_fd_pr__nfet_g5v0d10v5
+x a_18828_n2791# a_19182_n2791# a_19003_n2817# dvss s=2562,145 d=4368,272 l=30 w=84 x=19243 y=-2790 sky130_fd_pr__nfet_01v8
+x dout_ip dvdd a_15000_n1881# dvdd s=4452,274 d=2436,142 l=30 w=84 x=15053 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2564_n17250# a_2132_n17250# a_18932_n17416# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-17249 sky130_fd_pr__res_xhigh_po_0p35
+x a_19955_n2241# dvss a_20121_n2241# dvss s=2268,138 d=4368,272 l=30 w=84 x=20091 y=-1880 sky130_fd_pr__nfet_01v8
+x ibias_ip dvss_ip dvss_ip dvss_ip d=23200,916 l=400 w=400 x=14704 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x a_11052_n9500# a_10620_n9666# a_24220_n9500# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-9499 sky130_fd_pr__res_xhigh_po_0p35
+x a_17913_n2241# a_18263_n1869# a_18359_n1869# dvss s=2376,138 d=5604,220 l=30 w=72 x=18329 y=-1868 sky130_fd_pr__special_nfet_01v8
+x vbreg avdd_ip xout avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=23529 y=-14309 sky130_fd_pr__pfet_g5v0d10v5
+x a_3566_n13490# avss_ip avss_ip avss_ip s=30240,1004 l=14968 w=0 x=3566 y=-13489 sky130_fd_pr__res_xhigh_po_0p35
+x vg2 vrb vbreg avss_ip s=46400,1716 d=46400,1716 l=400 w=800 x=20908 y=-14879 sky130_fd_pr__nfet_g5v0d10v5
+x a_18481_n2549# a_18359_n2791# a_18525_n2791# dvss s=5604,220 d=1764,126 l=30 w=84 x=18495 y=-2790 sky130_fd_pr__nfet_01v8
+x a_2562_n20844# a_2130_n20844# a_24530_n21010# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-20843 sky130_fd_pr__res_xhigh_po_0p35
+x dout_ip a_15000_n2791# a_15083_n2791# dvss s=4452,274 d=1764,126 l=30 w=84 x=15053 y=-2790 sky130_fd_pr__nfet_01v8
+x a_20121_n2241# a_20689_n2273# a_21036_n1869# dvss s=3996,197 d=2844,151 l=30 w=72 x=21006 y=-1868 sky130_fd_pr__special_nfet_01v8
+x standby_b dvss dvss_ip dvss s=23200,858 d=23200,858 l=100 w=800 x=10080 y=-2991 sky130_fd_pr__nfet_01v8
+x a_2564_n15424# a_2132_n15590# a_18932_n15424# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-15423 sky130_fd_pr__res_xhigh_po_0p35
+x x7.ena_done_b a_14285_n2281# a_14285_n2079# dvdd s=5400,254 d=5400,254 l=30 w=200 x=14285 y=-1942 sky130_fd_pr__pfet_01v8_hvt
+x a_18828_n1869# a_19182_n1881# a_19003_n1943# dvss s=2562,145 d=4368,272 l=30 w=84 x=19243 y=-1880 sky130_fd_pr__nfet_01v8
+x xin vn vn dvdd_ip d=46400,1716 l=400 w=800 x=16260 y=-6896 sky130_fd_pr__pfet_g5v0d10v5
+x standby_b standby_33 avss avss s=17400,658 d=34800,1316 l=100 w=600 x=5508 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x a_11052_n7674# a_10620_n7674# a_24220_n7840# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-7673 sky130_fd_pr__res_xhigh_po_0p35
+x ibias_ip dvss_ip ibias_ip dvss_ip s=23200,916 d=23200,916 l=400 w=400 x=13548 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x x3.out_b avdd_ip avdd avdd s=23200,858 d=46400,1716 l=100 w=800 x=4504 y=-8054 sky130_fd_pr__pfet_g5v0d10v5
+x x7.x2.Qb1 dvdd a_15960_n2791# dvdd s=4368,272 d=2604,146 l=30 w=84 x=15942 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n19516# a_2130_n19516# a_24530_n19682# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-19515 sky130_fd_pr__res_xhigh_po_0p35
+x xin avdd_ip s=133956,1464 l=0 w=0 x=21316 y=-23019 sky130_fd_pr__diode_pd2nw_05v5
+x ena_ip dvdd a_20579_n2247# dvdd s=2814,151 d=4368,272 l=30 w=84 x=20786 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2971_n1521# ena_ip dvdd dvdd s=8216,420 d=4582,216 l=30 w=158 x=3289 y=-1520 sky130_fd_pr__pfet_01v8_hvt
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=18382 y=-17753 sky130_fd_pr__cap_mim_m3_1
+x dout_ip a_15000_n1881# a_15083_n1881# dvss s=4452,274 d=1764,126 l=30 w=84 x=15053 y=-1880 sky130_fd_pr__nfet_01v8
+x a_18481_n2273# a_18359_n1869# a_18525_n1881# dvss s=5604,220 d=1764,126 l=30 w=84 x=18495 y=-1880 sky130_fd_pr__nfet_01v8
+x x7.x2.Qb2 dvdd a_18168_n2791# dvdd s=4368,272 d=2604,146 l=30 w=84 x=18150 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x standby_b a_18525_n2791# dvss dvss s=1764,126 d=5384,230 l=30 w=84 x=18567 y=-2790 sky130_fd_pr__nfet_01v8
+x xout tail xin_buf dvdd_ip s=23200,858 d=23200,858 l=400 w=800 x=17176 y=-6896 sky130_fd_pr__pfet_g5v0d10v5
+x a_16055_n2791# dvdd a_16273_n2549# dvdd s=8736,440 d=5166,237 l=30 w=168 x=16567 y=-2508 sky130_fd_pr__pfet_01v8_hvt
+x x7.stby_done_b a_15083_n2791# dvss dvss s=1764,126 d=3864,176 l=30 w=84 x=15125 y=-2790 sky130_fd_pr__nfet_01v8
+x xin avss_ip xout avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-17769 sky130_fd_pr__nfet_g5v0d10v5
+x a_21211_n1943# dvss x7.x1.x4.Q dvss s=6760,364 d=6760,364 l=30 w=130 x=21639 y=-1926 sky130_fd_pr__nfet_01v8
+x x7.stby_done_b a_15000_n2791# dvdd dvdd s=2436,142 d=7364,252 l=30 w=84 x=15141 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x standby_ip a_14285_n2079# a_14009_n2404# dvdd s=5400,254 d=10400,504 l=30 w=200 x=14285 y=-1858 sky130_fd_pr__pfet_01v8_hvt
+x standby_b dvss dvss_ip dvss s=46400,1716 d=23200,858 l=100 w=800 x=9448 y=-2991 sky130_fd_pr__nfet_01v8
+x vbreg xout avdd_ip avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=22601 y=-13731 sky130_fd_pr__pfet_g5v0d10v5
+x vbp dvdd_ip tail dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=13542 y=-6388 sky130_fd_pr__pfet_01v8
+x a_2562_n20678# a_2130_n20844# a_24530_n20678# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-20677 sky130_fd_pr__res_xhigh_po_0p35
+x a_15539_n2241# a_16620_n1869# a_16729_n1869# dvss s=2844,151 d=2676,150 l=30 w=72 x=16699 y=-1868 sky130_fd_pr__special_nfet_01v8
+x avss_ip vg2 s=55200232,58472 l=3600 w=3600 x=9688 y=-18565 sky130_fd_pr__cap_mim_m3_1
+x vbp dvdd_ip dvdd_ip dvdd_ip d=23200,916 l=400 w=400 x=10682 y=-6388 sky130_fd_pr__pfet_01v8
+x a_16055_n1869# dvdd a_16273_n2273# dvdd s=8736,440 d=5166,237 l=30 w=168 x=16567 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2564_n15258# a_2132_n15258# a_18932_n15424# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-15257 sky130_fd_pr__res_xhigh_po_0p35
+x a_17913_n2791# a_18828_n2791# a_18990_n2425# dvdd s=2352,140 d=2268,138 l=30 w=84 x=18960 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x x7.stby_done_b dvdd a_14285_n2281# dvdd s=6300,263 d=6600,266 l=30 w=200 x=14285 y=-2310 sky130_fd_pr__pfet_01v8_hvt
+x vbreg avdd_ip avdd_ip avdd_ip d=46400,1716 l=400 w=800 x=23529 y=-13153 sky130_fd_pr__pfet_g5v0d10v5
+x ena_ip a_18525_n1881# dvss dvss s=1764,126 d=5384,230 l=30 w=84 x=18567 y=-1880 sky130_fd_pr__nfet_01v8
+x a_21211_n1943# a_21775_n2247# dvdd dvdd s=6656,360 d=6160,267 l=30 w=128 x=21827 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x x7.ena_done_b a_15083_n1881# dvss dvss s=1764,126 d=3864,176 l=30 w=84 x=15125 y=-1880 sky130_fd_pr__nfet_01v8
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=23508 y=-8477 sky130_fd_pr__cap_mim_m3_1
+x ena_ip dvdd a_16795_n1943# dvdd s=3276,162 d=2268,138 l=30 w=84 x=16944 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x standby dvss l=0 w=0 x=5358 y=-1041 sky130_fd_pr__diode_pw2nd_05v5
+x standby_b dvss_ip dvss dvss s=23200,858 d=23200,858 l=100 w=800 x=10554 y=-2991 sky130_fd_pr__nfet_01v8
+x a_2562_n19350# a_2130_n19516# a_24530_n19350# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-19349 sky130_fd_pr__res_xhigh_po_0p35
+x a_14009_n2404# x7.clk_disable dvdd dvdd s=10400,504 d=6300,263 l=30 w=200 x=14285 y=-2403 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n22504# avss_ip avss_ip avss_ip s=30240,1004 l=21968 w=0 x=2562 y=-22503 sky130_fd_pr__res_xhigh_po_0p35
+x standby_ip dvdd dvdd_ip dvdd s=46400,1716 d=23200,858 l=100 w=800 x=7522 y=-2986 sky130_fd_pr__pfet_01v8
+x ena_ip dvdd a_16163_n2247# dvdd s=2814,151 d=4368,272 l=30 w=84 x=16370 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2564_n16918# a_2132_n16918# a_18932_n17084# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-16917 sky130_fd_pr__res_xhigh_po_0p35
+x x7.x2.Qb2 a_19955_n2791# dvdd dvdd s=6656,360 d=3456,182 l=30 w=128 x=20007 y=-2474 sky130_fd_pr__pfet_01v8_hvt
+x ena_ip dvdd a_19003_n1943# dvdd s=3276,162 d=2268,138 l=30 w=84 x=19152 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=10152 y=-9035 sky130_fd_pr__cap_mim_m3_1
+x a_11052_n9334# a_10620_n9334# a_24220_n9500# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-9333 sky130_fd_pr__res_xhigh_po_0p35
+x a_21211_n2817# a_21775_n2791# dvss dvss s=4368,272 d=4010,197 l=30 w=84 x=21827 y=-2790 sky130_fd_pr__nfet_01v8
+x a_3566_n13324# a_3134_n13324# vrb avss_ip s=30240,1004 d=30240,1004 l=14968 w=0 x=3566 y=-13323 sky130_fd_pr__res_xhigh_po_0p35
+x standby_ip dvdd dvdd_ip dvdd s=23200,858 d=23200,858 l=100 w=800 x=8154 y=-2986 sky130_fd_pr__pfet_01v8
+x standby_b dvss a_16974_n2791# dvss s=4998,203 d=2562,145 l=30 w=84 x=16944 y=-2790 sky130_fd_pr__nfet_01v8
+x a_16795_n1943# dvss x7.x1.x2.Q dvss s=6760,364 d=6760,364 l=30 w=130 x=17223 y=-1926 sky130_fd_pr__nfet_01v8
+x a_2564_n17582# a_2132_n17582# a_18932_n17748# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-17581 sky130_fd_pr__res_xhigh_po_0p35
+x x7.x1.x2.CLK a_15539_n2241# dvdd dvdd s=6656,360 d=3456,182 l=30 w=128 x=15591 y=-2240 sky130_fd_pr__pfet_01v8_hvt
+x vbp tail dvdd_ip dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=11826 y=-6388 sky130_fd_pr__pfet_01v8
+x standby_b dvss a_19182_n2791# dvss s=4998,203 d=2562,145 l=30 w=84 x=19152 y=-2790 sky130_fd_pr__nfet_01v8
+x a_19003_n2817# a_18937_n2791# dvss dvss s=2676,150 d=4998,203 l=30 w=84 x=19003 y=-2790 sky130_fd_pr__nfet_01v8
+x avss_ip avss_ip avss_ip avss_ip d=46400,1716 l=400 w=800 x=20908 y=-15457 sky130_fd_pr__nfet_g5v0d10v5
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=20742 y=-13117 sky130_fd_pr__cap_mim_m3_1
+x inv_m2 dvss_ip dout_ip dvss_ip s=2900,158 d=5800,316 l=200 w=100 x=21670 y=-5505 sky130_fd_pr__nfet_01v8
+x a_15539_n2791# dvdd a_15705_n2791# dvdd s=3456,182 d=6656,360 l=30 w=128 x=15675 y=-2474 sky130_fd_pr__pfet_01v8_hvt
+x x3.out_b x3.out avdd avdd s=11600,516 d=11600,516 l=800 w=200 x=2810 y=-6232 sky130_fd_pr__pfet_g5v0d10v5
+x a_16795_n2817# a_16782_n2425# dvdd dvdd s=2268,138 d=3276,162 l=30 w=84 x=16836 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_21211_n1943# a_21775_n2247# dvss dvss s=4368,272 d=4010,197 l=30 w=84 x=21827 y=-1880 sky130_fd_pr__nfet_01v8
+x xin avss_ip xout avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-17137 sky130_fd_pr__nfet_g5v0d10v5
+x avss_ip avss_ip avss_ip avss_ip d=46400,1716 l=400 w=800 x=19998 y=-13145 sky130_fd_pr__nfet_g5v0d10v5
+x ena_ip dvss a_16974_n1881# dvss s=4998,203 d=2562,145 l=30 w=84 x=16944 y=-1880 sky130_fd_pr__nfet_01v8
+x a_16795_n1943# a_17359_n2247# dvdd dvdd s=6656,360 d=6160,267 l=30 w=128 x=17411 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n22338# xin a_24530_n22338# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-22337 sky130_fd_pr__res_xhigh_po_0p35
+x x3.out avss avss_ip avss s=23200,858 d=23200,858 l=100 w=800 x=2813 y=-8052 sky130_fd_pr__nfet_g5v0d10v5
+x x7.clk_disable dout_filt dvss dvss s=5800,316 d=5800,316 l=800 w=100 x=15156 y=-3265 sky130_fd_pr__nfet_01v8
+x a_15539_n2791# a_15960_n2791# a_16055_n2791# dvss s=2640,149 d=2376,138 l=30 w=72 x=16025 y=-2790 sky130_fd_pr__special_nfet_01v8
+x standby_ip dvdd_ip dvdd dvdd s=23200,858 d=23200,858 l=100 w=800 x=7680 y=-2986 sky130_fd_pr__pfet_01v8
+x x4.out_b avdd standby_33 avdd s=11600,516 d=11600,516 l=800 w=200 x=4726 y=-6232 sky130_fd_pr__pfet_g5v0d10v5
+x a_15705_n2241# a_15960_n1881# a_16055_n1869# dvdd s=2604,146 d=2898,153 l=30 w=84 x=16034 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x vbp tail dvdd_ip dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=14114 y=-6916 sky130_fd_pr__pfet_01v8
+x a_20121_n2791# a_20376_n2791# a_20471_n2791# dvdd s=2604,146 d=2898,153 l=30 w=84 x=20450 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x xout avss_ip s=257843176,88584 l=0 w=0 x=23568 y=-23031 sky130_fd_pr__diode_pw2nd_05v5
+x vbp dvdd_ip tail dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=11254 y=-6916 sky130_fd_pr__pfet_01v8
+x a_19003_n2817# a_18990_n2425# dvdd dvdd s=2268,138 d=3276,162 l=30 w=84 x=19044 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_11052_n9168# a_10620_n9334# a_24220_n9168# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-9167 sky130_fd_pr__res_xhigh_po_0p35
+x ena_ip dvss a_19182_n1881# dvss s=4998,203 d=2562,145 l=30 w=84 x=19152 y=-1880 sky130_fd_pr__nfet_01v8
+x vbreg xout avdd_ip avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=23529 y=-13731 sky130_fd_pr__pfet_g5v0d10v5
+x xin xout avss_ip avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-16979 sky130_fd_pr__nfet_g5v0d10v5
+x xout xin_buf xin_buf dvdd_ip d=23200,858 l=400 w=800 x=17634 y=-6896 sky130_fd_pr__pfet_g5v0d10v5
+x a_3566_n13158# a_3134_n13324# avss_ip avss_ip s=30240,1004 d=30240,1004 l=14968 w=0 x=3566 y=-13157 sky130_fd_pr__res_xhigh_po_0p35
+x a_19955_n2791# a_20689_n2549# a_21036_n2791# dvdd s=5166,237 d=2352,140 l=30 w=84 x=21082 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_19003_n1943# a_18937_n1869# dvss dvss s=2676,150 d=4998,203 l=30 w=84 x=19003 y=-1880 sky130_fd_pr__nfet_01v8
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=23508 y=-13117 sky130_fd_pr__cap_mim_m3_1
+x a_17747_n2791# a_18828_n2791# a_18937_n2791# dvss s=2844,151 d=2676,150 l=30 w=72 x=18907 y=-2790 sky130_fd_pr__special_nfet_01v8
+x a_16795_n2817# a_17359_n2791# dvss dvss s=4368,272 d=4010,197 l=30 w=84 x=17411 y=-2790 sky130_fd_pr__nfet_01v8
+x a_16055_n1869# dvss a_16273_n2273# dvss s=5384,230 d=3996,197 l=30 w=128 x=16491 y=-1924 sky130_fd_pr__nfet_01v8
+x a_16620_n1869# a_16795_n1943# dvdd dvdd s=2268,138 d=8528,334 l=30 w=84 x=17028 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_16795_n1943# dvdd x7.x1.x2.Q dvdd s=8528,334 d=11200,512 l=30 w=200 x=17192 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n20512# a_2130_n20512# a_24530_n20678# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-20511 sky130_fd_pr__res_xhigh_po_0p35
+x xin xout avss_ip avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-17611 sky130_fd_pr__nfet_g5v0d10v5
+x a_21036_n2791# a_21211_n2817# dvdd dvdd s=2268,138 d=8528,334 l=30 w=84 x=21444 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x standby_ip avss x4.out_b avss s=34800,1316 d=17400,658 l=100 w=600 x=4644 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x a_18263_n2791# dvdd a_18481_n2549# dvdd s=8736,440 d=5166,237 l=30 w=168 x=18775 y=-2508 sky130_fd_pr__pfet_01v8_hvt
+x inv_m1 dvss_ip dvss_ip dvss_ip d=5800,316 l=200 w=100 x=21412 y=-5505 sky130_fd_pr__nfet_01v8
+x ibias_ip dvss_ip ibias_ip dvss_ip s=23200,916 d=23200,916 l=400 w=400 x=11236 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x x7.x2.x2.CLK a_15539_n2791# dvss dvss s=4368,272 d=2268,138 l=30 w=84 x=15591 y=-2790 sky130_fd_pr__nfet_01v8
+x xin avss_ip xout avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-16505 sky130_fd_pr__nfet_g5v0d10v5
+x a_2564_n14926# a_2132_n14926# a_18932_n15092# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-14925 sky130_fd_pr__res_xhigh_po_0p35
+x x7.clk_disable a_14357_n2743# dvdd dvdd s=2688,170 d=4342,201 l=30 w=128 x=14357 y=-2700 sky130_fd_pr__pfet_01v8_hvt
+x vn vn vn dvss_ip d=46400,1716 l=400 w=800 x=16260 y=-5537 sky130_fd_pr__nfet_01v8
+x a_20121_n2791# a_20471_n2791# a_20567_n2791# dvss s=2376,138 d=5604,220 l=30 w=72 x=20537 y=-2790 sky130_fd_pr__special_nfet_01v8
+x standby_ip dvdd_ip dvdd dvdd s=23200,858 d=23200,858 l=100 w=800 x=8628 y=-2986 sky130_fd_pr__pfet_01v8
+x dout_filt dout dvss_ip dvss_ip s=8700,416 d=8700,416 l=200 w=150 x=23434 y=-5647 sky130_fd_pr__nfet_01v8
+x a_19955_n2241# a_20376_n1881# a_20471_n1869# dvss s=2640,149 d=2376,138 l=30 w=72 x=20441 y=-1868 sky130_fd_pr__special_nfet_01v8
+x a_18263_n1869# dvdd a_18481_n2273# dvdd s=8736,440 d=5166,237 l=30 w=168 x=18775 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x x3.out avss_ip avss avss s=23200,858 d=23200,858 l=100 w=800 x=2971 y=-8052 sky130_fd_pr__nfet_g5v0d10v5
+x a_16795_n1943# a_17359_n2247# dvss dvss s=4368,272 d=4010,197 l=30 w=84 x=17411 y=-1880 sky130_fd_pr__nfet_01v8
+x a_17359_n2247# dvdd x7.x1.Qb1 dvdd s=6160,267 d=10400,504 l=30 w=200 x=17508 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x vbp tail dvdd_ip dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=12970 y=-6916 sky130_fd_pr__pfet_01v8
+x avss avdd s=17936464,30612 l=2000 w=2000 x=1972 y=-5859 sky130_fd_pr__cap_mim_m3_1
+x a_16795_n2817# dvdd x7.x2.x2.Q dvdd s=8528,334 d=11200,512 l=30 w=200 x=17192 y=-2540 sky130_fd_pr__pfet_01v8_hvt
+x dout_ip dout_filt a_14035_n2743# dvss s=4368,272 d=1764,126 l=30 w=84 x=14035 y=-2772 sky130_fd_pr__nfet_01v8
+x x7.x1.x2.CLK a_15539_n2241# dvss dvss s=4368,272 d=2268,138 l=30 w=84 x=15591 y=-1880 sky130_fd_pr__nfet_01v8
+x inv_m2 dvss_ip dout_ip dvss_ip s=2900,158 d=5800,316 l=200 w=100 x=21670 y=-5715 sky130_fd_pr__nfet_01v8
+x vn dvss_ip xin_buf dvss_ip s=23200,858 d=23200,858 l=400 w=800 x=17176 y=-5537 sky130_fd_pr__nfet_01v8
+x vbreg vg1 avdd_ip avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=22601 y=-14887 sky130_fd_pr__pfet_g5v0d10v5
+x a_2562_n19682# a_2130_n19848# a_24530_n19682# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-19681 sky130_fd_pr__res_xhigh_po_0p35
+x vg2 vbreg vrb avss_ip s=46400,1716 d=46400,1716 l=400 w=800 x=19998 y=-13723 sky130_fd_pr__nfet_g5v0d10v5
+x a_17913_n2241# a_18481_n2273# a_18828_n1869# dvss s=3996,197 d=2844,151 l=30 w=72 x=18798 y=-1868 sky130_fd_pr__special_nfet_01v8
+x a_17359_n2791# dvss x7.x2.Qb1 dvss s=4010,197 d=6760,364 l=30 w=130 x=17508 y=-2790 sky130_fd_pr__nfet_01v8
+x a_2562_n20346# a_2130_n20512# a_24530_n20346# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-20345 sky130_fd_pr__res_xhigh_po_0p35
+x a_20689_n2273# a_20579_n2247# dvdd dvdd s=4620,194 d=2814,151 l=30 w=84 x=20689 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_15000_n1881# dvdd x7.x1.x2.CLK dvdd s=7364,252 d=6784,362 l=30 w=128 x=15295 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x standby_ip dvdd dvdd_ip dvdd s=23200,858 d=23200,858 l=100 w=800 x=8786 y=-2986 sky130_fd_pr__pfet_01v8
+x a_2564_n14760# a_2132_n14926# a_18932_n14760# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-14759 sky130_fd_pr__res_xhigh_po_0p35
+x a_17359_n2791# dvdd x7.x2.Qb1 dvdd s=6160,267 d=10400,504 l=30 w=200 x=17508 y=-2540 sky130_fd_pr__pfet_01v8_hvt
+x a_19003_n1943# dvss x7.x1.x3.Q dvss s=6760,364 d=6760,364 l=30 w=130 x=19431 y=-1926 sky130_fd_pr__nfet_01v8
+x xin avss_ip xout avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-17453 sky130_fd_pr__nfet_g5v0d10v5
+x x3.out_b avdd_ip avdd avdd s=23200,858 d=23200,858 l=100 w=800 x=4188 y=-8054 sky130_fd_pr__pfet_g5v0d10v5
+x a_16055_n2791# dvss a_16273_n2549# dvss s=5384,230 d=3996,197 l=30 w=128 x=16491 y=-2790 sky130_fd_pr__nfet_01v8
+x a_15705_n2791# a_16055_n2791# a_16151_n2791# dvss s=2376,138 d=5604,220 l=30 w=72 x=16121 y=-2790 sky130_fd_pr__special_nfet_01v8
+x vg1 xin s=102066284,76840 l=4400 w=4400 x=6578 y=-23291 sky130_fd_pr__cap_mim_m3_1
+x xin xout avss_ip avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-16347 sky130_fd_pr__nfet_g5v0d10v5
+x inv_m1 inv_m2 dvss_ip dvss_ip s=5800,316 d=2900,158 l=200 w=100 x=21412 y=-5715 sky130_fd_pr__nfet_01v8
+x a_2562_n19018# a_2130_n19184# a_24530_n19018# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-19017 sky130_fd_pr__res_xhigh_po_0p35
+x vbp dvdd_ip dvdd_ip dvdd_ip d=23200,916 l=400 w=400 x=12398 y=-6388 sky130_fd_pr__pfet_01v8
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=12472 y=-9035 sky130_fd_pr__cap_mim_m3_1
+x a_4857_n1521# standby_ip dvdd dvdd s=8216,420 d=4582,216 l=30 w=158 x=4883 y=-1520 sky130_fd_pr__pfet_01v8_hvt
+x ena_ip a_14009_n2404# a_14035_n1997# dvss s=6760,364 d=2730,172 l=30 w=130 x=14035 y=-2026 sky130_fd_pr__nfet_01v8
+x a_17747_n2791# dvdd a_17913_n2791# dvdd s=3456,182 d=6656,360 l=30 w=128 x=17883 y=-2474 sky130_fd_pr__pfet_01v8_hvt
+x standby dvss a_4857_n1521# dvss s=3016,162 d=5408,312 l=30 w=104 x=5229 y=-1432 sky130_fd_pr__nfet_01v8
+x a_11052_n9002# a_10620_n9002# a_24220_n9168# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-9001 sky130_fd_pr__res_xhigh_po_0p35
+x a_17747_n2791# a_18168_n2791# a_18263_n2791# dvss s=2640,149 d=2376,138 l=30 w=72 x=18233 y=-2790 sky130_fd_pr__special_nfet_01v8
+x standby_b a_14035_n2281# a_14009_n2404# dvss s=4290,196 d=6760,364 l=30 w=130 x=14035 y=-2214 sky130_fd_pr__nfet_01v8
+x a_15539_n2241# a_16273_n2273# a_16620_n1869# dvdd s=5166,237 d=2352,140 l=30 w=84 x=16666 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_17913_n2241# a_18168_n1881# a_18263_n1869# dvdd s=2604,146 d=2898,153 l=30 w=84 x=18242 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_11052_n8836# a_10620_n9002# a_24220_n8836# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-8835 sky130_fd_pr__res_xhigh_po_0p35
+x x7.x1.Qb2 a_19955_n2241# dvdd dvdd s=6656,360 d=3456,182 l=30 w=128 x=20007 y=-2240 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n20180# a_2130_n20180# a_24530_n20346# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-20179 sky130_fd_pr__res_xhigh_po_0p35
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=23508 y=-3837 sky130_fd_pr__cap_mim_m3_1
+x x3.out avdd x3.out_b avdd s=11600,516 d=11600,516 l=800 w=200 x=2810 y=-5628 sky130_fd_pr__pfet_g5v0d10v5
+x xin avss_ip xout avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-16821 sky130_fd_pr__nfet_g5v0d10v5
+x standby_33 x4.out_b avdd avdd s=11600,516 d=11600,516 l=800 w=200 x=4726 y=-5628 sky130_fd_pr__pfet_g5v0d10v5
+x a_19955_n2241# a_20471_n1869# a_20579_n2247# dvdd s=2898,153 d=4620,194 l=30 w=84 x=20549 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_16273_n2273# a_16163_n2247# dvdd dvdd s=4620,194 d=2814,151 l=30 w=84 x=16273 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x dout_ip dvdd a_15000_n2791# dvdd s=4452,274 d=2436,142 l=30 w=84 x=15053 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_18828_n1869# a_19003_n1943# dvdd dvdd s=2268,138 d=8528,334 l=30 w=84 x=19236 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n22006# a_2130_n22172# a_24530_n22006# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-22005 sky130_fd_pr__res_xhigh_po_0p35
+x xin xout avss_ip avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-17295 sky130_fd_pr__nfet_g5v0d10v5
+x avdd_ip avss_ip s=9162736,22500 l=1400 w=1400 x=13864 y=-11715 sky130_fd_pr__cap_mim_m3_1
+x a_15539_n2241# dvdd a_15705_n2241# dvdd s=3456,182 d=6656,360 l=30 w=128 x=15675 y=-2240 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n21840# a_2130_n21840# a_24530_n22006# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-21839 sky130_fd_pr__res_xhigh_po_0p35
+x vbreg xout avdd_ip avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=23529 y=-14887 sky130_fd_pr__pfet_g5v0d10v5
+x x7.x2.Qb1 a_17747_n2791# dvdd dvdd s=6656,360 d=3456,182 l=30 w=128 x=17799 y=-2474 sky130_fd_pr__pfet_01v8_hvt
+x a_2564_n16420# a_2132_n16586# a_18932_n16420# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-16419 sky130_fd_pr__res_xhigh_po_0p35
+x xin avss_ip avss_ip avss_ip d=46400,1716 l=100 w=800 x=20464 y=-16189 sky130_fd_pr__nfet_g5v0d10v5
+x a_11052_n8670# a_10620_n8670# a_24220_n8836# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-8669 sky130_fd_pr__res_xhigh_po_0p35
+x vn xin_buf xin_buf dvss_ip d=23200,858 l=400 w=800 x=17634 y=-5537 sky130_fd_pr__nfet_01v8
+x a_19567_n2247# dvdd x7.x1.Qb2 dvdd s=6160,267 d=10400,504 l=30 w=200 x=19716 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2564_n17084# a_2132_n17250# a_18932_n17084# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-17083 sky130_fd_pr__res_xhigh_po_0p35
+x x7.clk_disable dvdd a_14009_n2701# dvdd s=4342,201 d=4368,272 l=30 w=84 x=14401 y=-2597 sky130_fd_pr__pfet_01v8_hvt
+x x7.x2.Qb2 a_19955_n2791# dvss dvss s=4368,272 d=2268,138 l=30 w=84 x=20007 y=-2790 sky130_fd_pr__nfet_01v8
+x standby_ip dout_ip dvss dvss s=5800,316 d=5800,316 l=800 w=100 x=12774 y=-3051 sky130_fd_pr__nfet_01v8
+x ibias_ip vbp dvss_ip dvss_ip s=23200,916 d=23200,916 l=400 w=400 x=12970 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=10152 y=-6423 sky130_fd_pr__cap_mim_m3_1
+x vbreg a_22601_n15524# a_22601_n15524# avdd_ip d=46400,1716 l=400 w=800 x=22601 y=-15465 sky130_fd_pr__pfet_g5v0d10v5
+x standby_b dvdd a_20579_n2425# dvdd s=2814,151 d=4368,272 l=30 w=84 x=20786 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_15539_n2241# a_16055_n1869# a_16163_n2247# dvdd s=2898,153 d=4620,194 l=30 w=84 x=16133 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x xin xout avss_ip avss_ip s=23200,858 d=23200,858 l=100 w=800 x=20464 y=-16663 sky130_fd_pr__nfet_g5v0d10v5
+x a_19567_n2791# dvss x7.x2.Qb2 dvss s=4010,197 d=6760,364 l=30 w=130 x=19716 y=-2790 sky130_fd_pr__nfet_01v8
+x vg1 vbreg vbreg avss_ip d=46400,1716 l=400 w=800 x=19998 y=-14301 sky130_fd_pr__nfet_g5v0d10v5
+x vg1 xin s=102066284,76840 l=4400 w=4400 x=16018 y=-23291 sky130_fd_pr__cap_mim_m3_1
+x x3.out avss avss_ip avss s=46400,1716 d=23200,858 l=100 w=800 x=2497 y=-8052 sky130_fd_pr__nfet_g5v0d10v5
+x ena_ip dvss x3.in_b dvss s=11600,516 d=11600,516 l=200 w=200 x=2812 y=-2321 sky130_fd_pr__nfet_01v8
+x a_19567_n2791# dvdd x7.x2.Qb2 dvdd s=6160,267 d=10400,504 l=30 w=200 x=19716 y=-2540 sky130_fd_pr__pfet_01v8_hvt
+x x7.x1.Qb2 a_19955_n2241# dvss dvss s=4368,272 d=2268,138 l=30 w=84 x=20007 y=-1880 sky130_fd_pr__nfet_01v8
+x a_15539_n2791# dvss a_15705_n2791# dvss s=2268,138 d=4368,272 l=30 w=84 x=15675 y=-2790 sky130_fd_pr__nfet_01v8
+x standby_b avss standby_33 avss s=34800,1316 d=17400,658 l=100 w=600 x=5350 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x vg2 vrb vbreg avss_ip s=46400,1716 d=46400,1716 l=400 w=800 x=19998 y=-14879 sky130_fd_pr__nfet_g5v0d10v5
+x xin vn tail dvdd_ip s=23200,858 d=23200,858 l=400 w=800 x=16718 y=-6896 sky130_fd_pr__pfet_g5v0d10v5
+x inv_m2 dvdd_ip dout_ip dvdd_ip s=2900,158 d=5800,316 l=200 w=100 x=21670 y=-6738 sky130_fd_pr__pfet_01v8
+x dvdd dvss s=21042432,43332 l=2000 w=2000 x=7024 y=-3689 sky130_fd_pr__cap_mim_m3_1
+x a_21211_n1943# a_21198_n2247# dvdd dvdd s=2268,138 d=3276,162 l=30 w=84 x=21252 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n20014# a_2130_n20180# a_24530_n20014# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-20013 sky130_fd_pr__res_xhigh_po_0p35
+x vbp dvdd_ip dvdd_ip dvdd_ip d=23200,916 l=400 w=400 x=14686 y=-6916 sky130_fd_pr__pfet_01v8
+x x7.stby_done_b dvss a_20376_n2791# dvss s=8820,378 d=2640,149 l=30 w=84 x=20346 y=-2790 sky130_fd_pr__nfet_01v8
+x a_17747_n2241# a_18481_n2273# a_18828_n1869# dvdd s=5166,237 d=2352,140 l=30 w=84 x=18874 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=18382 y=-15433 sky130_fd_pr__cap_mim_m3_1
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=20742 y=-17757 sky130_fd_pr__cap_mim_m3_1
+x standby_b dvdd a_16795_n2817# dvdd s=3276,162 d=2268,138 l=30 w=84 x=16944 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_2564_n14428# a_2132_n14594# a_18932_n14428# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-14427 sky130_fd_pr__res_xhigh_po_0p35
+x a_15539_n2241# dvss a_15705_n2241# dvss s=2268,138 d=4368,272 l=30 w=84 x=15675 y=-1880 sky130_fd_pr__nfet_01v8
+x x3.in_b avss x3.out avss s=34800,1316 d=17400,658 l=100 w=600 x=2728 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x standby_b dvdd a_16163_n2425# dvdd s=2814,151 d=4368,272 l=30 w=84 x=16370 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=14792 y=-9035 sky130_fd_pr__cap_mim_m3_1
+x a_2564_n15092# a_2132_n15258# a_18932_n15092# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-15091 sky130_fd_pr__res_xhigh_po_0p35
+x standby_b dvdd a_19003_n2817# dvdd s=3276,162 d=2268,138 l=30 w=84 x=19152 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_18481_n2273# a_18371_n2247# dvdd dvdd s=4620,194 d=2814,151 l=30 w=84 x=18481 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n18520# avss_ip avss_ip avss_ip s=30240,1004 l=21968 w=0 x=2562 y=-18519 sky130_fd_pr__res_xhigh_po_0p35
+x x7.ena_done_b dvss a_20376_n1881# dvss s=8820,378 d=2640,149 l=30 w=84 x=20346 y=-1880 sky130_fd_pr__nfet_01v8
+x inv_m1 dvdd_ip dvdd_ip dvdd_ip d=5800,316 l=200 w=100 x=21412 y=-6738 sky130_fd_pr__pfet_01v8
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=23508 y=-17757 sky130_fd_pr__cap_mim_m3_1
+x standby_b dvss_ip dvss dvss s=23200,858 d=23200,858 l=100 w=800 x=9606 y=-2991 sky130_fd_pr__nfet_01v8
+x vg1 xin s=102066284,76840 l=4400 w=4400 x=11298 y=-23291 sky130_fd_pr__cap_mim_m3_1
+x a_2562_n19184# a_2130_n19184# a_24530_n19350# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-19183 sky130_fd_pr__res_xhigh_po_0p35
+x a_11052_n8504# a_10620_n8670# a_24220_n8504# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-8503 sky130_fd_pr__res_xhigh_po_0p35
+x a_17747_n2241# dvdd a_17913_n2241# dvdd s=3456,182 d=6656,360 l=30 w=128 x=17883 y=-2240 sky130_fd_pr__pfet_01v8_hvt
+x a_21211_n2817# dvss x7.x2.x4.Q dvss s=6760,364 d=6760,364 l=30 w=130 x=21639 y=-2790 sky130_fd_pr__nfet_01v8
+x ibias_ip ibias_ip dvss_ip dvss_ip s=23200,916 d=23200,916 l=400 w=400 x=14126 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x a_20121_n2241# a_21036_n1869# a_21198_n2247# dvdd s=2352,140 d=2268,138 l=30 w=84 x=21168 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_20471_n1869# dvss a_20689_n2273# dvss s=5384,230 d=3996,197 l=30 w=128 x=20907 y=-1924 sky130_fd_pr__nfet_01v8
+x a_21211_n1943# dvdd x7.x1.x4.Q dvdd s=8528,334 d=11200,512 l=30 w=200 x=21608 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x vbreg xout xout avdd_ip d=46400,1716 l=400 w=800 x=23529 y=-15465 sky130_fd_pr__pfet_g5v0d10v5
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=23508 y=-6157 sky130_fd_pr__cap_mim_m3_1
+x a_2564_n16752# a_2132_n16918# a_18932_n16752# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-16751 sky130_fd_pr__res_xhigh_po_0p35
+x avss_ip vg2 s=55200232,58472 l=3600 w=3600 x=13608 y=-18565 sky130_fd_pr__cap_mim_m3_1
+x a_15705_n2791# a_15960_n2791# a_16055_n2791# dvdd s=2604,146 d=2898,153 l=30 w=84 x=16034 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_3566_n12992# avss_ip avss_ip avss_ip s=30240,1004 l=14968 w=0 x=3566 y=-12991 sky130_fd_pr__res_xhigh_po_0p35
+x x3.in_b x3.out avss avss s=17400,658 d=34800,1316 l=100 w=600 x=2886 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=18382 y=-8473 sky130_fd_pr__cap_mim_m3_1
+x standby_b dvss dvss_ip dvss s=23200,858 d=23200,858 l=100 w=800 x=10712 y=-2991 sky130_fd_pr__nfet_01v8
+x ena_ip dvdd a_18371_n2247# dvdd s=2814,151 d=4368,272 l=30 w=84 x=18578 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_2562_n21508# a_2130_n21508# a_24530_n21674# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-21507 sky130_fd_pr__res_xhigh_po_0p35
+x a_17747_n2241# a_18263_n1869# a_18371_n2247# dvdd s=2898,153 d=4620,194 l=30 w=84 x=18341 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x vbreg avdd_ip vbreg avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=22601 y=-16043 sky130_fd_pr__pfet_g5v0d10v5
+x a_15705_n2791# a_16273_n2549# a_16620_n2791# dvss s=3996,197 d=2844,151 l=30 w=72 x=16590 y=-2790 sky130_fd_pr__special_nfet_01v8
+x a_21211_n2817# dvdd x7.x2.x4.Q dvdd s=8528,334 d=11200,512 l=30 w=200 x=21608 y=-2540 sky130_fd_pr__pfet_01v8_hvt
+x a_16620_n2791# a_16795_n2817# dvdd dvdd s=2268,138 d=8528,334 l=30 w=84 x=17028 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x standby_b dvss dvss_ip dvss s=23200,858 d=23200,858 l=100 w=800 x=9764 y=-2991 sky130_fd_pr__nfet_01v8
+x a_2562_n22172# a_2130_n22172# a_24530_n22338# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-22171 sky130_fd_pr__res_xhigh_po_0p35
+x a_11052_n8338# a_10620_n8338# a_24220_n8504# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-8337 sky130_fd_pr__res_xhigh_po_0p35
+x x7.x1.Qb1 a_17747_n2241# dvdd dvdd s=6656,360 d=3456,182 l=30 w=128 x=17799 y=-2240 sky130_fd_pr__pfet_01v8_hvt
+x standby_ip dvdd_ip dvdd dvdd s=23200,858 d=23200,858 l=100 w=800 x=8312 y=-2986 sky130_fd_pr__pfet_01v8
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=12472 y=-6423 sky130_fd_pr__cap_mim_m3_1
+x a_2564_n16586# a_2132_n16586# a_18932_n16752# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-16585 sky130_fd_pr__res_xhigh_po_0p35
+x a_17747_n2791# dvss a_17913_n2791# dvss s=2268,138 d=4368,272 l=30 w=84 x=17883 y=-2790 sky130_fd_pr__nfet_01v8
+x a_15539_n2241# a_15960_n1881# a_16055_n1869# dvss s=2640,149 d=2376,138 l=30 w=72 x=16025 y=-1868 sky130_fd_pr__special_nfet_01v8
+x a_16795_n2817# dvss x7.x2.x2.Q dvss s=6760,364 d=6760,364 l=30 w=130 x=17223 y=-2790 sky130_fd_pr__nfet_01v8
+x avdd_ip avss_ip s=9162736,22500 l=1400 w=1400 x=15594 y=-13457 sky130_fd_pr__cap_mim_m3_1
+x a_21775_n2247# dvss x7.ena_done_b dvss s=4010,197 d=6760,364 l=30 w=130 x=21924 y=-1926 sky130_fd_pr__nfet_01v8
+x avss_ip vg2 s=55200232,58472 l=3600 w=3600 x=1848 y=-18565 sky130_fd_pr__cap_mim_m3_1
+x avss_ip avss_ip avss_ip avss_ip d=46400,1716 l=400 w=800 x=19998 y=-15457 sky130_fd_pr__nfet_g5v0d10v5
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=20742 y=-8477 sky130_fd_pr__cap_mim_m3_1
+x a_20471_n2791# dvss a_20689_n2549# dvss s=5384,230 d=3996,197 l=30 w=128 x=20907 y=-2790 sky130_fd_pr__nfet_01v8
+x standby_b dvss_ip dvss dvss s=23200,858 d=46400,1716 l=100 w=800 x=10870 y=-2991 sky130_fd_pr__nfet_01v8
+x a_19003_n1943# a_19567_n2247# dvdd dvdd s=6656,360 d=6160,267 l=30 w=128 x=19619 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_9120_n9346# a_9120_n9346# dvdd_ip dvdd_ip s=5800,316 d=5800,316 l=1600 w=100 x=9797 y=-9079 sky130_fd_pr__pfet_01v8
+x a_21211_n2817# a_21775_n2791# dvdd dvdd s=6656,360 d=6160,267 l=30 w=128 x=21827 y=-2468 sky130_fd_pr__pfet_01v8_hvt
+x x7.ena_done_b dvdd a_20376_n1881# dvdd s=4368,272 d=2604,146 l=30 w=84 x=20358 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_17747_n2241# a_18828_n1869# a_18937_n1869# dvss s=2844,151 d=2676,150 l=30 w=72 x=18907 y=-1868 sky130_fd_pr__special_nfet_01v8
+x xin avss_ip s=257843176,88584 l=0 w=0 x=20460 y=-23029 sky130_fd_pr__diode_pw2nd_05v5
+x vbp tail dvdd_ip dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=14114 y=-6388 sky130_fd_pr__pfet_01v8
+x a_21036_n2791# a_21390_n2791# a_21211_n2817# dvss s=2562,145 d=4368,272 l=30 w=84 x=21451 y=-2790 sky130_fd_pr__nfet_01v8
+x vbp dvdd_ip tail dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=11254 y=-6388 sky130_fd_pr__pfet_01v8
+x a_17747_n2241# dvss a_17913_n2241# dvss s=2268,138 d=4368,272 l=30 w=84 x=17883 y=-1880 sky130_fd_pr__nfet_01v8
+x a_20689_n2549# a_20579_n2425# dvdd dvdd s=4620,194 d=2814,151 l=30 w=84 x=20689 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x standby_ip dvdd dvdd_ip dvdd s=23200,858 d=23200,858 l=100 w=800 x=8470 y=-2986 sky130_fd_pr__pfet_01v8
+x a_20121_n2241# a_20471_n1869# a_20567_n1869# dvss s=2376,138 d=5604,220 l=30 w=72 x=20537 y=-1868 sky130_fd_pr__special_nfet_01v8
+x dvdd dvss s=21042432,43332 l=2000 w=2000 x=9344 y=-3689 sky130_fd_pr__cap_mim_m3_1
+x a_19003_n2817# a_19567_n2791# dvss dvss s=4368,272 d=4010,197 l=30 w=84 x=19619 y=-2790 sky130_fd_pr__nfet_01v8
+x a_18263_n1869# dvss a_18481_n2273# dvss s=5384,230 d=3996,197 l=30 w=128 x=18699 y=-1924 sky130_fd_pr__nfet_01v8
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=18382 y=-10793 sky130_fd_pr__cap_mim_m3_1
+x vn vn dvss_ip dvss_ip s=23200,858 d=23200,858 l=400 w=800 x=16718 y=-5537 sky130_fd_pr__nfet_01v8
+x a_2562_n18852# a_2130_n18852# a_24530_n19018# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-18851 sky130_fd_pr__res_xhigh_po_0p35
+x x7.x2.Qb1 a_17747_n2791# dvss dvss s=4368,272 d=2268,138 l=30 w=84 x=17799 y=-2790 sky130_fd_pr__nfet_01v8
+x dvdd dvss s=21042432,43332 l=2000 w=2000 x=11664 y=-3689 sky130_fd_pr__cap_mim_m3_1
+x avss avdd s=17936464,30612 l=2000 w=2000 x=4328 y=-5857 sky130_fd_pr__cap_mim_m3_1
+x standby_ip x4.out_b avss avss s=17400,658 d=34800,1316 l=100 w=600 x=4802 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x vg2 avss_ip icnode avss_ip s=11600,516 d=11600,516 l=200 w=200 x=7326 y=-12449 sky130_fd_pr__nfet_g5v0d10v5
+x vbreg xout avdd_ip avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=22601 y=-16621 sky130_fd_pr__pfet_g5v0d10v5
+x a_21036_n1869# a_21390_n1881# a_21211_n1943# dvss s=2562,145 d=4368,272 l=30 w=84 x=21451 y=-1880 sky130_fd_pr__nfet_01v8
+x x7.x2.Qb1 dvss a_15960_n2791# dvss s=8820,378 d=2640,149 l=30 w=84 x=15930 y=-2790 sky130_fd_pr__nfet_01v8
+x icnode a_8268_n12482# a_11526_n12394# avss_ip s=2436,142 d=2436,142 l=1600 w=84 x=9926 y=-12393 sky130_fd_pr__nfet_g5v0d10v5
+x a_2564_n13930# avss_ip avss_ip avss_ip s=30240,1004 l=16368 w=0 x=2564 y=-13929 sky130_fd_pr__res_xhigh_po_0p35
+x a_19003_n1943# a_19567_n2247# dvss dvss s=4368,272 d=4010,197 l=30 w=84 x=19619 y=-1880 sky130_fd_pr__nfet_01v8
+x vbreg avdd_ip xout avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=23529 y=-16043 sky130_fd_pr__pfet_g5v0d10v5
+x a_4857_n1521# standby_ip dvss dvss s=5408,312 d=3016,162 l=30 w=104 x=5229 y=-1520 sky130_fd_pr__nfet_01v8
+x standby_ip dvss a_14009_n2404# dvss s=4290,196 d=6760,364 l=30 w=130 x=14035 y=-1858 sky130_fd_pr__nfet_01v8
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=7832 y=-11647 sky130_fd_pr__cap_mim_m3_1
+x vbp vbp dvdd_ip dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=12970 y=-6388 sky130_fd_pr__pfet_01v8
+x a_2564_n14594# a_2132_n14594# a_18932_n14760# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-14593 sky130_fd_pr__res_xhigh_po_0p35
+x a_15539_n2791# a_16273_n2549# a_16620_n2791# dvdd s=5166,237 d=2352,140 l=30 w=84 x=16666 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x x7.x1.Qb1 a_17747_n2241# dvss dvss s=4368,272 d=2268,138 l=30 w=84 x=17799 y=-1880 sky130_fd_pr__nfet_01v8
+x a_17913_n2791# a_18168_n2791# a_18263_n2791# dvdd s=2604,146 d=2898,153 l=30 w=84 x=18242 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_16795_n2817# a_17359_n2791# dvdd dvdd s=6656,360 d=6160,267 l=30 w=128 x=17411 y=-2468 sky130_fd_pr__pfet_01v8_hvt
+x ena dvss a_2971_n1521# dvss s=3016,162 d=5408,312 l=30 w=104 x=2997 y=-1432 sky130_fd_pr__nfet_01v8
+x standby_b a_20733_n2791# dvss dvss s=1764,126 d=5384,230 l=30 w=84 x=20775 y=-2790 sky130_fd_pr__nfet_01v8
+x x7.x1.Qb1 dvss a_15960_n1881# dvss s=8820,378 d=2640,149 l=30 w=84 x=15930 y=-1880 sky130_fd_pr__nfet_01v8
+x x7.stby_done_b dvss a_14035_n2281# dvss s=4095,193 d=4290,196 l=30 w=130 x=14035 y=-2310 sky130_fd_pr__nfet_01v8
+x a_19955_n2791# a_20471_n2791# a_20579_n2425# dvdd s=2898,153 d=4620,194 l=30 w=84 x=20549 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_19955_n2791# a_21036_n2791# a_21145_n2791# dvss s=2844,151 d=2676,150 l=30 w=72 x=21115 y=-2790 sky130_fd_pr__special_nfet_01v8
+x a_16273_n2549# a_16163_n2425# dvdd dvdd s=4620,194 d=2814,151 l=30 w=84 x=16273 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_15705_n2241# a_16055_n1869# a_16151_n1869# dvss s=2376,138 d=5604,220 l=30 w=72 x=16121 y=-1868 sky130_fd_pr__special_nfet_01v8
+x a_2562_n18686# a_2130_n18852# xout avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-18685 sky130_fd_pr__res_xhigh_po_0p35
+x a_18828_n2791# a_19003_n2817# dvdd dvdd s=2268,138 d=8528,334 l=30 w=84 x=19236 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x a_15705_n2241# a_16620_n1869# a_16782_n2247# dvdd s=2352,140 d=2268,138 l=30 w=84 x=16752 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x ena_ip avss x3.out_b avss s=34800,1316 d=17400,658 l=100 w=600 x=3434 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x a_14009_n2404# x7.clk_disable dvss dvss s=6760,364 d=4095,193 l=30 w=130 x=14035 y=-2403 sky130_fd_pr__nfet_01v8
+x avss avdd s=17936464,30612 l=2000 w=2000 x=4330 y=-8231 sky130_fd_pr__cap_mim_m3_1
+x standby_ip dvdd_ip dvdd dvdd s=23200,858 d=46400,1716 l=100 w=800 x=8944 y=-2986 sky130_fd_pr__pfet_01v8
+x a_18263_n2791# dvss a_18481_n2549# dvss s=5384,230 d=3996,197 l=30 w=128 x=18699 y=-2790 sky130_fd_pr__nfet_01v8
+x a_17913_n2791# a_18263_n2791# a_18359_n2791# dvss s=2376,138 d=5604,220 l=30 w=72 x=18329 y=-2790 sky130_fd_pr__special_nfet_01v8
+x x3.out_b avdd avdd_ip avdd s=23200,858 d=23200,858 l=100 w=800 x=4346 y=-8054 sky130_fd_pr__pfet_g5v0d10v5
+x a_17747_n2241# a_18168_n1881# a_18263_n1869# dvss s=2640,149 d=2376,138 l=30 w=72 x=18233 y=-1868 sky130_fd_pr__special_nfet_01v8
+x ena_ip a_20733_n1881# dvss dvss s=1764,126 d=5384,230 l=30 w=84 x=20775 y=-1880 sky130_fd_pr__nfet_01v8
+x a_19003_n2817# dvss x7.x2.x3.Q dvss s=6760,364 d=6760,364 l=30 w=130 x=19431 y=-2790 sky130_fd_pr__nfet_01v8
+x vbreg avdd_ip xout avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=22601 y=-17199 sky130_fd_pr__pfet_g5v0d10v5
+x a_2564_n18080# avss_ip avss_ip avss_ip s=30240,1004 l=16368 w=0 x=2564 y=-18079 sky130_fd_pr__res_xhigh_po_0p35
+x a_19003_n1943# dvdd x7.x1.x3.Q dvdd s=8528,334 d=11200,512 l=30 w=200 x=19400 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_20121_n2791# a_20689_n2549# a_21036_n2791# dvss s=3996,197 d=2844,151 l=30 w=72 x=21006 y=-2790 sky130_fd_pr__special_nfet_01v8
+x standby_b dvss_ip dvss dvss s=23200,858 d=23200,858 l=100 w=800 x=10238 y=-2991 sky130_fd_pr__nfet_01v8
+x avdd_ip icnode s=17114256,18960 l=4000 w=4000 x=1734 y=-13369 sky130_fd_pr__cap_mim_m3_1
+x ena_ip dvdd a_21211_n1943# dvdd s=3276,162 d=2268,138 l=30 w=84 x=21360 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=7832 y=-9035 sky130_fd_pr__cap_mim_m3_1
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=14792 y=-6423 sky130_fd_pr__cap_mim_m3_1
+x a_11052_n8006# a_10620_n8006# a_24220_n8172# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-8005 sky130_fd_pr__res_xhigh_po_0p35
+x vbreg xout avdd_ip avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=23529 y=-16621 sky130_fd_pr__pfet_g5v0d10v5
+x a_2562_n21674# a_2130_n21840# a_24530_n21674# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-21673 sky130_fd_pr__res_xhigh_po_0p35
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=7836 y=-14211 sky130_fd_pr__cap_mim_m3_1
+x a_11052_n7840# a_10620_n8006# a_24220_n7840# dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-7839 sky130_fd_pr__res_xhigh_po_0p35
+x x3.out_b avdd_ip avdd avdd s=46400,1716 d=23200,858 l=100 w=800 x=3872 y=-8054 sky130_fd_pr__pfet_g5v0d10v5
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=18382 y=-3833 sky130_fd_pr__cap_mim_m3_1
+x ena_ip x3.out_b avss avss s=17400,658 d=34800,1316 l=100 w=600 x=3592 y=-4725 sky130_fd_pr__nfet_g5v0d10v5
+x a_2564_n16254# a_2132_n16254# a_18932_n16420# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-16253 sky130_fd_pr__res_xhigh_po_0p35
+x a_15539_n2791# a_16055_n2791# a_16163_n2425# dvdd s=2898,153 d=4620,194 l=30 w=84 x=16133 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x vbp dvdd_ip tail dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=13542 y=-6916 sky130_fd_pr__pfet_01v8
+x a_8268_n12482# avss_ip a_8268_n12482# avss_ip s=4872,284 d=2436,142 l=1600 w=84 x=8268 y=-12393 sky130_fd_pr__nfet_g5v0d10v5
+x a_19003_n2817# dvdd x7.x2.x3.Q dvdd s=8528,334 d=11200,512 l=30 w=200 x=19400 y=-2540 sky130_fd_pr__pfet_01v8_hvt
+x a_14009_n2701# a_14035_n2743# dvss dvss s=1764,126 d=3066,157 l=30 w=84 x=14035 y=-2700 sky130_fd_pr__nfet_01v8
+x a_15000_n2791# dvdd x7.x2.x2.CLK dvdd s=7364,252 d=6784,362 l=30 w=128 x=15295 y=-2468 sky130_fd_pr__pfet_01v8_hvt
+x vbp dvdd_ip dvdd_ip dvdd_ip d=23200,916 l=400 w=400 x=10682 y=-6916 sky130_fd_pr__pfet_01v8
+x standby_b dvss a_21390_n2791# dvss s=4998,203 d=2562,145 l=30 w=84 x=21360 y=-2790 sky130_fd_pr__nfet_01v8
+x a_21211_n2817# a_21145_n2791# dvss dvss s=2676,150 d=4998,203 l=30 w=84 x=21211 y=-2790 sky130_fd_pr__nfet_01v8
+x vg1 xin s=102066284,76840 l=4400 w=4400 x=20738 y=-23291 sky130_fd_pr__cap_mim_m3_1
+x standby_b dvss dvss_ip dvss s=23200,858 d=23200,858 l=100 w=800 x=10396 y=-2991 sky130_fd_pr__nfet_01v8
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=10152 y=-11647 sky130_fd_pr__cap_mim_m3_1
+x a_15539_n2791# a_16620_n2791# a_16729_n2791# dvss s=2844,151 d=2676,150 l=30 w=72 x=16699 y=-2790 sky130_fd_pr__special_nfet_01v8
+x a_9120_n9346# dvss_ip a_9120_n9346# dvss_ip s=5800,316 d=5800,316 l=1600 w=100 x=9208 y=-9345 sky130_fd_pr__nfet_01v8
+x a_2562_n21010# a_2130_n21176# a_24530_n21010# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-21009 sky130_fd_pr__res_xhigh_po_0p35
+x a_2564_n17914# a_2132_n17914# vg1 avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-17913 sky130_fd_pr__res_xhigh_po_0p35
+x x7.x1.Qb1 dvdd a_15960_n1881# dvdd s=4368,272 d=2604,146 l=30 w=84 x=15942 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_19955_n2791# dvdd a_20121_n2791# dvdd s=3456,182 d=6656,360 l=30 w=128 x=20091 y=-2474 sky130_fd_pr__pfet_01v8_hvt
+x a_21211_n2817# a_21198_n2425# dvdd dvdd s=2268,138 d=3276,162 l=30 w=84 x=21252 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x dout_ip dout_filt a_14357_n2743# dvdd s=6656,360 d=2688,170 l=30 w=128 x=14357 y=-2772 sky130_fd_pr__pfet_01v8_hvt
+x ena dvdd a_2971_n1521# dvdd s=4582,216 d=8216,420 l=30 w=158 x=3289 y=-1432 sky130_fd_pr__pfet_01v8_hvt
+x ena_ip dvss a_21390_n1881# dvss s=4998,203 d=2562,145 l=30 w=84 x=21360 y=-1880 sky130_fd_pr__nfet_01v8
+x standby_ip dvdd standby_b dvdd s=11600,516 d=11600,516 l=200 w=200 x=4724 y=-2322 sky130_fd_pr__pfet_01v8
+x ibias_ip ibias_ip dvss_ip dvss_ip s=23200,916 d=23200,916 l=400 w=400 x=11814 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x x3.out avss avss_ip avss s=23200,858 d=46400,1716 l=100 w=800 x=3129 y=-8052 sky130_fd_pr__nfet_g5v0d10v5
+x a_17747_n2791# a_18481_n2549# a_18828_n2791# dvdd s=5166,237 d=2352,140 l=30 w=84 x=18874 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x x7.x1.Qb2 dvdd a_18168_n1881# dvdd s=4368,272 d=2604,146 l=30 w=84 x=18150 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x dvdd dvss s=21042432,43332 l=2000 w=2000 x=13984 y=-3689 sky130_fd_pr__cap_mim_m3_1
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=20742 y=-3837 sky130_fd_pr__cap_mim_m3_1
+x a_21211_n1943# a_21145_n1869# dvss dvss s=2676,150 d=4998,203 l=30 w=84 x=21211 y=-1880 sky130_fd_pr__nfet_01v8
+x ena_ip a_14285_n2079# a_14285_n2281# dvdd s=10400,504 d=5400,254 l=30 w=200 x=14285 y=-2026 sky130_fd_pr__pfet_01v8_hvt
+x vbreg avdd_ip avdd_ip avdd_ip d=46400,1716 l=400 w=800 x=22601 y=-17777 sky130_fd_pr__pfet_g5v0d10v5
+x a_2564_n16088# a_2132_n16254# a_18932_n16088# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-16087 sky130_fd_pr__res_xhigh_po_0p35
+x a_20471_n2791# dvdd a_20689_n2549# dvdd s=8736,440 d=5166,237 l=30 w=168 x=20983 y=-2508 sky130_fd_pr__pfet_01v8_hvt
+x x7.ena_done_b a_15000_n1881# dvdd dvdd s=2436,142 d=7364,252 l=30 w=84 x=15141 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x standby_b a_14285_n2281# dvdd dvdd s=6600,266 d=10400,504 l=30 w=200 x=14285 y=-2214 sky130_fd_pr__pfet_01v8_hvt
+x a_18481_n2549# a_18371_n2425# dvdd dvdd s=4620,194 d=2814,151 l=30 w=84 x=18481 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x vbp tail dvdd_ip dvdd_ip s=23200,916 d=23200,916 l=400 w=400 x=11826 y=-6916 sky130_fd_pr__pfet_01v8
+x vbreg avdd_ip xout avdd_ip s=46400,1716 d=46400,1716 l=400 w=800 x=23529 y=-17199 sky130_fd_pr__pfet_g5v0d10v5
+x a_17913_n2241# a_18828_n1869# a_18990_n2247# dvdd s=2352,140 d=2268,138 l=30 w=84 x=18960 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x a_20471_n1869# dvdd a_20689_n2273# dvdd s=8736,440 d=5166,237 l=30 w=168 x=20983 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x ibias_ip dvss_ip dvss_ip dvss_ip d=23200,916 l=400 w=400 x=10658 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x vg1 xin s=102066284,76840 l=4400 w=4400 x=1858 y=-23291 sky130_fd_pr__cap_mim_m3_1
+x x3.out avss_ip avss avss s=23200,858 d=23200,858 l=100 w=800 x=2655 y=-8052 sky130_fd_pr__nfet_g5v0d10v5
+x avss_ip avss_ip avss_ip avss_ip d=46400,1716 l=400 w=800 x=20908 y=-13145 sky130_fd_pr__nfet_g5v0d10v5
+x a_2564_n17748# a_2132_n17914# a_18932_n17748# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-17747 sky130_fd_pr__res_xhigh_po_0p35
+x a_2564_n14262# a_2132_n14262# a_18932_n14428# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-14261 sky130_fd_pr__res_xhigh_po_0p35
+x a_20121_n2791# a_21036_n2791# a_21198_n2425# dvdd s=2352,140 d=2268,138 l=30 w=84 x=21168 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=18382 y=-13113 sky130_fd_pr__cap_mim_m3_1
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=20742 y=-15437 sky130_fd_pr__cap_mim_m3_1
+x a_16795_n2817# a_16729_n2791# dvss dvss s=2676,150 d=4998,203 l=30 w=84 x=16795 y=-2790 sky130_fd_pr__nfet_01v8
+x inv_in xin_buf s=54499612,105820 l=2000 w=2000 x=10156 y=-14211 sky130_fd_pr__cap_mim_m3_1
+x vbp dvdd_ip dvdd_ip dvdd_ip d=23200,916 l=400 w=400 x=14686 y=-6388 sky130_fd_pr__pfet_01v8
+x standby_ip dvdd dvdd_ip dvdd s=23200,858 d=23200,858 l=100 w=800 x=7838 y=-2986 sky130_fd_pr__pfet_01v8
+x avss_ip vg2 s=55200232,58472 l=3600 w=3600 x=5768 y=-18565 sky130_fd_pr__cap_mim_m3_1
+x a_2564_n15922# a_2132_n15922# a_18932_n16088# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-15921 sky130_fd_pr__res_xhigh_po_0p35
+x standby_b dvdd a_18371_n2425# dvdd s=2814,151 d=4368,272 l=30 w=84 x=18578 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=23508 y=-15437 sky130_fd_pr__cap_mim_m3_1
+x a_17747_n2791# a_18263_n2791# a_18371_n2425# dvdd s=2898,153 d=4620,194 l=30 w=84 x=18341 y=-2424 sky130_fd_pr__pfet_01v8_hvt
+x ibias_ip dvss_ip ibias_ip dvss_ip s=23200,916 d=23200,916 l=400 w=400 x=12392 y=-5357 sky130_fd_pr__nfet_g5v0d10v5
+x a_16795_n1943# a_16729_n1869# dvss dvss s=2676,150 d=4998,203 l=30 w=84 x=16795 y=-1880 sky130_fd_pr__nfet_01v8
+x dout_filt dvdd_ip dout dvdd_ip s=46400,1716 d=46400,1716 l=200 w=800 x=23131 y=-6649 sky130_fd_pr__pfet_01v8
+x a_2564_n14096# a_2132_n14262# vg2 avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-14095 sky130_fd_pr__res_xhigh_po_0p35
+x a_16795_n1943# a_16782_n2247# dvdd dvdd s=2268,138 d=3276,162 l=30 w=84 x=16836 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x vbreg avdd_ip avdd_ip avdd_ip d=46400,1716 l=400 w=800 x=23529 y=-17777 sky130_fd_pr__pfet_g5v0d10v5
+x xout avdd_ip s=133956,1464 l=0 w=0 x=22742 y=-23021 sky130_fd_pr__diode_pd2nw_05v5
+x a_19955_n2791# a_20376_n2791# a_20471_n2791# dvss s=2640,149 d=2376,138 l=30 w=72 x=20441 y=-2790 sky130_fd_pr__special_nfet_01v8
+x a_17359_n2247# dvss x7.x1.Qb1 dvss s=4010,197 d=6760,364 l=30 w=130 x=17508 y=-1926 sky130_fd_pr__nfet_01v8
+x a_20121_n2241# a_20376_n1881# a_20471_n1869# dvdd s=2604,146 d=2898,153 l=30 w=84 x=20450 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x standby_ip dvdd_ip dvdd dvdd s=23200,858 d=23200,858 l=100 w=800 x=7996 y=-2986 sky130_fd_pr__pfet_01v8
+x a_2562_n21342# a_2130_n21508# a_24530_n21342# avss_ip s=30240,1004 d=30240,1004 l=21968 w=0 x=2562 y=-21341 sky130_fd_pr__res_xhigh_po_0p35
+x a_11052_n7508# a_10620_n7674# inv_in dvss_ip s=30240,1004 d=30240,1004 l=13168 w=0 x=11052 y=-7507 sky130_fd_pr__res_xhigh_po_0p35
+x a_19003_n1943# a_18990_n2247# dvdd dvdd s=2268,138 d=3276,162 l=30 w=84 x=19044 y=-2246 sky130_fd_pr__pfet_01v8_hvt
+x dvdd_ip dvss_ip s=95752032,171380 l=2000 w=2000 x=18382 y=-6153 sky130_fd_pr__cap_mim_m3_1
+x x7.x2.Qb2 dvss a_18168_n2791# dvss s=8820,378 d=2640,149 l=30 w=84 x=18138 y=-2790 sky130_fd_pr__nfet_01v8
+x vg2 vbreg vrb avss_ip s=46400,1716 d=46400,1716 l=400 w=800 x=20908 y=-13723 sky130_fd_pr__nfet_g5v0d10v5
+x a_2564_n15756# a_2132_n15922# a_18932_n15756# avss_ip s=30240,1004 d=30240,1004 l=16368 w=0 x=2564 y=-15755 sky130_fd_pr__res_xhigh_po_0p35
+C standby_33 xin_buf 2.3
+C xin_buf avss_ip 10.8
+C dout_ip dout_filt 3.6
+C standby_33 dvdd_ip 3.3
+C dvdd x7.ena_done_b 6.2
+C dvdd_ip avss_ip 2.3
+C vg2 vrb 4.6
+C vg2 vbreg 4.3
+C avss_ip a_8268_n12482# 3.6
+C ibias_ip dvss_ip 20.3
+C avdd avss 110.5
+C a_22601_n15524# vbreg 2.4
+C xout xin_buf 3.5
+C vbreg dvss_ip 7.8
+C avdd_ip xin_buf 9.1
+C dout_ip dvss_ip 6.8
+C dvdd_ip xout 4.8
+C avss_ip icnode 33.3
+C dvdd_ip avdd_ip 3.6
+C inv_in dvss_ip 14.9
+C xin avss_ip 73.1
+C dvdd_ip dout_filt 2.6
+C avdd x4.out_b 7.5
+C xin vg1 215.3
+C xin_buf vg2 3.6
+C dvdd x7.stby_done_b 5.4
+C vn dvss_ip 6.7
+C x3.out avss 5.9
+C standby_b dvss_ip 3.6
+C avdd_ip x3.out_b 2.4
+C xin_buf dvss_ip 28.0
+C inv_m1 dvss_ip 3.1
+C xout xin 12.4
+C avdd_ip icnode 43.6
+C dvdd dvss_ip 20.3
+C dvdd_ip dvss_ip 502.5
+C avdd_ip xin 6.7
+C x3.out avdd 9.3
+C xin vg2 6.3
+C avss_ip vg1 20.8
+C xin_buf inv_in 113.6
+C avdd x3.out_b 12.4
+C xout avss_ip 26.4
+C dvdd_ip inv_in 10.4
+C avdd_ip avss_ip 856.9
+C a_9120_n9346# dvss_ip 8.1
+C vn xin_buf 4.7
+C standby_b ena_ip 3.8
+C dvdd standby_b 6.0
+C ena_ip standby_ip 4.6
+C dvdd standby_ip 10.3
+C dvdd_ip xin_buf 19.2
+C dvdd_ip standby_ip 3.4
+C vg2 avss_ip 156.0
+C dvdd_ip inv_m1 2.8
+C avdd_ip xout 7.2
+C dvdd ena_ip 7.8
+C dvdd dvdd_ip 14.0
+C standby_33 dvss_ip 3.3
+C xin_buf tail 4.4
+C avss_ip dvss_ip 23.9
+C avss avss_ip 7.3
+C vg1 dvss_ip 6.4
+C dvdd_ip tail 3.2
+C dout dvss_ip 6.7
+C vn xin 3.1
+C xin_buf icnode 3.6
+C xin_buf vbp 3.5
+C standby_33 avdd 9.0
+C avdd avss_ip 2.3
+C xout dvss_ip 14.2
+C dvdd_ip vbp 26.2
+C vrb avss_ip 6.5
+C dvdd_ip xin 4.3
+C avdd_ip dvss_ip 20.7
+C avss_ip vbreg 13.8
+C dvss_ip dout_filt 7.4
+C vbp tail 10.1
+C vbreg vg1 4.8
+C dvdd_ip a_9120_n9346# 3.3
+C avdd avdd_ip 9.3
+C vg2 dvss_ip 3.9
+C x3.out avss_ip 2.4
+C xout vbreg 16.6
+C avdd_ip vbreg 39.1
+C xout0 4.2
+R xout 46255
+C xin0 11.8
+R xin 7612
+C dout0 3.0
+R dout 3424
+R standby 941
+= standby x2.A
+R ena 941
+= ena x1.A
+C avss0 10.3
+R avss 150148
+= avss x4.avss
+= avss x3.avss
+C ibias0 6.4
+R ibias 11598
+C dvdd0 139.5
+R dvdd 153056
+= dvdd ena_buf_tap.VPWR
+= dvdd standby_buf_tap.VPWR
+= dvdd x1.VPWR
+= dvdd x1.VPB
+= dvdd x2.VPWR
+= dvdd x2.VPB
+= dvdd x7.sky130_fd_sc_hd__tapvpwrvgnd_1_3.VPWR
+= dvdd x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_0.VPWR
+= dvdd x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_1.VPWR
+= dvdd x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_2.VPWR
+= dvdd x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_3.VPWR
+= dvdd x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_4.VPWR
+= dvdd x7.x1.x1.VPWR
+= dvdd x7.x1.x1.VPB
+= dvdd x7.x1.x2.VPWR
+= dvdd x7.x1.x2.VPB
+= dvdd x7.x1.x3.VPWR
+= dvdd x7.x1.x3.VPB
+= dvdd x7.x1.x4.VPWR
+= dvdd x7.x1.x4.VPB
+= dvdd x7.x1.dvdd
+= dvdd x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_0.VPWR
+= dvdd x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_1.VPWR
+= dvdd x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_2.VPWR
+= dvdd x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_3.VPWR
+= dvdd x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_4.VPWR
+= dvdd x7.x2.x1.VPWR
+= dvdd x7.x2.x1.VPB
+= dvdd x7.x2.x2.VPWR
+= dvdd x7.x2.x2.VPB
+= dvdd x7.x2.x3.VPWR
+= dvdd x7.x2.x3.VPB
+= dvdd x7.x2.x4.VPWR
+= dvdd x7.x2.x4.VPB
+= dvdd x7.x2.dvdd
+= dvdd x7.x3.VPWR
+= dvdd x7.x3.VPB
+= dvdd x7.x5.VPWR
+= dvdd x7.x5.VPB
+= dvdd x7.dvdd
+= dvdd x4.dvdd
+= dvdd x3.dvdd
+C avdd0 92.1
+R avdd 144486
+= avdd x4.avdd
+= avdd x3.avdd
+R a_2562_n22504# 627657
+R a_2562_n22338# 627657
+R a_24530_n22338# 194
+R a_2562_n22172# 627657
+R a_2562_n22006# 627657
+R a_2130_n22172# 194
+R a_24530_n22006# 194
+R a_2562_n21840# 627657
+R a_2562_n21674# 627657
+R a_2130_n21840# 194
+R a_24530_n21674# 194
+R a_2562_n21508# 627657
+R a_2562_n21342# 627657
+R a_2130_n21508# 194
+R a_24530_n21342# 194
+R a_2562_n21176# 627657
+R a_2562_n21010# 627657
+R a_2130_n21176# 194
+R a_24530_n21010# 194
+R a_2562_n20844# 627657
+R a_2562_n20678# 627657
+R a_2130_n20844# 194
+R a_24530_n20678# 194
+R a_2562_n20512# 627657
+R a_2562_n20346# 627657
+R a_2130_n20512# 194
+R a_24530_n20346# 194
+R a_2562_n20180# 627657
+R a_2562_n20014# 627657
+R a_2130_n20180# 194
+R a_24530_n20014# 194
+R a_2562_n19848# 627657
+R a_2562_n19682# 627657
+R a_2130_n19848# 194
+R a_24530_n19682# 194
+R a_2562_n19516# 627657
+R a_2562_n19350# 627657
+R a_2130_n19516# 194
+R a_24530_n19350# 194
+R a_2562_n19184# 627657
+R a_2562_n19018# 627657
+R a_2130_n19184# 194
+R a_24530_n19018# 194
+R a_2562_n18852# 627657
+R a_2562_n18686# 627657
+R a_2130_n18852# 194
+R a_2562_n18520# 627657
+R a_22601_n15524# 5694
+R a_2564_n18080# 467657
+R vg1 4778
+R a_2564_n17914# 467657
+R a_2564_n17748# 467657
+R a_2132_n17914# 194
+R a_18932_n17748# 194
+R a_2564_n17582# 467657
+R a_2564_n17416# 467657
+R a_2132_n17582# 194
+R a_18932_n17416# 194
+R a_2564_n17250# 467657
+R a_2564_n17084# 467657
+R a_2132_n17250# 195
+R a_18932_n17084# 194
+R a_2564_n16918# 467657
+R a_2564_n16752# 467657
+R a_2132_n16918# 195
+R a_18932_n16752# 194
+R a_2564_n16586# 467657
+R a_2564_n16420# 467657
+R a_2132_n16586# 194
+R a_18932_n16420# 194
+R a_2564_n16254# 467657
+R a_2564_n16088# 467657
+R a_2132_n16254# 194
+R a_18932_n16088# 194
+R a_2564_n15922# 467657
+R a_2564_n15756# 467657
+R a_2132_n15922# 194
+R a_18932_n15756# 194
+R a_2564_n15590# 467657
+R a_2564_n15424# 467657
+R a_2132_n15590# 195
+R a_18932_n15424# 194
+R a_2564_n15258# 467657
+R a_2564_n15092# 467657
+R a_2132_n15258# 194
+R a_18932_n15092# 194
+R a_2564_n14926# 467657
+R a_2564_n14760# 467657
+R a_2132_n14926# 194
+R a_18932_n14760# 194
+R a_2564_n14594# 467657
+R a_2564_n14428# 467657
+R a_2132_n14594# 195
+R a_18932_n14428# 194
+R a_2564_n14262# 467657
+R a_2564_n14096# 467657
+R a_2132_n14262# 194
+R a_2564_n13930# 467657
+R a_3566_n13490# 427657
+R vrb 7567
+R a_3566_n13324# 427657
+R a_3566_n13158# 427657
+R a_3134_n13324# 194
+R a_3566_n12992# 427657
+C vbreg0 4.4
+R vbreg 19805
+R a_11526_n12394# 200
+R a_8268_n12482# 570
+C icnode0 6.4
+R icnode 3695
+C vg20 3.9
+R vg2 1384
+R a_11052_n9832# 376229
+R a_24220_n9832# 195
+R a_11052_n9666# 376229
+R a_11052_n9500# 376229
+R a_10620_n9666# 194
+R a_24220_n9500# 195
+R a_11052_n9334# 376229
+R a_11052_n9168# 376229
+R a_10620_n9334# 195
+R a_24220_n9168# 194
+R a_11052_n9002# 376229
+R a_11052_n8836# 376229
+R a_10620_n9002# 195
+R a_24220_n8836# 194
+R a_11052_n8670# 376229
+R a_11052_n8504# 376229
+R a_10620_n8670# 195
+R a_24220_n8504# 194
+R a_11052_n8338# 376229
+R a_11052_n8172# 376229
+R a_10620_n8338# 195
+R a_24220_n8172# 195
+R a_11052_n8006# 376229
+R a_11052_n7840# 376229
+R a_10620_n8006# 195
+R a_24220_n7840# 195
+R a_11052_n7674# 376229
+R a_11052_n7508# 376229
+R a_10620_n7674# 196
+C a_9120_n9346#0 2.2
+R a_9120_n9346# 1541
+R tail 20354
+R inv_m2 1654
+R inv_m1 1657
+C inv_in0 6.1
+R inv_in 3255
+C xin_buf0 7.4
+R xin_buf 9318
+R vn 10424
+C vbp0 3.5
+R vbp 6053
+R x4.out_b 2929
+R x3.out_b 5378
+R x3.out 5342
+R a_21390_n2791# 165
+R a_21145_n2791# 188
+R x7.x2.x4.Q 1084
+R a_20733_n2791# 240
+R a_20567_n2791# 209
+R a_21198_n2425# 306
+R a_19182_n2791# 165
+R a_18937_n2791# 188
+R a_20579_n2425# 1281
+R a_20376_n2791# 659
+R a_21775_n2791# 1583
+R a_21036_n2791# 1519
+R a_21211_n2817# 3283
+R a_20471_n2791# 1631
+R a_20689_n2549# 1995
+R a_20121_n2791# 2660
+R a_19955_n2791# 3806
+R x7.x2.x3.Q 1084
+R a_18525_n2791# 240
+R a_18359_n2791# 209
+R a_18990_n2425# 306
+R a_16974_n2791# 165
+R a_16729_n2791# 188
+R a_18371_n2425# 1281
+R a_18168_n2791# 659
+R a_19567_n2791# 1583
+R a_18828_n2791# 1519
+R a_19003_n2817# 3283
+R a_18263_n2791# 1631
+R a_18481_n2549# 1995
+R a_17913_n2791# 2660
+R x7.x2.Qb2 3130
+= x7.x2.Qb2 x7.x2.x3.D
+= x7.x2.Qb2 x7.x2.x3.Q_N
+= x7.x2.Qb2 x7.x2.x4.CLK
+R a_17747_n2791# 3806
+R x7.x2.x2.Q 1084
+R a_16317_n2791# 240
+R a_16151_n2791# 209
+R a_16782_n2425# 306
+R a_15083_n2791# 240
+C dout_filt0 5.9
+R dout_filt 2343
+= dout_filt x7.x5.Z
+= dout_filt x7.clkout
+R a_16163_n2425# 1281
+R a_15960_n2791# 659
+R a_14357_n2743# 600
+R a_14035_n2743# 240
+R a_17359_n2791# 1583
+R a_16620_n2791# 1519
+R a_16795_n2817# 3283
+R a_16055_n2791# 1631
+R a_16273_n2549# 1995
+R a_15705_n2791# 2660
+R x7.x2.Qb1 3130
+= x7.x2.Qb1 x7.x2.x2.D
+= x7.x2.Qb1 x7.x2.x2.Q_N
+= x7.x2.Qb1 x7.x2.x3.CLK
+R a_15539_n2791# 3806
+R x7.x2.x2.CLK 1743
+= x7.x2.x2.CLK x7.x2.x1.X
+R a_14009_n2701# 1123
+C x7.clk_disable0 4.6
+R x7.clk_disable 2384
+= x7.clk_disable x7.x3.X
+= x7.clk_disable x7.x5.TE_B
+R a_15000_n2791# 1398
+R a_21198_n2247# 306
+R x7.x1.x4.Q 1084
+R a_20579_n2247# 1281
+R a_21390_n1881# 165
+R a_21145_n1869# 188
+R a_20733_n1881# 240
+R a_18990_n2247# 306
+R a_20567_n1869# 209
+R a_20376_n1881# 659
+R x7.x1.x3.Q 1084
+R a_18371_n2247# 1281
+R a_19182_n1881# 165
+R a_18937_n1869# 188
+R a_18525_n1881# 240
+R a_16782_n2247# 306
+R a_18359_n1869# 209
+R a_18168_n1881# 659
+R x7.x1.x2.Q 1084
+R a_16163_n2247# 1281
+R a_16974_n1881# 165
+R a_16729_n1869# 188
+C x7.stby_done_b0 2.7
+R x7.stby_done_b 3797
+= x7.stby_done_b x7.x2.x1.B
+= x7.stby_done_b x7.x2.x4.D
+= x7.stby_done_b x7.x2.x4.Q_N
+= x7.stby_done_b x7.x2.doneb
+= x7.stby_done_b x7.x3.A2
+R a_14035_n2281# 236
+R a_16317_n1881# 240
+R a_16151_n1869# 209
+R a_15960_n1881# 659
+C ibias_ip0 4.4
+R ibias_ip 9908
+C standby_330 5.8
+R standby_33 3484
+= standby_33 x4.out
+R a_14035_n1997# 371
+R a_14285_n2281# 1918
+R a_15083_n1881# 240
+R a_14285_n2079# 2058
+R a_21775_n2247# 1583
+R a_21036_n1869# 1519
+R a_21211_n1943# 3283
+R a_20471_n1869# 1631
+R a_20689_n2273# 1995
+R a_20121_n2241# 2660
+R a_19955_n2241# 3806
+R a_19567_n2247# 1583
+R a_18828_n1869# 1519
+R a_19003_n1943# 3283
+R a_18263_n1869# 1631
+R a_18481_n2273# 1995
+R a_17913_n2241# 2660
+R x7.x1.Qb2 3130
+= x7.x1.Qb2 x7.x1.x3.D
+= x7.x1.Qb2 x7.x1.x3.Q_N
+= x7.x1.Qb2 x7.x1.x4.CLK
+R a_17747_n2241# 3806
+R a_17359_n2247# 1583
+R a_16620_n1869# 1519
+R a_16795_n1943# 3283
+R a_16055_n1869# 1631
+R a_16273_n2273# 1995
+R a_15705_n2241# 2660
+R x7.x1.Qb1 3130
+= x7.x1.Qb1 x7.x1.x2.D
+= x7.x1.Qb1 x7.x1.x2.Q_N
+= x7.x1.Qb1 x7.x1.x3.CLK
+R a_15539_n2241# 3806
+R x7.x1.x2.CLK 1743
+= x7.x1.x2.CLK x7.x1.x1.X
+R a_15000_n1881# 1398
+C x7.ena_done_b0 2.4
+R x7.ena_done_b 3798
+= x7.ena_done_b x7.x1.x1.B
+= x7.ena_done_b x7.x1.x4.D
+= x7.ena_done_b x7.x1.x4.Q_N
+= x7.ena_done_b x7.x1.doneb
+= x7.ena_done_b x7.x3.B2
+C dout_ip0 6.7
+R dout_ip 5395
+= dout_ip x7.x1.x1.A
+= dout_ip x7.x1.clkin
+= dout_ip x7.x2.x1.A
+= dout_ip x7.x2.clkin
+= dout_ip x7.x5.A
+= dout_ip x7.clkin
+R a_14009_n2404# 3689
+C standby_b0 25.6
+R standby_b 12850
+= standby_b x7.x2.x2.RESET_B
+= standby_b x7.x2.x3.RESET_B
+= standby_b x7.x2.x4.RESET_B
+= standby_b x7.x2.ena
+= standby_b x7.x3.A1
+= standby_b x7.stby_b
+= standby_b x4.in_b
+R x3.in_b 2407
+C standby_ip0 20.4
+R standby_ip 10058
+= standby_ip x2.X
+= standby_ip x7.x3.C1
+= standby_ip x7.stby
+= standby_ip x4.in
+C ena_ip0 14.4
+R ena_ip 6917
+= ena_ip x1.X
+= ena_ip x7.x1.x2.RESET_B
+= ena_ip x7.x1.x3.RESET_B
+= ena_ip x7.x1.x4.RESET_B
+= ena_ip x7.x1.ena
+= ena_ip x7.x3.B1
+= ena_ip x7.ena
+= ena_ip x3.in
+R a_4857_n1521# 1873
+R a_2971_n1521# 1873
+C avss_ip0 29.7
+R avss_ip 967366
+C dvss_ip0 42.0
+R dvss_ip 457563
+C avdd_ip0 963.3
+R avdd_ip 410215
+C dvdd_ip0 352.3
+R dvdd_ip 373490
+R dvss 62009
+= dvss ena_buf_tap.VGND
+= dvss standby_buf_tap.VGND
+= dvss x1.VGND
+= dvss x2.VNB
+= dvss x2.VGND
+= dvss x7.x1.x1.VNB
+= dvss x7.sky130_fd_sc_hd__tapvpwrvgnd_1_3.VGND
+= dvss x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_0.VGND
+= dvss x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_1.VGND
+= dvss x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_2.VGND
+= dvss x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_3.VGND
+= dvss x7.x1.sky130_fd_sc_hd__tapvpwrvgnd_1_4.VGND
+= dvss x7.x1.x1.VGND
+= dvss x7.x1.x2.VNB
+= dvss x7.x1.x2.VGND
+= dvss x7.x1.x3.VNB
+= dvss x7.x1.x3.VGND
+= dvss x7.x1.x4.VNB
+= dvss x7.x1.x4.VGND
+= dvss x7.x2.x1.VNB
+= dvss x7.x1.dvss
+= dvss x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_0.VGND
+= dvss x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_1.VGND
+= dvss x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_2.VGND
+= dvss x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_3.VGND
+= dvss x7.x2.sky130_fd_sc_hd__tapvpwrvgnd_1_4.VGND
+= dvss x7.x2.x1.VGND
+= dvss x7.x2.x2.VNB
+= dvss x7.x2.x2.VGND
+= dvss x7.x2.x3.VNB
+= dvss x7.x2.x3.VGND
+= dvss x7.x2.x4.VNB
+= dvss x7.x2.x4.VGND
+= dvss x7.x3.VNB
+= dvss x7.x2.dvss
+= dvss x7.x3.VGND
+= dvss x7.x5.VNB
+= dvss x1.VNB
+= dvss x7.x5.VGND
+= dvss x7.dvss
+= dvss x4.dvss
+= dvss x3.dvss

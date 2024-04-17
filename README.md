@@ -30,7 +30,7 @@ The listed specifications are provided in table form, with individual simulation
 Total simulation time is currently over 3 hours. I recommend running each simulation type individually. If possible, in your simulation home directory, update `.spiceinit` to include the line:
 
 ```
-set num_threads={Max System Threads}
+set num_threads=4
 ```
 
 I recommend system RAM of at least 16 GB, and even then warn users of the tendency to run out of memory (at least in a WSL 2 environment). Due to simulation time limitations, all testbenches are performed during crystal startup, or simulating a crystal response with pure sinusoids. Some of these CACE testbenches that include a crystal model, such as duty cycle, can produce spurious results caused by variations in startup behavior. **To plot example behavior and tool with testbench settings, see the manual testbench in the `xschem/` directory.**
@@ -101,7 +101,9 @@ This IP is in the design phase. The compliance table is in development. Typical 
 | _dout_ High Level (Vol)            | DVDD    | DVDD  | V     |
 | _dout_ Rise/Fall Time              | 4       | 2.6   | ns    |
 
-### CACE Summary Capture
+### CACE Summary Capture (Schematic Capture)
+
+Last updated April 01, 2024
 
 ![CACE Summary - Produced on 01 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_results_combined_20240401.png?raw=true)
 
@@ -111,7 +113,9 @@ Startup times appear strongly influenced by initial transient response from init
 
 ## Magic VLSI Layout Render
 
-![GDS Rendered in Magic VLSI, produced 15 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/magic_layout_20240415.png?raw=true)
+Last updated April 17, 2024
+
+![GDS Rendered in Magic VLSI, produced 17 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/magic_layout_20240417.png?raw=true)
 
 ## Theory of Operation
 
@@ -172,6 +176,16 @@ The following specification table for appropriate crystals will keep your system
 | Storage Temperature Range         | -40 to 85   | deg C        |
 | Equivalent Series Resistance      | <= 90,000   | Ohm          |
 | Maximum Drive Level               | >= 0.5      | microWatt    |
+
+The following table includes examples of available crystal part numbers and their post-silicon validation status:
+
+| Manufacturer  | Part Number         | C_load  | Package         | Approx. $/10 | Digikey Link                           | Mouser Link            | Testing Status | Notes                              |
+| ------------- | ------------------- | ------- | --------------- | ------------ | -------------------------------------- | ---------------------- | -------------- |----------------------------------- |
+| ECS Inc.      | ECS-.327-12.5-34B-C | 12.5 pF | 3.2 x 1.5mm SMD | $4.50        | https://www.digikey.com/short/p27fn3tf | https://mou.sr/3xxjRjt | UNTESTED       | Low cost                           |
+| IQD Freq Prod | LFXTAL062558        | 9 pF    | 2.0 x 1.2mm SMD | $7.10        | https://www.digikey.com/short/0zn0d8d4 | https://mou.sr/3Q7DbKu | UNTESTED       | Lower tempco, small size           |
+| Abracon       | ABS06-32.768KHZ-6-1 | 6 pF    | 2.0 x 1.2mm SMD | $15.20       | https://www.digikey.com/short/080dd50r | https://mou.sr/3na9BJf | UNTESTED       | Low load capacitance (lower power) |
+
+As with most PCB systems, reflow has an impact on circuit reliability. For a crystal oscillator circuit, aggressive reflow temperatures may cause crystals to deviate from their specified tolerances. Always follow the reflow profiles specified by the crystal manufacturer for your chosen part in its datasheet.
 
 ### Startup Characteristics
 
