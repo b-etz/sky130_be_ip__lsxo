@@ -170,8 +170,8 @@ X31 a_761_289# a_543_47# VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.12915 pd=1.18
 
 .subckt ripple_dly_4 clkin ena doneb dvss dvdd
 Xx1 clkin doneb dvss dvss dvdd dvdd x1/X sky130_fd_sc_hd__and2_0
-Xx3 Qb1 Qb2 ena dvss dvss dvdd dvdd x3/Q Qb2 sky130_fd_sc_hd__dfrbp_1
 Xx2 x1/X Qb1 ena dvss dvss dvdd dvdd x2/Q Qb1 sky130_fd_sc_hd__dfrbp_1
+Xx3 Qb1 Qb2 ena dvss dvss dvdd dvdd x3/Q Qb2 sky130_fd_sc_hd__dfrbp_1
 Xx4 Qb2 doneb ena dvss dvss dvdd dvdd x4/Q doneb sky130_fd_sc_hd__dfrbp_1
 .ends
 
@@ -203,11 +203,11 @@ X5 VPWR TE_B a_30_47# VPB sky130_fd_pr__pfet_01v8_hvt ad=0.10855 pd=1.005 as=0.1
 X0 a_400_n50# a_n400_n138# a_n458_n50# a_n560_n224# sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=4
 .ends
 
-.subckt ripl_dly_clk_buf clkin clkout ena stby stby_b dvss x5/VPB
-Xx1 clkin ena ena_done_b dvss x5/VPB ripple_dly_4
-Xx2 clkin stby_b stby_done_b dvss x5/VPB ripple_dly_4
-Xx3 stby_b stby_done_b ena ena_done_b stby dvss dvss x5/VPB x5/VPB clk_disable sky130_fd_sc_hd__a221o_1
-Xx5 clkin clk_disable dvss dvss x5/VPB x5/VPB clkout sky130_fd_sc_hd__einvn_0
+.subckt ripl_dly_clk_buf clkin clkout ena stby stby_b dvss dvdd
+Xx1 clkin ena ena_done_b dvss dvdd ripple_dly_4
+Xx2 clkin stby_b stby_done_b dvss dvdd ripple_dly_4
+Xx3 stby_b stby_done_b ena ena_done_b stby dvss dvss dvdd dvdd clk_disable sky130_fd_sc_hd__a221o_1
+Xx5 clkin clk_disable dvss dvss dvdd dvdd clkout sky130_fd_sc_hd__einvn_0
 XXM3 clkout clk_disable dvss dvss sky130_fd_pr__nfet_01v8_AHZR5K
 .ends
 

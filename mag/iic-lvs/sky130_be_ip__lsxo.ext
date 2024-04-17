@@ -1,4 +1,4 @@
-timestamp 1713225924
+timestamp 1713362978
 version 8.3
 tech sky130A
 style ngspice()
@@ -45,23 +45,23 @@ use sky130_fd_pr__pfet_01v8_M6QFHF amp_XM10_12 1 0 21641 0 1 -6575
 use sky130_fd_pr__nfet_01v8_6G4XAN amp_XM11_13 1 0 21641 0 1 -5561
 use sky130_fd_pr__nfet_01v8_HZ6WG7 XM4 0 1 23509 -1 0 -5548
 use sky130_fd_pr__pfet_01v8_3H68VM XM7 0 -1 23531 1 0 -6550
-use sky130_fd_sc_hd__tapvpwrvgnd_1 ena_buf_tap 0 1 2950 -1 0 -1232
-use sky130_fd_sc_hd__tapvpwrvgnd_1 standby_buf_tap 0 -1 5380 1 0 -1324
-use sky130_fd_sc_hd__buf_1 x1 0 1 2950 -1 0 -1324
 use sky130_fd_sc_hd__buf_1 x2 0 -1 5380 -1 0 -1324
+use sky130_fd_sc_hd__buf_1 x1 0 1 2950 -1 0 -1324
+use sky130_fd_sc_hd__tapvpwrvgnd_1 standby_buf_tap 0 -1 5380 1 0 -1324
+use sky130_fd_sc_hd__tapvpwrvgnd_1 ena_buf_tap 0 1 2950 -1 0 -1232
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ ant_diode_standby 1 0 5403 0 1 -997
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ ant_diode_ena 1 0 2933 0 1 -997
 use sky130_fd_pr__cap_mim_m3_1_43FTN9 XC2 1 0 21888 0 1 -9798
 port "dout" 8 23912 -1212 24312 -812 m2
 port "xout" 9 23054 -23704 23454 -23304 m1
 port "xin" 10 20656 -23704 21056 -23304 m1
-port "avss" 2 1626 -1212 2026 -812 m2
-port "dvss" 4 9976 -1212 10376 -812 m2
 port "dvdd" 3 8076 -1212 8476 -812 m2
 port "ibias" 5 11192 -1212 11592 -812 m2
+port "avss" 2 1626 -1212 2026 -812 m2
 port "standby" 7 4338 -1212 4738 -812 m2
 port "ena" 6 3592 -1212 3992 -812 m2
 port "avdd" 1 2178 -1212 2578 -812 m2
+port "dvss" 4 9976 -1212 10376 -812 m2
 node "m4_5950_n21440#" 0 0 5950 -21440 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "m4_5242_n17098#" 0 0 5242 -17098 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "m4_15136_n13354#" 0 0 15136 -13354 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -138,8 +138,8 @@ node "dout_filt" 0 0 14344 -3464 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "dout_ip" 0 0 12772 -3294 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "m1_12702_n2400#" 0 0 12702 -2400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "standby_33" 0 0 9140 -4152 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "m1_3518_n1864#" 0 0 3518 -1864 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "dout" 0 0 23912 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m1_3518_n1864#" 0 0 3518 -1864 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_24528_n22338#" 0 0 24528 -22338 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_24528_n22004#" 0 0 24528 -22004 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_2128_n22170#" 0 0 2128 -22170 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -213,39 +213,35 @@ node "tail" 0 0 11586 -6922 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "xin_buf" 0 0 17498 -5542 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "vn" 0 0 16208 -6902 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "vbp" 0 0 10682 -7018 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_3872_n8196#" 0 0 3872 -8196 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "avss_ip" 0 0 1844 -23486 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_2496_n8184#" 0 0 2496 -8184 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "avss" 0 0 1626 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_12440_n3646#" 0 0 12440 -3646 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "ibias_ip" 0 0 11436 -5500 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "dvss_ip" 0 0 8880 -5494 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "dvss" 0 0 9976 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "dvdd" 0 0 8076 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "ibias" 0 0 11192 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_12600_n2212#" 0 0 12600 -2212 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "standby_b" 0 0 9426 -3098 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3872_n8196#" 0 0 3872 -8196 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "avss_ip" 0 0 1844 -23486 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2496_n8184#" 0 0 2496 -8184 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "avss" 0 0 1626 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "standby_ip" 0 0 4904 -1772 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "ena_ip" 0 0 3038 -1780 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "standby" 0 0 4338 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "ena" 0 0 3592 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_2748_n1182#" 0 0 2748 -1182 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_1912_n23418#" 0 0 1912 -23418 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_8986_n10106#" 0 0 8986 -10106 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "w_2132_n8800#" 0 0 2132 -8800 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "avdd_ip" 0 0 1706 -23624 dnw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "dvdd_ip" 0 0 8780 -10312 dnw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "avdd" 0 0 2178 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "dvss" 0 0 9976 -1212 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "amp_XM4_18/a_887_n400#" "amp_XM4_18/a_429_n400#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "amp_XM4_18/a_429_n400#" "amp_XM3_5/a_887_n400#"
 merge "amp_XM3_5/a_887_n400#" "amp_XM3_5/a_429_n400#"
 merge "amp_XM3_5/a_429_n400#" "amp_XC1/m3_n3798_n4520#"
 merge "amp_XC1/m3_n3798_n4520#" "xin_buf"
-merge "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_4/VPWR" "x7/x5/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "x7/x5/VPWR" "x7/m1_624_n482#"
-merge "x7/m1_624_n482#" "x2/VPWR"
-merge "x2/VPWR" "XM8/a_761_n400#"
+merge "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_4/VPWR" "x7/dvdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x7/dvdd" "standby_buf_tap/VPWR"
+merge "standby_buf_tap/VPWR" "XM8/a_761_n400#"
 merge "XM8/a_761_n400#" "XM8/a_445_n400#"
 merge "XM8/a_445_n400#" "XM8/a_129_n400#"
 merge "XM8/a_129_n400#" "XM8/a_n187_n400#"
@@ -254,11 +250,11 @@ merge "XM8/a_n503_n400#" "XM8/a_n819_n400#"
 merge "XM8/a_n819_n400#" "XM8/w_n957_n619#"
 merge "XM8/w_n957_n619#" "dvdd"
 merge "dvdd" "x2/VPB"
-merge "x2/VPB" "standby_buf_tap/VPWR"
-merge "standby_buf_tap/VPWR" "x1/VPWR"
-merge "x1/VPWR" "x1/VPB"
-merge "x1/VPB" "ena_buf_tap/VPWR"
-merge "ena_buf_tap/VPWR" "x4/dvdd"
+merge "x2/VPB" "x2/VPWR"
+merge "x2/VPWR" "ena_buf_tap/VPWR"
+merge "ena_buf_tap/VPWR" "x1/VPB"
+merge "x1/VPB" "x1/VPWR"
+merge "x1/VPWR" "x4/dvdd"
 merge "x4/dvdd" "x3/dvdd"
 merge "x3/dvdd" "x7/m1_8690_n1674#"
 merge "x7/m1_8690_n1674#" "XC4/c1_n1146_n4480#"
@@ -273,20 +269,20 @@ merge "x7/x1/x4/VGND" "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_0/VGND"
 merge "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_0/VGND" "x7/x1/x3/VGND"
 merge "x7/x1/x3/VGND" "x7/x1/dvss"
 merge "x7/x1/dvss" "x7/x1/x1/VGND"
-merge "x7/x1/x1/VGND" "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_1/VGND"
-merge "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_1/VGND" "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_2/VGND"
-merge "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_2/VGND" "x7/x1/x2/VGND"
+merge "x7/x1/x1/VGND" "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_2/VGND"
+merge "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_2/VGND" "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_1/VGND"
+merge "x7/x1/sky130_fd_sc_hd__tapvpwrvgnd_1_1/VGND" "x7/x1/x2/VGND"
 merge "x7/x1/x2/VGND" "x7/x3/VGND"
 merge "x7/x3/VGND" "XM3/a_n458_n50#"
-merge "XM3/a_n458_n50#" "x2/VNB"
-merge "x2/VNB" "li_12600_n2212#"
-merge "li_12600_n2212#" "x2/VGND"
-merge "x2/VGND" "standby_buf_tap/VGND"
-merge "standby_buf_tap/VGND" "x4/dvss"
-merge "x4/dvss" "x1/VNB"
+merge "XM3/a_n458_n50#" "standby_buf_tap/VGND"
+merge "standby_buf_tap/VGND" "li_12600_n2212#"
+merge "li_12600_n2212#" "x2/VNB"
+merge "x2/VNB" "x2/VGND"
+merge "x2/VGND" "x4/dvss"
+merge "x4/dvss" "ena_buf_tap/VGND"
+merge "ena_buf_tap/VGND" "x1/VNB"
 merge "x1/VNB" "x1/VGND"
-merge "x1/VGND" "ena_buf_tap/VGND"
-merge "ena_buf_tap/VGND" "x3/dvss"
+merge "x1/VGND" "x3/dvss"
 merge "x3/dvss" "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_4/VGND"
 merge "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_4/VGND" "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_3/VGND"
 merge "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_3/VGND" "x7/x2/x4/VGND"
@@ -294,25 +290,22 @@ merge "x7/x2/x4/VGND" "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_0/VGND"
 merge "x7/x2/sky130_fd_sc_hd__tapvpwrvgnd_1_0/VGND" "x7/x2/x3/VGND"
 merge "x7/x2/x3/VGND" "x7/x2/dvss"
 merge "x7/x2/dvss" "x7/XM3/a_n560_n224#"
-merge "x7/XM3/a_n560_n224#" "XC4/m3_n1186_n4520#"
-merge "XC4/m3_n1186_n4520#" "li_2748_n1182#"
-merge "li_2748_n1182#" "x7/x2/x2/VGND"
+merge "x7/XM3/a_n560_n224#" "x7/x2/x2/VGND"
 merge "x7/x2/x2/VGND" "x7/a_472_n1778#"
 merge "x7/a_472_n1778#" "x7/x5/VGND"
 merge "x7/x5/VGND" "XM3/a_n560_n224#"
-merge "XM3/a_n560_n224#" "li_12440_n3646#"
-merge "li_12440_n3646#" "XM9/VSUBS"
+merge "XM3/a_n560_n224#" "XM9/VSUBS"
 merge "XM9/VSUBS" "XM11/a_761_n400#"
 merge "XM11/a_761_n400#" "XM11/a_445_n400#"
 merge "XM11/a_445_n400#" "XM11/a_129_n400#"
 merge "XM11/a_129_n400#" "XM11/a_n187_n400#"
 merge "XM11/a_n187_n400#" "XM11/a_n503_n400#"
-merge "XM11/a_n503_n400#" "XM8/VSUBS"
-merge "XM8/VSUBS" "XC4/VSUBS"
-merge "XC4/VSUBS" "VSUBS"
-merge "VSUBS" "XM11/a_n819_n400#"
+merge "XM11/a_n503_n400#" "XM11/a_n819_n400#"
 merge "XM11/a_n819_n400#" "XM11/a_n921_n574#"
-merge "XM11/a_n921_n574#" "dvss"
+merge "XM11/a_n921_n574#" "XM8/VSUBS"
+merge "XM8/VSUBS" "XC4/VSUBS"
+merge "XC4/VSUBS" "XC4/m3_n1186_n4520#"
+merge "XC4/m3_n1186_n4520#" "dvss"
 merge "amp_XR1/a_297_n7016#" "m1_10620_n9002#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 merge "m1_10620_n9002#" "amp_XR1/a_131_n7016#"
 merge "amp_XR1/a_131_n7016#" "li_10620_n9002#"

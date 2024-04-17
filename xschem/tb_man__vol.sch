@@ -34,7 +34,7 @@ C {devices/lab_pin.sym} 40 -460 2 0 {name=p1 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 40 -590 2 0 {name=p2 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 430 -670 0 0 {name=p3 sig_type=std_logic lab=ena
 }
-C {devices/code_shown.sym} 990 -400 0 0 {name=MODELS 
+C {devices/code_shown.sym} 990 -380 0 0 {name=MODELS 
 only_toplevel=true
 value=".model DUMMY D()"}
 C {devices/isource.sym} 110 -690 0 0 {name=Ibias value=50n}
@@ -76,7 +76,6 @@ C {devices/vsource.sym} 40 -320 0 0 {name=Vena value=1.98 savecurrent=false}
 C {devices/lab_pin.sym} 430 -630 0 0 {name=p6 sig_type=std_logic lab=standby}
 C {devices/lab_pin.sym} 240 -660 2 0 {name=p7 sig_type=std_logic lab=ibias}
 C {devices/diode.sym} 240 -690 2 0 {name=D1 model=DUMMY area=100}
-C {sky130_be_ip__lsxo.sym} 560 -650 0 0 {name=x1}
 C {devices/vsource.sym} 240 -560 0 0 {name=Vdvss value=0 savecurrent=false}
 C {devices/gnd.sym} 240 -530 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} 240 -430 0 0 {name=Vavss value=0 savecurrent=false}
@@ -115,6 +114,8 @@ C {devices/code_shown.sym} 990 -590 0 0 {name=SETUP only_toplevel=false value="*
 .option TEMP=-40
 * Flag unsafe operating conditions (exceeds models' specified limits)
 .option warn=1
+.option reltol=1e-3
+.option abstol=1e-3
 "}
 C {devices/vsource.sym} 580 -170 0 0 {name=Vxout value="SIN(0.5378 0.1027 32768 0 0 130)" savecurrent=false}
 C {devices/vsource.sym} 540 -90 0 0 {name=Vxin value="SIN(0.5450 0.0842 32768 0 0 0)" savecurrent=false}
@@ -129,3 +130,4 @@ value="
 "
 spice_ignore=false
 place=header}
+C {sky130_be_ip__lsxo_rcx.sym} 560 -650 0 0 {name=x1}

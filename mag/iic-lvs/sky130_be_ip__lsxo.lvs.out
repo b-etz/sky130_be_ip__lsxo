@@ -342,14 +342,14 @@ Subcircuit pins:
 Circuit 1: ripl_dly_clk_buf                |Circuit 2: ripl_dly_clk_buf                
 -------------------------------------------|-------------------------------------------
 stby                                       |stby                                       
-x5/VPB                                     |dvdd **Mismatch**                          
+dvdd                                       |dvdd                                       
 dvss                                       |dvss                                       
 clkout                                     |clkout                                     
 stby_b                                     |stby_b                                     
 ena                                        |ena                                        
 clkin                                      |clkin                                      
 ---------------------------------------------------------------------------------------
-Cell pin lists for ripl_dly_clk_buf and ripl_dly_clk_buf altered to match.
+Cell pin lists are equivalent.
 Device classes ripl_dly_clk_buf and ripl_dly_clk_buf are equivalent.
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_WHP78W in circuit sky130_be_ip__lsxo (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_M35ED8 in circuit sky130_be_ip__lsxo (0)(1 instance)

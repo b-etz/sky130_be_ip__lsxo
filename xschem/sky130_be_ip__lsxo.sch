@@ -37,6 +37,7 @@ T {Copyright 2024 Brady Etz
    See the License for the specific language governing permissions and
    limitations under the License.} -60 -230 0 0 0.2 0.2 {}
 T {Port Diodes} 1640 -810 0 0 0.6 0.6 {}
+T {50 nA} 890 -850 0 0 0.4 0.4 {}
 N 290 -290 390 -290 {
 lab=xin}
 N 430 -260 430 -210 {

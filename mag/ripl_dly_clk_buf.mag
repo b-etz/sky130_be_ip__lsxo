@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713225924
+timestamp 1713360460
 << psubdiff >>
 rect 472 -1694 532 -1670
 rect 472 -1778 532 -1754
@@ -178,23 +178,23 @@ rect 1714 -2066 1726 -2038
 rect 2492 -2066 2504 -1988
 rect 1714 -2074 2504 -2066
 use sky130_fd_sc_hd__tapvpwrvgnd_1  sky130_fd_sc_hd__tapvpwrvgnd_1_3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713225924
+timestamp 1712500979
 transform 0 1 542 -1 0 -598
 box -38 -48 130 592
 use ripple_dly_4  x1
-timestamp 1713225924
+timestamp 1713360460
 transform 1 0 1378 0 -1 -1870
 box -98 -1228 7350 -588
 use ripple_dly_4  x2
-timestamp 1713225924
+timestamp 1713360460
 transform 1 0 1378 0 1 -598
 box -98 -1228 7350 -588
 use sky130_fd_sc_hd__a221o_1  x3 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713225924
+timestamp 1712500979
 transform 0 1 542 -1 0 -690
 box -38 -48 774 592
 use sky130_fd_sc_hd__einvn_0  x5 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1713225924
+timestamp 1712500979
 transform 0 1 542 -1 0 -1426
 box -38 -48 406 592
 use sky130_fd_pr__nfet_01v8_AHZR5K  XM3
@@ -202,8 +202,6 @@ timestamp 1713225924
 transform 1 0 2110 0 1 -2156
 box -596 -260 596 260
 << labels >>
-flabel space 624 -490 1336 -290 0 FreeSans 800 0 0 0 dvdd
-port 1 nsew
 flabel metal1 490 -2416 690 -2056 0 FreeSans 800 0 0 0 clkin
 port 3 nsew
 flabel metal1 886 -2416 1086 -2206 0 FreeSans 800 0 0 0 clkout
@@ -219,4 +217,6 @@ flabel metal1 494 -220 1470 -120 0 FreeSans 800 0 0 0 dvss
 port 2 nsew
 flabel metal2 910 -642 1798 -542 0 FreeSans 400 0 0 0 ena_done_b
 flabel metal2 908 -1926 1798 -1826 0 FreeSans 400 0 0 0 stby_done_b
+flabel metal1 624 -482 1336 -290 0 FreeSans 800 0 0 0 dvdd
+port 1 nsew
 << end >>
