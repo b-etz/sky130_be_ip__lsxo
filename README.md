@@ -67,39 +67,39 @@ The spice output is readable as `sky130_be_ip__lsxo.pex.spice` using your favori
 
 ### Provided Specifications
 
-| Parameter                          | Minimum    | Typical | Maximum | Unit  |
-| ---------------------------------- | ---------- | ------- | ------- | ----- |
-| Analog Supply                      | 2.7        | 3.3     | 5.5     | V     |
-| Operating Temperature              | -40        | 25      | 85      | deg C |
-| AVDD Current Dissipation (Enabled) | 0.8        | 1       | 1.2     | uA    |
-| Current Dissipation (Powered Down) | 0.5        | 1       | 2       | nA    |
-| _dout_ Duty Cycle                  | 45         | 50      | 55      | %     |
-| Startup Time (Power-on)            | 1          | 2       | 4       | ms    |
-| Startup Time (Enable)              | 1          | 1       | 2       | ms    |
-| Input Load Capacitance at Crystal  |            |         | 2       | pF    |
-| Output Load Capacitance at _dout_  |            |         | 200     | fF    |
-| Frequency Stability over Temp      | -200       | 0       | 0       | ppm   |
-| Frequency Accuracy at 25 deg C     | -20        | 0       | 20      | ppm   |
-| _dout_ Low Level (Vol)             |            | 0       | 0.1     | V     |
-| _dout_ High Level (Vol)            | DVDD - 0.1 | DVDD    |         | V     |
-| _dout_ Rise/Fall Time              | 4          | 5       | 6       | ns    |
+| Parameter                            | Minimum    | Typical | Maximum | Unit  |
+| ------------------------------------ | ---------- | ------- | ------- | ----- |
+| Analog Supply                        | 2.7        | 3.3     | 5.5     | V     |
+| Operating Temperature                | -40        | 25      | 85      | deg C |
+| `avdd` Current Dissipation (Enabled) | 0.8        | 1       | 1.2     | uA    |
+| Current Dissipation (Powered Down)   | 0.5        | 1       | 2       | nA    |
+| `dout` Duty Cycle                    | 45         | 50      | 55      | %     |
+| Startup Time (Power-on)              | 1          | 2       | 4       | ms    |
+| Startup Time (Enable)                | 1          | 1       | 2       | ms    |
+| Input Load Capacitance at Crystal    |            |         | 2       | pF    |
+| Output Load Capacitance at `dout`    |            |         | 200     | fF    |
+| Frequency Stability over Temp        | -200       | 0       | 0       | ppm   |
+| Frequency Accuracy at 25 deg C       | -20        | 0       | 20      | ppm   |
+| `dout` Low Level (Vol)               |            | 0       | 0.1     | V     |
+| `dout` High Level (Vol)              | DVDD - 0.1 | DVDD    |         | V     |
+| `dout` Rise/Fall Time                | 4          | 5       | 6       | ns    |
 
 ### Achieved Specifications
 
-This IP is in the design phase. The compliance table is in development. Typical simulated performance figures are listed below:
+This IP is in the validation phase. The compliance table is in development. Typical simulated performance figures are listed below:
 
-| Parameter                          | Typical | Worst | Unit  |
-| ---------------------------------- | ------- | ----- | ----- |
-| AVDD Current Dissipation (Enabled) | 0.8     | 0.9   | uA    |
-| Current Dissipation (Powered Down) | 0.4     | 0.6   | nA    |
-| _dout_ Duty Cycle                  | 50.4    | 62    | %     |
-| Startup Time (Power-on)            | 1.3     | 5.9   | ms    |
-| Startup Time (Enable)              | 1.7     | 5.9   | ms    |
-| Frequency Stability over Temp      | n/a     | n/a   | ppm   |
-| Frequency Accuracy at 25 deg C     | n/a     | n/a   | ppm   |
-| _dout_ Low Level (Vol)             | 0       | 0     | V     |
-| _dout_ High Level (Vol)            | DVDD    | DVDD  | V     |
-| _dout_ Rise/Fall Time              | 4       | 2.6   | ns    |
+| Parameter                            | Typical | Worst | Unit  |
+| ------------------------------------ | ------- | ----- | ----- |
+| `avdd` Current Dissipation (Enabled) | 0.8     | 0.9   | uA    |
+| Current Dissipation (Powered Down)   | 0.4     | 0.6   | nA    |
+| `dout` Duty Cycle                    | 50.4    | 62    | %     |
+| Startup Time (Power-on)              | 1.3     | 5.9   | ms    |
+| Startup Time (Enable)                | 1.7     | 5.9   | ms    |
+| Frequency Stability over Temp        | n/a     | n/a   | ppm   |
+| Frequency Accuracy at 25 deg C       | n/a     | n/a   | ppm   |
+| `dout` Low Level (Vol)               | 0       | 0     | V     |
+| `dout` High Level (Vol)              | DVDD    | DVDD  | V     |
+| `dout` Rise/Fall Time                | 4       | 2.6   | ns    |
 
 ### CACE Summary Capture (Schematic Capture)
 
@@ -109,7 +109,7 @@ Last updated April 01, 2024
 
 Duty cycle tests are performed with a 10-nA current initial condition for the crystal motional inductance. This is done to accelerate startup (separate testbench) and capture a more realistic image of duty cycle across these corners.
 
-Startup times appear strongly influenced by initial transient response from initial conditions, which vary slightly from sim to sim. The startup times could improve for 12.5-pF devices by loading the active device with more current and consuming greater startup power. However, this would reduce or eliminate compatibility with 6-pF and 4-pF devices entirely. Lower drive current is required to sustain oscillations with low-CL, low-ESR devices.
+Startup times appear strongly influenced by initial transient response from initial conditions, which vary slightly from sim to sim.
 
 ## Magic VLSI Layout Render
 
@@ -179,17 +179,19 @@ Temperature and process variability dramatically affect the steady-state oscilla
 
 Startup time is commonly defined as the time taken from oscillator activation to the crystal reaching 90% of its steady-state oscillation amplitude. For a high-Q crystal oscillator, this may take thousands of cycles. This project uses the alternative definition of the time from oscillator activation to the first valid clock. Although the crystal does not oscillate within tolerance during startup, the early use of a clock could be useful for certain applications. **Designers using this IP block must be aware of the startup variability this design exposes, and gate the clock according to their system requirements.**
 
+For more details on general crystal oscillator function, I recommend checking out the seminal STMicroelectronics application note AN2867, and any of the referenced books/papers at the end of this README.
+
 ### Output Clock Generation
 
-`xin` and `xout` are compared by a differential amplifier, which is fed a tail current bias from an external bias generator at 50 nA. This amplifies the `xin` signal level by approximately 20-30 times (until saturation at higher amplitudes). The output sinusoid is AC-coupled to a center-biased inverter chain that approximates a square waveform output. As described in the Control Bits section, the output clock is gated by a ripple delay counter, and amplified by a final inverter section to drive `dout` with the specified rise/fall times.
+`xin` and `xout` are compared by a differential amplifier, which is fed a tail current bias mirrored from an external bias generator at 50 nA. This amplifies the `xin` signal level by approximately 20-30 times (until saturation at higher amplitudes). The output sinusoid is AC-coupled to a center-biased inverter chain that approximates a square waveform output. As described in the Control Bits section, the output clock is gated by a ripple delay counter, and amplified by a final inverter section to drive `dout` with the specified rise/fall times.
 
 This clock output is not guaranteed by design to be a 50% duty cycle. This is the reason for the ripple delay glitch filter. Regardless, duty cycle deviations as extreme as 10% or 90% at the slow 32-kHz frequency are unlikely to cause setup/hold violations.
 
-I would recommend investigating a Schmitt trigger or other latching mechanism with hysteresis to improve clock shape. This was not investigated in the first design pass due to the rapid startup specification.
+Looking forward, I would recommend investigating a Schmitt trigger or other latching mechanism with hysteresis to improve clock shape. This was not investigated in the first design pass due to the rapid startup specification.
 
 ### Recommended Crystal Specifications
 
-This circuit can only be simulated so many ways, and development has focused on 12.5 pF load capacitance crystals. For that reason, higher load capacitances are recommended for frequency stability and startup assurance. Load capacitances of 6 pF have also been simulated successfully. At a glance, smaller load capacitances (e.g. 4 pF) may start up with a transconductor g_m of 0.3 uS to 3 uS. Larger load capacitances (e.g. 12.5 pF) require transconductances of 1 uS to 40 uS. This oscillator IP was designed with a transconductance of ~8 uS, which allows reasonably fast startup for 12.5 pF crystals, great startup for 6 pF crystals, and far exceeds the optimal g_m for 4 pF crystals. For this reason, 4 pF crystals may fail to start with this circuit.
+This circuit can only be simulated so many ways, and development has focused on 12.5 pF load capacitance crystals. For that reason, higher load capacitances are recommended for frequency stability and startup assurance. Load capacitances of 6 pF have also been simulated successfully. At a high level, crystals with small load capacitances (e.g. 4 pF) may start up with a transconductor g_m of 0.3 uS to 3 uS. Larger load capacitances (e.g. 12.5 pF) require transconductances of 1 uS to 40 uS. This oscillator IP was designed with a startup transconductance of ~8 uS, which allows reasonably fast startup for 12.5 pF crystals, great startup for 6 pF crystals, and far exceeds the optimal g_m for 4 pF crystals. For this reason, 4 pF crystals may fail to sustain oscillation with this circuit.
 
 The following specification table for appropriate crystals will keep your system capable of the proposed specifications listed earlier. For requirements given in ranges, devices with a range that fully includes the specified range are acceptable.
 
@@ -208,29 +210,29 @@ The following specification table for appropriate crystals will keep your system
 
 The following table includes examples of available crystal part numbers and their post-silicon validation status:
 
-| Manufacturer  | Part Number         | C_load  | Package         | Approx. $/10 | Digikey Link                           | Mouser Link            | Testing Status | Notes                              |
-| ------------- | ------------------- | ------- | --------------- | ------------ | -------------------------------------- | ---------------------- | -------------- |----------------------------------- |
-| ECS Inc.      | ECS-.327-12.5-34B-C | 12.5 pF | 3.2 x 1.5mm SMD | $4.50        | https://www.digikey.com/short/p27fn3tf | https://mou.sr/3xxjRjt | UNTESTED       | Low cost                           |
-| IQD Freq Prod | LFXTAL062558        | 9 pF    | 2.0 x 1.2mm SMD | $7.10        | https://www.digikey.com/short/0zn0d8d4 | https://mou.sr/3Q7DbKu | UNTESTED       | Lower tempco, small size           |
-| Abracon       | ABS06-32.768KHZ-6-1 | 6 pF    | 2.0 x 1.2mm SMD | $15.20       | https://www.digikey.com/short/080dd50r | https://mou.sr/3na9BJf | UNTESTED       | Low load capacitance (lower power) |
+| Manufacturer  | Part Number         | C_load  | Package         | Approx. $/10 | To Order                                                                            | Testing Status | Notes                              |
+| ------------- | ------------------- | ------- | --------------- | ------------ | ----------------------------------------------------------------------------------- | -------------- |----------------------------------- |
+| ECS Inc.      | ECS-.327-12.5-34B-C | 12.5 pF | 3.2 x 1.5mm SMD | $4.50        | [Mouser](https://mou.sr/3xxjRjt), [Digikey](https://www.digikey.com/short/p27fn3tf) | UNTESTED       | Low cost                           |
+| IQD Freq Prod | LFXTAL062558        | 9 pF    | 2.0 x 1.2mm SMD | $7.10        | [Mouser](https://mou.sr/3Q7DbKu), [Digikey](https://www.digikey.com/short/0zn0d8d4) | UNTESTED       | Lower tempco, small size           |
+| Abracon       | ABS06-32.768KHZ-6-1 | 6 pF    | 2.0 x 1.2mm SMD | $15.20       | [Mouser](https://mou.sr/3na9BJf), [Digikey](https://www.digikey.com/short/080dd50r) | UNTESTED       | Low load capacitance (lower power) |
+
+Refer to the Ports and Connections section for more details on SMD load capacitor requirements.
 
 As with most PCB systems, reflow has an impact on circuit reliability. For a crystal oscillator circuit, aggressive reflow temperatures may cause crystals to deviate from their specified tolerances. Always follow the reflow profiles specified by the crystal manufacturer for your chosen part in its datasheet.
-
-Refer to the Ports and Connections section for more details on load capacitor requirements.
 
 ### Startup Characteristics
 
 A big thank-you to IQD Frequency Products, Ltd. for providing the 12.5pF device characterization data used for these simulations.
 
-Startup waveforms are interesting to observe for a crystal oscillator, because they expose the inner workings of the oscillator system. Below, I have an Ngspice plot of _xin_ (red) and _xout_ (blue) generated by the manual testbench with a rising edge on _ena_ and a falling edge on _standby_.
+Startup waveforms are interesting to observe for a crystal oscillator, because they expose the inner workings of the oscillator system. Below, I have an Ngspice plot of `xin` (red) and `xout` (blue) generated by the manual testbench with a rising edge on `ena` and a falling edge on `standby`.
 
 ![XIN and XOUT Waveforms, 1.5sec sample, produced 01 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/typical_startup_waveform.png?raw=true)
 
-The bulk of the signal amplitude grow-up happens between 0.5 seconds and 1.1 seconds. Here, the _xin_ amplitude climbs from 1 mVpp to ~300 mVpp. The _xout_ amplitude inflects around 0.9 seconds in, and levels off alongside _xin_ around 1.2 seconds.
+The bulk of the signal amplitude grow-up happens between 0.5 seconds and 1.1 seconds. Here, the `xin` amplitude climbs from 1 mVpp to ~300 mVpp. The `xout` amplitude inflects around 0.9 seconds in, and levels off alongside `xin` around 1.2 seconds.
 
 What causes the amplitude to plateau (deviate from the exponential growth)? Other than non-linearities in the common-source amplifier stage, it's the amplitude regulator built into the bias generator.
 
-Below, I have another Ngspice plot of the current drawn from _avdd_ over time. By design, it is most power-hungry early during startup. After startup, the current consumption dwindles to a mere 300 nA because of a rising P-side bias voltage generated by the bias_gen subblock (noise around the ideal sigmoid is caused by AC feedthrough into the bias generator, as well as transient sim nonsense from the 1-us timestep).
+Below, I have another Ngspice plot of the current drawn from `avdd` over time. By design, it is most power-hungry early during startup. After startup, the current consumption dwindles to a mere 300 nA because of a rising P-side bias voltage generated by the bias_gen subblock (noise around the ideal sigmoid is caused by AC feedthrough into the bias generator, as well as transient sim nonsense from the 1-us timestep).
 
 ![AVDD Waveform, 1.5sec sample, produced 01 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/typical_startup_avdd_current.png?raw=true)
 
