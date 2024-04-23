@@ -130,10 +130,6 @@ N 650 -120 670 -120 {
 lab=avss_ip}
 N 810 -180 810 -120 {
 lab=avss_ip}
-N 1760 -680 1760 -660 {
-lab=xin}
-N 1760 -500 1760 -480 {
-lab=xout}
 N 1240 -200 1240 -190 {
 lab=dout_ip}
 N 605 -450 670 -450 {
@@ -145,6 +141,14 @@ lab=xout}
 N 670 -510 680 -510 {
 lab=xout}
 N 670 -450 680 -450 {
+lab=xout}
+N 1760 -670 1760 -660 {
+lab=xin}
+N 1760 -490 1760 -480 {
+lab=xout}
+N 1760 -680 1760 -670 {
+lab=xin}
+N 1760 -500 1760 -490 {
 lab=xout}
 C {devices/iopin.sym} 90 -820 0 0 {name=p1 lab=avdd}
 C {devices/opin.sym} 100 -640 0 0 {name=p8 lab=dout}
@@ -401,27 +405,13 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 770 -150 3 0 {name=p229 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 810 -120 3 0 {name=p230 sig_type=std_logic lab=avss_ip}
-C {sky130_fd_pr/diode.sym} 1760 -710 0 0 {name=D1
-model=diode_pd2nw_05v5
-area=2.025e11
-perim=1.8e6
-spiceprefix=X
-}
 C {sky130_fd_pr/diode.sym} 1760 -630 0 0 {name=D2
 model=diode_pw2nd_05v5
 area=2.025e11
 perim=1.8e6
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1760 -670 0 0 {name=p266 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 1760 -600 2 0 {name=p267 sig_type=std_logic lab=avss_ip}
-C {devices/lab_pin.sym} 1760 -740 2 0 {name=p265 sig_type=std_logic lab=avdd_ip}
-C {sky130_fd_pr/diode.sym} 1760 -530 0 0 {name=D3
-model=diode_pd2nw_05v5
-area=2.025e11
-perim=1.8e6
-spiceprefix=X
-}
 C {sky130_fd_pr/diode.sym} 1760 -450 0 0 {name=D4
 model=diode_pw2nd_05v5
 area=2.025e11
@@ -429,8 +419,6 @@ perim=1.8e6
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 1760 -420 2 0 {name=p270 sig_type=std_logic lab=avss_ip}
-C {devices/lab_pin.sym} 1760 -560 2 0 {name=p268 sig_type=std_logic lab=avdd_ip}
-C {devices/lab_pin.sym} 1760 -490 0 0 {name=p269 sig_type=std_logic lab=xout}
 C {sky130_fd_pr/diode.sym} 1760 -350 0 0 {name=D5
 model=diode_pw2nd_05v5
 area=2.025e11
@@ -465,3 +453,17 @@ spiceprefix=X
 C {devices/lab_pin.sym} 565 -480 3 0 {name=p11 sig_type=std_logic lab=vbreg}
 C {devices/lab_pin.sym} 680 -510 2 0 {name=p12 sig_type=std_logic lab=xout}
 C {devices/lab_pin.sym} 605 -480 2 0 {name=p13 sig_type=std_logic lab=avdd_ip}
+C {devices/lab_pin.sym} 1760 -670 0 0 {name=p14 sig_type=std_logic lab=xin}
+C {devices/lab_pin.sym} 1760 -490 0 0 {name=p15 sig_type=std_logic lab=xout}
+C {sky130_fd_pr/diode.sym} 1760 -710 0 0 {name=D1
+model=diode_pd2nw_05v5
+area=2.025e11
+perim=1.8e6
+spiceprefix=X
+}
+C {sky130_fd_pr/diode.sym} 1760 -530 0 0 {name=D3
+model=diode_pd2nw_05v5
+area=2.025e11
+perim=1.8e6
+spiceprefix=X
+}

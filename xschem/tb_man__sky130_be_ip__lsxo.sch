@@ -75,17 +75,17 @@ value=".param DVDD=1.8
   save V(DOUT) 
   save V(XIN) V(XOUT)
   *save V(x1.vbreg)
-  *save V(x1.x4.xin_buf) V(x1.x4.inv_in)
+  save V(x1.x6.xin_buf) V(x1.x6.inv_in)
   *save V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
   *save I(VA) I(VD)
-  tran 1u 1.5m
+  tran 1u 1 uic
   *tran 1n 0.2m
   remzerovec
   write tb_lsxo_general_short.raw
   plot V(DOUT)
   plot V(XIN) V(XOUT)
   *plot V(x1.vbreg)
-  *plot V(x1.x4.xin_buf) V(x1.x4.inv_in)
+  plot V(x1.x6.xin_buf) V(x1.x6.inv_in)
   *plot V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
   *plot I(VA) I(VD)
   * quit 0

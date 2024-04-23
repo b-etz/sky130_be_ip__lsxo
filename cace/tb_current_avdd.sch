@@ -43,10 +43,6 @@ N 690 -650 730 -650 {
 lab=dout}
 N 730 -650 850 -650 {
 lab=dout}
-C {devices/vsource.sym} 40 -560 0 0 {name=Vdvdd value=\{Vdvdd\} savecurrent=false}
-C {devices/vsource.sym} 40 -430 0 0 {name=Vavdd value=\{Vavdd\} savecurrent=false}
-C {devices/lab_pin.sym} 40 -460 2 0 {name=p1 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 40 -590 2 0 {name=p2 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 430 -670 0 0 {name=p3 sig_type=std_logic lab=ena
 }
 C {devices/code_shown.sym} 990 -700 0 0 {name=MODELS 
@@ -84,8 +80,6 @@ C {devices/lab_pin.sym} 520 -530 0 0 {name=p15 sig_type=std_logic lab=xin}
 C {devices/lab_pin.sym} 600 -530 2 0 {name=p18 sig_type=std_logic lab=xout}
 C {devices/lab_pin.sym} 480 -730 0 0 {name=p20 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 640 -730 2 0 {name=p22 sig_type=std_logic lab=dvdd}
-C {devices/gnd.sym} 40 -530 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} 40 -400 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 560 -730 2 0 {name=p11 sig_type=std_logic lab=ibias}
 C {devices/gnd.sym} 40 -290 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 40 -350 2 0 {name=p4 sig_type=std_logic lab=ena}
@@ -125,7 +119,7 @@ m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 980 -250 0 0 {name=CONTROL only_toplevel=false value=".control
 save I(Vavdd)
-tran 50n 1m
+tran 500n 1m
 set wr_singlescale
 let avgI = mean(-I(Vavdd))
 wrdata \{simpath\}/\{filename\}_\{N\}.data avgI
@@ -157,3 +151,15 @@ value="
 spice_ignore=false
 place=header}
 C {xtal_iqd_125_1.sym} 560 -100 0 0 {name=x0}
+C {devices/vsource.sym} 170 -100 0 0 {name=Vavddp value="PULSE(0 \{Vavdd\} 1u 100n 100n 10m 11m)" savecurrent=false}
+C {devices/lab_pin.sym} 40 -460 2 0 {name=p13 sig_type=std_logic lab=avdd}
+C {devices/gnd.sym} 170 -70 0 0 {name=l6 lab=GND}
+C {devices/vsource.sym} 70 -100 0 0 {name=Vdvddp value="PULSE(0 \{Vdvdd\} 1u 50n 50n 10m 11m)" savecurrent=false}
+C {devices/lab_pin.sym} 40 -590 2 0 {name=p14 sig_type=std_logic lab=dvdd}
+C {devices/gnd.sym} 70 -70 0 0 {name=l14 lab=GND}
+C {devices/vsource.sym} 40 -430 0 0 {name=Vavdd value="DC \{Vavdd\}" savecurrent=false}
+C {devices/gnd.sym} 40 -400 0 0 {name=l1 lab=GND}
+C {devices/vsource.sym} 40 -560 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
+C {devices/gnd.sym} 40 -530 0 0 {name=l2 lab=GND}
+C {devices/noconn.sym} 70 -130 0 0 {name=l15}
+C {devices/noconn.sym} 170 -130 0 0 {name=l16}
