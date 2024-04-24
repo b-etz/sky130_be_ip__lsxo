@@ -92,7 +92,7 @@ This IP is in the validation phase. The compliance table is in development. Typi
 | ------------------------------------ | ------- | ----- | ----- |
 | `avdd` Current Dissipation (Enabled) | 0.8     | 0.9   | uA    |
 | Current Dissipation (Powered Down)   | 0.4     | 0.6   | nA    |
-| `dout` Duty Cycle                    | 50.4    | 62    | %     |
+| `dout` Duty Cycle                    | 51      | 67    | %     |
 | Startup Time (Power-on)              | 1.3     | 5.9   | ms    |
 | Startup Time (Enable)                | 1.7     | 5.9   | ms    |
 | Frequency Stability over Temp        | n/a     | n/a   | ppm   |
@@ -103,13 +103,19 @@ This IP is in the validation phase. The compliance table is in development. Typi
 
 ### CACE Summary Capture (Schematic Capture)
 
-Last updated April 01, 2024
+Last updated April 24, 2024
 
-![CACE Summary - Produced on 01 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_results_combined_20240401.png?raw=true)
+![CACE Summary - Produced on 24 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_results_20240424_schematic_combined.png?raw=true)
 
-Duty cycle tests are performed with a 10-nA current initial condition for the crystal motional inductance. This is done to accelerate startup (separate testbench) and capture a more realistic image of duty cycle across these corners.
+These results are for the final LVS schematic with dummy devices and protection diodes included. They were created after modifying the sky130 `diode_pd2nw_05v5` and `diode_pw2nd_05v5` models to comment out the `rs` ohmic resistance parameter, which is tied to spurious current fluctuations at the anode when the diode's reverse voltage changes. `+rs={rs_int}` is replaced with `*+rs={rs_int}` until further testing reveals the root cause of the nonphysical current simulations.
+
+Duty cycle tests are performed with a 10-nA current initial condition for the crystal motional inductance. This is done to accelerate startup (separate testbench) and capture a more realistic image of duty cycle across these corners. Duty cycle captures at 0% cannot be readily reproduced in the manual testbench. These are spurious.
 
 Startup times appear strongly influenced by initial transient response from initial conditions, which vary slightly from sim to sim.
+
+### CACE Summary Capture (Extracted Layout)
+
+The extracted models are simulating with some nonphysical results. Two negative capacitances must be removed from the netlist before attempting simulation. Testbench troubleshooting is still in progress...
 
 ## Magic VLSI Layout Render
 
@@ -191,7 +197,7 @@ Looking forward, I would recommend investigating a Schmitt trigger or other latc
 
 ### Recommended Crystal Specifications
 
-This circuit can only be simulated so many ways, and development has focused on 12.5 pF load capacitance crystals. For that reason, higher load capacitances are recommended for frequency stability and startup assurance. Load capacitances of 6 pF have also been simulated successfully. At a high level, crystals with small load capacitances (e.g. 4 pF) may start up with a transconductor g_m of 0.3 uS to 3 uS. Larger load capacitances (e.g. 12.5 pF) require transconductances of 1 uS to 40 uS. This oscillator IP was designed with a startup transconductance of ~8 uS, which allows reasonably fast startup for 12.5 pF crystals, great startup for 6 pF crystals, and far exceeds the optimal g_m for 4 pF crystals. For this reason, 4 pF crystals may fail to sustain oscillation with this circuit.
+Development has focused on 12.5 pF load capacitance crystals. For that reason, higher load capacitances are recommended for frequency stability and startup assurance. Load capacitances of 6 pF have also been simulated successfully. At a high level, crystals with small load capacitances (e.g. 4 pF) may start up with a transconductor g_m of 0.3 uS to 3 uS. Larger load capacitances (e.g. 12.5 pF) require transconductances of 1 uS to 40 uS. This oscillator IP was designed with a startup transconductance of ~8 uS, which allows reasonably fast startup for 12.5 pF crystals, great startup for 6 pF crystals, and far exceeds the optimal g_m for 4 pF crystals. For this reason, 4 pF crystals may fail to sustain oscillation with this circuit.
 
 The following specification table for appropriate crystals will keep your system capable of the proposed specifications listed earlier. For requirements given in ranges, devices with a range that fully includes the specified range are acceptable.
 

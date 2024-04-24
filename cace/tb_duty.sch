@@ -90,7 +90,7 @@ C {devices/gnd.sym} 40 -400 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 560 -730 2 0 {name=p11 sig_type=std_logic lab=ibias}
 C {devices/gnd.sym} 40 -290 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 40 -350 2 0 {name=p4 sig_type=std_logic lab=ena}
-C {devices/vsource.sym} 40 -210 0 0 {name=Vstby value="PULSE(\{Vdvdd\} 0 50u 10n 10n 10m 20m)" savecurrent=false}
+C {devices/vsource.sym} 40 -210 0 0 {name=Vstby value="PULSE(\{Vdvdd\} 0 50u 10n 10n 5 6)" savecurrent=false}
 C {devices/gnd.sym} 40 -180 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 40 -240 2 0 {name=p5 sig_type=std_logic lab=standby}
 C {devices/res.sym} 520 -480 0 0 {name=R3
@@ -105,7 +105,7 @@ device=resistor
 m=1}
 C {lqfp_parasitics.sym} 560 -340 3 1 {name=x2}
 C {devices/gnd.sym} 560 -260 0 0 {name=l13 lab=GND}
-C {devices/vsource.sym} 40 -320 0 0 {name=Vena value="PULSE(0 \{Vdvdd\} 0 10n 10n 10m 20m)" savecurrent=false}
+C {devices/vsource.sym} 40 -320 0 0 {name=Vena value="PULSE(0 \{Vdvdd\} 0 10n 10n 5 6)" savecurrent=false}
 C {devices/lab_pin.sym} 430 -630 0 0 {name=p6 sig_type=std_logic lab=standby}
 C {devices/lab_pin.sym} 240 -660 2 0 {name=p7 sig_type=std_logic lab=ibias}
 C {devices/diode.sym} 240 -690 2 0 {name=D1 model=DUMMY area=100}
@@ -126,7 +126,7 @@ m=1}
 C {devices/gnd.sym} 850 -590 0 0 {name=l5 lab=GND}
 C {devices/code_shown.sym} 990 -300 0 0 {name=CONTROL only_toplevel=false value=".control
 save v(dout)
-tran 3u 5m uic
+tran 200n 5m uic
 
 meas tran doutint INTEG v(dout) from=4.5m to=5m
 let vavg=doutint/0.5m
@@ -146,8 +146,6 @@ C {devices/code_shown.sym} 990 -550 0 0 {name=SETUP only_toplevel=false value="*
 .lib \{PDK_ROOT\}/\{PDK\}/libs.tech/combined/sky130.lib.spice \{corner\}
 
 .option TEMP=\{temperature\}
-.option klu
-.option noinit
 * Flag unsafe operating conditions (exceeds models' specified limits)
 .option warn=1
 "}

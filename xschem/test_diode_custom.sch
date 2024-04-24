@@ -47,8 +47,8 @@ hilight_wave=-1
 color=7
 node=ramp3}
 B 2 820 -620 1230 -410 {flags=graph
-y1=-5.1e-12
-y2=1.7e-16
+y1=-4e-06
+y2=2e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -68,8 +68,8 @@ color=8
 node=i(v5)
 hilight_wave=-1}
 B 2 820 -830 1230 -620 {flags=graph
-y1=-1.7e-16
-y2=5.1e-12
+y1=-2.4e-06
+y2=4.6e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -115,8 +115,8 @@ hilight_wave=-1
 color=7
 node=ramp2}
 B 2 410 -620 820 -410 {flags=graph
-y1=-5.1e-12
-y2=-3.1e-15
+y1=-2e-06
+y2=4e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -163,8 +163,8 @@ hilight_wave=-1
 color=7
 node=ramp1}
 B 2 0 -620 410 -410 {flags=graph
-y1=-5.1e-12
-y2=4.5e-16
+y1=-4e-06
+y2=2e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -184,8 +184,8 @@ color=8
 node=i(v2)
 hilight_wave=-1}
 B 2 0 -830 410 -620 {flags=graph
-y1=-5.1e-12
-y2=5.1e-12
+y1=-3.6e-06
+y2=6.7e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -232,8 +232,8 @@ hilight_wave=-1
 color=7
 node=sig4}
 B 2 1230 -830 1640 -620 {flags=graph
-y1=3.9e-13
-y2=7e-13
+y1=-1.9e-08
+y2=4.3e-08
 ypos1=0
 ypos2=2
 divy=5
@@ -253,8 +253,8 @@ color=8
 node=i(v7)
 hilight_wave=-1}
 B 2 1230 -620 1640 -410 {flags=graph
-y1=-7e-13
-y2=-3.9e-13
+y1=-4.3e-08
+y2=1.9e-08
 ypos1=0
 ypos2=2
 divy=5
@@ -301,8 +301,8 @@ hilight_wave=-1
 color=7
 node=ramp5}
 B 2 1640 -620 2050 -410 {flags=graph
-y1=-5e-12
-y2=9e-17
+y1=-5.1e-12
+y2=4e-07
 ypos1=0
 ypos2=2
 divy=5
@@ -322,8 +322,8 @@ color=8
 node=i(v9)
 hilight_wave=-1}
 B 2 1640 -830 2050 -620 {flags=graph
-y1=-9e-17
-y2=5e-12
+y1=-9.6e-07
+y2=5.1e-12
 ypos1=0
 ypos2=2
 divy=5
@@ -343,8 +343,8 @@ color=8
 node=i(v8)
 hilight_wave=-1}
 B 2 410 -830 820 -620 {flags=graph
-y1=3.1e-15
-y2=5.1e-12
+y1=-4e-06
+y2=2e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -414,18 +414,16 @@ C {devices/simulator_commands_shown.sym} -220 -250 0 0 {name=COMMANDS1
 simulator=ngspice
 only_toplevel=false 
 value="
-.option method=trap
-.option interp
-.option scale=1
+.option savecurrents
 .control
-set skywaterpdk
+save all
 tran 100p 10u
 remzerovec
-write sky130__test_diode.raw
+write test_diode_custom.raw
 .endc
 "}
 C {sky130_fd_pr/corner.sym} -220 -425 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/launcher.sym} 150 -40 0 0 {name=h1 
+C {devices/launcher.sym} -150 -50 0 0 {name=h1 
 descr="Load tran waves" 
 tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw tran
@@ -463,39 +461,67 @@ C {devices/vsource.sym} 1930 -350 2 0 {name=V9 value=5
 C {devices/lab_pin.sym} 1760 -260 1 0 {name=p17 lab=ramp5}
 C {devices/vsource.sym} 690 -160 0 0 {name=V10 value=-0.004
 }
-C {sky130_fd_pr/diode.sym} 320 -280 0 0 {name=D1
-model=diode_pd2nw_05v5
-area=2.025e11
-perim=1.8e6
+C {devices/code_shown.sym} 2100 -1000 0 0 {name=MODELS only_toplevel=false value="
+*  Model parameters from sky130_fd_pr OpenPDK
+*  sky130_fd_pr__diode_pd2nw_05v5
+*  PPlus to Nwell normal Pmos VT Diode Model
+*  -----------------------------------------------------
 
-}
-C {sky130_fd_pr/diode.sym} 320 -200 0 0 {name=D2
-model=diode_pw2nd_05v5
-area=2.025e11
-perim=1.8e6
-
-}
-C {sky130_fd_pr/diode.sym} 690 -290 0 0 {name=D3
-model=diode_pd2nw_05v5
-area=2.025e11
-perim=1.8e6
-
-}
-C {sky130_fd_pr/diode.sym} 1090 -280 0 0 {name=D4
-model=diode_pw2nd_05v5
-area=2.025e11
-perim=1.8e6
-
-}
-C {sky130_fd_pr/diode.sym} 1540 -280 0 0 {name=D5
-model=diode_pw2nd_05v5
-area=2.025e11
-perim=1.8e6
-
-}
-C {sky130_fd_pr/diode.sym} 1930 -290 0 0 {name=D6
-model=diode_pd2nw_05v5
-area=2.025e11
-perim=1.8e6
-
-}
+.model pdiode d 
++ level = 3
+*
+*PARAMETERS TO MAKE MODEL INTO CADFLOW
++ tlevc = 1
++ area = 2.025e11
++ pj = 1.8e6
+*
+*JUNCTION CAPACITANCE PARAMETERS
++ cj = 1e-12
++ mj = 0.34629
++ pb = 0.6587
++ cjsw = 3.3e-013
++ mjsw = 0.29781
++ php = 0.7418
++ cta = 0.0012407
++ ctp = 0.00037357
++ tpb = 0.0020386
++ tphp = 0.001246
+*
+*DIODE IV PARAMETERS
++ js = 2.1483e-017
++ jsw = 8.04e-016
++ n = 1.3632
++ rs = 600e-12
++ ik = 4.76e4
++ ikr = 0
++ vb = 6000
++ ibv = 0.00106
++ trs = 0
++ eg = 1.05
++ xti = 5.2
++ tref = 30
+*
+*DEFAULT PARAMETERS
++ tcv = 0
++ gap1 = 0.000473
++ gap2 = 1110
++ ttt1 = 0
++ ttt2 = 0
++ tm1 = 0
++ tm2 = 0
++ lm = 0
++ lp = 0
++ wm = 0
++ wp = 0
++ xm = 0
++ xoi = 10000
++ xom = 10000
++ xp = 0
++ xw = 0
+"}
+C {devices/diode.sym} 1930 -290 2 0 {name=D6 model=pdiode area=2.025e11}
+C {devices/diode.sym} 320 -280 2 0 {name=D1 model=pdiode area=2.025e11}
+C {devices/diode.sym} 320 -200 2 0 {name=D2 model=pdiode area=2.025e11}
+C {devices/diode.sym} 690 -290 2 0 {name=D3 model=pdiode area=2.025e11}
+C {devices/diode.sym} 1090 -280 2 0 {name=D4 model=pdiode area=2.025e11}
+C {devices/diode.sym} 1540 -280 2 0 {name=D5 model=pdiode area=2.025e11}

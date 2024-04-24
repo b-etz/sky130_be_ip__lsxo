@@ -45,59 +45,59 @@ N 500 -220 540 -260 {
 lab=#net3}
 N 580 -260 620 -220 {
 lab=#net1}
+N 730 -650 840 -650 {
+lab=DOUT}
 C {devices/vsource.sym} 40 -560 0 0 {name=VD value=\{DVDD\} savecurrent=false}
 C {devices/vsource.sym} 40 -430 0 0 {name=VA value=\{AVDD\} savecurrent=false}
 C {devices/lab_pin.sym} 40 -460 2 0 {name=p1 sig_type=std_logic lab=AVDD}
 C {devices/lab_pin.sym} 40 -590 2 0 {name=p2 sig_type=std_logic lab=DVDD}
 C {devices/lab_pin.sym} 430 -670 0 0 {name=p3 sig_type=std_logic lab=ENA
 }
-C {devices/code_shown.sym} 830 -140 0 0 {name=TT_MODELS
+C {devices/code_shown.sym} 910 -650 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval(@value )"
 value="
-.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.lib $::SKYWATER_MODELS/sky130.lib.spice ss
 .include $::SKYWATER_STDCELLS/sky130_fd_sc_hd.spice
 "
 spice_ignore=false
 place=header}
-C {devices/code_shown.sym} 820 -690 0 0 {name=STIMULI 
+C {devices/code_shown.sym} 910 -550 0 0 {name=STIMULI 
 only_toplevel=true
 value=".param DVDD=1.8
 .param AVDD=3.3
 .param ENA=1
 .param STANDBY=0
 .param CL=12.5p
+.param CXTAL=21p
 .param CSTRAY=2p
-.model DUMMY D()
-*.ic V(x0.icnode)=100m
-.option TEMP=25
+.option TEMP=-40
 .control
   save V(DOUT) 
   save V(XIN) V(XOUT)
   *save V(x1.vbreg)
-  save V(x1.x6.xin_buf) V(x1.x6.inv_in)
+  *save V(x1.x6.xin_buf) V(x1.x6.inv_in)
   *save V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
   *save I(VA) I(VD)
-  tran 1u 1 uic
-  *tran 1n 0.2m
+  tran 200n 5m uic
   remzerovec
   write tb_lsxo_general_short.raw
   plot V(DOUT)
   plot V(XIN) V(XOUT)
   *plot V(x1.vbreg)
-  plot V(x1.x6.xin_buf) V(x1.x6.inv_in)
+  *plot V(x1.x6.xin_buf) V(x1.x6.inv_in)
   *plot V(x1.vbreg) V(x1.x3.vg1) V(x1.x3.vg2)
   *plot I(VA) I(VD)
   * quit 0
 .endc"}
 C {devices/capa.sym} 500 -70 0 1 {name=C1
 m=1
-value=\{2*(CL-CSTRAY)\}
+value=\{CXTAL\}
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 620 -70 0 0 {name=C2
 m=1
-value=\{2*(CL-CSTRAY)\}
+value=\{CXTAL\}
 footprint=1206
 device="ceramic capacitor"}
 C {devices/capa.sym} 560 -150 3 0 {name=C3
@@ -127,7 +127,7 @@ C {devices/gnd.sym} 40 -400 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 560 -730 2 0 {name=p11 sig_type=std_logic lab=IBIAS}
 C {devices/gnd.sym} 40 -290 0 0 {name=l11 lab=GND}
 C {devices/lab_pin.sym} 40 -350 2 0 {name=p4 sig_type=std_logic lab=ENA}
-C {devices/vsource.sym} 40 -210 0 0 {name=V6 value="pulse(\{DVDD\} 0 1m 10n 10n 5 6)" savecurrent=false}
+C {devices/vsource.sym} 40 -210 0 0 {name=V6 value="pulse(\{DVDD\} 0 50u 10n 10n 5 6)" savecurrent=false}
 C {devices/gnd.sym} 40 -180 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 40 -240 2 0 {name=p5 sig_type=std_logic lab=STANDBY}
 C {devices/res.sym} 520 -480 0 0 {name=R3
@@ -156,3 +156,12 @@ C {devices/lab_pin.sym} 200 -460 2 0 {name=p8 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 200 -590 2 0 {name=p9 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 640 -570 2 0 {name=p10 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 480 -570 0 0 {name=p12 sig_type=std_logic lab=avss}
+C {devices/res.sym} 840 -620 0 1 {name=Rout
+value=100Meg
+footprint=1206
+device=resistor
+m=1}
+C {devices/gnd.sym} 840 -590 0 0 {name=l4 lab=GND}
+C {devices/code_shown.sym} 910 -710 0 0 {name=MODELS 
+only_toplevel=true
+value=".model DUMMY D()"}
