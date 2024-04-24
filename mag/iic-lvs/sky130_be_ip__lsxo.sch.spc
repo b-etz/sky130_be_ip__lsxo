@@ -27,13 +27,13 @@ x2 standby dvss dvss dvdd dvdd standby_ip sky130_fd_sc_hd__buf_1
 * noconn #net2
 XRD1 avss_ip avss_ip avss_ip sky130_fd_pr__res_xhigh_po_0p35 L=110 mult=2 m=2
 XMD1 avss_ip xin avss_ip avss_ip sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=4 nf=1 m=2
-XD1 xin avdd_ip sky130_fd_pr__diode_pd2nw_05v5 area=2.025e11 perim=1.8e6
 XD2 avss_ip xin sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
-XD3 xout avdd_ip sky130_fd_pr__diode_pd2nw_05v5 area=2.025e11 perim=1.8e6
 XD4 avss_ip xout sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 XD5 dvss ena sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 XD6 dvss standby sky130_fd_pr__diode_pw2nd_05v5 area=2.025e11 perim=1.8e6
 XMD2 xout vbreg xout avdd_ip sky130_fd_pr__pfet_g5v0d10v5 L=2 W=4 nf=1 m=1
+XD1 xin avdd_ip sky130_fd_pr__diode_pd2nw_05v5 area=2.025e11 perim=1.8e6
+XD3 xout avdd_ip sky130_fd_pr__diode_pd2nw_05v5 area=2.025e11 perim=1.8e6
 .ends
 
 * expanding   symbol:  ripl_dly_clk_buf.sym # of pins=7

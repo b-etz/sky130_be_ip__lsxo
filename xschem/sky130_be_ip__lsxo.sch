@@ -467,3 +467,5 @@ area=2.025e11
 perim=1.8e6
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 1760 -740 2 0 {name=p16 sig_type=std_logic lab=avdd_ip}
+C {devices/lab_pin.sym} 1760 -560 2 0 {name=p17 sig_type=std_logic lab=avdd_ip}

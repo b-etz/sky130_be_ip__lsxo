@@ -45,9 +45,9 @@ Call to undefined subcircuit bias_gen
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_sc_hd__buf_1
 Creating placeholder cell definition.
-Call to undefined subcircuit sky130_fd_pr__diode_pd2nw_05v5
-Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__diode_pw2nd_05v5
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__diode_pd2nw_05v5
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_sc_hd__a221o_1
 Creating placeholder cell definition.
