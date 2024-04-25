@@ -101,17 +101,15 @@ This IP is in the validation phase. The compliance table is in development. Typi
 | `dout` High Level (Vol)              | DVDD    | DVDD  | V     |
 | `dout` Rise/Fall Time                | 4       | 2.6   | ns    |
 
-### CACE Summary Capture (Schematic Capture)
+### CACE Summary Capture (Layout - No Parasitic Extraction)
 
-Last updated April 24, 2024
+Last updated April 25, 2024
 
-![CACE Summary - Produced on 24 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_results_20240424_schematic_combined.png?raw=true)
+![CACE Summary - Produced on 25 April 2024](https://github.com/b-etz/sky130_be_ip__lsxo/blob/main/images/cace_results_20240425_layout_combined.png?raw=true)
 
-These results are for the final LVS schematic with dummy devices and protection diodes included. They were created after modifying the sky130 `diode_pd2nw_05v5` and `diode_pw2nd_05v5` models to comment out the `rs` ohmic resistance parameter, which is tied to spurious current fluctuations at the anode when the diode's reverse voltage changes. `+rs={rs_int}` is replaced with `*+rs={rs_int}` until further testing reveals the root cause of the nonphysical current simulations.
+These results are for the final LVS schematic/layout with dummy devices and protection diodes included. They were created after modifying the sky130 `diode_pd2nw_05v5` and `diode_pw2nd_05v5` models to comment out the `rs` ohmic resistance parameter, which is tied to spurious current fluctuations at the anode when the diode's reverse voltage changes. `+rs={rs_int}` is replaced with `*+rs={rs_int}` until further testing reveals the root cause of the nonphysical current simulations.
 
-Duty cycle tests are performed with a 10-nA current initial condition for the crystal motional inductance. This is done to accelerate startup (separate testbench) and capture a more realistic image of duty cycle across these corners. Duty cycle captures at 0% cannot be readily reproduced in the manual testbench. These are spurious.
-
-Startup times appear strongly influenced by initial transient response from initial conditions, which vary slightly from sim to sim.
+Duty cycle tests are performed with a 10-nA current initial condition for the crystal motional inductance. This is done to accelerate startup (separate testbench) and capture a more realistic image of duty cycle across these corners. Some failing duty cycle captures cannot be readily reproduced in the manual testbench. Duty cycle and startup time are both heavily influenced by transient time step and initial conditions; they are not indicative of a likely failure to start.
 
 ### CACE Summary Capture (Extracted Layout)
 
@@ -137,14 +135,14 @@ Power supplies and control ports are on the top-left and top-middle. Digital clo
 | dvss    | 0                  | Digital reference voltage               | Internal |
 | avdd    | 3.3/5 (CMOS)       | Analog supply voltage                   | Internal |
 | avss    | 0                  | Analog reference voltage                | Internal |
-| ibias   | 0-3.3 (50 nA)      | Reference current input                 | Internal |
+| ibias   | avss-avdd (50 nA)  | Reference current input                 | Internal |
 | ena     | dvss/dvdd          | Crystal oscillator enable (control bit) | Internal |
 | standby | dvss/dvdd          | Clock output disable (control bit)      | Internal |
 | dout    | dvss/dvdd          | Clock output                            | Internal |
 | xin     | avss-avdd          | Crystal pin 1 (input)                   | External |
 | xout    | avss-avdd          | Crystal pin 2 (output)                  | External |
 
-This oscillator is designed to operate without an external series resistor between `xout` and the crystal. On an application board, connect one crystal pad to `xin` and one crystal pad to `xout`. Locate the crystal physically close to the `xin` and `xout` pins, and keep digital signals and return currents away from this protected zone. If possible, guard the crystal oscillator, `xin`/`xout` pins, and the load capacitors with an analog ground ring.
+This oscillator is designed to operate without an external series resistor between `xout` and the crystal. (A small I/O resistor for ESD protection and contact resistance is included in the testbench models, and the integrated I/O ESD protection should be used when available.) On an application board, connect one crystal pad to `xin` and one crystal pad to `xout`. Locate the crystal physically close to the `xin` and `xout` package pins, and keep digital signals and return currents away from this protected zone. If possible, guard the crystal oscillator, `xin`/`xout` pins, and the load capacitors with an analog ground ring.
 
 The crystal will require one load capacitor to ground on each lead. The value of the load capacitor depends on the load capacitance specification for the crystal part being used, as well as the board parasitic capacitances on the crystal and the `xin`/`xout` ports.
 
