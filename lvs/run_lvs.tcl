@@ -16,4 +16,3 @@ readnet spice ../netlist/schematic/sky130_be_ip__lsxo.spice $circuit2
 
 lvs "$circuit1 sky130_be_ip__lsxo" "$circuit2 sky130_be_ip__lsxo" \
         $setupfile sky130_be_ip__lsxo_comp.out
-~                                                    
