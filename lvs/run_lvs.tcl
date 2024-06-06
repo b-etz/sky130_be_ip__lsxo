@@ -9,11 +9,15 @@ set reflibs ${pdklib}/libs.ref
 
 set setupfile ${techlibs}/netgen/sky130A_setup.tcl
 set hvlib ${reflibs}/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
+set hdlib ${reflibs}/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 set circuit1 [readnet spice ../netlist/layout/sky130_be_ip__lsxo.spice]
 set circuit2 [readnet spice $hvlib]
+
+readnet spice $hdlib $circuit2
 readnet spice ../netlist/schematic/sky130_be_ip__lsxo.spice $circuit2
+
+debug on
 
 lvs "$circuit1 sky130_be_ip__lsxo" "$circuit2 sky130_be_ip__lsxo" \
         $setupfile sky130_be_ip__lsxo_comp.out
-~                                                    
