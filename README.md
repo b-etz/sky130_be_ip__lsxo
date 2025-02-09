@@ -214,9 +214,11 @@ The following specification table for appropriate crystals will keep your system
 
 The following table includes examples of available crystal part numbers and their post-silicon validation status:
 
+Last updated February 9, 2025
+
 | Manufacturer  | Part Number         | C_load  | Package         | Approx. $/10 | To Order                                                                            | Testing Status | Notes                              |
 | ------------- | ------------------- | ------- | --------------- | ------------ | ----------------------------------------------------------------------------------- | -------------- |----------------------------------- |
-| ECS Inc.      | ECS-.327-12.5-34B-C | 12.5 pF | 3.2 x 1.5mm SMD | $4.50        | [Mouser](https://mou.sr/3xxjRjt), [Digikey](https://www.digikey.com/short/p27fn3tf) | UNTESTED       | Low cost                           |
+| ECS Inc.      | ECS-.327-12.5-12R-C | 12.5 pF | 2.0 x 1.2mm SMD | $4.50        | [Mouser](https://mou.sr/417H207), [Digikey](https://www.digikey.com/short/h573r2vj) | UNTESTED       | Low cost                           |
 | IQD Freq Prod | LFXTAL062558        | 9 pF    | 2.0 x 1.2mm SMD | $7.10        | [Mouser](https://mou.sr/3Q7DbKu), [Digikey](https://www.digikey.com/short/0zn0d8d4) | UNTESTED       | Lower tempco, small size           |
 | Abracon       | ABS06-32.768KHZ-6-1 | 6 pF    | 2.0 x 1.2mm SMD | $15.20       | [Mouser](https://mou.sr/3na9BJf), [Digikey](https://www.digikey.com/short/080dd50r) | UNTESTED       | Low load capacitance (lower power) |
 
