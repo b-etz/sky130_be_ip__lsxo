@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1714591373
+timestamp 1723748229
 << dnwell >>
 rect 1926 -9006 6422 -3446
 rect 8780 -10312 25248 -4220
@@ -45,6 +45,8 @@ rect 8606 -9242 8626 -9164
 rect 8602 -10436 8626 -9242
 rect 8524 -11500 8548 -11496
 rect 25508 -11500 25532 -10436
+rect 21076 -22690 21646 -22634
+rect 22502 -22692 23072 -22634
 << nsubdiff >>
 rect 1883 -3423 6465 -3403
 rect 1883 -3457 1963 -3423
@@ -85,8 +87,8 @@ rect 1663 -11649 25533 -11629
 rect 1663 -11655 1737 -11649
 rect 1663 -23587 1683 -11655
 rect 1717 -23587 1737 -11655
-rect 1663 -23593 1737 -23587
 rect 25459 -11655 25533 -11649
+rect 1663 -23593 1737 -23587
 rect 25459 -23587 25479 -11655
 rect 25513 -23587 25533 -11655
 rect 25459 -23593 25533 -23587
@@ -4154,7 +4156,7 @@ timestamp 1713225924
 transform 0 1 11050 -1 0 -13206
 box -450 -8082 450 8082
 use sky130_fd_sc_hd__tapvpwrvgnd_1  ena_buf_tap $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1712845802
+timestamp 1715205430
 transform 0 1 2950 -1 0 -1232
 box -38 -48 130 592
 use sky130_fd_pr__diode_pw2nd_05v5_FT76RJ  esd_n_xin
@@ -4174,15 +4176,15 @@ timestamp 1713225924
 transform 1 0 22787 0 1 -22977
 box -321 -321 321 321
 use sky130_fd_sc_hd__tapvpwrvgnd_1  standby_buf_tap
-timestamp 1712845802
+timestamp 1715205430
 transform 0 -1 5380 1 0 -1324
 box -38 -48 130 592
 use sky130_fd_sc_hd__buf_1  x1 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
-timestamp 1712845802
+timestamp 1715205430
 transform 0 1 2950 -1 0 -1324
 box -38 -48 314 592
 use sky130_fd_sc_hd__buf_1  x2
-timestamp 1712845802
+timestamp 1715205430
 transform 0 -1 5380 -1 0 -1324
 box -38 -48 314 592
 use level_shift  x3
